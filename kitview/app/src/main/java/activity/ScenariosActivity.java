@@ -357,7 +357,7 @@ public class ScenariosActivity extends FragmentActivity implements OrientationLi
 		});
 	}
 
-
+	// TODO voir pour les deprecated
 	public void setResolution(int width, int height){
 		try{
 			Parameters params = mCamera.getParameters();

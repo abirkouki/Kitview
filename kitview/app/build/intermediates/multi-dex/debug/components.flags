@@ -1,5 +1,5 @@
--injars 'C:\Users\Administrateur\Desktop\kitview\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
--outjars 'C:\Users\Administrateur\Desktop\kitview\app\build\intermediates\multi-dex\debug\componentClasses.jar'
+-injars 'C:\DEV_ANDROID\kitview\app\build\intermediates\transforms\jarMerging\debug\jars\1\1f\combined.jar'
+-outjars 'C:\DEV_ANDROID\kitview\app\build\intermediates\multi-dex\debug\componentClasses.jar'
 
 -libraryjars 'C:\Users\Administrateur\AppData\Local\Android\Sdk\build-tools\25.0.0\lib\shrinkedAndroid.jar'
 
@@ -10,7 +10,7 @@
 -dontpreverify
 -dontnote **
 -dontwarn **
--printconfiguration 'C:\Users\Administrateur\Desktop\kitview\app\build\intermediates\multi-dex\debug\components.flags'
+-printconfiguration 'C:\DEV_ANDROID\kitview\app\build\intermediates\multi-dex\debug\components.flags'
 
 
 -keep public class * extends android.app.Instrumentation {

@@ -1,1 +1,9 @@
+//rootProject.name = 'kitview'
+//
+//include 'practice', 'out'
+//
+//rootProject.children.each {
+//    it.name = rootProject.name + '-' + it.name
+//}
+
 include ':app'

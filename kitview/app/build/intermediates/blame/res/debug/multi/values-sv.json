@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\Administrateur\\Desktop\\kitview\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sv\\values-sv.xml",
+        "outputFile": "C:\\DEV_ANDROID\\kitview\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sv\\values-sv.xml",
         "map": [
             {
                 "to": {
@@ -284,6 +284,82 @@
                         "startOffset": 1518,
                         "endColumn": 116,
                         "endOffset": 1630
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1634,
+                    "endColumn": 58,
+                    "endOffset": 1688
+                },
+                "from": {
+                    "file": "C:\\Users\\Administrateur\\.android\\build-cache\\bb6f7861207aae88b536297cd2da9afa454b6c36\\output\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 195,
+                        "endColumn": 58,
+                        "endOffset": 249
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1693,
+                    "endColumn": 46,
+                    "endOffset": 1735
+                },
+                "from": {
+                    "file": "C:\\Users\\Administrateur\\.android\\build-cache\\bb6f7861207aae88b536297cd2da9afa454b6c36\\output\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 254,
+                        "endColumn": 46,
+                        "endOffset": 296
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1740,
+                    "endColumn": 105,
+                    "endOffset": 1841
+                },
+                "from": {
+                    "file": "C:\\Users\\Administrateur\\.android\\build-cache\\bb6f7861207aae88b536297cd2da9afa454b6c36\\output\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 301,
+                        "endColumn": 105,
+                        "endOffset": 402
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1846,
+                    "endColumn": 113,
+                    "endOffset": 1955
+                },
+                "from": {
+                    "file": "C:\\Users\\Administrateur\\.android\\build-cache\\bb6f7861207aae88b536297cd2da9afa454b6c36\\output\\res\\values-sv\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 407,
+                        "endColumn": 113,
+                        "endOffset": 516
                     }
                 }
             }

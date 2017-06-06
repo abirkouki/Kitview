@@ -127,6 +127,11 @@
     <string name="sending_pictures_to_kitview_ko">Impossible d\'envoyer les photos à KitView</string>
     <string name="ice_cream_sandwitch_required">Android 4.0 requis pour executer l\'application</string>
     <!--<string name="nb_pictures_from_patient_transmitted_to_kitview">VALUE1 du patient VALUE2 VALUE3 à KitView</string>-->
+    <string name="folder_non_existent">Dossier non existant</string>
+    <string name="downloading">Téléchargement en cours&#8230;</string>
+    <string name="success_download">Les fichiers ont été téléchargés avec succès</string>
+    <string name="download_failed">Un problème a eu lieu durant le téléchargement</string>
+    <string name="no_data_received">Aucune donnée reçue</string>
 
     <!-- Ne pas traduire le reste -->
 

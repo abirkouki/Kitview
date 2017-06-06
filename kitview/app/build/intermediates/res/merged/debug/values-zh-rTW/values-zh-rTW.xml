@@ -15,4 +15,8 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"語音搜尋"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"選擇分享對象"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"與「%s」分享"</string>
+    <string name="zxing_app_name">條碼掃描器</string>
+    <string name="zxing_button_ok">確定</string>
+    <string name="zxing_msg_camera_framework_bug">很抱歉，Android 相機出現問題，您可能需要重新啟動您的裝置。</string>
+    <string name="zxing_msg_default_status">將條碼置於鏡頭範圍內以進行掃描。</string>
 </resources>

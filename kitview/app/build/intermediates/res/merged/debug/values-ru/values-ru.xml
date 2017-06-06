@@ -15,4 +15,8 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Голосовой поиск"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Открыть доступ"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Открыть доступ пользователю %s"</string>
+    <string name="zxing_app_name">Сканер штрих-кодов</string>
+    <string name="zxing_button_ok">OK</string>
+    <string name="zxing_msg_camera_framework_bug">К сожалению, возникла ошибка камеры. Может потребоваться перезагрузить устройство.</string>
+    <string name="zxing_msg_default_status">Чтобы сканировать штрих-код, поместите его в прямоугольник видоискателя.</string>
 </resources>

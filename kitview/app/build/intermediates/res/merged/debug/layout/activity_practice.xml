@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <Button android:id="@+id/scan_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Scan" />
+
+    <TextView
+        android:id="@+id/scan_format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/scan_button" />
+    <TextView
+        android:id="@+id/scan_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/scan_format" />
+
+
+    <Button
+        android:id="@+id/envoyer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.07"
+        android:text="Envoyer"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:text="code de cabinet" />
+
+
+    <!--
+    android:digits="0123456789" clavier normal only chiffres
+    android:inputType="numberDecimal" clavier numérique plus '.'
+    android:inputType="number" clavier numérique
+    -->
+    <EditText
+        android:id="@+id/code_input"
+        android:digits="0123456789"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:hint="code de cabinet" />
+
+
+    <view
+        android:clickable="true"
+        android:layout_width="@dimen/loading_practice"
+        android:layout_height="@dimen/loading_practice"
+        class="mbanje.kurt.fabbutton.FabButton"
+        android:id="@+id/determinate"
+        android:color="@color/blue"
+        app:fbb_showShadow="true"
+        android:src="@drawable/ic_fab_dl"
+        android:indeterminate="true"
+        android:max="100"
+        app:fbb_autoStart="true"
+        app:fbb_progressColor="@color/blue"
+        app:fbb_progressWidthRatio="0.12"
+        app:fbb_endBitmap="@drawable/ic_fab_complete"
+        app:fbb_showEndBitmap="true"
+        app:fbb_hideProgressOnComplete="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+
+
+</RelativeLayout>
+
+

@@ -33,6 +33,7 @@
     <dimen name="app_settings_interaction_component_width2">130dp</dimen>
     
     <dimen name="listview_row_height">17sp</dimen>
+    <dimen name="loading_practice">75dp</dimen>
     
     <!-- Level -->
     <dimen name="level_border_width">5dip</dimen>

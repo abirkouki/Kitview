@@ -19,6 +19,7 @@ import com.dentalcrm.kitview.R;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.media.MediaPlayer;
@@ -103,6 +104,8 @@ public class MainActivity extends FragmentActivity{
 		this.mGridView = (GridView)this.findViewById(R.id.gridview_home);
 		this.mGridView2 = (GridView)this.findViewById(R.id.gridview_home2);
 
+		//TODO voir pour le stockage cache du mode avec persistenceMan
+
 		try{
 			int mode = (mPersistenceManager != null)?mPersistenceManager.getMode():PersistenceManager.MODE_SELECTION;
 
@@ -185,7 +188,11 @@ public class MainActivity extends FragmentActivity{
 	}
 
 	private void initializeVideoView(){
-		Uri path = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.video);
+		Context context = getApplicationContext();
+		Uri path;
+		File videoPractice = new File(context.getFilesDir().getAbsolutePath() + File.separator + "video.mp4");
+		if (videoPractice.exists()) path = Uri.parse(context.getFilesDir().getAbsolutePath() + File.separator + "video.mp4");
+		else path = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.video);
 
 		if(mVideoView != null){
 			if(path != null )mVideoView.setVideoURI(path);
@@ -551,7 +558,7 @@ public class MainActivity extends FragmentActivity{
 			context.startActivity(intent);
 		}
 	}
-
+	//TODO voir comment cette fonction n'est plus appelee une fois qu'on a choisit un des modes pour faire un truc similaire pour le dl des data du ftp
 	public void initializeGridView0(){
 		this.mModules0 = new ArrayList<Module>();
 		this.mModules0.add(new Module(R.string.cabinet, R.color.color1, R.drawable.ic_action_group));
@@ -625,6 +632,7 @@ public class MainActivity extends FragmentActivity{
 		}
 	}
 
+	//Mode patient
 	public void initializeGridView2(){
 		this.mModules2 = new ArrayList<Module>();
 		this.mModules2.add(new Module(R.string.picture_shot_emergency, R.color.color1, R.drawable.ic_action_camera));
@@ -632,6 +640,7 @@ public class MainActivity extends FragmentActivity{
 		this.mModules2.add(new Module(R.string.folder_patient, R.color.color3, R.drawable.ic_action_person));
 		this.mModules2.add(new Module(R.string.folder2, R.color.color4, R.drawable.ic_action_group));
 		this.mModules2.add(new Module(R.string.settings, R.color.color5, R.drawable.ic_action_settings));
+		this.mModules2.add(new Module(R.string.practice, R.color.color6, R.drawable.ic_action_settings));
 
 		this.mInitializationFinished2 = false;
 
@@ -642,7 +651,7 @@ public class MainActivity extends FragmentActivity{
 						@Override
 						public void onGlobalLayout() {
 							if(!mInitializationFinished2){
-								mSpacing = getWindowManager().getDefaultDisplay().getWidth()/50;
+								mSpacing = getWindowManager().getDefaultDisplay().getWidth()/50; // TODO voir pour les deprecated
 
 								LinearLayout.LayoutParams llp3 = (android.widget.LinearLayout.LayoutParams) mActualSituationTextView.getLayoutParams();//new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
 								llp3.setMargins(mSpacing, 0, mSpacing, 0);
@@ -835,6 +844,34 @@ public class MainActivity extends FragmentActivity{
 						launchSettings(MainActivity.this,false);
 
 						break;
+
+						//Test
+					case 5:
+						if(mDialog != null)mDialog.showFRProgressDialog();
+
+						new Thread(new Runnable() {
+							@Override
+							public void run() {
+								Intent intent = new Intent(MainActivity.this.getApplicationContext(), PracticeActivity.class);
+								if(intent != null){
+									intent.putExtra("practice", "5");
+									intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+									MainActivity.this.getApplicationContext().startActivity(intent);
+								}
+
+								if(mDialog != null){
+									runOnUiThread(new  Runnable(){
+										@Override
+										public void run() {
+											mDialog.cancelFRProgressDialog();
+										}
+									});
+								}
+							}
+						}).start();
+
+						break;
+
 					}
 				}
 			});
@@ -962,7 +999,6 @@ public class MainActivity extends FragmentActivity{
 		mViewAnimator.setDisplayedChild(index);
 		mViewAnimator.requestLayout();
 		mViewAnimator.invalidate();
-
 		mBottomInfosLinearLayout.setVisibility((index==1)?View.VISIBLE:View.GONE);
 		mBottomInfosLinearLayout.requestLayout();
 		mBottomInfosLinearLayout.invalidate();

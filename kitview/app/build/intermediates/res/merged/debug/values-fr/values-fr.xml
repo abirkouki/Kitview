@@ -96,6 +96,8 @@ the calibration for all the phone sides.</string>
     <string name="displaymodemycase1">Première/Seconde</string>
     <string name="displaymodemycase2">Première/Dernière</string>
     <string name="doctoremail">Mail praticien</string>
+    <string name="download_failed">Un problème a eu lieu durant le téléchargement</string>
+    <string name="downloading">Téléchargement en cours…</string>
     <string name="exploitation">Exploitation</string>
     <string name="export_choose">Choose file destination</string>
     <string name="export_exists_msg">Do you want to overwrite ?</string>
@@ -106,6 +108,7 @@ the calibration for all the phone sides.</string>
     <string name="focus">Mise au point</string>
     <string name="folder">Mon cas</string>
     <string name="folder2">Cas similaires</string>
+    <string name="folder_non_existent">Dossier non existant</string>
     <string name="folder_patient">Ma photothèque</string>
     <string name="grey">Gris</string>
     <string name="help_discovery_content">The method that is being used, does not need to have root privileges. In future release there will be more advanced techniques, once the non-root ones are polished.\n\nHere is how it works: \n1. Calculate the subnetwork range\n2. Iterate throught IP and query them\n3. First it sends an ICMP ping or Echo on tcp/7 (with InetAddress.isReachable())\n4. If it does not work, it tries to connect() on well known open tcp ports such as: 135, 139, 22, 111, 80\n5. If none of the above is successful, the host is not discovered</string>
@@ -143,6 +146,7 @@ the calibration for all the phone sides.</string>
     <string name="net_mode_wifi">WiFi (%1$s %2$s)</string>
     <string name="net_ssid">SSID: %s</string>
     <string name="next">Suivant</string>
+    <string name="no_data_received">Aucune donnée reçue</string>
     <string name="no_patient_found">Aucun patient trouvé</string>
     <string name="no_pictures">Aucune photo dans cette collection</string>
     <string name="not_supported">Orientation not supported</string>
@@ -271,6 +275,7 @@ the calibration for all the phone sides.</string>
     <string name="sound">Son</string>
     <string name="splashscreen">Ecran de démarrage</string>
     <string name="streaming">Streaming</string>
+    <string name="success_download">Les fichiers ont été téléchargés avec succès</string>
     <string name="sur">sur</string>
     <string name="tag_aperture">Focal ratio</string>
     <string name="tag_datetime">Date and time</string>
@@ -317,4 +322,8 @@ the calibration for all the phone sides.</string>
     <string name="wifi_unknown">Wifi state unknown</string>
     <string name="year">an</string>
     <string name="years">ans</string>
+    <string name="zxing_app_name">Barcode Scanner</string>
+    <string name="zxing_button_ok">OK</string>
+    <string name="zxing_msg_camera_framework_bug">Désolé, la caméra Android a rencontré un problème. Un redémarrage de l\'appareil est peut-être nécessaire.</string>
+    <string name="zxing_msg_default_status">Encadrez un code-barres avec le viseur pour le balayer.</string>
 </resources>

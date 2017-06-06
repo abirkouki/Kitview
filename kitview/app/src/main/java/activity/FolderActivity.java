@@ -3,7 +3,6 @@ package activity;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import model.PersistenceManager;
@@ -20,7 +19,7 @@ import view.sharing.SharingPhotosView;
 
 import com.dentalcrm.kitview.R;
 
-import fragment.comparator.ImageDetailFragment;
+import view.comparator.ImageDetailFragment;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.res.Configuration;
@@ -28,7 +27,6 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
 import android.support.v4.view.ViewPager;
 import android.view.Gravity;
 import android.view.KeyEvent;

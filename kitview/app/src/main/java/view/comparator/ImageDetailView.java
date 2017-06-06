@@ -8,7 +8,6 @@ import model.rest.Photo;
 
 import com.dentalcrm.kitview.R;
 
-import fragment.comparator.ImageDetailFragment;
 import util.components.gallery.ImageCache;
 import util.components.gallery.ImageFetcher;
 import util.components.gallery.Utils;

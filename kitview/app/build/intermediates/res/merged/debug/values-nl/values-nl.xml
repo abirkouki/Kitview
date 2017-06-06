@@ -15,4 +15,8 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Gesproken zoekopdracht"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Delen met"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Delen met %s"</string>
+    <string name="zxing_app_name">Barcode Scanner</string>
+    <string name="zxing_button_ok">OK</string>
+    <string name="zxing_msg_camera_framework_bug">Sorry, er is een probleem met de Android-camera. Probeer je telefoon opnieuw op te starten.</string>
+    <string name="zxing_msg_default_status">Plaats een barcode binnen de rechthoek om deze te scannen.</string>
 </resources>

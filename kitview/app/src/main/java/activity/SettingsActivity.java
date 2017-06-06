@@ -171,6 +171,7 @@ public class SettingsActivity extends FragmentActivity implements ActionBar.TabL
 			this.initializeAndroidPort(view);
 			this.initializeRestoreButton(view);
 
+			// TODO voir pour les serveurs distants en mode patient
 			boolean patientMode = (mPersistenceManager.getMode() == PersistenceManager.MODE_PATIENT);
 
 			//mDoctorEmailLinearLayout.setVisibility(patientMode?View.VISIBLE:View.GONE);

@@ -317,4 +317,8 @@ the calibration for all the phone sides.</string>
     <string name="wifi_unknown">Wifi state unknown</string>
     <string name="year">Jahr</string>
     <string name="years">Jahren</string>
+    <string name="zxing_app_name">Barcode Scanner</string>
+    <string name="zxing_button_ok">OK</string>
+    <string name="zxing_msg_camera_framework_bug">Mit der Android-Kamera ist leider ein Fehler aufgetreten. Es könnte sein, dass Sie das Gerät neu starten müssen.</string>
+    <string name="zxing_msg_default_status">Positionieren Sie den Barcode innerhalb des Rechteckes.</string>
 </resources>
