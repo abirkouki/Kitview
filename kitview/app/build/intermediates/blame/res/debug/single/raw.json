@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\Administrateur\\Desktop\\kitview\\app\\build\\intermediates\\res\\merged\\debug\\raw\\shutter.ogg",
+        "source": "C:\\Users\\Administrateur\\Desktop\\kitview\\app\\src\\main\\res\\raw\\shutter.ogg"
+    },
+    {
+        "merged": "C:\\Users\\Administrateur\\Desktop\\kitview\\app\\build\\intermediates\\res\\merged\\debug\\raw\\video.mp4",
+        "source": "C:\\Users\\Administrateur\\Desktop\\kitview\\app\\src\\main\\res\\raw\\video.mp4"
+    },
+    {
+        "merged": "C:\\Users\\Administrateur\\Desktop\\kitview\\app\\build\\intermediates\\res\\merged\\debug\\raw\\services.bin",
+        "source": "C:\\Users\\Administrateur\\Desktop\\kitview\\app\\src\\main\\res\\raw\\services.bin"
+    },
+    {
+        "merged": "C:\\Users\\Administrateur\\Desktop\\kitview\\app\\build\\intermediates\\res\\merged\\debug\\raw\\puzzle.jpg",
+        "source": "C:\\Users\\Administrateur\\Desktop\\kitview\\app\\src\\main\\res\\raw\\puzzle.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Administrateur\\Desktop\\kitview\\app\\build\\intermediates\\res\\merged\\debug\\raw\\saves.bin",
+        "source": "C:\\Users\\Administrateur\\Desktop\\kitview\\app\\src\\main\\res\\raw\\saves.bin"
+    }
+]

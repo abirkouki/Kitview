@@ -1,0 +1,61 @@
+<resources>
+
+    <dimen name="main_menu_module_height">50dp</dimen>
+    
+    
+    <dimen name="main_menu_module_textheight">6sp</dimen>
+    
+    
+    <dimen name="gridview_textpadding">4dp</dimen>
+    <dimen name="list_item_width">100dp</dimen>
+    <dimen name="list_padding">0dp</dimen>
+    <dimen name="image_thumbnail_size">100dp</dimen>
+    
+    <dimen name="popup_width">430sp</dimen>
+    
+    <dimen name="circle">70dp</dimen>
+      <dimen name="foldertextsize">17sp</dimen>
+    
+    <dimen name="popup_title">26sp</dimen>
+    <dimen name="popup_content">14sp</dimen>
+    <dimen name="popup_button_width">120dip</dimen>
+    <dimen name="popup_button_width2">80dip</dimen>
+    
+    <dimen name="popup_button_height">30dip</dimen>
+    <dimen name="popup_button_height2">50dip</dimen>
+    
+    <dimen name="app_settings_text_size">22sp</dimen>
+    <dimen name="app_settings_subtext_size">18sp</dimen>
+    <dimen name="app_settings_space_between_items">5sp</dimen>
+    <dimen name="app_settings_subtext_leftspace">20sp</dimen>
+    <dimen name="app_settings_subtext_leftspace2">40sp</dimen>
+    <dimen name="app_settings_interaction_component_width">110dp</dimen>
+    <dimen name="app_settings_interaction_component_width2">130dp</dimen>
+    
+    <dimen name="listview_row_height">17sp</dimen>
+    
+    <!-- Level -->
+    <dimen name="level_border_width">5dip</dimen>
+    <dimen name="level_border_height">0dip</dimen>
+    <!-- Display -->
+    <dimen name="display_padding">8dip</dimen>
+    <dimen name="display_border">1dip</dimen>
+    <dimen name="display_gap">20dip</dimen>
+    <!-- Sensor -->
+    <dimen name="sensor_gap">5dip</dimen>
+    <!-- Marker -->
+    <dimen name="marker_thickness">3dip</dimen>
+    <!-- Bubble -->
+    <dimen name="bubble_padding">2dip</dimen>
+    <dimen name="bubble_padding_top">0dip</dimen>
+    <dimen name="bubble_padding_bottom">4dip</dimen>
+    <dimen name="bubble_padding_right">2dip</dimen>
+    <dimen name="bubble_padding_left">2dip</dimen>
+    <!-- LCD -->
+    <dimen name="lcd_text">20dip</dimen>
+    <!-- LOCK -->
+    <dimen name="lock_text">32dip</dimen>
+    <!-- INFO -->
+    <dimen name="info_text">12dip</dimen>
+
+</resources>

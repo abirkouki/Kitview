@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\KITVIEW\StudioProjects\kitview\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="C:\Users\KITVIEW\StudioProjects\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_a88f38b73ec03236b8d0f31077e7accea23a925a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\KITVIEW\StudioProjects\kitview\app\libs\mail.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="428e267abff0d10802ccde86b915da2c20471160">
+        <dex dex="C:\Users\KITVIEW\StudioProjects\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\2\mail_2a1ca24cc55b4052a641bf433d5349759ca49bcf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\KITVIEW\StudioProjects\kitview\app\libs\crittercism_v5_0_6_sdkonly.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="927a461dc7228d49ee26d7b4eaecd9d5e813beb4">
+        <dex dex="C:\Users\KITVIEW\StudioProjects\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\2\crittercism_v5_0_6_sdkonly_fc53c49de25479de5350c92c093c9b47f9114dc3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\KITVIEW\StudioProjects\kitview\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\KITVIEW\StudioProjects\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-21.0.3_3e4a453c28a7f850e757cc59ba7775f175c18b2f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\KITVIEW\StudioProjects\kitview\app\libs\android-support-v13.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b233aa84246aa63c5b220404fe1e3d5eda32c318">
+        <dex dex="C:\Users\KITVIEW\StudioProjects\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\2\android-support-v13_6a834ea82ee5a97a08a0707f8e0f14ffc73c8161\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\KITVIEW\StudioProjects\kitview\app\libs\activation.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d1257cbff6faa44c1f325ae0d9413522d4644383">
+        <dex dex="C:\Users\KITVIEW\StudioProjects\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\2\activation_b6aa1770c49408a529f3e3b3d78af2cc2f59fe89\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\KITVIEW\AppData\Local\Android\Sdk\build-tools\25.0.0\renderscript\lib\renderscript-v8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="05668b8cd6c7b07f152b6a5b4c6cff620817ba0f">
+        <dex dex="C:\Users\KITVIEW\StudioProjects\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\10\renderscript-v8_1c5567247630bd435034aa77a0b3d3c06db386b2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\KITVIEW\StudioProjects\kitview\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6caa0ce4e76c99537b7b1b71213592413921e0f7">
+        <dex dex="C:\Users\KITVIEW\StudioProjects\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_1a55e718c2fa8cc4d745a2e7de17a283eea2ed4b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\KITVIEW\StudioProjects\kitview\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d4e4b5165a2aa2f1dc7fd2210a0ffba551c6d7e7">
+        <dex dex="C:\Users\KITVIEW\StudioProjects\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_dd2d28748f6527452b2d17313b2c0510d9a8ea3d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\KITVIEW\StudioProjects\kitview\app\libs\additionnal.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="C:\Users\KITVIEW\StudioProjects\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\2\additionnal_6a710dfd4d2f665b8e3368230d1cde4c1e56dd59\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\KITVIEW\StudioProjects\kitview\app\libs\jcifs-1.3.18.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="29d62325100eac2bb3c25b44434acdc4d698c401">
+        <dex dex="C:\Users\KITVIEW\StudioProjects\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\2\jcifs-1.3.18_8188147299d00c1cc1d7028213ba0708698f1594\classes.dex" />
+    </item>
+
+</items>

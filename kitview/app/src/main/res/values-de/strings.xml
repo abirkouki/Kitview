@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main Menu -->
+
+    <string name="blank"></string>
+    <string name="picture_shot_once">Fotoaufnahmen</string>
+    <string name="picture_shot_several">Szenario</string>
+    <string name="picture_shot_several_patient">Fototermin</string>
+    <string name="picture_shot_emergency">Notfall</string>
+    <string name="barcode_reader">Strichcode</string>
+    <string name="folder">Mein Fall</string>
+    <string name="folder_patient">Meine Fotos</string>
+    <string name="folder2">Ähnliche Fälle</string>
+    <string name="puzzle">Andere</string>
+    <string name="settings">Einstellungen</string>
+
+    <!-- Same cases -->
+    <string name="no_patient_found">Kein Patient gefunden</string>
+
+    <!-- Settings -->
+
+	<string name="initialisation">Initialisierung</string>
+	<string name="exploitation">Betrieb</string>
+
+    <string name="splashscreen">Startbildschirm</string>
+    <string name="connection_timeout">Server Verbindung Zeitlimits</string>
+    <string name="shutter_release_button">Auslöseknopf</string>
+    <string name="shutter_release_button1">Virtuelle</string>
+    <string name="shutter_release_button2">Lautstärke</string>
+    <string name="bgcolor">Hintergrundfarbe</string>
+    <string name="displaymodemycase">Mein Fall anzeigen</string>
+    <string name="displaymodemycase1">Erste/Zweite</string>
+    <string name="displaymodemycase2">Erste/Letzte</string>
+    <string name="doctoremail">Doktor email</string>
+    <string name="black">Schwartz</string>
+    <string name="grey">Grau</string>
+    <string name="white">Weiss</string>
+    <string name="remoteserver">Entfernte Verbindung KitView</string>
+    <string name="multicomputers">Mehrere Computer</string>
+    <string name="kitview_computer">Lokale Verbindung KitView</string>
+    <string name="ip">IP-Adresse</string>
+    <string name="port">Portnummer </string>
+    <string name="streaming">Streaming</string>
+    <string name="android">Android</string>
+
+    <!-- Buttons -->
+
+    <string name="ok">Bestätigen</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="next">Weiter</string>
+    <string name="previous">Zurück</string>
+
+    <!-- Dialog -->
+    
+    <string name="send_logs_by_mail">Fotos per E-mail schicken ?</string>
+
+    <string name="barcode_modes_title">Arten</string>
+    <string name="barcode_mode1_explanation">Erste Art - Zu keyboard schicken</string>
+    <string name="barcode_mode2_explanation">Zweite Art - Ein script launchen</string>
+    <string name="barcode_choice">Wahl</string>
+    <string name="barcode_mode1">Erste Art</string>
+    <string name="barcode_mode2">Zweite Art</string>
+    <string name="share_photo_title">Teilen</string>
+    <string name="camera_unavailable_title">Kamera nicht verfügbar</string>
+    <string name="camera_unavailable_content">Bitte starten Sie Ihren Android apparat neu.</string>
+    <string name="oom_title">Kein Speicher mehr verfügbar.</string>
+    <string name="oom_content">Kein Speicher mehr verfügbar. Bitte starten Sie die Mobil-App neu.</string>
+    <string name="io_error_title">Schreibfehler</string>
+    <string name="io_error_content">Fehler beim Speichern des Bildes. Bitte starten Sie die Mobil-App oder ihre Android apparat neu.</string>
+    <string name="disk_full_title">Nicht genug Speicherplatz auf dem Android apparat.</string>
+    <string name="disk_full_content">Fehler beim Speichern des Bildes : nicht genug Speicherplatz auf dem Android apparat. Freier Arbeitsspeicher.</string>
+    <string name="wifi_title">Wifi ausgeschaltet</string>
+    <string name="wifi_content">Bitte aktivieren Sie Wifi in ihren Android apparat Einstellungen.</string>
+    <string name="quit_application">Programm beenden ?</string>
+    <string name="confirm_quit_application">Sind Sie sicher das Programm zu beenden ?</string>
+    <string name="select_mode_cabinet_patient">Programm Art</string>
+    <string name="cabinet">Praxis</string>
+    <string name="patient">Patient</string>
+    <string name="select_collection">Wählen Sie eine Sammlung aus</string>
+    <string name="confirm_before_sending">Bestätigung warten bevor Zusendung</string>
+    <string name="pictures_missing">Einige Fotos fehlen.</string>
+    <string name="confirm_before_sending_sure_to_send_pictures_to_kitview">Sind Sie sicher ihre Fotos zu KitView senden ?</string>
+    <string name="confirm_before_sending_sure_to_send_pictures_to_medical">Sind Sie sicher ihre Fotos an Doktor senden ?</string>
+    <string name="confirm_before_deletion">Bestätigung bevor Abschaffung</string>
+    <string name="confirm_before_deletion_sure_to_delete">Sind Sie sicher um die ausgewählte Zeile zu löschen ?</string>
+    <string name="confirm_before_reinit">Bestätigung bevor Zurücksetzung</string>
+    <string name="confirm_before_reinit_sure_to_reinit">Sind Sie sicher um die aktuelle Konfiguration su zurücksetzen ?</string>
+
+    <!-- Camera settings -->
+
+    <string name="off">Off</string>
+    <string name="sound">Lautstärke</string>
+    <string name="shutter1">Erste Auslöse</string>
+    <string name="flash">Flash</string>
+    <string name="focus">Focus</string>
+    <string name="resolution">Auflösung </string>
+    <string name="scenarios">Szenario</string>
+    <string name="sensivity">Sensitivität</string>
+    <string name="sensivity_low">Schwach</string>
+    <string name="sensivity_normal">Normal</string>
+    <string name="sensivity_high">Hoch</string>
+    <string name="picture_time_display">Anzeigedauer</string>
+
+    <!-- Toast - messages -->
+
+    <string name="pinch_to_zoom">Pinch um zu zoomen</string>
+    <string name="clic_twice_to_show_patient_pictures">Doppelklicken um Patienten Fotos zu anzeigen\n Swipe um zu navigieren</string>
+    <string name="years">Jahren</string>
+    <string name="year">Jahr</string>
+    <string name="months">Monaten</string>
+    <string name="month">Monate</string>
+    <string name="last">Letzte</string>
+    <string name="copyright_kitview_labs_2015"><![CDATA[<font size="1" color="white"></font> <font size="5" color="white"><b>KitView Labs 2016</b></font>]]></string>
+    <string name="sur">auf</string>
+    <string name="no_pictures">Keine Fotos in diese Sammlung</string>
+    <string name="take_photo"><![CDATA[<b> VALUE </b> machen]]></string>
+    <string name="take_photo_again"><![CDATA[Wieder <b> VALUE </b> machen]]></string>
+    <string name="photo_type_saved"><![CDATA[<b> VALUE </b> gespeichert]]></string>
+    <string name="photo_from_patient_saved1">Foto gespeichert</string>
+    <string name="photo_from_patient_saved2">VALUE1 gespeichert</string>
+    <string name="photo_from_patient_transmitted_to_kitview">Foto wurde an KitView geschickt</string>
+    <string name="photos_from_patient_transmitted_to_kitview">Fotos wurden an KitView geschickt</string>
+    <string name="connection_to_kitview_ko">Verbindungsaufbau fehlerhaft</string>
+    <string name="wifi_ko">Wifi nicht verfügbar</string>
+    <string name="sending_pictures_to_kitview_ko">Fehler : Fotos wurden nicht an KitView geschickt</string>
+    <string name="ice_cream_sandwitch_required">Android 4.0 ist erforderlich um KitView Programm auszuführen</string>
+    <!-- <string name="nb_pictures_from_patient_transmitted_to_kitview">              VALUE1 von Patient VALUE2 VALUE3 to KitView</string> -->
+
+
+    <!-- Ne pas traduire le reste -->
+
+
+    <!-- Bubble (ne pas traduire) -->
+
+    <string name="name">Bubble</string>
+    <string name="reset">Reset</string>
+    <string name="not_supported">Orientation not supported</string>
+    <string name="save">Save</string>
+    <string name="calibrate">Calibrate</string>
+    <string name="calibrate_info">press MENU to calibrate...</string>
+    <string name="calibrate_title">Calibrate your phone</string>
+    <string name="calibrate_message">Put any side (including the back) of your Android device on a flat horizontal surface and press the Calibrate button.\n\nOr reset 
+the calibration for all the phone sides.</string>
+    <string name="calibrate_again_title">You must re-calibrate</string>
+    <string name="calibrate_again_message">The sensor change requires re-calibration of the phone.</string>
+    <string name="calibrate_saved">Custom calibration saved !</string>
+    <string name="calibrate_failed">Calibration failed !</string>
+    <string name="calibrate_restored">Original calibration restored !</string>
+    <string name="preferences">Settings</string>
+    <string name="preference_show_angle">Show numeric angle</string>
+    <string name="preference_show_angle_summary">Display angle value(s) on screen</string>
+    <string name="preference_display_type">Display type</string>
+    <string name="preference_sound">Sound effects</string>
+    <string name="preference_sound_summary">Play sound when level</string>
+    <string name="preference_lock">Locking</string>
+    <string name="preference_lock_summary">Allow level orientation locking</string>
+    <string name="preference_viscosity">Viscosity</string>
+    <string name="preference_economy">Eco mode</string>
+    <string name="preference_economy_summary">Less smooth animations\nbut preserves the battery life</string>
+    <string name="angle">Angle</string>
+    <string name="lock_info">tap to lock level orientation</string>
+    <string name="inclination">Inclination</string>
+    <string name="roof_pitch">Roof pitch</string>
+    <string name="roof_pitch_summary">Inches of rise per foot of run\n3 &#126; 14°</string>
+    <string name="angle_summary">Angle in degrees</string>
+    <string name="inclination_summary">Inclination in percents\n100&#37; &#126; 45°</string>
+    <string name="viscosity_low">Low</string>
+    <string name="viscosity_medium">Medium</string>
+    <string name="viscosity_high">High</string>
+    <string name="viscosity_low_summary">Low viscosity\nBubble moves faster</string>
+    <string name="viscosity_medium_summary">Medium viscosity\nBubble moves normaly</string>
+    <string name="viscosity_high_summary">High viscosity\nBubble moves slowly</string>
+    <string name="config_switch_vertically">Invert vertically</string>
+    <string name="config_switch_horizontally">Invert horizontally</string>
+    <string name="config_rotate_axis">Rotate axis</string>
+
+    <!-- EXIF tags (ne pas traduire) -->
+
+    <string name="tag_aperture">Focal ratio</string>
+    <string name="tag_datetime">Date and time</string>
+    <string name="tag_exposure_time">Exposure time</string>
+    <string name="tag_flash">Flash</string>
+    <string name="tag_focal_length">Focal length</string>
+    <string name="tag_gps_altitude">GPS altitude</string>
+    <string name="tag_gps_altitude_ref">GPS altitude ref</string>
+    <string name="tag_gps_datestamp">GPS date stamp</string>
+    <string name="tag_gps_latitude">GPS latitude</string>
+    <string name="tag_gps_latitude_ref">GPS latitude ref</string>
+    <string name="tag_gps_longitude">GPS longitude</string>
+    <string name="tag_gps_longitude_ref">GPS longitude ref</string>
+    <string name="tag_gps_processing_method">GPS processing method</string>
+    <string name="tag_gps_timestamp">GPS time stamp</string>
+    <string name="tag_image_length">Height</string>
+    <string name="tag_image_width">Width</string>
+    <string name="tag_iso">ISO sensitivity</string>
+    <string name="tag_make">Make</string>
+    <string name="tag_model">Model</string>
+    <string name="tag_orientation">Orientation</string>
+    <string name="tag_white_balance">White balance</string>
+
+    <!-- Network Discovery (ne pas traduire) -->
+
+    <string name="app_name">Network Discovery</string>
+    <string name="app_loading">Loading</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+    <string name="btn_ok">Ok</string>
+    <string name="btn_discover">Discover</string>
+    <string name="btn_discover_cancel">Cancel</string>
+    <string name="btn_export">Export</string>
+    <string name="btn_close">Close</string>
+    <string name="btn_scan">Scan</string>
+    <string name="btn_options">Options</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_info">Info</string>
+    <string name="btn_ports">Ports</string>
+    <string name="btn_remove">Remove</string>
+    <string name="task_db">Downloading and installing %s database ...</string>
+    <string name="task_services">Creating Services database ...\nThis may take a while ...</string>
+    <string name="package_missing">%s must be installed from the market !</string>
+    <string name="wifi_enabled">Wifi is enabled</string>
+    <string name="wifi_enabling">Wifi is enabling</string>
+    <string name="wifi_disabling">Wifi is disabling</string>
+    <string name="wifi_disabled">Wifi is disabled</string>
+    <string name="wifi_scanning">Wifi is scanning</string>
+    <string name="wifi_associating">Wifi is associating with %s</string>
+    <string name="wifi_dhcp">Obtaining IP address from %s</string>
+    <string name="wifi_unknown">Wifi state unknown</string>
+    <string name="net_ip">IP: %1$s/%2$d (%3$s)</string>
+    <string name="net_carrier">CARRIER: %s</string>
+    <string name="net_ssid">SSID: %s</string>
+    <string name="net_mode">MODE: %s</string>
+    <string name="net_mode_wifi">WiFi (%1$s %2$s)</string>
+    <string name="net_mode_mobile">Mobile</string>
+    <string name="net_mode_eth">Ethernet (Not supported yet)</string>
+    <string name="net_mode_unknown">Unknown</string>
+    <string name="discover_start">Discovery started ...</string>
+    <string name="discover_canceled">Discovery canceled !</string>
+    <string name="discover_proxy_title">Proxy Error</string>
+    <string name="discover_proxy_msg">Discovery is canceled, because a mac address appeared multiple times, you probably are behind a proxy.\n\nGo to your Gateway from the browser : http://%s</string>
+    <string name="discover_root_title">Installation: Root</string>
+    <string name="discover_root_install">Do you want to install the scan daemon for root ?</string>
+    <string name="discover_root_restart">Restarting application ...</string>
+    <string name="discover_empty">Press Discover to start</string>
+    <string name="discover_action_title">Choose an action</string>
+    <string name="discover_action_scan">Scan ports</string>
+    <string name="discover_action_rename">Change name</string>
+    <string name="discover_action_saved">Name saved!</string>
+    <string name="discover_action_deleted">Name deleted!</string>
+    <string name="discover_myphone_name">MyPhone</string>
+    <string name="scan_single_title">Scan IP</string>
+    <string name="scan_single_summary">Enter an IP address or FQDN to scan, i.e. scanme.nmap.org</string>
+    <string name="scan_noport">No open port found !</string>
+    <string name="scan_noaction">No associated action !</string>
+    <string name="scan_connect">Connect</string>
+    <string name="scan_start">Scan started ...</string>
+    <string name="scan_finished">Scan finished !</string>
+    <string name="scan_canceled">Scan canceled !</string>
+    <string name="scan_open">Open (%s)</string>
+    <string name="scan_closed">Closed (%s)</string>
+    <string name="scan_host_unreachable">Host unreachable !</string>
+    <string name="scan_banner_title">Port %s/tcp</string>
+    <string name="info_time">Response time:</string>
+    <string name="info_mac">MAC Address:</string>
+    <string name="info_nic">NIC vendor:</string>
+    <string name="info_ports_open">Open ports:</string>
+    <string name="info_ports_closed">Closed ports:</string>
+    <string name="info_unknown">Unknown</string>
+    <string name="export_finished">File saved !</string>
+    <string name="export_choose">Choose file destination</string>
+    <string name="export_save">Save</string>
+    <string name="export_exists_title">File already exists</string>
+    <string name="export_exists_msg">Do you want to overwrite ?</string>
+    <string name="help_discovery_title">Hosts discovery</string>
+    <string name="help_discovery_content">The method that is being used, does not need to have root privileges. In future release there will be more advanced techniques, once the non-root ones are polished.\n\nHere is how it works: \n1. Calculate the subnetwork range\n2. Iterate throught IP and query them\n3. First it sends an ICMP ping or Echo on tcp/7 (with InetAddress.isReachable())\n4. If it does not work, it tries to connect() on well known open tcp ports such as: 135, 139, 22, 111, 80\n5. If none of the above is successful, the host is not discovered</string>
+    <string name="help_portscan_title">Port scan</string>
+    <string name="help_portscan_content">Port scan is event driven, using Java\'s Selector and SocketChannel.\nThere is a fake timeout by registrering the time in ms at socket\'s creation and checking regularly this value.\nThe port scan method, as discovery, uses full tcp connection check. (will be more granular in the future with root features.)\n\nA maximum of 127 Sockets are opened at a time, so this is not always accurate, but quite fast. Again, a new feature is coming that will adapt times between requests according to host response time (kind of software network congestion control)\n\nA port is considered open when tcp connect() is fully successful, closed when no service is listening on the other end, or filtered when the timeout is reached.</string>
+    <string name="help_links_title">Links</string>
+    <string name="help_links_content">- TCP connect scan: http://nmap.org/book/man-port-scanning-techniques.html#id421401\n\n- Host discovery: http://nmap.org/book/man-host-discovery.html</string>
+    <string name="preferences_help">Help</string>
+    <string name="preferences_export">Export</string>
+    <string name="preferences_credits">Credits</string>
+    <string name="preferences_discover">Discovery</string>
+    <string name="preferences_portscan">Port Scan</string>
+    <string name="preferences_advanced">General</string>
+    <string name="preferences_donate">Donate: If you like this app, you can buy me a beer.</string>
+    <string name="preferences_resolve_name_title">Resolve Hostname</string>
+    <string name="preferences_resolve_name_summary">Use system DNS to resolve ip addresses</string>
+    <string name="preferences_vibrate_title">Vibrate</string>
+    <string name="preferences_vibrate_summary">Vibrate when Scan is completed</string>
+    <string name="preferences_ratecontrol_enable_title">Rate control</string>
+    <string name="preferences_ratecontrol_enable_summary">Enable automatic rate detection</string>
+    <string name="preferences_timeout_discover_title">Custom rate</string>
+    <string name="preferences_timeout_discover_summary">Rate of discovery in millisecondes</string>
+    <string name="preferences_port_start_title">First Port</string>
+    <string name="preferences_port_start_summary">First TCP Port to scan. 1-65535</string>
+    <string name="preferences_port_end_title">Last Port</string>
+    <string name="preferences_port_end_summary">Last TCP Port to scan. 1-65535</string>
+    <string name="preferences_banner_title">Services banners</string>
+    <string name="preferences_banner_summary">Read banner from a connected socket (ex.: SSH-2.0-OpenSSH_5.1p1)</string>
+    <string name="preferences_timeout_force_title">Custom timeout</string>
+    <string name="preferences_timeout_force_summary">Manually set connect timeout</string>
+    <string name="preferences_timeout_title">Connect timeout</string>
+    <string name="preferences_timeout_summary">Timeout of a port connection in millisecondes</string>
+    <string name="preferences_allow_mobile_title">Allow mobile discovery</string>
+    <string name="preferences_allow_mobile_summary">Scan over edge/3g/... usually leading to strange results, if any</string>
+    <string name="preferences_ssh_user_title">SSH User</string>
+    <string name="preferences_ssh_user_summary">Username for the SSH connection</string>
+    <string name="preferences_threads_title">Threads pool</string>
+    <string name="preferences_threads_summary">Maximum number of threads to use in host discovery (1-256)</string>
+    <string name="preferences_resetdb_title">Update NIC Database</string>
+    <string name="preferences_resetdb_summary">Pull and update MAC addresses database</string>
+    <string name="preferences_resetdb_action">Do you want to download %1$s ? (~%2$sk)</string>
+    <string name="preferences_resetdb_ok">Database updated ! %s new entries ...</string>
+    <string name="preferences_version_title">Version</string>
+    <string name="preferences_website_title">Website</string>
+    <string name="preferences_email_title">Contact</string>
+    <string name="preferences_intf_title">Network interface</string>
+    <string name="preferences_intf_summary">Choose which interface to use</string>
+    <string name="preferences_discover_method_title">Discover Method</string>
+    <string name="preferences_discover_method_summary">Change to different method of host discovery</string>
+    <string name="preferences_discover_method_title_dialog">Choose a method</string>
+    <string name="preferences_ip_start_title">IP start</string>
+    <string name="preferences_ip_start_summary">First IP address to scan</string>
+    <string name="preferences_ip_end_title">IP end</string>
+    <string name="preferences_ip_end_summary">Last IP address to scan</string>
+    <string name="preferences_ip_custom_title">Custom IP range</string>
+    <string name="preferences_ip_custom_summary">Manually set start/end IPs</string>
+    <string name="preferences_cidr_custom_title">Custom CIDR</string>
+    <string name="preferences_cidr_custom_summary">Manually set CIDR (defines subnet)</string>
+    <string name="preferences_cidr">Change CIDR</string>
+    <string name="preferences_error1">Error: First is bigger than Last !</string>
+    <string name="preferences_error2">Error: Number of Threads must be between 1 and 256 !</string>
+    <string name="preferences_error3">Error: File transfer interrupted !</string>
+    <string name="preferences_error4">Error: Value is not a valid IP address !</string>
+
+    <string-array name="method_discover_name">
+        <item>Ping/connect (default)</item>
+        <item>DNS requests</item>
+    </string-array>
+
+</resources>

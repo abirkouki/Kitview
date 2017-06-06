@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="display_types_name" translatable="false">
+        <item>@string/angle</item>
+        <item>@string/inclination</item>
+        <item>@string/roof_pitch</item>
+    </string-array>
+    
+    <string-array name="display_types" translatable="false">
+	    <item>ANGLE</item>
+	    <item>INCLINATION</item>
+	    <item>ROOF_PITCH</item>
+	</string-array>
+
+	<string-array name="viscosities_name" translatable="false">
+        <item>@string/viscosity_low</item>
+        <item>@string/viscosity_medium</item>
+        <item>@string/viscosity_high</item>
+    </string-array>
+    
+    <string-array name="viscosities" translatable="false">
+	    <item>LOW</item>
+	    <item>MEDIUM</item>
+	    <item>HIGH</item>
+	</string-array>
+
+	<string-array name="configs_name" translatable="false">
+        <item>@string/config_switch_horizontally</item>
+        <item>@string/config_switch_vertically</item>
+        <item>@string/config_rotate_axis</item>
+    </string-array>
+    
+	
+	<string-array name="method_discover_value" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+</resources>
