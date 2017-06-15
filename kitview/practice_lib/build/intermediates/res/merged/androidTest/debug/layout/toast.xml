@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <!--  
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="430dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="calibri"
+        android:maxLines="1"
+        android:textAllCaps="true"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/app_settings_text_size"
+        android:textStyle="bold" />-->
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tv_toast_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="calibri"
+        android:textAllCaps="false"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:background="@drawable/toast_background"
+        android:padding="10dp" />

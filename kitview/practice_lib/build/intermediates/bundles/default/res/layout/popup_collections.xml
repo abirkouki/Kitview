@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action_adobe_reader_appinit_dialog"
+    android:layout_width="@dimen/popup_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:visibility="gone" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:fontFamily="calibri"
+        android:maxLines="1"
+        android:paddingBottom="30dp"
+        android:text="@string/select_collection"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/app_settings_text_size"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/sp_collection_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </Spinner>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.25dip"
+        android:layout_marginBottom="5.0dip"
+        android:background="#55FFFFFF"
+        android:visibility="visible" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>

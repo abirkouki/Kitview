@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\raw\\video.mp4",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\raw\\video.mp4"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\raw\\saves.bin",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\raw\\saves.bin"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\raw\\puzzle.jpg",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\raw\\puzzle.jpg"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\raw\\services.bin",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\raw\\services.bin"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\raw\\zxing_beep.ogg",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\bb6f7861207aae88b536297cd2da9afa454b6c36\\output\\res\\raw\\zxing_beep.ogg"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\raw\\shutter.ogg",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\raw\\shutter.ogg"
+    }
+]

@@ -1,0 +1,94 @@
+[
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_action_new_picture.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_action_new_picture.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_action_view_as_list.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_action_view_as_list.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_action_person.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_action_person.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_action_refresh.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_action_refresh.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_action_warning.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_action_warning.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\logo.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\logo.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_action_search.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_action_search.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\gallery_hd.jpg",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\gallery_hd.jpg"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_action_time.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_action_time.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_action_camera.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_action_camera.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_fab_dl.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_fab_dl.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_action_settings.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_action_settings.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_action_info.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_action_info.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_action_about.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_action_about.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_action_cast.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_action_cast.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_action_picture.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_action_picture.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_action_go_to_today.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_action_go_to_today.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_fab_complete.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_fab_complete.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_action_group.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_action_group.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_action_select_all.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_action_select_all.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\barcode.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\barcode.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\ic_action_warning2.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xhdpi-v4\\ic_action_warning2.png"
+    }
+]

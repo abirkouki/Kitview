@@ -1,0 +1,147 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:background="@drawable/dialog_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="calibri"
+            android:maxLines="1"
+            android:paddingBottom="10dp"
+            android:text="@string/barcode_modes_title"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/popup_title"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_splashscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/app_settings_space_between_items"
+            android:layout_marginLeft="@dimen/app_settings_subtext_leftspace"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_splashscreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="calibri"
+                android:text="@string/barcode_mode1_explanation"
+                android:textAllCaps="true"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/app_settings_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_connection_timeout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/app_settings_space_between_items"
+            android:layout_marginLeft="@dimen/app_settings_subtext_leftspace"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_connection_timeout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="calibri"
+                android:text="@string/barcode_mode2_explanation"
+                android:textAllCaps="true"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/app_settings_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sensivity_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/app_settings_space_between_items"
+            
+            android:layout_marginLeft="@dimen/app_settings_subtext_leftspace2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/sensivity_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="calibri"
+                android:text="@string/barcode_choice"
+                android:textAllCaps="true"
+                android:textColor="@color/grey_transparent"
+                android:textSize="@dimen/app_settings_text_size"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/sensivity_spinner"
+                android:layout_width="@dimen/app_settings_interaction_component_width2"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!--
+              <Button
+            android:id="@+id/bt_restore"
+            android:layout_width="@dimen/app_settings_interaction_component_width2"
+            android:layout_height="@dimen/popup_button_height"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:background="@drawable/button_style_red_transparent"
+            android:text="@string/reset"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_settings_subtext_size" />
+        -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="@dimen/popup_button_width"
+                android:layout_height="@dimen/popup_button_height"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_style_red_transparent"
+                android:text="@string/cancel"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/popup_content" />
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="@dimen/popup_button_width"
+                android:layout_height="@dimen/popup_button_height"
+                android:layout_margin="0dp"
+                android:background="@drawable/button_style_red_transparent"
+                android:text="@string/ok"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/popup_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

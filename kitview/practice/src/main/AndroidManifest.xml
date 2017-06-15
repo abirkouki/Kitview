@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kitview.practice.mobile">
+
+    <application>
+
+        <!--<activity-->
+
+
+        <activity
+            android:name="activity.SplashScreenActivity"
+            android:launchMode="standard"
+            android:noHistory="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="activity.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard" />
+
+        <activity
+            android:name="activity.ScenariosActivity"
+            android:configChanges="orientation"
+            android:noHistory="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="activity.SettingsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard" >
+        </activity>
+        <activity
+            android:name="activity.FolderActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:noHistory="true"
+            android:launchMode="singleTop" >
+        </activity>
+        <activity
+            android:name="activity.SameCasesActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name="activity.PuzzleActivity"
+            android:configChanges="orientation"
+            android:noHistory="true"
+            android:screenOrientation="landscape" >
+        </activity>
+
+
+        <activity
+            android:name="activity.PracticeActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="standard" />
+        <activity
+            android:name="util.network.discovery.ActivityMain"
+            android:launchMode="standard"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="util.network.discovery.ActivityDiscovery"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard" />
+        <activity
+            android:name="util.network.discovery.ActivityNet"
+            android:launchMode="standard"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="util.network.discovery.ActivityPortscan"
+            android:launchMode="standard"
+            android:screenOrientation="landscape" />
+
+        <!--
+        <activity
+            android:name="view.level.Level"
+            android:noHistory="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="view.level.LevelPreferences"
+            android:noHistory="true"
+            android:screenOrientation="landscape" >
+        </activity>
+
+        <service android:name="service.remotevision.RemoteVisionProcessorService" />
+        -->
+
+
+    </application>
+
+</manifest>

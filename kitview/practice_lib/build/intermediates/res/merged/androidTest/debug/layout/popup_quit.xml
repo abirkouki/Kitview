@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action_adobe_reader_appinit_dialog2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:background="@drawable/dialog_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="@dimen/popup_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="calibri"
+        android:singleLine="true"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/app_settings_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/content2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:fontFamily="calibri"
+        android:textAllCaps="false"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/app_settings_text_size"
+        android:textStyle="normal" />
+
+     <CheckBox
+        android:id="@+id/chkAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="@string/send_logs_by_mail"
+        android:checked="false" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="@dimen/popup_button_width"
+            android:layout_height="@dimen/popup_button_height"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_style_red_transparent"
+            android:text="@string/cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/popup_content" />
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="@dimen/popup_button_width"
+            android:layout_height="@dimen/popup_button_height"
+            android:layout_margin="0dp"
+            android:background="@drawable/button_style_red_transparent"
+            android:text="@string/ok"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/popup_content" />
+    </LinearLayout>
+
+</LinearLayout>

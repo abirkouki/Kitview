@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/kitview.iml" filepath="$PROJECT_DIR$/kitview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/out/kitview-out.iml" filepath="$PROJECT_DIR$/out/kitview-out.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice/kitview-practice.iml" filepath="$PROJECT_DIR$/practice/kitview-practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice_lib/kitview-practice_lib.iml" filepath="$PROJECT_DIR$/practice_lib/kitview-practice_lib.iml" />
     </modules>
   </component>
 </project>

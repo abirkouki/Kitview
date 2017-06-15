@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout-land\\activity_main.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout-land\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout-land\\portscan.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout-land\\portscan.xml"
+    }
+]

@@ -2,130 +2,103 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="C:\DEV_ANDROID\kitview\app\libs\commons-net-3.6.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b71de00508dcb078d2b24b5fa7e538636de9b3da">
-        <dex dex="C:\DEV_ANDROID\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\2\commons-net-3.6_697704413e6dd1c77ca0a38a1f13d22f661ff591\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\DEV_ANDROID\kitview\app\libs\mail.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="428e267abff0d10802ccde86b915da2c20471160">
-        <dex dex="C:\DEV_ANDROID\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\2\mail_62a2edcdb397b774fbd1e2073555c91c1215ceb9\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Administrateur\.android\build-cache\035b2ca42e3970f8571a84c1d0ef97bd2f2bc3d3\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="C:\DEV_ANDROID\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6c7c0f46e77fab646c2fa701d0d47f4bb8ab2418\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\DEV_ANDROID\kitview\app\libs\activation.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d1257cbff6faa44c1f325ae0d9413522d4644383">
-        <dex dex="C:\DEV_ANDROID\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\2\activation_845b446c7e8674e2e893ac0ff7d8eae385bc7971\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Administrateur\AppData\Local\Android\Sdk\build-tools\25.0.0\renderscript\lib\renderscript-v8.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="05668b8cd6c7b07f152b6a5b4c6cff620817ba0f">
-        <dex dex="C:\DEV_ANDROID\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\10\renderscript-v8_27de120d2613170789af0ccf76a5f6f112337689\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Administrateur\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.2.0\e019d15a13a9786f881141d2df6654b8510bce8b\core-3.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e019d15a13a9786f881141d2df6654b8510bce8b">
-        <dex dex="C:\DEV_ANDROID\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\10\core-3.2.0_ae70f3af853d863921e543d1002480a146e8e08e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\DEV_ANDROID\kitview\app\libs\crittercism_v5_0_6_sdkonly.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="927a461dc7228d49ee26d7b4eaecd9d5e813beb4">
-        <dex dex="C:\DEV_ANDROID\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\2\crittercism_v5_0_6_sdkonly_3f3f93fe98b6c29d13e3e8bb79a862f51965cf46\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\DEV_ANDROID\kitview\app\libs\android-support-v13.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b233aa84246aa63c5b220404fe1e3d5eda32c318">
-        <dex dex="C:\DEV_ANDROID\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\2\android-support-v13_fea9361aa48bfa1dea6e37c19bcfe8cb61976aea\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Administrateur\.android\build-cache\9551e7d6baca76857caecf62a68aa4ce934b69d8\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
-        <dex dex="C:\DEV_ANDROID\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6c78989228a9ca3f9bbf9aa6ba21d71cd20c5831\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\DEV_ANDROID\kitview\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="2587626fae5d3d9d973bd150027a67f414d70209">
-        <dex dex="C:\DEV_ANDROID\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_6a67e210888dcd6b8f150a1ce9443d2e9fb51feb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\DEV_ANDROID\kitview\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
-        <dex dex="C:\DEV_ANDROID\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_04dfe101d6bda8a27c10dd2a639ba5e9eea4994f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="C:\Users\Administrateur\.android\build-cache\bb6f7861207aae88b536297cd2da9afa454b6c36\output\jars\classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
-        revision="25.0.0"
+        revision="25.0.3"
         sha1="744a4b394a9a7db8a4c4680836d8544802a9cd64">
-        <dex dex="C:\DEV_ANDROID\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a6a604db5c408a9344052e3eaed052e2f8d13ff2\classes.dex" />
+        <dex dex="C:\DEV_ANDROID\kitview\out\build\intermediates\pre-dexed\debug\classes_a6a604db5c408a9344052e3eaed052e2f8d13ff2.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\DEV_ANDROID\kitview\app\libs\jcifs-1.3.18.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Administrateur\.android\build-cache\9551e7d6baca76857caecf62a68aa4ce934b69d8\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
-        revision="25.0.0"
-        sha1="29d62325100eac2bb3c25b44434acdc4d698c401">
-        <dex dex="C:\DEV_ANDROID\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\2\jcifs-1.3.18_7f39a89cfe80bb1be491f6d45776b759c764472d\classes.dex" />
+        revision="25.0.3"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="C:\DEV_ANDROID\kitview\out\build\intermediates\pre-dexed\debug\classes_6c78989228a9ca3f9bbf9aa6ba21d71cd20c5831.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\DEV_ANDROID\kitview\app\libs\additionnal.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Administrateur\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.2.0\e019d15a13a9786f881141d2df6654b8510bce8b\core-3.2.0.jar"
+        jumboMode="false"
         optimize="true"
-        revision="25.0.0"
-        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
-        <dex dex="C:\DEV_ANDROID\kitview\app\build\intermediates\transforms\dex\debug\folders\1000\2\additionnal_bb9fcd194d9c73aa4aec08ec0cb43aa07a6036b0\classes.dex" />
+        revision="25.0.3"
+        sha1="e019d15a13a9786f881141d2df6654b8510bce8b">
+        <dex dex="C:\DEV_ANDROID\kitview\out\build\intermediates\pre-dexed\debug\core-3.2.0_ae70f3af853d863921e543d1002480a146e8e08e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\DEV_ANDROID\kitview\practice\build\intermediates\bundles\default\libs\commons-net-3.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="60c1ab1d7534bca8394173ce206affd62c6244a1">
+        <dex dex="C:\DEV_ANDROID\kitview\out\build\intermediates\pre-dexed\debug\commons-net-3.6_085ac2fb5640a6289decf9880e10bdbc30b1de9b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\DEV_ANDROID\kitview\practice\build\intermediates\bundles\default\libs\additionnal.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="57adc1843cc21aa845e27adb0aa32ea9a4537cd9">
+        <dex dex="C:\DEV_ANDROID\kitview\out\build\intermediates\pre-dexed\debug\additionnal_784fe2bbb34b96e798f6c23396694f2284b87cf1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\DEV_ANDROID\kitview\practice\build\intermediates\bundles\default\libs\crittercism_v5_0_6_sdkonly.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b7971b0b5ed6d13a24b0205121f8ba6f4f2df787">
+        <dex dex="C:\DEV_ANDROID\kitview\out\build\intermediates\pre-dexed\debug\crittercism_v5_0_6_sdkonly_c07f31af9b9a31fc7b5fb35e859eabec3426957a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\DEV_ANDROID\kitview\practice\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4fc454d0d085dd998cfb79e85f932c3fbd500b73">
+        <dex dex="C:\DEV_ANDROID\kitview\out\build\intermediates\pre-dexed\debug\classes_84a46d533868ccfd00b0db59bfc1ba0ff3271449.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\DEV_ANDROID\kitview\practice\build\intermediates\bundles\default\libs\activation.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="caeb02439d439d221f8be4aaf33931153bbe34db">
+        <dex dex="C:\DEV_ANDROID\kitview\out\build\intermediates\pre-dexed\debug\activation_337422baa4c087a9c1fe27252c4df2009154e892.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\DEV_ANDROID\kitview\practice\build\intermediates\bundles\default\libs\android-support-v13.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="eaa6743c83a5d754579c626b275618e254c72357">
+        <dex dex="C:\DEV_ANDROID\kitview\out\build\intermediates\pre-dexed\debug\android-support-v13_8f8d5c31f8b24ba34d105e91363c406dadb61dd4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\DEV_ANDROID\kitview\practice\build\intermediates\bundles\default\libs\mail.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c1ec1665abd1e1a471dc2cb31219bc765d2fd674">
+        <dex dex="C:\DEV_ANDROID\kitview\out\build\intermediates\pre-dexed\debug\mail_18dd38053ce3254a9ee0e63688b4c97d778f1d85.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\DEV_ANDROID\kitview\practice\build\intermediates\bundles\default\libs\jcifs-1.3.18.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6833f31ec4508162f9a125bcfea401869cbbfc48">
+        <dex dex="C:\DEV_ANDROID\kitview\out\build\intermediates\pre-dexed\debug\jcifs-1.3.18_38751e64d997ec14638d364bbac0ba7f2bc6447d.jar" />
     </item>
 
 </items>
