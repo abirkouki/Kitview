@@ -187,8 +187,7 @@ public class ProgressBarUI extends View {
 
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
-		if(mDialog != null)mDialog.dismiss();
-
+		//if(mDialog != null)mDialog.dismiss();//pour arreter le progress quand l'user touche l'écran
 		return super.onTouchEvent(event);
 	}
 

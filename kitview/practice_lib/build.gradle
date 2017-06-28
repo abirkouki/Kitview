@@ -25,7 +25,7 @@ android {
     configurations {
         all*.exclude group: 'com.android.support', module: 'support-v4'
         all*.exclude group: 'com.android.support', module: 'support-annotations'
-        all*.exclude module: 'support-compat'
+        //all*.exclude module: 'support-compat'
     }
 }
 

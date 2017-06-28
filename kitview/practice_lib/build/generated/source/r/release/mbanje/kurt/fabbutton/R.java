@@ -360,8 +360,8 @@ public final class R {
         public static int end = 0x7f0f001e;
         public static int expand_activities_button = 0x7f0f002c;
         public static int expanded_menu = 0x7f0f0032;
-        public static int fabbutton_circle = 0x7f0f00f7;
-        public static int fabbutton_ring = 0x7f0f00f8;
+        public static int fabbutton_circle = 0x7f0f00f1;
+        public static int fabbutton_ring = 0x7f0f00f2;
         public static int home = 0x7f0f0006;
         public static int homeAsUp = 0x7f0f0017;
         public static int icon = 0x7f0f0030;
@@ -422,8 +422,8 @@ public final class R {
         public static int abc_screen_toolbar = 0x7f040013;
         public static int abc_search_dropdown_item_icons_2line = 0x7f040014;
         public static int abc_search_view = 0x7f040015;
-        public static int support_simple_spinner_dropdown_item = 0x7f04003a;
-        public static int widget_fab_button = 0x7f04003c;
+        public static int support_simple_spinner_dropdown_item = 0x7f040039;
+        public static int widget_fab_button = 0x7f04003b;
     }
     public static final class string {
         public static int abc_action_bar_home_description = 0x7f080000;

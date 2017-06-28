@@ -40,7 +40,6 @@
         android:allowBackup="true"
         android:hardwareAccelerated="false"
         android:icon="@drawable/logo"
-        android:label="KitView"
         android:largeHeap="true"
         android:theme="@style/AppTheme" >
 
@@ -75,7 +74,7 @@
 
 
         <!-- <activity -->
-        <!-- android:name="activity.PracticeActivity" -->
+        <!-- android:name="com.example.android.out.PracticeActivity" -->
         <!-- android:configChanges="orientation|screenSize" -->
         <!-- android:launchMode="standard" > -->
         <!-- </activity> -->

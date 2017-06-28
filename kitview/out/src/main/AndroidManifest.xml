@@ -2,11 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kitview.out.mobile">
 
-    <application>
+    <application
+        android:label="KitView-Out">
 
         <activity
             android:name="com.example.android.out.SplashScreenActivity"
-            android:label="@string/title_activity_splash_screen">
+            android:launchMode="standard"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -15,8 +17,27 @@
 
         <activity
             android:name="com.example.android.out.MainActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:configChanges="orientation|screenSize"
             android:launchMode="standard" />
+
+
+        <activity
+            android:name="com.example.android.out.PracticeActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="standard" />
+
+        <activity
+            android:name="activity.ScenariosActivity"
+            android:configChanges="orientation"
+            android:noHistory="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="activity.SettingsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="standard" >
+        </activity>
+
 
     </application>
 

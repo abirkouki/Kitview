@@ -40,7 +40,6 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.VideoView;
 import android.widget.ViewAnimator;
 
@@ -79,6 +78,7 @@ public class MainActivity extends FragmentActivity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
+		//TODO app bar s'est barre essayer de la remettre
 
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -106,6 +106,7 @@ public class MainActivity extends FragmentActivity{
 		this.mGridView2 = (GridView)this.findViewById(R.id.gridview_home2);
 
 		//TODO voir pour le stockage cache du mode avec persistenceMan
+
 
 		try{
 			int mode = (mPersistenceManager != null)?mPersistenceManager.getMode():PersistenceManager.MODE_SELECTION;
@@ -848,31 +849,31 @@ public class MainActivity extends FragmentActivity{
 						break;
 
 						//Test
-					case 5:
-						if(mDialog != null)mDialog.showFRProgressDialog();
-
-						new Thread(new Runnable() {
-							@Override
-							public void run() {
-								Intent intent = new Intent(MainActivity.this.getApplicationContext(), PracticeActivity.class);
-								if(intent != null){
-									intent.putExtra("practice", "5");
-									intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-									MainActivity.this.getApplicationContext().startActivity(intent);
-								}
-
-								if(mDialog != null){
-									runOnUiThread(new  Runnable(){
-										@Override
-										public void run() {
-											mDialog.cancelFRProgressDialog();
-										}
-									});
-								}
-							}
-						}).start();
-
-						break;
+//					case 5:
+//						if(mDialog != null)mDialog.showFRProgressDialog();
+//
+//						new Thread(new Runnable() {
+//							@Override
+//							public void run() {
+//								Intent intent = new Intent(MainActivity.this.getApplicationContext(), PracticeActivity.class);
+//								if(intent != null){
+//									intent.putExtra("practice", "5");
+//									intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//									MainActivity.this.getApplicationContext().startActivity(intent);
+//								}
+//
+//								if(mDialog != null){
+//									runOnUiThread(new  Runnable(){
+//										@Override
+//										public void run() {
+//											mDialog.cancelFRProgressDialog();
+//										}
+//									});
+//								}
+//							}
+//						}).start();
+//
+//						break;
 
 					}
 				}

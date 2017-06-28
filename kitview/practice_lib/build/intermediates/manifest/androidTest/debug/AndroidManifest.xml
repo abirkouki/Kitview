@@ -51,7 +51,6 @@
         android:allowBackup="true"
         android:hardwareAccelerated="false"
         android:icon="@drawable/logo"
-        android:label="KitView"
         android:largeHeap="true"
         android:theme="@style/AppTheme" >
         <uses-library android:name="android.test.runner" />

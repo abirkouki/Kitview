@@ -38,14 +38,16 @@ public class FRProgressDialog {
 		//mProgressBarUI.setText(progressMessage);
 		mProgressBarUI.setDialog(mDialog);
 		mProgressBarUI.setTwoSquareMode(twoSquareMode);
+		mDialog.setCancelable(false);//empeche l'user de dismiss quand il appuie sur back
+		mDialog.setCanceledOnTouchOutside(false);//empeche l'user de dismiss quand il appuie sur l'écran
 	}
 
 	public void showFRProgressDialog(){
 		try{
 			createDialog();
 
-			if(!context.isFinishing())mDialog.show();
-			
+			if(!context.isFinishing()) mDialog.show();
+
 			processing = true;
 
 			mRunnable = new Runnable() {
