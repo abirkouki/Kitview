@@ -14,8 +14,6 @@ import model.Module;
 import model.PersistenceManager;
 import model.rest.Personne;
 import util.FTP.PracticeFTP;
-import util.components.gallery.ImageCache;
-import util.components.gallery.ImageFetcher;
 import util.components.progressdialog.FRProgressDialog;
 import util.network.KitviewUtil;
 import util.system.SystemUtil;
@@ -43,7 +41,6 @@ import android.os.Environment;
 import android.os.Handler;
 import android.support.v4.app.FragmentActivity;
 import android.text.Html;
-import android.text.format.Time;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -52,7 +49,6 @@ import android.view.ViewTreeObserver;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.LinearLayout;
@@ -61,31 +57,23 @@ import android.widget.Toast;
 import android.widget.VideoView;
 import android.widget.ViewAnimator;
 
-import javax.xml.datatype.Duration;
 
 @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
 public class MainActivity extends FragmentActivity{
     //Views
     private ViewAnimator mViewAnimator;
-    private ModulesAdapter mModulesAdapter0,mModulesAdapter,mModulesAdapter2;
-    private GridView mGridView0, mGridView, mGridView2;
-    private ArrayList<Module> mModules0,mModules,mModules2;
-    private boolean mInitializationFinished0,mInitializationFinished1,mInitializationFinished2;
+    private ModulesAdapter mModulesAdapter0,mModulesAdapter2;
+    private GridView mGridView0, mGridView2;
+    private ArrayList<Module> mModules0,mModules2;
+    private boolean mInitializationFinished0,mInitializationFinished2;
     private int mSpacing;
     private VideoView mVideoView;
-    private static FRProgressDialog mDialog;
+    private FRProgressDialog mDialog;
     private TextView mCurrentPatientInfosTextView;
     private TextView mCopyrightTextView;
-    private static GenericPopupManager mGenericPopupManager;
+    private GenericPopupManager mGenericPopupManager;
     private LinearLayout mActualSituationTextView;
     private LinearLayout mBottomInfosLinearLayout;
-
-    //Constants
-    private final static String IMAGE_THUMBNAIL_CACHE_DIR = "image_thumbnails";
-
-    //Cache
-    private static ImageFetcher mThumbnailImageFetcherFromDisk;
-    private static ImageCache.ImageCacheParams cacheParams2;
 
     //Model
     private PersistenceManager mPersistenceManager;
@@ -154,14 +142,14 @@ public class MainActivity extends FragmentActivity{
     }
 
     //TODO garder peut etre utile
-    public static void launchWifiPopup(Activity context){
+    public void launchWifiPopup(Activity context){
         String title = context.getResources().getString(R.string.wifi_title);
         String content = context.getResources().getString(R.string.wifi_content);
         launchGenericPopup(context,title, content, false);
     }
 
     //TODO garder peut etre utile
-    private static void launchGenericPopup(Activity context, final String title, final String content, final boolean exitOnClose){
+    private void launchGenericPopup(Activity context, final String title, final String content, final boolean exitOnClose){
         mGenericPopupManager = new GenericPopupManager(context);
 
         if(mGenericPopupManager != null){
@@ -213,7 +201,7 @@ public class MainActivity extends FragmentActivity{
 		});*/
     }
 
-    //TODO peut etre pour l'image aussi ??
+    //TODO peut etre pour l'image aussi ?? + régler MPEG4Extractor: Reset mWrongNALCounter. Re-check a condition - 'isMalformed = 0'
     private void initializeVideoView(){
         Context context = getApplicationContext();
         Uri path;
@@ -236,45 +224,8 @@ public class MainActivity extends FragmentActivity{
         }
     }
 
-    //TODO suppr fonction
-//    private void initializeAppImageCache(){
-//        this.cacheParams2 = new ImageCache.ImageCacheParams(this, IMAGE_THUMBNAIL_CACHE_DIR);
-//        if(this.cacheParams2 != null)this.cacheParams2.setMemCacheSizePercent(0.25f);
-//
-//        int mImageThumbSize = getResources().getDimensionPixelSize(R.dimen.image_thumbnail_size);
-//
-//        this.mThumbnailImageFetcherFromDisk = new ImageFetcher(this, mImageThumbSize,mImageThumbSize);
-//
-//        if(mThumbnailImageFetcherFromDisk != null && cacheParams2 != null){
-//            this.mThumbnailImageFetcherFromDisk.setLoadingImage(R.drawable.empty_photo);
-//            mThumbnailImageFetcherFromDisk.setUseAttachedViewModified(false);
-//            this.mThumbnailImageFetcherFromDisk.addImageCache(getFragmentManager(), cacheParams2);
-//        }
-//    }
-
-    //TODO suppr fonction
-//    public static ImageFetcher getImageFetcher(Personne p){
-//        mThumbnailImageFetcherFromDisk.setPatientId(p);
-//        return mThumbnailImageFetcherFromDisk;
-//    }
-
-    //TODO suppr fonction
-//    public static void setUseCache(boolean useCache){
-//        getImageFetcher(null).setUseCache(useCache);
-//    }
-
-    //TODO suppr fonction
-//    public static void setUseAttachedViewModified(boolean useCache){
-//        getImageFetcher(null).setUseAttachedViewModified(useCache);
-//    }
-
-    //TODO suppr fonction
-//    public static ImageCache.ImageCacheParams getImageCache(){
-//        return cacheParams2;
-//    }
-
     //TODO conserver pour le moment (utile pour la photothèque)
-    public static void launchMyCase(final Activity context, final int patientId){
+    public void launchMyCase(final Activity context, final int patientId){
         if(mDialog != null)mDialog.showFRProgressDialog();
         KitviewUtil.isKitviewAvailable(context, new KitviewUtil.ITestConnectionResponse() {
             @Override
@@ -396,8 +347,6 @@ public class MainActivity extends FragmentActivity{
                             practiceScan();
                             break;
                     }
-                    //setViewAnimatorIndex(2);//dans runFTPQuery
-                    //initializeGridView2();//dans runFTPQuery
                     //checkKitViewConnection();
                 }
             });
@@ -419,7 +368,7 @@ public class MainActivity extends FragmentActivity{
         else Toast.makeText(getApplicationContext(),getApplicationContext().getString(R.string.no_data_received),Toast.LENGTH_LONG).show();
     }
 
-
+    //TODO changer skin du dialog
     public void practiceDialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         AlertDialog dialog;
@@ -443,7 +392,6 @@ public class MainActivity extends FragmentActivity{
         dialog.show();
         dialog.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);//TODO enlever, pour mon portable uniquement
     }
-
 
     public void runFTPQuery(final String code_input){//TODO degager tous les println
         final PracticeFTP ftp = new PracticeFTP(code_input,getApplicationContext(),getActivity());
@@ -510,7 +458,6 @@ public class MainActivity extends FragmentActivity{
 
 
     //TODO garder et modifier selon actions
-    //Mode patient
     public void initializeGridView2(){
         this.mModules2 = new ArrayList<Module>();
         this.mModules2.add(new Module(R.string.picture_shot_emergency, R.color.color1, R.drawable.ic_action_camera));
@@ -823,7 +770,6 @@ public class MainActivity extends FragmentActivity{
         }
     }
 
-    //TODO garder et voir backPressed, meme que generic sauf qu'envoi de mail en plus (QuitPopupManager) -> enlever parce qu'on s'en fout d'envoyer un mail
     @Override
     public void onBackPressed() {
         String content = getResources().getString(R.string.confirm_quit_application);
