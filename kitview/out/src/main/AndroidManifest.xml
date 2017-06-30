@@ -6,7 +6,7 @@
         android:label="KitView-Out">
 
         <activity
-            android:name="com.example.android.out.SplashScreenActivity"
+            android:name="out.activity.SplashScreenActivity"
             android:launchMode="standard"
             android:noHistory="true">
             <intent-filter>
@@ -16,13 +16,13 @@
         </activity>
 
         <activity
-            android:name="com.example.android.out.MainActivity"
+            android:name="out.activity.MainActivity"
             android:configChanges="orientation|screenSize"
             android:launchMode="standard" />
 
 
         <activity
-            android:name="com.example.android.out.PracticeActivity"
+            android:name="out.activity.PracticeActivity"
             android:configChanges="orientation|screenSize"
             android:launchMode="standard" />
 

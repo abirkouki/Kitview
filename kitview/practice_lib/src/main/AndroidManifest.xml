@@ -86,7 +86,7 @@
         <!--</activity>-->
 
         <!--<activity-->
-            <!--android:name="com.example.android.out.PracticeActivity"-->
+            <!--android:name="out.activity.PracticeActivity"-->
             <!--android:configChanges="orientation|screenSize"-->
             <!--android:launchMode="standard" >-->
         <!--</activity>-->
