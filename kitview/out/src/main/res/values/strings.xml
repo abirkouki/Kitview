@@ -2,4 +2,7 @@
     <string name="app_name">Out</string>
     <string name="practice_id">Practice code</string>
     <string name="practice_scan">Scan</string>
+    <string name="FCM_PREF">com.kitview.out.mobile.fcm_pref</string>
+    <string name="FCM_TOKEN">com.kitview.out.mobile.fcm_token</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

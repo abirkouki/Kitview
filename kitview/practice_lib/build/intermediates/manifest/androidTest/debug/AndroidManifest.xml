@@ -22,8 +22,7 @@
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.PREVENT_POWER_KEY" /> <!-- enforced starting in API level 19 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- uses-sdk tools:overrideLibrary="com.google.zxing.client.android" /> -->
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />

@@ -5,7 +5,6 @@
     <application
         android:label="KitView-Practice">
 
-        <!--<activity-->
 
 
         <activity
@@ -70,20 +69,7 @@
             android:launchMode="standard"
             android:screenOrientation="landscape" />
 
-        <!--
-        <activity
-            android:name="view.level.Level"
-            android:noHistory="true"
-            android:screenOrientation="landscape" >
-        </activity>
-        <activity
-            android:name="view.level.LevelPreferences"
-            android:noHistory="true"
-            android:screenOrientation="landscape" >
-        </activity>
 
-        <service android:name="service.remotevision.RemoteVisionProcessorService" />
-        -->
 
 
     </application>

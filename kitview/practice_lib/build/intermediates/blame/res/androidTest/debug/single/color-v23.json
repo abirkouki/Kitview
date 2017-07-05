@@ -1,42 +1,38 @@
 [
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_btn_checkable.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\8047eded91a141765dab67cea49fc8e31690c679\\output\\res\\color-v23\\abc_tint_btn_checkable.xml"
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\color-v23\\abc_tint_btn_checkable.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_spinner.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\8047eded91a141765dab67cea49fc8e31690c679\\output\\res\\color-v23\\abc_tint_spinner.xml"
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\color-v23\\abc_tint_spinner.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_color_highlight_material.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\8047eded91a141765dab67cea49fc8e31690c679\\output\\res\\color-v23\\abc_color_highlight_material.xml"
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\color-v23\\abc_color_highlight_material.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_default.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\8047eded91a141765dab67cea49fc8e31690c679\\output\\res\\color-v23\\abc_tint_default.xml"
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\color-v23\\abc_tint_default.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_switch_track.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\8047eded91a141765dab67cea49fc8e31690c679\\output\\res\\color-v23\\abc_tint_switch_track.xml"
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\color-v23\\abc_tint_switch_track.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_switch_thumb.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\8047eded91a141765dab67cea49fc8e31690c679\\output\\res\\color-v23\\abc_tint_switch_thumb.xml"
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\color-v23\\abc_tint_switch_thumb.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_seek_thumb.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\8047eded91a141765dab67cea49fc8e31690c679\\output\\res\\color-v23\\abc_tint_seek_thumb.xml"
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\color-v23\\abc_tint_seek_thumb.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_btn_colored_borderless_text_material.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\8047eded91a141765dab67cea49fc8e31690c679\\output\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_tint_edittext.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\8047eded91a141765dab67cea49fc8e31690c679\\output\\res\\color-v23\\abc_tint_edittext.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v23\\abc_btn_colored_text_material.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\8047eded91a141765dab67cea49fc8e31690c679\\output\\res\\color-v23\\abc_btn_colored_text_material.xml"
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\color-v23\\abc_tint_edittext.xml"
     }
 ]

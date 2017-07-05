@@ -1,0 +1,54 @@
+package util.network;
+
+/**
+ * Created by orthalis on 19/06/2017.
+ */
+
+import android.annotation.TargetApi;
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.Network;
+import android.net.NetworkInfo;
+import android.os.Build;
+
+import org.jetbrains.annotations.NotNull;
+
+public class NetworkUtils {
+    public static boolean isConnected(@NotNull Context context) {
+        ConnectivityManager connMgr = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+        return (networkInfo != null && networkInfo.isConnected());
+    }
+
+    public static boolean isWifiConnected(@NotNull Context context) {
+        return isConnected(context, ConnectivityManager.TYPE_WIFI);
+    }
+
+    public static boolean isMobileConnected(@NotNull Context context) {
+        return isConnected(context, ConnectivityManager.TYPE_MOBILE);
+    }
+
+    private static boolean isConnected(@NotNull Context context, int type) {
+        ConnectivityManager connMgr = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
+            NetworkInfo networkInfo = connMgr.getNetworkInfo(type);
+            return networkInfo != null && networkInfo.isConnected();
+        } else {
+            return isConnected(connMgr, type);
+        }
+    }
+
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    private static boolean isConnected(@NotNull ConnectivityManager connMgr, int type) {
+        Network[] networks = connMgr.getAllNetworks();
+        NetworkInfo networkInfo;
+        for (Network mNetwork : networks) {
+            networkInfo = connMgr.getNetworkInfo(mNetwork);
+            if (networkInfo != null && networkInfo.getType() == type && networkInfo.isConnected()) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+

@@ -12,6 +12,9 @@
     <string msgid="4076576682505996667" name="abc_action_mode_done">"Fertig"</string>
     <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Alle ansehen"</string>
     <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"App auswählen"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"Aus"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"An"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"Suchen…"</string>
     <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Suchanfrage löschen"</string>
     <string msgid="2550479030709304392" name="abc_searchview_description_query">"Suchanfrage"</string>
     <string msgid="8264924765203268293" name="abc_searchview_description_search">"Suchen"</string>
@@ -19,6 +22,7 @@
     <string msgid="893419373245838918" name="abc_searchview_description_voice">"Sprachsuche"</string>
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Freigeben für"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Freigeben für %s"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Minimieren"</string>
     <string name="android">Android</string>
     <string name="angle">Angle</string>
     <string name="angle_summary">Angle in degrees</string>
@@ -254,6 +258,7 @@ the calibration for all the phone sides.</string>
     <string name="scan_single_title">Scan IP</string>
     <string name="scan_start">Scan started ...</string>
     <string name="scenarios">Szenario</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Suchen"</string>
     <string name="select_collection">Wählen Sie eine Sammlung aus</string>
     <string name="select_mode_cabinet_patient">Programm Art</string>
     <string name="send_logs_by_mail">Fotos per E-mail schicken ?</string>
@@ -270,6 +275,7 @@ the calibration for all the phone sides.</string>
     <string name="shutter_release_button2">Lautstärke</string>
     <string name="sound">Lautstärke</string>
     <string name="splashscreen">Startbildschirm</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
     <string name="streaming">Streaming</string>
     <string name="sur">auf</string>
     <string name="tag_aperture">Focal ratio</string>

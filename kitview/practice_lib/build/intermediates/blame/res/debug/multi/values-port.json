@@ -11,13 +11,13 @@
                     "endOffset": 106
                 },
                 "from": {
-                    "file": "C:\\Users\\Administrateur\\.android\\build-cache\\035b2ca42e3970f8571a84c1d0ef97bd2f2bc3d3\\output\\res\\values-port\\values.xml",
+                    "file": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\values-port\\values-port.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 56,
+                        "startOffset": 55,
                         "endColumn": 55,
-                        "endOffset": 107
+                        "endOffset": 106
                     }
                 }
             }

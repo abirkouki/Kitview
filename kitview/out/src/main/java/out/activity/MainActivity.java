@@ -1,28 +1,5 @@
 package out.activity;
 
-import java.io.File;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.concurrent.atomic.AtomicBoolean;
-
-import activity.FolderActivity;
-import activity.SameCasesActivity;
-import activity.ScenariosActivity;
-import activity.SettingsActivity;
-import model.Module;
-import model.PersistenceManager;
-import model.rest.Personne;
-import util.FTP.PracticeFTP;
-import util.components.progressdialog.FRProgressDialog;
-import util.network.KitviewUtil;
-import util.system.SystemUtil;
-import view.adapter.ModulesAdapter;
-import view.popup.GenericPopupManager;
-
-import com.google.zxing.integration.android.IntentIntegrator;
-import com.google.zxing.integration.android.IntentResult;
-import com.kitview.out.mobile.R;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -57,6 +34,29 @@ import android.widget.Toast;
 import android.widget.VideoView;
 import android.widget.ViewAnimator;
 
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
+import com.kitview.out.mobile.R;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.concurrent.atomic.AtomicBoolean;
+
+import activity.FolderActivity;
+import activity.SameCasesActivity;
+import activity.ScenariosActivity;
+import activity.SettingsActivity;
+import model.Module;
+import model.PersistenceManager;
+import model.rest.Personne;
+import util.FTP.PracticeFTP;
+import util.components.progressdialog.FRProgressDialog;
+import util.network.KitviewUtil;
+import util.system.SystemUtil;
+import view.adapter.ModulesAdapter;
+import view.popup.GenericPopupManager;
 
 @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
 public class MainActivity extends FragmentActivity{
@@ -665,7 +665,7 @@ public class MainActivity extends FragmentActivity{
                             new Thread(new Runnable() {
                                 @Override
                                 public void run() {
-                                    Intent intent = new Intent(MainActivity.this.getApplicationContext(), PracticeActivity.class);
+                                    Intent intent = new Intent(MainActivity.this.getApplicationContext(), MainActivity2.class);
                                     if(intent != null){
                                         intent.putExtra("practice", "5");
                                         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

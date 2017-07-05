@@ -1,7 +1,7 @@
 [
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_bottom.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\035b2ca42e3970f8571a84c1d0ef97bd2f2bc3d3\\output\\res\\anim\\abc_slide_out_bottom.xml"
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\anim\\fade_out.xml",
@@ -9,7 +9,7 @@
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_out_top.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\035b2ca42e3970f8571a84c1d0ef97bd2f2bc3d3\\output\\res\\anim\\abc_slide_out_top.xml"
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\anim\\abc_slide_out_top.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\anim\\float_anim.xml",
@@ -17,15 +17,15 @@
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_popup_enter.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\8047eded91a141765dab67cea49fc8e31690c679\\output\\res\\anim\\abc_popup_enter.xml"
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\anim\\abc_popup_enter.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\8047eded91a141765dab67cea49fc8e31690c679\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_in.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\035b2ca42e3970f8571a84c1d0ef97bd2f2bc3d3\\output\\res\\anim\\abc_fade_in.xml"
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\anim\\abc_fade_in.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\anim\\fade_in.xml",
@@ -33,22 +33,22 @@
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_fade_out.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\035b2ca42e3970f8571a84c1d0ef97bd2f2bc3d3\\output\\res\\anim\\abc_fade_out.xml"
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\anim\\abc_fade_out.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_top.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\035b2ca42e3970f8571a84c1d0ef97bd2f2bc3d3\\output\\res\\anim\\abc_slide_in_top.xml"
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\anim\\abc_slide_in_top.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\8047eded91a141765dab67cea49fc8e31690c679\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_slide_in_bottom.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\035b2ca42e3970f8571a84c1d0ef97bd2f2bc3d3\\output\\res\\anim\\abc_slide_in_bottom.xml"
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\anim\\abc_popup_exit.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\8047eded91a141765dab67cea49fc8e31690c679\\output\\res\\anim\\abc_popup_exit.xml"
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\anim\\abc_popup_exit.xml"
     }
 ]

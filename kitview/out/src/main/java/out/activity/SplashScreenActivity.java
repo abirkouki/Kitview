@@ -1,17 +1,18 @@
 package out.activity;
 
-import util.system.SystemUtil;
-import model.PersistenceManager;
-
-import com.crittercism.app.Crittercism;
-import com.kitview.out.mobile.R;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.crittercism.app.Crittercism;
+import com.kitview.out.mobile.R;
+
+import model.PersistenceManager;
+import util.system.SystemUtil;
+
 
 public class SplashScreenActivity extends Activity {
     private static final int SPLASH_TIME = 1000;
