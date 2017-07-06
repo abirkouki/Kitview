@@ -61,8 +61,9 @@ public class LoginActivity extends Activity {
 
         // Check if user is already logged in or not
         if (session.isLoggedIn()) {
+
             // User is already logged in. Take him to main activity
-            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            Intent intent = new Intent(LoginActivity.this, MainActivity2.class);
             startActivity(intent);
             finish();
         }
@@ -71,6 +72,7 @@ public class LoginActivity extends Activity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View view) {
+
                 String user = inputUser.getText().toString().trim();
                 String password = inputPassword.getText().toString().trim();
 
@@ -78,6 +80,7 @@ public class LoginActivity extends Activity {
                 if (!user.isEmpty() && !password.isEmpty()) {
                     // login user
                     checkLogin(user, password);
+
                 } else {
                     // Prompt user to enter credentials
                     Toast.makeText(getApplicationContext(),
@@ -102,7 +105,6 @@ public class LoginActivity extends Activity {
         showDialog();
 
         StringRequest strReq = new StringRequest(Method.POST, AppConfig.URL_LOGIN, new Response.Listener<String>() {
-
             @Override
             public void onResponse(String response) {
                 Log.d(TAG, "Login Response: " + response.toString());
@@ -124,7 +126,6 @@ public class LoginActivity extends Activity {
                         JSONObject user = jObj.getJSONObject("user");
                         String nom = user.getString("nom").trim();
                         String prenom = user.getString("prenom").trim();
-
 
                         // Inserting row in users table
                         db.addUser(prenom, nom, uid);

@@ -665,7 +665,7 @@ public class MainActivity extends FragmentActivity{
                             new Thread(new Runnable() {
                                 @Override
                                 public void run() {
-                                    Intent intent = new Intent(MainActivity.this.getApplicationContext(), MainActivity2.class);
+                                    Intent intent = new Intent(MainActivity.this.getApplicationContext(), LoginActivity.class);
                                     if(intent != null){
                                         intent.putExtra("practice", "5");
                                         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

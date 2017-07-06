@@ -127,7 +127,7 @@ public class ParamNotifActivity extends AppCompatActivity {
 
                     AppController.getInstance().addToRequestQueue(stringRequest, tag_string_req);
                 // Launch main activity
-                Intent intent = new Intent(ParamNotifActivity.this, MainActivity.class);
+                Intent intent = new Intent(ParamNotifActivity.this, MainActivity2.class);
                 startActivity(intent);
                 finish();
             }

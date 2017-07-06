@@ -99,7 +99,7 @@ public class SettingsActivity extends AppCompatActivity{
 
                     AppController.getInstance().addToRequestQueue(stringRequest, tag_string_req);
                 // Launch main activity
-                Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
+                Intent intent = new Intent(SettingsActivity.this, MainActivity2.class);
                 startActivity(intent);
                 finish();
             }

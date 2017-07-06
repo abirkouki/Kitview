@@ -1,7 +1,27 @@
 [
     {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\raw\\video.mp4",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\raw\\video.mp4"
+    },
+    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\raw\\video.mp4",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\raw\\video.mp4"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\raw\\shutter.ogg",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\raw\\shutter.ogg"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\raw\\saves.bin",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\raw\\saves.bin"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\raw\\services.bin",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\raw\\services.bin"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\raw\\zxing_beep.ogg",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\a778191b7dc16d90d9b495db3f668d7bb5ea9484\\output\\res\\raw\\zxing_beep.ogg"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\raw\\saves.bin",
@@ -22,5 +42,9 @@
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\raw\\shutter.ogg",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\raw\\shutter.ogg"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\raw\\puzzle.jpg",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\raw\\puzzle.jpg"
     }
 ]

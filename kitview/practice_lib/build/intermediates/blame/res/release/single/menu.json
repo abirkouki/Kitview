@@ -2,5 +2,9 @@
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\menu\\main.xml",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\menu\\main.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\menu\\main.xml",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\menu\\main.xml"
     }
 ]

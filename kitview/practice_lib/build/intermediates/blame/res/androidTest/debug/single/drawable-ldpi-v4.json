@@ -1,5 +1,9 @@
 [
     {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldpi-v4\\bubble_2d.xml",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-ldpi-v4\\bubble_2d.xml"
+    },
+    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldpi-v4\\bubble_2d.xml",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-ldpi-v4\\bubble_2d.xml"
     }

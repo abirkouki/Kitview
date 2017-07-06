@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "246998637720",
+    "firebase_url": "https://kitview-8e9d1.firebaseio.com",
+    "project_id": "kitview-8e9d1",
+    "storage_bucket": "kitview-8e9d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246998637720:android:225be1366af0576d",
+        "android_client_info": {
+          "package_name": "com.kitview.out.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246998637720-5hgiujtbhtluse07qsracobh2utk1s7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMhN9tAVWi4V-xviBtbE84_16UrSRCbJU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
