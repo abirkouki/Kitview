@@ -45,7 +45,6 @@ import java.util.Date;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import activity.FolderActivity;
-import activity.SameCasesActivity;
 import activity.ScenariosActivity;
 import activity.SettingsActivity;
 import model.Module;
@@ -609,47 +608,56 @@ public class MainActivity extends FragmentActivity{
                         case 3:
                             if(mDialog != null)mDialog.showFRProgressDialog();
 
-                            KitviewUtil.isKitviewAvailable(MainActivity.this, new KitviewUtil.ITestConnectionResponse() {
-                                @Override
-                                public void onResponse(final int connectionEstablished) {
-                                    new Thread(new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            runOnUiThread(new Runnable() {
-                                                public void run() {
-                                                    if(connectionEstablished == KitviewUtil.TEST_CONNECTION_OK){
-                                                        KitviewUtil.GetCurrentIdPatient(MainActivity.this,new KitviewUtil.IIntResponse() {
-                                                            @Override
-                                                            public void onResponse(final int patientId) {
-                                                                Intent intent = new Intent(MainActivity.this.getApplicationContext(), SameCasesActivity.class);
-                                                                if(intent != null){
-                                                                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                                                    intent.putExtra(SameCasesActivity.EXTRA_KEY_PATIENTID, patientId);
-                                                                    MainActivity.this.getApplicationContext().startActivity(intent);
-                                                                }
-                                                                if(mDialog != null)mDialog.cancelFRProgressDialog();
-                                                            }
-                                                        });
-                                                    }else{
-                                                        if(mDialog != null)mDialog.cancelFRProgressDialog();
+//                            KitviewUtil.isKitviewAvailable(MainActivity.this, new KitviewUtil.ITestConnectionResponse() {
+//                                @Override
+//                                public void onResponse(final int connectionEstablished) {
+//                                    new Thread(new Runnable() {
+//                                        @Override
+//                                        public void run() {
+//                                            runOnUiThread(new Runnable() {
+//                                                public void run() {
+//                                                    if(connectionEstablished == KitviewUtil.TEST_CONNECTION_OK){
+//                                                        KitviewUtil.GetCurrentIdPatient(MainActivity.this,new KitviewUtil.IIntResponse() {
+//                                                            @Override
+//                                                            public void onResponse(final int patientId) {
+//                                                                Intent intent = new Intent(MainActivity.this.getApplicationContext(), SameCasesActivity.class);
+//                                                                if(intent != null){
+//                                                                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                                                                    intent.putExtra(SameCasesActivity.EXTRA_KEY_PATIENTID, patientId);
+//                                                                    MainActivity.this.getApplicationContext().startActivity(intent);
+//                                                                }
+//                                                                if(mDialog != null)mDialog.cancelFRProgressDialog();
+//                                                            }
+//                                                        });
+//                                                    }else{
+//                                                        if(mDialog != null)mDialog.cancelFRProgressDialog();
+//
+//                                                        String text = "";
+//
+//                                                        if(connectionEstablished == KitviewUtil.TEST_CONNECTION_WIFI_KO){
+//                                                            text = getResources().getString(R.string.wifi_ko);
+//
+//                                                            launchWifiPopup(MainActivity.this);
+//
+//                                                        }else if(connectionEstablished == KitviewUtil.TEST_CONNECTION_KITVIEW_KO){
+//                                                            launchSettings(MainActivity.this,true);
+//                                                        }
+//                                                    }
+//                                                }
+//                                            });
+//                                        }
+//                                    }).start();
+//                                }
+//                            });
 
-                                                        String text = "";
+                            Intent intent = new Intent(MainActivity.this.getApplicationContext(), DummyActivity.class);
+                            if(intent != null){
+                                intent.putExtra("testXml", "3");
+                                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                MainActivity.this.getApplicationContext().startActivity(intent);
+                            }
 
-                                                        if(connectionEstablished == KitviewUtil.TEST_CONNECTION_WIFI_KO){
-                                                            text = getResources().getString(R.string.wifi_ko);
 
-                                                            launchWifiPopup(MainActivity.this);
-
-                                                        }else if(connectionEstablished == KitviewUtil.TEST_CONNECTION_KITVIEW_KO){
-                                                            launchSettings(MainActivity.this,true);
-                                                        }
-                                                    }
-                                                }
-                                            });
-                                        }
-                                    }).start();
-                                }
-                            });
                             break;
 
                         //Settings
@@ -662,26 +670,47 @@ public class MainActivity extends FragmentActivity{
                         case 5:
                             if(mDialog != null)mDialog.showFRProgressDialog();
 
-                            new Thread(new Runnable() {
-                                @Override
-                                public void run() {
-                                    Intent intent = new Intent(MainActivity.this.getApplicationContext(), LoginActivity.class);
-                                    if(intent != null){
-                                        intent.putExtra("practice", "5");
-                                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                        MainActivity.this.getApplicationContext().startActivity(intent);
-                                    }
+//                            new Thread(new Runnable() {//TODO enlever ce thread ?
+//                                @Override
+//                                public void run() {
+
+//                                    Intent intent = new Intent(MainActivity.this.getApplicationContext(), LoginActivity.class);
+//                                    if(intent != null){
+//                                        intent.putExtra("practice", "5");
+//                                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                                        MainActivity.this.getApplicationContext().startActivity(intent);
+//                                    }
+
+                                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                                    AlertDialog dialog;
+                                    LayoutInflater inflater = getActivity().getLayoutInflater();
+                                    builder.setTitle("Login");//TODO R.strings
+                                    builder.setView(inflater.inflate(R.layout.activity_login,null));
+                                    builder.setPositiveButton("Valider", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int id) {
+                                            //EditText code_input = (EditText) ((Dialog) dialog).findViewById(R.id.code_input);
+                                            //runFTPQuery(code_input.getText().toString());
+                                            System.out.println("je suis dans le login hahahaha");
+                                        }
+                                    });
+
+                                    dialog = builder.create();
+                                    dialog.show();
+                                    dialog.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);//TODO enlever, pour mon portable uniquement
+
+
 
                                     if(mDialog != null){
-                                        runOnUiThread(new  Runnable(){
-                                            @Override
-                                            public void run() {
+//                                        runOnUiThread(new  Runnable(){
+//                                            @Override
+//                                            public void run() {
                                                 mDialog.cancelFRProgressDialog();
-                                            }
-                                        });
+//                                            }
+//                                        });
                                     }
-                                }
-                            }).start();
+//                                }
+//                            }).start();
 
                             break;
 
