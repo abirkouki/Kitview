@@ -9,6 +9,7 @@ import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
 
 import util.helper.XmlParser;
 
@@ -25,13 +26,13 @@ public class DummyActivity extends AppCompatActivity {
         try {
             XmlParser xmlParser = new XmlParser(path);
 
-//            System.out.println(xmlParser.getAddress().toString());
-//            System.out.println(xmlParser.getName());
-//            System.out.println(Arrays.toString(xmlParser.getDoctors().toArray()));
-//            System.out.println(xmlParser.getOpeningHours().toString());
-//            System.out.println(xmlParser.getKitviewServer().toString());
-//            System.out.println(xmlParser.getText());
-//            System.out.println(xmlParser.getContact().toString());
+            System.out.println(xmlParser.getAddress().toString());
+            System.out.println(xmlParser.getName());
+            System.out.println(Arrays.toString(xmlParser.getDoctors().toArray()));
+            System.out.println(xmlParser.getOpeningHours().toString());
+            System.out.println(xmlParser.getKitviewServer().toString());
+            System.out.println(xmlParser.getText());
+            System.out.println(xmlParser.getContact().toString());
 
         } catch (IOException e) {
             e.printStackTrace();

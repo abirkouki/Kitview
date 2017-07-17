@@ -11,6 +11,8 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.kitview.out.mobile.R;
 
+import util.app.AppController;
+
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
@@ -38,10 +40,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-
+        double lat = AppController.practiceAddress.latitude;
+        double lng = AppController.practiceAddress.longitude;
         // Add a marker and move the camera
-        LatLng pau = new LatLng(43.3219617, -0.3667958999999428);
-        mMap.addMarker(new MarkerOptions().position(pau).title("Marker in Pau"));
+        LatLng pau = new LatLng(lat, lng);
+        mMap.addMarker(new MarkerOptions().position(pau).title("Marker in Pau"));//Todo changer title marker
         float zoomLevel = (float) 16.0;
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(pau,zoomLevel));
     }

@@ -8,7 +8,11 @@
     <application
         android:name="util.app.AppController"
         android:allowBackup="true"
-        android:label="KitView-Out">
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
         <activity
             android:name="out.activity.SplashScreenActivity"
             android:launchMode="standard"
@@ -23,13 +27,7 @@
             android:name="out.activity.MainActivity"
             android:configChanges="orientation|screenSize"
             android:launchMode="standard" />
-
-
-
         <activity android:name="out.activity.DummyActivity" />
-
-
-
         <activity
             android:name="out.activity.BalanceActivity"
             android:label="@string/app_name"
@@ -101,6 +99,10 @@
         <activity
             android:name="out.activity.MapsActivity"
             android:label="@string/title_activity_maps" />
+        <activity
+            android:name="out.activity.ContactActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="out.activity.AboutActivity"/>
     </application>
 
 </manifest>

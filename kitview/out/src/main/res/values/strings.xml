@@ -1,9 +1,19 @@
 <resources>
-    <string name="app_name">Out</string>
+    <string name="app_name">KitView-Out</string>
     <string name="practice_id">Practice code</string>
     <string name="practice_scan">Scan</string>
     <string name="FCM_PREF">com.kitview.out.mobile.fcm_pref</string>
     <string name="FCM_TOKEN">com.kitview.out.mobile.fcm_token</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_dummy">DummyActivity</string>
+
+    <string name="balance">Balance</string>
+    <string name="notification">Notification</string>
+    <string name="appointment">Appointment</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="map">Map</string>
+    <string name="contact">Contact</string>
+    <string name="about">About</string>
+
 </resources>

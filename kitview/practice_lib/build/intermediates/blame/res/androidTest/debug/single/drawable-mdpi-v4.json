@@ -108,10 +108,6 @@
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable-mdpi-v4\\abc_list_focused_holo.9.png"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\ic_fab_dl.png",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\ic_fab_dl.png"
-    },
-    {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\notification_bg_low_normal.9.png",
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
     },
@@ -293,7 +289,7 @@
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\ic_fab_complete.png",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-mdpi-v4\\ic_fab_complete.png"
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\263c8c9d6b5f94c6003e29ba2e90aa28ca8cbee8\\output\\res\\drawable-mdpi-v4\\ic_fab_complete.png"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",

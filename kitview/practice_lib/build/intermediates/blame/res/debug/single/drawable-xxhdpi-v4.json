@@ -105,7 +105,7 @@
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_fab_complete.png",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable-xxhdpi\\ic_fab_complete.png"
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\263c8c9d6b5f94c6003e29ba2e90aa28ca8cbee8\\output\\res\\drawable-xxhdpi-v4\\ic_fab_complete.png"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png",
@@ -274,10 +274,6 @@
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_fab_dl.png",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable-xxhdpi\\ic_fab_dl.png"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",

@@ -48,10 +48,7 @@ public class XmlParser {
 
         @Override
         public String toString() {
-            return "Doctor{" +
-                    "firstname='" + firstname + '\'' +
-                    ", lastname='" + lastname + '\'' +
-                    '}';
+            return "Dr. " + firstname + " " + lastname;
         }
     }
 

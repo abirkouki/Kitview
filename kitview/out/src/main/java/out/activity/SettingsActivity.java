@@ -3,7 +3,11 @@ package out.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -43,6 +47,11 @@ public class SettingsActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+
         setContentView(R.layout.activity_settings);
         // SqLite database handler
         db = new SQLiteHandler(getApplicationContext());
@@ -99,7 +108,7 @@ public class SettingsActivity extends AppCompatActivity{
 
                     AppController.getInstance().addToRequestQueue(stringRequest, tag_string_req);
                 // Launch main activity
-                Intent intent = new Intent(SettingsActivity.this, MainActivity2.class);
+                Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -116,4 +125,15 @@ public class SettingsActivity extends AppCompatActivity{
            return "N";
        }
     }
+
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        System.out.println("passe ici");
+//        MenuInflater inflater = getMenuInflater();
+//        inflater.inflate(R.menu.main,menu);
+//        System.out.println(inflater.toString());
+//        System.out.println(menu.toString());
+//        return true;
+//    }
+
 }

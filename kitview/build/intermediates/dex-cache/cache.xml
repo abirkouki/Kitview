@@ -12,6 +12,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\orthalis\.android\build-cache\a03b55971985bf94ac8ca73e3cc20c87364d40b0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_91b4447085f05ce141600ec0363bf8e0583da3ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="E:\DEV_ANDROID\Kitview-master\kitview\practice_lib\build\intermediates\bundles\default\libs\commons-net-3.6.jar"
         jumboMode="true"
         optimize="true"
@@ -21,21 +30,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\orthalis\.android\build-cache\c1ed25f671ad571b252d5b4f654f4034ff18905a\output\jars\classes.jar"
+        jar="C:\Users\orthalis\.android\build-cache\51e062487abd1057e9bee962c53d4a03337a5fff\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
-        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a95f1c8253f7d6089f50059dfc9d50d0efc7e031\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\orthalis\.android\build-cache\82bbcf49a4d99ea616ef3f47e4e7015da5ce2fcb\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
-        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9a2945ec5b566e467aff79d54744392206f1a370\classes.dex" />
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a5a2f2ac6482068fc106676d9e3ae87159ea4319\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -48,12 +48,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\orthalis\.android\build-cache\c18136e5e3b0deb8e4a80d50f1e8745768ae3873\output\jars\classes.jar"
+        jar="C:\Users\orthalis\.android\build-cache\7f73a1ac7c4de7209632e63e325f395c08d28af7\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
-        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_07f744470443942053ac0e9e6ab2bef955bfc762\classes.dex" />
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0fabb2eb3b80adb19c39f6041b39517be6870484\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -75,15 +75,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\orthalis\.android\build-cache\fc4f2d6e4dbd58fc896738078ae4f06de7143893\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bfd7014b2d00d46a2fcceb916bafd6541c8379fd\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\orthalis\.android\build-cache\669d349b928b2194cf18c115bfe3725ff7fe8f56\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -102,6 +93,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\orthalis\.android\build-cache\4c099ac50041a15256824b3d99788d233d2853cb\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_17a4d9eac2df3521e12fc894ac31ae9b2c74b198\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\orthalis\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
         jumboMode="true"
         optimize="true"
@@ -115,8 +115,26 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="65e537404383282dc7b684e001edf7cdbac98bb4">
+        sha1="790f07ea1df10d99bacbeed2e81963e2f0f1c37b">
         <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_1250b3670fe904f33151159e03ee9485e4ca0b76\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\orthalis\.android\build-cache\94f4a800b755a5cb988f8938d80c6f0fe0511842\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5fd603e7a5ab9c51b881b63644f8fa5efedfed26\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\orthalis\.android\build-cache\e977f43d11e00c15c880725d6241c727bac1c43e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bf12bc585fc44fd91acc12d46c65925fcb297d70\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -147,15 +165,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\orthalis\.android\build-cache\4a0f1dd35d360e93808018e8e680884cb9b8d803\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="8bc45ce1f63d1a391fd38b32a201be5a42f9c95d">
-        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ccb50b27e93096f89ffcd22239756645ae52ee37\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\orthalis\.android\build-cache\61f227bbe42b2b2a32b83f72af33af95f0ed18ca\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -165,12 +174,30 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\orthalis\.android\build-cache\476b349e9fb936e010a28bbfe5933db0644c958f\output\jars\classes.jar"
+        jar="C:\Users\orthalis\.android\build-cache\305d37a7d11f27c3cd6afba5ad859d34fcb3b6fb\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="d79c575e1d97b0298746a4c032a0c1dc201c2f82">
-        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_24aaa3b93474b95d6c6a9fa9341fd5a010bd08ad\classes.dex" />
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_03fa56003b7e3461bbc140a3795b8e828a2a0562\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\orthalis\.android\build-cache\3e5fc078e3548aba4d047d19638ba7c9fbd692df\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_10ccfafb06ffed8377e46cd43d1d90c91a4950c2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\orthalis\.android\build-cache\dac10d84dced0bc1c9718c0e82ef91e58934dcc5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cb2a279938441d10fcb1d00d7ad6a09a6274f973\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -180,6 +207,15 @@
         revision="25.0.0"
         sha1="caeb02439d439d221f8be4aaf33931153bbe34db">
         <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\8\activation_a0be9c82a984c4424ef929b9cd5690598fc0df8d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\orthalis\.android\build-cache\476b349e9fb936e010a28bbfe5933db0644c958f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d79c575e1d97b0298746a4c032a0c1dc201c2f82">
+        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_24aaa3b93474b95d6c6a9fa9341fd5a010bd08ad\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -210,12 +246,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\orthalis\.android\build-cache\ce4d153adc382a311b88d5c080adeacab507af48\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5238b36abc758bb7a3872781cc5410049bd76b9d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\orthalis\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations-java5\15.0\7011b4551a8451906759b05814c58b9eb829ea9b\annotations-java5-15.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="7011b4551a8451906759b05814c58b9eb829ea9b">
         <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\annotations-java5-15.0_0ca7ddb0b4d512bb1e7466e65b0e019e5e6c12ea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\orthalis\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.1_bffbeab48dc317f8a35292a1fc77bc113623ce3f\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -228,21 +282,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\orthalis\.android\build-cache\62811cca02aef1d86017195b50f3439f9eee3a1c\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="d29714cc76b38157e3cbd034c66e1ec808eb4c19">
-        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7f6f3ebfc5075dea064aa64288f2dcc1ab0f1630\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\orthalis\.android\build-cache\b0586b0f6bc86852a764bb2a34c0cb51e278401d\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="9ff5114aff3bfb387577ba92a11408dcf0441c24">
         <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bfc3cc1bda2a692d38f24491d95416aa90362b6b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\orthalis\.android\build-cache\48556272706d90a9c4275e30451e78a5f94c3d92\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9082eba13015a373813135633fd3ad0ee53e1f20\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -255,30 +309,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\orthalis\.android\build-cache\53ee54a06ae86ff0c7328531b33028e0097818ea\output\jars\classes.jar"
+        jar="C:\Users\orthalis\.android\build-cache\83ca7ea7e8a588599d64aba42842a6d33195bfef\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="53a420cd4f49274db6bd43475f8006ba67ef6bbd">
-        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8e57c28f0ba0644a327f0ff34ccacf1253f299fa\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\orthalis\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
-        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.2.0_1783b816d88e3a339a83e5cd1005d0469cb7cbc1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\orthalis\.android\build-cache\6c741e707a48701e8b141242f87fc2ce18989efc\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
-        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4696ee52a85f30794223856e49bf6f72a3d778bf\classes.dex" />
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b858167c6c6fa5ed8750bb7208144d4dffdf6242\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -288,15 +324,6 @@
         revision="25.0.0"
         sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
         <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8fd6e3eaca29c5f52703e5cd924a5dad91aa22bb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\orthalis\.android\build-cache\ed17de386b3ccfc577f53071c786b16f6a0faf08\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
-        <dex dex="E:\DEV_ANDROID\Kitview-master\kitview\out\build\intermediates\transforms\dex\debug\folders\1000\10\classes_433f7de9014cc5769b492cb15cd6528ec176ce63\classes.dex" />
     </item>
 
 </items>

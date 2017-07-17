@@ -127,7 +127,7 @@ public class ParamNotifActivity extends AppCompatActivity {
 
                     AppController.getInstance().addToRequestQueue(stringRequest, tag_string_req);
                 // Launch main activity
-                Intent intent = new Intent(ParamNotifActivity.this, MainActivity2.class);
+                Intent intent = new Intent(ParamNotifActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -140,6 +140,12 @@ public class ParamNotifActivity extends AppCompatActivity {
         } else {
             return "N";
         }
+    }
+
+    //si on vient plusieurs fois sur cette activité, enlever ça
+    @Override
+    public void onBackPressed() {
+        moveTaskToBack(true);
     }
 
 }

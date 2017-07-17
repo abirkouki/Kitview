@@ -9,6 +9,8 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Point;
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -28,6 +30,7 @@ import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -41,6 +44,7 @@ import com.kitview.out.mobile.R;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -51,8 +55,11 @@ import model.Module;
 import model.PersistenceManager;
 import model.rest.Personne;
 import util.FTP.PracticeFTP;
+import util.app.AppController;
+import util.components.imagezoom.ImageViewTouch;
 import util.components.progressdialog.FRProgressDialog;
 import util.network.KitviewUtil;
+import util.session.SessionManager;
 import util.system.SystemUtil;
 import view.adapter.ModulesAdapter;
 import view.popup.GenericPopupManager;
@@ -67,6 +74,7 @@ public class MainActivity extends FragmentActivity{
     private boolean mInitializationFinished0,mInitializationFinished2;
     private int mSpacing;
     private VideoView mVideoView;
+    private ImageView mImageView;
     private FRProgressDialog mDialog;
     private TextView mCurrentPatientInfosTextView;
     private TextView mCopyrightTextView;
@@ -81,6 +89,8 @@ public class MainActivity extends FragmentActivity{
     public final static String KEY_TEST_CONNECTION = "KEY_TEST_CONNECTION";
 
     private boolean mCheckKitViewConnection = true;
+
+    private SessionManager session;
 
     public MainActivity getActivity() {
         return this;
@@ -97,23 +107,27 @@ public class MainActivity extends FragmentActivity{
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         this.setContentView(R.layout.activity_main);
 
+        // Session manager
+        session = new SessionManager(getApplicationContext());
+
         if(savedInstanceState != null){
             mCheckKitViewConnection = (Boolean) savedInstanceState.get(KEY_TEST_CONNECTION);
         }
 
         this.mOrientation = getResources().getConfiguration().orientation;
 
-        this.mPersistenceManager = PersistenceManager.getInstance();
+        //this.mPersistenceManager = PersistenceManager.getInstance();
 
         //TODO trim layout
         this.mViewAnimator = (ViewAnimator) findViewById(R.id.va_main);
         this.mVideoView = (VideoView)findViewById(R.id.videoview);
+        this.mImageView = (ImageView)findViewById(R.id.imageview);
         this.mCurrentPatientInfosTextView = (TextView) findViewById(R.id.tv_current_patient_infos);
         this.mCopyrightTextView = (TextView) findViewById(R.id.copyright);
         this.mActualSituationTextView = (LinearLayout) findViewById(R.id.ll_parent_infos);
         this.mBottomInfosLinearLayout = (LinearLayout) findViewById(R.id.ll_bottom_infos);
 
-        this.initializeVideoView();
+        if (!this.initializeImageView()) this.initializeVideoView();
 
         this.mGridView0 = (GridView)this.findViewById(R.id.gridview_home0);
         //this.mGridView = (GridView)this.findViewById(R.id.gridview_home);
@@ -125,12 +139,36 @@ public class MainActivity extends FragmentActivity{
             File CfgDir = new File(getApplicationContext().getFilesDir().getAbsolutePath() + File.separator + "Config");
 
             if(CfgDir.exists()){
-                setViewAnimatorIndex(2);
-                initializeGridView2();
+                // Check if user is already logged in or not
+                if (session.isLoggedIn()) {
+
+                    System.out.println("isLogged");
+                    setViewAnimatorIndex(2);
+                    initializeGridView2();
+                }
+                else {
+                    System.out.println("isNotLogged");
+                    // User is already logged in. Take him to main activity
+                    Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                    startActivity(intent);
+                    //finish();//bien dans logAct mais pas trop dans Main
+
+
+                    ///////////////////////
+//                    Intent intent = new Intent(MainActivity.this.getApplicationContext(), LoginActivity.class);
+//                    intent.putExtra("login", "5");
+//                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                    MainActivity.this.getApplicationContext().startActivity(intent);
+
+
+
+                }
             }else{
                 setViewAnimatorIndex(0);
                 initializeGridView0();
             }
+
+            //System.out.println(Arrays.toString(AppController.practiceDoctors.toArray()));
 
             mDialog = new FRProgressDialog(this, "",false);
 
@@ -139,6 +177,18 @@ public class MainActivity extends FragmentActivity{
             e.printStackTrace();
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
     //TODO garder peut etre utile
     public void launchWifiPopup(Activity context){
@@ -202,6 +252,7 @@ public class MainActivity extends FragmentActivity{
 
     //TODO peut etre pour l'image aussi ?? + régler MPEG4Extractor: Reset mWrongNALCounter. Re-check a condition - 'isMalformed = 0'
     private void initializeVideoView(){
+        System.out.println("initializeVideoView");
         Context context = getApplicationContext();
         Uri path;
         String pathStr = context.getFilesDir().getAbsolutePath() + File.separator + "Config" + File.separator + "video.mp4";
@@ -216,12 +267,28 @@ public class MainActivity extends FragmentActivity{
             mVideoView.setOnPreparedListener (new MediaPlayer.OnPreparedListener() {
                 @Override
                 public void onPrepared(MediaPlayer mp) {
+                    System.out.println("startVideo");
                     mVideoView.start();
                     mp.setLooping(true);
                 }
             });
         }
     }
+
+
+    private boolean initializeImageView(){
+        System.out.println("initializeImageView");
+        Context context = getApplicationContext();
+        String pathStr = context.getFilesDir().getAbsolutePath() + File.separator + "Config" + File.separator + "photo0.jpg";
+        File imagePractice = new File(pathStr);
+        boolean res = mImageView != null && imagePractice.exists();
+        if(res){
+            Bitmap mBitMap = BitmapFactory.decodeFile(pathStr);
+            mImageView.setImageBitmap(mBitMap);
+        }
+        return res;
+    }
+
 
     //TODO conserver pour le moment (utile pour la photothèque)
     public void launchMyCase(final Activity context, final int patientId){
@@ -314,10 +381,10 @@ public class MainActivity extends FragmentActivity{
 
                                 if(mOrientation == Configuration.ORIENTATION_LANDSCAPE){
                                     nbItemsPerRow = 2;
-                                    nbRows = 2;
+                                    nbRows = 1;
                                 }else if(mOrientation == Configuration.ORIENTATION_PORTRAIT){
                                     nbItemsPerRow = 2;
-                                    nbRows = 3;
+                                    nbRows = 1;
                                 }
 
                                 mInitializationFinished0 = true;
@@ -422,7 +489,7 @@ public class MainActivity extends FragmentActivity{
         try {
             thread1 = new Thread(checkRun);
             thread1.start();
-            thread1.join();
+            thread1.join();//Attend que le thread finisse avant de continuer
             thread2 = new Thread(downloadRun);
 
             if (folderExists[0].get()){
@@ -439,8 +506,8 @@ public class MainActivity extends FragmentActivity{
                                 public void run() {
                                     if(mDialog != null)mDialog.cancelFRProgressDialog();
                                     if (folderExists[0].get()){//que si tout a réussi
-                                        setViewAnimatorIndex(2);
-                                        initializeGridView2();
+                                        //setViewAnimatorIndex(2);
+                                        //initializeGridView2();
                                         recreate();
                                     };
                                 }
@@ -458,14 +525,23 @@ public class MainActivity extends FragmentActivity{
 
 
     //TODO garder et modifier selon actions
+    //TODO ceux qui seront effacé -> changer le numéro du case
     public void initializeGridView2(){
         this.mModules2 = new ArrayList<Module>();
-        this.mModules2.add(new Module(R.string.picture_shot_emergency, R.color.color1, R.drawable.ic_action_camera));
-        this.mModules2.add(new Module(R.string.picture_shot_several_patient, R.color.color2, R.drawable.ic_action_new_picture));
-        this.mModules2.add(new Module(R.string.folder_patient, R.color.color3, R.drawable.ic_action_person));
-        this.mModules2.add(new Module(R.string.folder2, R.color.color4, R.drawable.ic_action_group));//degager
+        //this.mModules2.add(new Module(R.string.picture_shot_emergency, R.color.color1, R.drawable.ic_action_camera));
+        //this.mModules2.add(new Module(R.string.picture_shot_several_patient, R.color.color2, R.drawable.ic_action_new_picture));
+        //this.mModules2.add(new Module(R.string.folder_patient, R.color.color3, R.drawable.ic_action_person));
+        //this.mModules2.add(new Module(R.string.folder2, R.color.color4, R.drawable.ic_action_group));//degager
         this.mModules2.add(new Module(R.string.settings, R.color.color5, R.drawable.ic_action_settings));
-        this.mModules2.add(new Module(R.string.practice, R.color.color6, R.drawable.ic_action_settings));//degager
+        //this.mModules2.add(new Module(R.string.practice, R.color.color6, R.drawable.ic_action_settings));//degager
+        this.mModules2.add(new Module(R.string.balance, R.color.color6, R.drawable.ic_action_settings));
+        this.mModules2.add(new Module(R.string.notification, R.color.color6, R.drawable.ic_action_settings));
+        this.mModules2.add(new Module(R.string.appointment, R.color.color6, R.drawable.ic_action_settings));
+        this.mModules2.add(new Module(R.string.phone, R.color.color6, R.drawable.ic_action_settings));
+        this.mModules2.add(new Module(R.string.email, R.color.color6, R.drawable.ic_action_settings));
+        this.mModules2.add(new Module(R.string.map, R.color.color6, R.drawable.ic_action_settings));
+        this.mModules2.add(new Module(R.string.contact, R.color.color6, R.drawable.ic_action_settings));
+        this.mModules2.add(new Module(R.string.about, R.color.color6, R.drawable.ic_action_settings));
 
         this.mInitializationFinished2 = false;
 
@@ -476,8 +552,12 @@ public class MainActivity extends FragmentActivity{
                         @Override
                         public void onGlobalLayout() {
                             if(!mInitializationFinished2){
-                                mSpacing = getWindowManager().getDefaultDisplay().getWidth()/50; // TODO voir pour les deprecated
+                                Point size = new Point();
+                                getWindowManager().getDefaultDisplay().getSize(size);
+                                int width = size.x;
+                                //int height = size.y;
 
+                                mSpacing = width/40;
                                 LinearLayout.LayoutParams llp3 = (android.widget.LinearLayout.LayoutParams) mActualSituationTextView.getLayoutParams();//new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
                                 llp3.setMargins(mSpacing, 0, mSpacing, 0);
                                 mActualSituationTextView.setLayoutParams(llp3);
@@ -497,10 +577,10 @@ public class MainActivity extends FragmentActivity{
 
                                 if(mOrientation == Configuration.ORIENTATION_LANDSCAPE){
                                     nbItemsPerRow = 3;
-                                    nbRows = 2;
+                                    nbRows = 4;
                                 }else if(mOrientation == Configuration.ORIENTATION_PORTRAIT){
                                     nbItemsPerRow = 2;
-                                    nbRows = 3;
+                                    nbRows = 6;
                                 }
 
                                 mModulesAdapter2 = new ModulesAdapter(mModules2,nbItemsPerRow,nbRows,mGridView2, MainActivity.this, mSpacing);
@@ -520,15 +600,16 @@ public class MainActivity extends FragmentActivity{
             this.mGridView2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> arg0, View arg1, final int arg2, long arg3) {
+                    Intent intent;
                     switch (arg2) {
 
                         //Emergency
-                        case 0:
+                        //case 0:
+                            /*
                             if(mDialog != null){
                                 mDialog.showFRProgressDialog();
                                 System.out.println("dialog lancée");
                             }
-
                             new Thread(new Runnable() {
                                 @Override
                                 public void run() {
@@ -550,12 +631,11 @@ public class MainActivity extends FragmentActivity{
                                     }
                                 }
                             }).start();
-
                             break;
-
-
+                            */
                         //Seance photos
-                        case 1:
+                        //case 1:
+                            /*
                             if(mDialog != null)mDialog.showFRProgressDialog();
 
                             KitviewUtil.isKitviewAvailable(MainActivity.this, new KitviewUtil.ITestConnectionResponse() {
@@ -595,125 +675,160 @@ public class MainActivity extends FragmentActivity{
                                     }).start();
                                 }
                             });
-
                             break;
-
+                            */
                         //Ma phototheque
-                        case 2:
+                        //case 2:
+                            /*
                             launchMyCase(MainActivity.this,-1);
-
                             break;
-
+                            */
                         //Cas similaires
-                        case 3:
+                        //case 3:
+                            /*
                             if(mDialog != null)mDialog.showFRProgressDialog();
-
-//                            KitviewUtil.isKitviewAvailable(MainActivity.this, new KitviewUtil.ITestConnectionResponse() {
-//                                @Override
-//                                public void onResponse(final int connectionEstablished) {
-//                                    new Thread(new Runnable() {
-//                                        @Override
-//                                        public void run() {
-//                                            runOnUiThread(new Runnable() {
-//                                                public void run() {
-//                                                    if(connectionEstablished == KitviewUtil.TEST_CONNECTION_OK){
-//                                                        KitviewUtil.GetCurrentIdPatient(MainActivity.this,new KitviewUtil.IIntResponse() {
-//                                                            @Override
-//                                                            public void onResponse(final int patientId) {
-//                                                                Intent intent = new Intent(MainActivity.this.getApplicationContext(), SameCasesActivity.class);
-//                                                                if(intent != null){
-//                                                                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                                                                    intent.putExtra(SameCasesActivity.EXTRA_KEY_PATIENTID, patientId);
-//                                                                    MainActivity.this.getApplicationContext().startActivity(intent);
-//                                                                }
-//                                                                if(mDialog != null)mDialog.cancelFRProgressDialog();
-//                                                            }
-//                                                        });
-//                                                    }else{
-//                                                        if(mDialog != null)mDialog.cancelFRProgressDialog();
-//
-//                                                        String text = "";
-//
-//                                                        if(connectionEstablished == KitviewUtil.TEST_CONNECTION_WIFI_KO){
-//                                                            text = getResources().getString(R.string.wifi_ko);
-//
-//                                                            launchWifiPopup(MainActivity.this);
-//
-//                                                        }else if(connectionEstablished == KitviewUtil.TEST_CONNECTION_KITVIEW_KO){
-//                                                            launchSettings(MainActivity.this,true);
-//                                                        }
-//                                                    }
-//                                                }
-//                                            });
-//                                        }
-//                                    }).start();
-//                                }
-//                            });
-
-                            Intent intent = new Intent(MainActivity.this.getApplicationContext(), DummyActivity.class);
-                            if(intent != null){
-                                intent.putExtra("testXml", "3");
-                                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                MainActivity.this.getApplicationContext().startActivity(intent);
-                            }
-
-
-                            break;
-
-                        //Settings
-                        case 4:
-                            launchSettings(MainActivity.this,false);
-
-                            break;
-
-                        //Test
-                        case 5:
-                            if(mDialog != null)mDialog.showFRProgressDialog();
-
-//                            new Thread(new Runnable() {//TODO enlever ce thread ?
-//                                @Override
-//                                public void run() {
-
-//                                    Intent intent = new Intent(MainActivity.this.getApplicationContext(), LoginActivity.class);
-//                                    if(intent != null){
-//                                        intent.putExtra("practice", "5");
-//                                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                                        MainActivity.this.getApplicationContext().startActivity(intent);
-//                                    }
-
-                                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-                                    AlertDialog dialog;
-                                    LayoutInflater inflater = getActivity().getLayoutInflater();
-                                    builder.setTitle("Login");//TODO R.strings
-                                    builder.setView(inflater.inflate(R.layout.activity_login,null));
-                                    builder.setPositiveButton("Valider", new DialogInterface.OnClickListener() {
+                            KitviewUtil.isKitviewAvailable(MainActivity.this, new KitviewUtil.ITestConnectionResponse() {
+                                @Override
+                                public void onResponse(final int connectionEstablished) {
+                                    new Thread(new Runnable() {
                                         @Override
-                                        public void onClick(DialogInterface dialog, int id) {
-                                            //EditText code_input = (EditText) ((Dialog) dialog).findViewById(R.id.code_input);
-                                            //runFTPQuery(code_input.getText().toString());
-                                            System.out.println("je suis dans le login hahahaha");
+                                        public void run() {
+                                            runOnUiThread(new Runnable() {
+                                                public void run() {
+                                                    if(connectionEstablished == KitviewUtil.TEST_CONNECTION_OK){
+                                                        KitviewUtil.GetCurrentIdPatient(MainActivity.this,new KitviewUtil.IIntResponse() {
+                                                            @Override
+                                                            public void onResponse(final int patientId) {
+                                                                Intent intent = new Intent(MainActivity.this.getApplicationContext(), SameCasesActivity.class);
+                                                                if(intent != null){
+                                                                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                                                    intent.putExtra(SameCasesActivity.EXTRA_KEY_PATIENTID, patientId);
+                                                                    MainActivity.this.getApplicationContext().startActivity(intent);
+                                                                }
+                                                                if(mDialog != null)mDialog.cancelFRProgressDialog();
+                                                            }
+                                                        });
+                                                    }else{
+                                                        if(mDialog != null)mDialog.cancelFRProgressDialog();
+
+                                                        String text = "";
+
+                                                        if(connectionEstablished == KitviewUtil.TEST_CONNECTION_WIFI_KO){
+                                                            text = getResources().getString(R.string.wifi_ko);
+
+                                                            launchWifiPopup(MainActivity.this);
+
+                                                        }else if(connectionEstablished == KitviewUtil.TEST_CONNECTION_KITVIEW_KO){
+                                                            launchSettings(MainActivity.this,true);
+                                                        }
+                                                    }
+                                                }
+                                            });
                                         }
-                                    });
+                                    }).start();
+                                }
+                            });
 
-                                    dialog = builder.create();
-                                    dialog.show();
-                                    dialog.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);//TODO enlever, pour mon portable uniquement
+//                            intent = new Intent(MainActivity.this.getApplicationContext(), DummyActivity.class);
+//                            if(intent != null){
+//                                intent.putExtra("testXml", "3");
+//                                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                                MainActivity.this.getApplicationContext().startActivity(intent);
+//                            }
+                            if(mDialog != null)mDialog.cancelFRProgressDialog();
+                            break;
+                        */
+                        //Settings
+                        case 0://4
+                            //launchSettings(MainActivity.this,false);
+                            intent = new Intent(MainActivity.this, out.activity.SettingsActivity.class);
+                            startActivity(intent);
+                            break;
+                        //Test
+                        //case 5:
+                            /*
+                            if(mDialog != null)mDialog.showFRProgressDialog();
+
+                            new Thread(new Runnable() {//TODO enlever ce thread ?
+                                @Override
+                                public void run() {
+
+                                    Intent intent = new Intent(MainActivity.this.getApplicationContext(), LoginActivity.class);
+                                    intent.putExtra("login", "5");
+                                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                    MainActivity.this.getApplicationContext().startActivity(intent);
 
 
+//                                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+//                                    AlertDialog dialog;
+//                                    LayoutInflater inflater = getActivity().getLayoutInflater();
+//                                    builder.setTitle("Login");//TODO R.strings
+//                                    builder.setView(inflater.inflate(R.layout.activity_login,null));
+//                                    builder.setPositiveButton("Valider", new DialogInterface.OnClickListener() {
+//                                        @Override
+//                                        public void onClick(DialogInterface dialog, int id) {
+//                                            //EditText code_input = (EditText) ((Dialog) dialog).findViewById(R.id.code_input);
+//                                            //runFTPQuery(code_input.getText().toString());
+//                                            System.out.println("je suis dans le login hahahaha");
+//                                        }
+//                                    });
+//
+//                                    dialog = builder.create();
+//                                    dialog.show();
+//                                    dialog.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);//TODO enlever, pour mon portable uniquement
 
                                     if(mDialog != null){
-//                                        runOnUiThread(new  Runnable(){
-//                                            @Override
-//                                            public void run() {
+                                        runOnUiThread(new  Runnable(){
+                                            @Override
+                                            public void run() {
                                                 mDialog.cancelFRProgressDialog();
-//                                            }
-//                                        });
+                                            }
+                                        });
                                     }
-//                                }
-//                            }).start();
-
+                                }
+                            }).start();
                             break;
-
+                            */
+                        //Balance
+                        case 1://6
+                            intent = new Intent(MainActivity.this, BalanceActivity.class);
+                            startActivity(intent);
+                            break;
+                        //Notif
+                        case 2://7
+                            intent = new Intent(MainActivity.this, NotificationsActivity.class);
+                            startActivity(intent);
+                            break;
+                        //RDV
+                        case 3://8
+                            intent = new Intent(MainActivity.this, ProchainRdvActivity.class);
+                            startActivity(intent);
+                            break;
+                        //Appel
+                        case 4://9
+                            intent = new Intent(MainActivity.this, CallActivity.class);
+                            startActivity(intent);
+                            break;
+                        //Mail
+                        case 5://10
+                            intent = new Intent(MainActivity.this, EmailActivity.class);
+                            startActivity(intent);
+                            break;
+                        //Map
+                        case 6://11
+                            intent = new Intent(MainActivity.this, MapsActivity.class);
+                            startActivity(intent);
+                            break;
+                        //Contact
+                        case 7://12
+                            intent = new Intent(MainActivity.this, ContactActivity.class);
+                            startActivity(intent);
+                            break;
+                        //Contact
+                        case 8://13
+                            intent = new Intent(MainActivity.this, AboutActivity.class);
+                            startActivity(intent);
+                            break;
                     }
                 }
             });
@@ -745,7 +860,7 @@ public class MainActivity extends FragmentActivity{
     protected void onResume(){
         super.onResume();
 
-        startVideo();
+        //startVideo();
         //TODO peut etre changer a partir d'ici
         KitviewUtil.GetCurrentIdPatient(MainActivity.this,new KitviewUtil.IIntResponse() {
             @Override
@@ -776,6 +891,7 @@ public class MainActivity extends FragmentActivity{
 
     //TODO garder
     public void startVideo(){
+        //System.out.println("startVideo");
         try{
             if(mVideoView != null){
                 mVideoView.seekTo(0);
@@ -789,7 +905,7 @@ public class MainActivity extends FragmentActivity{
     @Override
     protected void onPause(){
         super.onPause();
-        pauseVideo();
+        //pauseVideo();
     }
 
     //TODO garder

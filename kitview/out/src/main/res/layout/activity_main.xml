@@ -16,6 +16,16 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentTop="true"
             android:background="@null" />
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="test"
+            android:background="@null" />
+
     </RelativeLayout>
 
     <LinearLayout

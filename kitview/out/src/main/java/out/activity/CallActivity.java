@@ -9,6 +9,8 @@ import android.support.v4.app.ActivityCompat;
 import android.view.View;
 import android.widget.Button;
 
+import util.app.AppController;
+
 import com.kitview.out.mobile.R;
 
 
@@ -33,8 +35,7 @@ public class CallActivity extends Activity {
             public void onClick(View v) {
 
                 Intent callIntent = new Intent(Intent.ACTION_CALL);
-                //mettre le telephone du practicient
-                callIntent.setData(Uri.parse("tel:0652133676"));
+                callIntent.setData(Uri.parse("tel:"+AppController.practiceContact.tel));//0652133676
                 if (ActivityCompat.checkSelfPermission(getApplicationContext(), android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                     // TODO: Consider calling
                     //    ActivityCompat#requestPermissions

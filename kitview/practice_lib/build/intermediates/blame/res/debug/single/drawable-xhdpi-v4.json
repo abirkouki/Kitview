@@ -112,10 +112,6 @@
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\035b2ca42e3970f8571a84c1d0ef97bd2f2bc3d3\\output\\res\\drawable-xhdpi\\abc_ic_clear_mtrl_alpha.png"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_fab_dl.png",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable-xhdpi\\ic_fab_dl.png"
-    },
-    {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
     },
@@ -461,7 +457,7 @@
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_fab_complete.png",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable-xhdpi\\ic_fab_complete.png"
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\263c8c9d6b5f94c6003e29ba2e90aa28ca8cbee8\\output\\res\\drawable-xhdpi-v4\\ic_fab_complete.png"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",

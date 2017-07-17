@@ -9,6 +9,8 @@ import android.widget.EditText;
 
 import com.kitview.out.mobile.R;
 
+import util.app.AppController;
+
 
 public class EmailActivity extends Activity {
     @Override
@@ -18,7 +20,7 @@ public class EmailActivity extends Activity {
 
        Button buttonSend = (Button) findViewById(R.id.envoyer);
         //à remplacer par l'adresse du practicient
-       final String to = "legrosocea@eisti.eu";
+       final String to = AppController.practiceContact.email;
        final EditText textSubject = (EditText) findViewById(R.id.intitule_email);
         final EditText textMessage = (EditText) findViewById(R.id.message_email);
 
