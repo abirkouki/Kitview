@@ -4,12 +4,14 @@ package out.activity;
  * Created by orthalis on 02/06/2017.
  */
 
-import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -31,7 +33,7 @@ import util.app.AppController;
 import util.session.SQLiteHandler;
 import util.session.SessionManager;
 
-public class LoginActivity extends Activity {
+public class LoginActivity extends AppCompatActivity {
     private static final String TAG = LoginActivity.class.getSimpleName();
     private Button btnLogin;
     private EditText inputUser;
@@ -43,7 +45,14 @@ public class LoginActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_login);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setLogo(R.drawable.logo98);
+        actionBar.setDisplayUseLogoEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
 
         inputUser = (EditText) findViewById(R.id.username);
         inputPassword = (EditText) findViewById(R.id.password);

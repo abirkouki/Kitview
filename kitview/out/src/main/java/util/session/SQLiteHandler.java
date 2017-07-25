@@ -26,11 +26,20 @@ public class SQLiteHandler extends SQLiteOpenHelper {
     // Login table name
     private static final String TABLE_USER = "user";
 
+
+
     // Login Table Columns names
     private static final String KEY_ID = "id";
     private static final String KEY_NOM = "nom";
     private static final String KEY_UID = "uid";
     private static final String KEY_PRENOM = "prenom";
+
+    //Params table name
+    private static final String TABLE_PARAMS = "params";
+
+    // Params Table Columns names
+    private static final String KEY_DELTA = "delta";
+    private static final String KEY_FAMILLE = "famille";
 
     // Notif table name
     private static final String TABLE_NOTIF = "notif";
@@ -77,10 +86,16 @@ public class SQLiteHandler extends SQLiteOpenHelper {
                 + KEY_ID + " INTEGER PRIMARY KEY,"
                 + KEY_BALANCE + " TEXT,"+ KEY_DATE_MODIF + " TEXT"
                 + ")";
+        String CREATE_PARAMS_TABLE = "CREATE TABLE " + TABLE_PARAMS + "("
+                + KEY_ID + " INTEGER PRIMARY KEY,"
+                + KEY_DELTA + " TEXT,"+ KEY_FAMILLE + " TEXT"
+                + ")";
+
         db.execSQL(CREATE_LOGIN_TABLE);
         db.execSQL(CREATE_NOTIF_TABLE);
         db.execSQL(CREATE_RDV_TABLE);
         db.execSQL(CREATE_BALANCE_TABLE);
+        db.execSQL(CREATE_PARAMS_TABLE);
         Log.d(TAG, "Database tables created");
     }
 
@@ -92,6 +107,7 @@ public class SQLiteHandler extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NOTIF);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_RDV);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_BALANCE);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_PARAMS);
         onCreate(db);
     }
 
@@ -114,6 +130,7 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 
         Log.d(TAG, "New user inserted into sqlite: " + id);
     }
+
     public void addNotif(String message, String date) {
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -162,7 +179,23 @@ public class SQLiteHandler extends SQLiteOpenHelper {
         long id = db.insert(TABLE_BALANCE, null, values);
         db.close(); // Closing database connection
 
-        Log.d(TAG, "New rdv inserted into sqlite: " + id);
+        Log.d(TAG, "New balance inserted into sqlite: " + id);
+    }
+
+    public void addParams(String delta, String famille) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(KEY_DELTA, delta);
+        values.put(KEY_FAMILLE, famille);
+
+
+        // Inserting Row
+        deleteParams();
+        long id = db.insert(TABLE_PARAMS, null, values);
+        db.close(); // Closing database connection
+
+        Log.d(TAG, "New params inserted into sqlite: " + id);
     }
 
     /**
@@ -244,7 +277,7 @@ public class SQLiteHandler extends SQLiteOpenHelper {
     }
 
     public String[][] getBalanceDetails() {
-        String[][] rdv = new String[1][2];
+        String[][] balance = new String[1][2];
         String selectQuery = "SELECT  * FROM " + TABLE_BALANCE;
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);
@@ -254,17 +287,41 @@ public class SQLiteHandler extends SQLiteOpenHelper {
         if (cursor.getCount() > 0) {
             cursor.moveToFirst();
 
-            rdv[0][0] = (cursor.getString(1));
-            rdv[0][1] = (cursor.getString(2));
+            balance[0][0] = (cursor.getString(1));
+            balance[0][1] = (cursor.getString(2));
 
         }
         cursor.close();
         db.close();
         // return notif
-        Log.d(TAG, "Fetching user from Sqlite: " + rdv.toString());
+        Log.d(TAG, "Fetching user from Sqlite: " + balance.toString());
 
-        return rdv;
+        return balance;
     }
+
+    public String[][] getParamsDetails() {
+        String[][] param = new String[1][2];
+        String selectQuery = "SELECT  * FROM " + TABLE_PARAMS;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+
+
+        if (cursor.getCount() > 0) {
+            cursor.moveToFirst();
+
+            param[0][0] = (cursor.getString(1));
+            param[0][1] = (cursor.getString(2));
+
+        }
+        cursor.close();
+        db.close();
+
+
+        Log.d(TAG, "Fetching user from Sqlite: " + param.toString());
+        return param;
+    }
+
     /**
      * Re crate database Delete all tables and create them again
      * */
@@ -301,5 +358,14 @@ public class SQLiteHandler extends SQLiteOpenHelper {
         //db.close();
 
         Log.d(TAG, "Deleted all balance info from sqlite");
+    }
+
+    public void deleteParams() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        // Delete All Rows
+        db.delete(TABLE_PARAMS, null, null);
+        //db.close();
+
+        Log.d(TAG, "Deleted all params info from sqlite");
     }
 }

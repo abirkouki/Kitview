@@ -24,7 +24,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentTop="true"
             android:contentDescription="test"
-            android:background="@null" />
+            android:background="@color/white" />
 
     </RelativeLayout>
 

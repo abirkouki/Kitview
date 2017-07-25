@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="E:\DEV_ANDROID\Kitview-master\kitview\practice_lib\src\main\shaders"/></dataSet><dataSet config="debug"><source path="E:\DEV_ANDROID\Kitview-master\kitview\practice_lib\src\debug\shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="C:\DEV_ANDROID\kitview\practice_lib\src\main\shaders"/></dataSet><dataSet config="debug"><source path="C:\DEV_ANDROID\kitview\practice_lib\src\debug\shaders"/></dataSet></merger>

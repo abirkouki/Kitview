@@ -88,12 +88,12 @@
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\button_style_red_transparent.xml",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\button_style_red_transparent.xml"
-    },
-    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\button_style_red_transparent.xml",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\button_style_red_transparent.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\button_style_red_transparent.xml",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\button_style_red_transparent.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\abc_ratingbar_material.xml",

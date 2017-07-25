@@ -44,7 +44,7 @@ public final class R {
         public static int zxing_capture = 0x7f040052;
     }
     public static final class raw {
-        public static int zxing_beep = 0x7f070005;
+        public static int zxing_beep = 0x7f070006;
     }
     public static final class string {
         public static int zxing_app_name = 0x7f080015;

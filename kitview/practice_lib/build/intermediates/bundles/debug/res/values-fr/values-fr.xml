@@ -8,7 +8,6 @@
     <string name="angle">Angle</string>
     <string name="angle_summary">Angle in degrees</string>
     <string name="app_loading">Loading</string>
-    <string name="app_name">Network Discovery</string>
     <string name="barcode_choice">Choix</string>
     <string name="barcode_mode1">Mode 1</string>
     <string name="barcode_mode1_explanation">Mode 1 - Envoyer vers le clavier</string>

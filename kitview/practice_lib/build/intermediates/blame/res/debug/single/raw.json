@@ -8,6 +8,10 @@
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\raw\\puzzle.jpg"
     },
     {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\debug\\raw\\orthalis.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\raw\\orthalis.png"
+    },
+    {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\debug\\raw\\services.bin",
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\raw\\services.bin"
     },

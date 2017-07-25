@@ -2,6 +2,8 @@ package util.helper;
 
 import android.util.Xml;
 
+import com.kitview.out.mobile.R;
+
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -88,10 +90,12 @@ public class XmlParser {
     public static class KitviewServer {
         public final String ip;
         public final String port;
+        public final String path;
 
-        public KitviewServer(String ip, String port) {
+        public KitviewServer(String ip, String port, String path) {
             this.ip = ip;
             this.port = port;
+            this.path = path;
         }
 
         @Override
@@ -99,6 +103,7 @@ public class XmlParser {
             return "KitviewServer{" +
                     "ip='" + ip + '\'' +
                     ", port='" + port + '\'' +
+                    ", path='" + path + '\'' +
                     '}';
         }
     }
@@ -188,23 +193,31 @@ public class XmlParser {
                 continue;
             }
             String tagName = parser.getName();
-            // looking for the tags
-            if (tagName.equals("address")) {
-                address = readAddress(parser);
-            } else if(tagName.equals("name")) {
-                name = readLeaf(parser, "name");
-            } else if(tagName.equals("doctor")) {
-                doctors.add(readDoctor(parser));
-            } else if(tagName.equals("opening_hours")) {
-                openingHours = readOpeningHours(parser);
-            } else if(tagName.equals("kitview_server")) {
-                kitviewServer = readKitviewServer(parser);
-            } else if(tagName.equals("text")) {
-                text = readLeaf(parser, "text");
-            } else if(tagName.equals("contact")) {
-                contact = readContact(parser);
-            } else {
-                skip(parser);
+            switch (tagName) {
+                case "address":
+                    address = readAddress(parser);
+                    break;
+                case "name":
+                    name = readLeaf(parser, "name");
+                    break;
+                case "doctor":
+                    doctors.add(readDoctor(parser));
+                    break;
+                case "opening_hours":
+                    openingHours = readOpeningHours(parser);
+                    break;
+                case "kitview_server":
+                    kitviewServer = readKitviewServer(parser);
+                    break;
+                case "text":
+                    text = readLeaf(parser, "text");
+                    break;
+                case "contact":
+                    contact = readContact(parser);
+                    break;
+                default:
+                    skip(parser);
+                    break;
             }
         }
     }
@@ -216,9 +229,8 @@ public class XmlParser {
         return text;
     }
 
-    // For the tags title and summary, extracts their text values.
     private String readLeafContent(XmlPullParser parser) throws IOException, XmlPullParserException {
-        String result = "";
+        String result = null;
         if (parser.next() == XmlPullParser.TEXT) {
             result = parser.getText();
             parser.nextTag();
@@ -244,31 +256,35 @@ public class XmlParser {
     }
 
     private Address readAddress(XmlPullParser parser) throws XmlPullParserException, IOException {
-        parser.require(XmlPullParser.START_TAG, ns, "address");
-        String geographic = "";
-        double latitude = 0, longitude = 0;
-        while (parser.next() != XmlPullParser.END_TAG) {
+        parser.require(XmlPullParser.START_TAG, ns, "address");//on veut le tag avec adresse
+        String geographic = "";//initialisation
+        double latitude = 0, longitude = 0;//initialisation
+        while (parser.next() != XmlPullParser.END_TAG) {//tant qu'on n'est pas arrivé au tag de fin
             if (parser.getEventType() != XmlPullParser.START_TAG) {
                 continue;
             }
-            String tagName = parser.getName();
-            // looking for the tags
-            if (tagName.equals("geographic")) {
-                geographic = readLeaf(parser, "geographic");
-            } else if(tagName.equals("latitude")) {
-                latitude = Double.parseDouble(readLeaf(parser, "latitude"));
-            } else if(tagName.equals("longitude")) {
-                longitude = Double.parseDouble(readLeaf(parser, "longitude"));
-            } else {
-                skip(parser);
+            String tagName = parser.getName();//prend le tag sur lequel il arrive
+            switch (tagName) {// cherche les tags
+                case "geographic"://lit le contenu du tag 'geographic'
+                    geographic = readLeaf(parser, "geographic");
+                    break;
+                case "latitude"://lit le contenu du tag 'latitude'
+                    latitude = Double.parseDouble(readLeaf(parser, "latitude"));
+                    break;
+                case "longitude"://lit le contenu du tag 'longitude'
+                    longitude = Double.parseDouble(readLeaf(parser, "longitude"));
+                    break;
+                default:
+                    skip(parser);
+                    break;
             }
-        }
+        }//renvoie un objet Address
         return new Address(geographic,latitude,longitude);
     }
 
     private OpeningHours readOpeningHours(XmlPullParser parser) throws XmlPullParserException, IOException {
         parser.require(XmlPullParser.START_TAG, ns, "opening_hours");
-        String monday = "", tuesday = "", wednesday = "", thursday = "", friday = "", saturday = "", sunday = "";
+        String monday = ""+R.string.closed, tuesday = ""+R.string.closed, wednesday = ""+R.string.closed, thursday = ""+R.string.closed, friday = ""+R.string.closed, saturday = ""+R.string.closed, sunday = ""+R.string.closed;
         while (parser.next() != XmlPullParser.END_TAG) {
             if (parser.getEventType() != XmlPullParser.START_TAG) {
                 continue;
@@ -298,27 +314,34 @@ public class XmlParser {
 
     private KitviewServer readKitviewServer(XmlPullParser parser) throws XmlPullParserException, IOException {
         parser.require(XmlPullParser.START_TAG, ns, "kitview_server");
-        String ip = "", port = "";
+        String ip = "", port = "", path = "";
         while (parser.next() != XmlPullParser.END_TAG) {
             if (parser.getEventType() != XmlPullParser.START_TAG) {
                 continue;
             }
             String tagName = parser.getName();
             // looking for the tags
-            if (tagName.equals("ip")) {
-                ip = readLeaf(parser, "ip");
-            } else if(tagName.equals("port")) {
-                port = readLeaf(parser, "port");
-            } else {
-                skip(parser);
+            switch (tagName) {
+                case "ip":
+                    ip = readLeaf(parser, "ip");
+                    break;
+                case "port":
+                    port = readLeaf(parser, "port");
+                    break;
+                case "path":
+                    path = readLeaf(parser, "path");
+                    break;
+                default:
+                    skip(parser);
+                    break;
             }
         }
-        return new KitviewServer(ip,port);
+        return new KitviewServer(ip,port,path);
     }
 
     private Contact readContact(XmlPullParser parser) throws XmlPullParserException, IOException {
         parser.require(XmlPullParser.START_TAG, ns, "contact");
-        String email = "", tel = "", website = "";
+        String email = null, tel = null, website = null;
         while (parser.next() != XmlPullParser.END_TAG) {
             if (parser.getEventType() != XmlPullParser.START_TAG) {
                 continue;

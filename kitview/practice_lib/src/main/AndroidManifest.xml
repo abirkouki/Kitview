@@ -41,12 +41,7 @@
     -->
 
 
-    <application
-        android:allowBackup="true"
-        android:hardwareAccelerated="false"
-        android:icon="@drawable/logo"
-        android:largeHeap="true"
-        android:theme="@style/AppTheme" >
+    <application>
 
         <!--<activity-->
             <!--android:name="activity.SplashScreenActivity"-->

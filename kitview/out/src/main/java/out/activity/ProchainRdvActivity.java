@@ -1,9 +1,14 @@
 package out.activity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -44,6 +49,7 @@ public class ProchainRdvActivity extends AppCompatActivity {
     TextView txtDuree;
     TextView txtLibelle;
     TextView txtMaj;
+    Button callButton;
     String rdv;
     String rdvDuree;
     String rdvLibelle;
@@ -53,7 +59,17 @@ public class ProchainRdvActivity extends AppCompatActivity {
         String tag_string_req = "req_prochain_rdv_activity";
 
         super.onCreate(savedInstanceState);
+
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_rdv);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setLogo(R.drawable.logo98);
+        actionBar.setDisplayUseLogoEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
+
+
         // SqLite database handler
         db = new SQLiteHandler(getApplicationContext());
 
@@ -70,6 +86,7 @@ public class ProchainRdvActivity extends AppCompatActivity {
         txtDuree = (TextView) findViewById(R.id.dureeRdv);
         txtLibelle = (TextView) findViewById(R.id.libelleRdv);
         txtMaj = (TextView) findViewById(R.id.majRdv);
+        callButton = (Button) findViewById(R.id.callButton);
         if (!NetworkUtils.isWifiConnected(getApplicationContext()) && !NetworkUtils.isMobileConnected(getApplicationContext())) {
             String[][] rdvDetails = db.getRdvDetails();
             rdv = rdvDetails[0][0];
@@ -159,6 +176,15 @@ public class ProchainRdvActivity extends AppCompatActivity {
             // Adding request to request queue
             AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
         }
+
+        callButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProchainRdvActivity.this, CallActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void showDialog() {

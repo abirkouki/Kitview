@@ -44,8 +44,7 @@
                 android:id="@+id/unjour"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="24"
-                android:checked="true"/>
+                android:text="24"/>
 
 
 
@@ -74,8 +73,7 @@
                 android:id="@+id/non"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Non"
-                android:checked="true"/>
+                android:text="Non"/>
 
 
 

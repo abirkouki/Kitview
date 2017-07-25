@@ -32,7 +32,8 @@ public class PracticeFTP {//TODO clean tout ce bordel et ranger les exceptions
     private Activity activity;
     private Context context;
 
-    private final static String SERVER = "diedendorf.dyndns.org";//"90.48.177.143"
+    private final static String SERVER = "orqualpau.dyndns.org";
+    //private final static String SERVER = "diedendorf.dyndns.org";//"90.48.177.143"
     private final static int PORT = 21;
     private final static String USER = "smartphone";
     private final static String PASS = "smartphone";
@@ -86,7 +87,7 @@ public class PracticeFTP {//TODO clean tout ce bordel et ranger les exceptions
         } catch (IOException ex) {
             ex.printStackTrace();
             System.out.println("IOException\nError: " + ex.getMessage());
-            toastToUserFromBackgroundThread("Une erreur est survenue, veuillez réessayer dans un instant",Toast.LENGTH_LONG);//TODO changer le R.string
+            toastToUserFromBackgroundThread("Une erreur de réseau est survenue, veuillez vérifier votre connexion et réessayer dans un instant",Toast.LENGTH_LONG);//TODO changer le R.string
         } finally {
             try {
                 if (ftpClient.isConnected()) {
@@ -181,7 +182,7 @@ public class PracticeFTP {//TODO clean tout ce bordel et ranger les exceptions
         } catch (IOException ex) {
             ex.printStackTrace();
             System.out.println("IOException\nError: " + ex.getMessage());
-            toastToUserFromBackgroundThread("Une erreur est survenue, veuillez réessayer dans un instant",Toast.LENGTH_LONG);//TODO changer le R.string
+            toastToUserFromBackgroundThread("Une erreur de réseau est survenue, veuillez vérifier votre connexion et réessayer dans un instant",Toast.LENGTH_LONG);//TODO changer le R.string
             dlSuccess = false;
         } finally {
             try {

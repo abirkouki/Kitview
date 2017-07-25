@@ -8,12 +8,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -45,13 +48,20 @@ public class ParamNotifActivity extends AppCompatActivity {
     private RadioGroup radioGroup;
     private RadioButton radioButton;
 
-    private RadioGroup radioGroupFamille;
-    private RadioButton radioButtonFamille;
+    private RadioGroup radioGroupFam;
+    private RadioButton radioButtonFam;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.param_notif);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setLogo(R.drawable.logo98);
+        actionBar.setDisplayUseLogoEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
 
         txtNom = (TextView) findViewById(R.id.nom);
         txtPrenom = (TextView) findViewById(R.id.prenom);
@@ -76,7 +86,7 @@ public class ParamNotifActivity extends AppCompatActivity {
 
         //addListenerOnButton();
         radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
-        radioGroupFamille = (RadioGroup) findViewById(R.id.radioGroupFamille);
+        radioGroupFam = (RadioGroup) findViewById(R.id.radioGroupFam);
         button = (Button) findViewById(R.id.notifButton);
         button.setOnClickListener(new View.OnClickListener() {
 
@@ -84,9 +94,9 @@ public class ParamNotifActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // get selected radio button from radioGroup
                 int selectedId = radioGroup.getCheckedRadioButtonId();
-                int selectedIdFamille = radioGroupFamille.getCheckedRadioButtonId();
+                int selectedIdFamille = radioGroupFam.getCheckedRadioButtonId();
                 // find the radiobutton by returned id
-                radioButtonFamille = (RadioButton) findViewById(selectedIdFamille);
+                radioButtonFam = (RadioButton) findViewById(selectedIdFamille);
                 // find the radiobutton by returned id
                 radioButton = (RadioButton) findViewById(selectedId);
 
@@ -94,7 +104,6 @@ public class ParamNotifActivity extends AppCompatActivity {
                 String ff = FirebaseInstanceId.getInstance().getToken();
                 SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences(getString(R.string.FCM_PREF), Context.MODE_PRIVATE);
                 final String token = sharedPreferences.getString(getString(R.string.FCM_TOKEN),ff);
-
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, AppConfig.URL_INSERT,
                         new Response.Listener<String>() {
                             @Override
@@ -111,12 +120,14 @@ public class ParamNotifActivity extends AppCompatActivity {
                     @Override
                     protected Map<String, String> getParams() throws AuthFailureError {
                         Map<String,String> params = new HashMap<String,String>();
+
+
                         params.put("fcm_token", token);
                         params.put("rdv_notif_delta",(String) radioButton.getText());
                         params.put("patient_id", uid);
                         params.put("first_name", prenom);
                         params.put("last_name", nom);
-                        params.put("notif_famille",transformeNotifFamille((String) radioButtonFamille.getText()));
+                        params.put("notif_famille",transformeNotifFamille((String) radioButtonFam.getText()));
 
                         return params;
 
@@ -124,10 +135,17 @@ public class ParamNotifActivity extends AppCompatActivity {
                     }
                 };
 
-
+                     //Toast.makeText(getApplicationContext(),"token"+token,Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(),"notifdelta :"+ radioButton.getText(),Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(),"uid :"+ uid,Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(),prenom,Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(),nom,Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(),transformeNotifFamille((String) radioButtonFamille.getText()),Toast.LENGTH_LONG).show();
                     AppController.getInstance().addToRequestQueue(stringRequest, tag_string_req);
+                    db.addParams((String) radioButton.getText(),(String) radioButtonFam.getText());
                 // Launch main activity
                 Intent intent = new Intent(ParamNotifActivity.this, MainActivity.class);
+
                 startActivity(intent);
                 finish();
             }
@@ -146,6 +164,15 @@ public class ParamNotifActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         moveTaskToBack(true);
+        finish();
+    }
+
+    @Override
+    protected void onDestroy() {
+        Toast.makeText(getApplicationContext(),"blablabla",Toast.LENGTH_LONG).show();
+        System.out.println("salutations");
+        super.onDestroy();
+
     }
 
 }

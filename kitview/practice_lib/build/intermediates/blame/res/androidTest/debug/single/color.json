@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_tint_edittext.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\color\\abc_tint_edittext.xml"
-    },
-    {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_secondary_text_material_light.xml",
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_tint_edittext.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\color\\abc_tint_edittext.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
@@ -68,10 +68,6 @@
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\color\\abc_secondary_text_material_dark.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\035b2ca42e3970f8571a84c1d0ef97bd2f2bc3d3\\output\\res\\color\\abc_background_cache_hint_selector_material_dark.xml"
-    },
-    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_secondary_text_material_dark.xml",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\color\\abc_secondary_text_material_dark.xml"
     },
@@ -90,10 +86,6 @@
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\035b2ca42e3970f8571a84c1d0ef97bd2f2bc3d3\\output\\res\\color\\abc_background_cache_hint_selector_material_light.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\color\\abc_tint_spinner.xml",

@@ -2,11 +2,9 @@ package out.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.View;
-import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -22,6 +20,7 @@ import com.kitview.out.mobile.R;
 import java.util.HashMap;
 import java.util.Map;
 
+import util.app.AppConfig;
 import util.app.AppController;
 import util.session.SQLiteHandler;
 import util.session.SessionManager;
@@ -32,7 +31,6 @@ import util.session.SessionManager;
 
 public class SettingsActivity extends AppCompatActivity{
     Button button;
-    String app_server_url = "http://192.168.2.74/blabla/modif_settings.php";
     SQLiteHandler db;
     SessionManager session;
 
@@ -44,12 +42,24 @@ public class SettingsActivity extends AppCompatActivity{
     private RadioGroup radioGroupFamille;
     private RadioButton radioButtonFamille;
 
+    private RadioButton radioButtonTrois;
+    private RadioButton radioButtonDeux;
+    private RadioButton radioButtonUn;
+
+    private RadioButton radioButtonYes;
+    private RadioButton radioButtonNo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        setContentView(R.layout.activity_settings);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setLogo(R.drawable.logo98);
+        actionBar.setDisplayUseLogoEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
 
 
         setContentView(R.layout.activity_settings);
@@ -63,6 +73,33 @@ public class SettingsActivity extends AppCompatActivity{
         // Fetching user details from sqlite
         HashMap<String, String> user = db.getUserDetails();
         final String uid = user.get("uid");
+
+        //Selection case par défaut. La case checked = les parametres selectionnés précédemment
+        radioButtonTrois = (RadioButton) findViewById(R.id.troisjours);
+        radioButtonDeux = (RadioButton) findViewById(R.id.deuxjours);
+        radioButtonUn = (RadioButton) findViewById(R.id.unjour);
+        radioButtonYes = (RadioButton) findViewById(R.id.oui);
+        radioButtonNo = (RadioButton) findViewById(R.id.non);
+        //Récupération des parametres dans SQLite interne
+        String[][] paramsDetails = db.getParamsDetails();
+        String delta = paramsDetails[0][0];
+        String famille = paramsDetails[0][1];
+
+        if (delta.equals(radioButtonTrois.getText())) {
+            radioButtonTrois.setChecked(true);
+        } else {
+            if (delta.equals(radioButtonDeux.getText())) {
+                radioButtonDeux.setChecked(true);
+            } else {
+                radioButtonUn.setChecked(true);
+            }
+        }
+
+        if (famille.equals(radioButtonYes.getText())) {
+            radioButtonYes.setChecked(true);
+        } else {
+            radioButtonNo.setChecked(true);
+        }
 
         //addListenerOnButton();
         radioGroupDelta = (RadioGroup) findViewById(R.id.radioGroupDelta);
@@ -79,7 +116,10 @@ public class SettingsActivity extends AppCompatActivity{
                 radioButtonDelta = (RadioButton) findViewById(selectedIdDelta);
                 radioButtonFamille = (RadioButton) findViewById(selectedIdFamille);
 
-                StringRequest stringRequest = new StringRequest(Request.Method.POST, app_server_url,
+
+
+
+                StringRequest stringRequest = new StringRequest(Request.Method.POST, AppConfig.URL_MODIF_SETTINGS,
                         new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
@@ -105,8 +145,12 @@ public class SettingsActivity extends AppCompatActivity{
                     }
                 };
 
+                //Toast.makeText(getApplicationContext(),"notifdelta :"+ radioButtonDelta.getText(), Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(),"uid :"+ uid,Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(),transformeNotifFamille((String) radioButtonFamille.getText()),Toast.LENGTH_LONG).show();
 
                     AppController.getInstance().addToRequestQueue(stringRequest, tag_string_req);
+                    db.addParams((String) radioButtonDelta.getText(), transformeNotifFamille((String) radioButtonFamille.getText()));
                 // Launch main activity
                 Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
                 startActivity(intent);

@@ -25,7 +25,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
-import android.view.Window;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.EditText;
@@ -42,21 +41,18 @@ import com.google.zxing.integration.android.IntentResult;
 import com.kitview.out.mobile.R;
 
 import java.io.File;
+import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Date;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import activity.FolderActivity;
 import activity.ScenariosActivity;
-import activity.SettingsActivity;
 import model.Module;
-import model.PersistenceManager;
 import model.rest.Personne;
 import util.FTP.PracticeFTP;
 import util.app.AppController;
-import util.components.imagezoom.ImageViewTouch;
 import util.components.progressdialog.FRProgressDialog;
 import util.network.KitviewUtil;
 import util.session.SessionManager;
@@ -83,12 +79,12 @@ public class MainActivity extends FragmentActivity{
     private LinearLayout mBottomInfosLinearLayout;
 
     //Model
-    private PersistenceManager mPersistenceManager;
+    //private PersistenceManager mPersistenceManager;
     private int mOrientation;
 
     public final static String KEY_TEST_CONNECTION = "KEY_TEST_CONNECTION";
 
-    private boolean mCheckKitViewConnection = true;
+    //private boolean mCheckKitViewConnection = true;
 
     private SessionManager session;
 
@@ -103,16 +99,16 @@ public class MainActivity extends FragmentActivity{
         //setHasOptionsMenu(true);
         //TODO app bar s'est barre essayer de la remettre
 
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         this.setContentView(R.layout.activity_main);
 
         // Session manager
         session = new SessionManager(getApplicationContext());
 
-        if(savedInstanceState != null){
-            mCheckKitViewConnection = (Boolean) savedInstanceState.get(KEY_TEST_CONNECTION);
-        }
+//        if(savedInstanceState != null){
+//            mCheckKitViewConnection = (Boolean) savedInstanceState.get(KEY_TEST_CONNECTION);
+//        }
 
         this.mOrientation = getResources().getConfiguration().orientation;
 
@@ -141,7 +137,6 @@ public class MainActivity extends FragmentActivity{
             if(CfgDir.exists()){
                 // Check if user is already logged in or not
                 if (session.isLoggedIn()) {
-
                     System.out.println("isLogged");
                     setViewAnimatorIndex(2);
                     initializeGridView2();
@@ -151,39 +146,18 @@ public class MainActivity extends FragmentActivity{
                     // User is already logged in. Take him to main activity
                     Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                     startActivity(intent);
-                    //finish();//bien dans logAct mais pas trop dans Main
-
-
-                    ///////////////////////
-//                    Intent intent = new Intent(MainActivity.this.getApplicationContext(), LoginActivity.class);
-//                    intent.putExtra("login", "5");
-//                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                    MainActivity.this.getApplicationContext().startActivity(intent);
-
-
-
                 }
             }else{
                 setViewAnimatorIndex(0);
                 initializeGridView0();
             }
-
-            //System.out.println(Arrays.toString(AppController.practiceDoctors.toArray()));
-
             mDialog = new FRProgressDialog(this, "",false);
 
-            if(mViewAnimator.getDisplayedChild() != 0 && mCheckKitViewConnection)checkKitViewConnection();
+            //if(mViewAnimator.getDisplayedChild() != 0 && mCheckKitViewConnection)checkKitViewConnection();
         }catch(Exception e){
             e.printStackTrace();
         }
     }
-
-
-
-
-
-
-
 
 
 
@@ -262,7 +236,7 @@ public class MainActivity extends FragmentActivity{
 
         if(mVideoView != null){
             if(path != null )mVideoView.setVideoURI(path);
-
+            mImageView.setBackgroundResource(R.color.translucent);
             mVideoView.seekTo(0);
             mVideoView.setOnPreparedListener (new MediaPlayer.OnPreparedListener() {
                 @Override
@@ -279,12 +253,21 @@ public class MainActivity extends FragmentActivity{
     private boolean initializeImageView(){
         System.out.println("initializeImageView");
         Context context = getApplicationContext();
-        String pathStr = context.getFilesDir().getAbsolutePath() + File.separator + "Config" + File.separator + "photo0.jpg";
-        File imagePractice = new File(pathStr);
-        boolean res = mImageView != null && imagePractice.exists();
-        if(res){
-            Bitmap mBitMap = BitmapFactory.decodeFile(pathStr);
-            mImageView.setImageBitmap(mBitMap);
+        boolean res = mImageView != null;
+        if (res){
+            String pathStr = context.getFilesDir().getAbsolutePath() + File.separator + "Config" + File.separator + "photo0.jpg";
+            File imagePractice = new File(pathStr);
+            res = imagePractice.exists();
+            if (res){
+                Bitmap mBitMap = BitmapFactory.decodeFile(pathStr);
+                mImageView.setImageBitmap(mBitMap);
+            }
+            else{
+                InputStream is = getResources().openRawResource(R.raw.orthalis);
+                Bitmap mBitMap = BitmapFactory.decodeStream(is);
+                mImageView.setImageBitmap(mBitMap);
+                res = true;
+            }
         }
         return res;
     }
@@ -333,22 +316,22 @@ public class MainActivity extends FragmentActivity{
 
     //TODO garder et modifier
     public static void launchSettings(Activity context, boolean connectionKo){
-        if(!SettingsActivity.IS_LAUNCHED){
-            if(connectionKo){
-                String text = context.getResources().getString(R.string.connection_to_kitview_ko);
-                SystemUtil.showPopup(context,text);
-            }
-            SettingsActivity.IS_LAUNCHED = true;
-            Intent intent = new Intent(context.getApplicationContext(), SettingsActivity.class);
-            context.startActivity(intent);
-        }
+//        if(!SettingsActivity.IS_LAUNCHED){
+//            if(connectionKo){
+//                String text = context.getResources().getString(R.string.connection_to_kitview_ko);
+//                SystemUtil.showPopup(context,text);
+//            }
+//            SettingsActivity.IS_LAUNCHED = true;
+//            Intent intent = new Intent(context.getApplicationContext(), SettingsActivity.class);
+//            context.startActivity(intent);
+//        }
     }
 
     //TODO mettre PracticeAct dans cette fonction
     public void initializeGridView0(){
         this.mModules0 = new ArrayList<Module>();
-        this.mModules0.add(new Module(R.string.practice_id, R.color.color1, R.drawable.ic_action_group));
-        this.mModules0.add(new Module(R.string.practice_scan, R.color.color2, R.drawable.barcode));
+        this.mModules0.add(new Module(R.string.practice_id, R.color.logo_orange, R.drawable.ic_action_group));
+        this.mModules0.add(new Module(R.string.practice_scan, R.color.logo_brown, R.drawable.barcode));
 
         this.mInitializationFinished0 = false;
 
@@ -508,6 +491,7 @@ public class MainActivity extends FragmentActivity{
                                     if (folderExists[0].get()){//que si tout a réussi
                                         //setViewAnimatorIndex(2);
                                         //initializeGridView2();
+                                        AppController.parseConfigFile(getApplicationContext());
                                         recreate();
                                     };
                                 }
@@ -537,11 +521,12 @@ public class MainActivity extends FragmentActivity{
         this.mModules2.add(new Module(R.string.balance, R.color.color6, R.drawable.ic_action_settings));
         this.mModules2.add(new Module(R.string.notification, R.color.color6, R.drawable.ic_action_settings));
         this.mModules2.add(new Module(R.string.appointment, R.color.color6, R.drawable.ic_action_settings));
-        this.mModules2.add(new Module(R.string.phone, R.color.color6, R.drawable.ic_action_settings));
-        this.mModules2.add(new Module(R.string.email, R.color.color6, R.drawable.ic_action_settings));
-        this.mModules2.add(new Module(R.string.map, R.color.color6, R.drawable.ic_action_settings));
+        //this.mModules2.add(new Module(R.string.phone, R.color.color6, R.drawable.ic_action_settings));
+        //this.mModules2.add(new Module(R.string.email, R.color.color6, R.drawable.ic_action_settings));
+        //this.mModules2.add(new Module(R.string.map, R.color.color6, R.drawable.ic_action_settings));
         this.mModules2.add(new Module(R.string.contact, R.color.color6, R.drawable.ic_action_settings));
         this.mModules2.add(new Module(R.string.about, R.color.color6, R.drawable.ic_action_settings));
+        this.mModules2.add(new Module(R.string.title_activity_opening, R.color.color6, R.drawable.ic_action_settings));
 
         this.mInitializationFinished2 = false;
 
@@ -729,7 +714,7 @@ public class MainActivity extends FragmentActivity{
                                 }
                             });
 
-//                            intent = new Intent(MainActivity.this.getApplicationContext(), DummyActivity.class);
+//                            intent = new Intent(MainActivity.this.getApplicationContext(), OpeningActivity.class);
 //                            if(intent != null){
 //                                intent.putExtra("testXml", "3");
 //                                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -805,28 +790,33 @@ public class MainActivity extends FragmentActivity{
                             startActivity(intent);
                             break;
                         //Appel
-                        case 4://9
-                            intent = new Intent(MainActivity.this, CallActivity.class);
-                            startActivity(intent);
-                            break;
-                        //Mail
-                        case 5://10
-                            intent = new Intent(MainActivity.this, EmailActivity.class);
-                            startActivity(intent);
-                            break;
-                        //Map
-                        case 6://11
-                            intent = new Intent(MainActivity.this, MapsActivity.class);
-                            startActivity(intent);
-                            break;
+//                        case 4://9
+//                            intent = new Intent(MainActivity.this, CallActivity.class);
+//                            startActivity(intent);
+//                            break;
+//                        //Mail
+//                        case 5://10
+//                            intent = new Intent(MainActivity.this, EmailActivity.class);
+//                            startActivity(intent);
+//                            break;
+//                        //Map
+//                        case 6://11
+//                            intent = new Intent(MainActivity.this, MapsActivity.class);
+//                            startActivity(intent);
+//                            break;
                         //Contact
-                        case 7://12
+                        case 4://7://12
                             intent = new Intent(MainActivity.this, ContactActivity.class);
                             startActivity(intent);
                             break;
                         //Contact
-                        case 8://13
+                        case 5://8://13
                             intent = new Intent(MainActivity.this, AboutActivity.class);
+                            startActivity(intent);
+                            break;
+                        //Contact
+                        case 6://9://14
+                            intent = new Intent(MainActivity.this, OpeningActivity.class);
                             startActivity(intent);
                             break;
                     }
