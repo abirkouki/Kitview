@@ -5,7 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.WindowManager;
 
-import com.kitview.out.mobile.R;
+import com.orthalis.connect.R;
+
 
 public class AboutActivity extends AppCompatActivity {
 

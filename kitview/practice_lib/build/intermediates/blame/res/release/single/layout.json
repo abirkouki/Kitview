@@ -1,51 +1,511 @@
 [
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_singlechoice_material.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_media_custom.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_template_media_custom.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\popup_quit.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\popup_quit.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\main.xml",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\main.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_bar.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_action_mode_bar.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\portscan.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\portscan.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_action_tombstone.xml",
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_action_tombstone.xml"
     },
     {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\popup_app_settings.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\popup_app_settings.xml"
+    },
+    {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_narrow_custom.xml",
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\discovery.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\discovery.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_puzzle.xml",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\activity_puzzle.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\discovery.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\discovery.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_lines_media.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\popup_line_delete.xml",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\popup_line_delete.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\widget_fab_button.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\263c8c9d6b5f94c6003e29ba2e90aa28ca8cbee8\\output\\res\\layout\\widget_fab_button.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_samecases.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\activity_samecases.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\layout_row_treelist.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\layout_row_treelist.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\widget_fab_button.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\8244f631de68bf3ef16ee3f5df660e03cf925c24\\output\\res\\layout\\widget_fab_button.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\layout_progressdialog.xml",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\layout_progressdialog.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\custom.xml",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\custom.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_folder.xml",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\activity_folder.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_photo.xml",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\activity_photo.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_folder.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\activity_folder.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\zxing_barcode_scanner.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\a778191b7dc16d90d9b495db3f668d7bb5ea9484\\output\\res\\layout\\zxing_barcode_scanner.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\popup_camera_settings.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\popup_camera_settings.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_scenarios.xml",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\activity_scenarios.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\popup_collections.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\popup_collections.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\spinner_rows.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\spinner_rows.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_action.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_puzzle.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\activity_puzzle.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\dialog_edittext.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\dialog_edittext.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\zxing_barcode_scanner.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\bb6f7861207aae88b536297cd2da9afa454b6c36\\output\\res\\layout\\zxing_barcode_scanner.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_action.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\layout_progressdialog.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\layout_progressdialog.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\popup_app_settings.xml",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\popup_app_settings.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_media_custom.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_action.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\custom.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\custom.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\popup_app_settings.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\popup_app_settings.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\portscan.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\portscan.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\zxing_capture.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\a778191b7dc16d90d9b495db3f668d7bb5ea9484\\output\\res\\layout\\zxing_capture.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\list_host.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\list_host.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_lines_media.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\fragment_folder_image_detail.xml",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\fragment_folder_image_detail.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\list_port.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\list_port.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\main.xml",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\custom.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\custom.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\zxing_barcode_scanner.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\a778191b7dc16d90d9b495db3f668d7bb5ea9484\\output\\res\\layout\\zxing_barcode_scanner.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_main.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\help.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\help.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\list_port.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\list_port.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\share_popup.xml",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\share_popup.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\fragment_settings_exploitation.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\fragment_settings_exploitation.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\popup_line_delete.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\popup_line_delete.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_scenarios.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\activity_scenarios.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\scan_single.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\scan_single.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\list_host.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\list_host.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_splashscreen.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\activity_splashscreen.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\layout_photo_item.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\layout_photo_item.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\fragment_folder_image_detail.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\fragment_folder_image_detail.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\popup_quit.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\popup_quit.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_settings.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_media_custom.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\dialog_edittext.xml",
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\dialog_edittext.xml"
     },
     {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\layout_listview_chrome_popup.xml",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\layout_listview_chrome_popup.xml"
+    },
+    {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\layout_row_treelist.xml",
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\layout_row_treelist.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\layout_listview_chrome_popup.xml",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\layout_listview_chrome_popup.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\fragment_settings_exploitation.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\fragment_settings_exploitation.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_layout.xml",
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple_overlay_action_mode.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_narrow.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_big_media_narrow.xml"
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_item_material.xml",
@@ -56,16 +516,8 @@
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view_list_item.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
-    },
-    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_item_layout.xml",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_action_menu_item_layout.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\widget_fab_button.xml",
@@ -74,10 +526,6 @@
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\popup_collections.xml",
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\popup_collections.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_puzzle.xml",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\activity_puzzle.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\popup_quit.xml",
@@ -100,10 +548,6 @@
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\discovery.xml",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\discovery.xml"
-    },
-    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view_list_item.xml",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
@@ -112,24 +556,20 @@
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_action.xml"
     },
     {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_action.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\fragment_settings_exploitation.xml",
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\fragment_settings_exploitation.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_custom.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_template_big_media_custom.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_chronometer.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_template_part_chronometer.xml"
-    },
-    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\share_popup.xml",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\share_popup.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\popup_line_delete.xml",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\popup_line_delete.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\donate.xml",
@@ -140,72 +580,48 @@
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\activity_scenarios.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\layout_row_treelist.xml",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\layout_row_treelist.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_singlechoice_material.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_icon_group.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_item_material.xml",
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\select_dialog_item_material.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_search_view.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_search_view.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\widget_fab_button.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\8244f631de68bf3ef16ee3f5df660e03cf925c24\\output\\res\\layout\\widget_fab_button.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\dialog_edittext.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\dialog_edittext.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media.xml",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_template_big_media.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_up_container.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_action_bar_up_container.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\layout_progressdialog.xml",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\layout_progressdialog.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_custom_big.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_template_custom_big.xml"
-    },
-    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_splashscreen.xml",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\activity_splashscreen.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\layout_listview_chrome_popup.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\layout_listview_chrome_popup.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\toast.xml",
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\toast.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_custom_big.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_custom_big.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\custom.xml",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\custom.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_multichoice_material.xml",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\select_dialog_multichoice_material.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_folder.xml",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\activity_folder.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_big_media_custom.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_photo.xml",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\activity_photo.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_icon.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\layout_photo_item.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\layout_photo_item.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\portscan.xml",
@@ -216,60 +632,40 @@
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_menu_layout.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_action_menu_layout.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_narrow.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_template_big_media_narrow.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_cancel_action.xml",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_media_cancel_action.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_layout.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\zxing_barcode_scanner.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\a778191b7dc16d90d9b495db3f668d7bb5ea9484\\output\\res\\layout\\zxing_barcode_scanner.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_up_container.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_action_bar_up_container.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_scenarios.xml",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\activity_scenarios.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_big_media_narrow_custom.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\popup_barcode_modes.xml",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\popup_barcode_modes.xml"
     },
     {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\donate.xml",
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\donate.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_action.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_media_action.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\dialog_edittext.xml",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\dialog_edittext.xml"
-    },
-    {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_samecases.xml",
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\activity_samecases.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_activity_chooser_view.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\zxing_barcode_scanner.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\bb6f7861207aae88b536297cd2da9afa454b6c36\\output\\res\\layout\\zxing_barcode_scanner.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_button_bar_material.xml",
@@ -284,8 +680,16 @@
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\spinner_rows.xml",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\spinner_rows.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_radio.xml",
@@ -296,20 +700,16 @@
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_action.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_action.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\fragment_settings_initialisation.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\fragment_settings_initialisation.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_select_dialog_material.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_select_dialog_material.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\popup_line_delete.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\popup_line_delete.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_media_custom.xml",
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_media_custom.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_cancel_action.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_media_cancel_action.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_multichoice_material.xml",
@@ -320,52 +720,32 @@
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\activity_splashscreen.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\layout_progressdialog.xml",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\layout_progressdialog.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_expanded_menu_layout.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_expanded_menu_layout.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_screen_simple.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\layout_row_treelist.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\layout_row_treelist.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_header_item_layout.xml",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\popup_app_settings.xml",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\popup_app_settings.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_activity_chooser_view.xml"
-    },
-    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_time.xml",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_photo.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\activity_photo.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_view_list_nav_layout.xml",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_popup_menu_header_item_layout.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_action.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_media_action.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_screen_simple.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_chronometer.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_part_chronometer.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_settings.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\activity_settings.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\popup_barcode_modes.xml",
@@ -380,16 +760,12 @@
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_radio.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\fragment_folder_image_detail.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\fragment_folder_image_detail.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_content_include.xml",
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_screen_content_include.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_icon.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_media.xml",
@@ -398,6 +774,10 @@
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_layout.xml",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\toast.xml",
@@ -412,6 +792,10 @@
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\list_view_row_item.xml"
     },
     {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\share_popup.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\share_popup.xml"
+    },
+    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_puzzle.xml",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\activity_puzzle.xml"
     },
@@ -420,8 +804,8 @@
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_template_icon_group.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_checkbox.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_main.xml",
@@ -432,6 +816,10 @@
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_screen_content_include.xml"
     },
     {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_action.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_media_action.xml"
+    },
+    {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\spinner_rows.xml",
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\spinner_rows.xml"
     },
@@ -440,48 +828,28 @@
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\popup_app_settings.xml",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\popup_app_settings.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_view_list_nav_layout.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
-    },
-    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_dialog_title_material.xml",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_dialog_title_material.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_media.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_media.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\portscan.xml",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\portscan.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_search_dropdown_item_icons_2line.xml",
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\list_view_row_item.xml",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\list_view_row_item.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\popup_barcode_modes.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\popup_barcode_modes.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_toolbar.xml",
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_bar_title_item.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_action_bar_title_item.xml"
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\list_view_row_item.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\list_view_row_item.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_simple_dropdown_hint.xml",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\035b2ca42e3970f8571a84c1d0ef97bd2f2bc3d3\\output\\res\\layout\\abc_simple_dropdown_hint.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_narrow_custom.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_template_big_media_narrow_custom.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\zxing_capture.xml",
@@ -492,48 +860,36 @@
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\activity_photo.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_select_dialog_material.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_select_dialog_material.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_dialog_title_material.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\scan_single.xml",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\scan_single.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_lines_media.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_template_lines_media.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\help.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\help.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_search_view.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_search_view.xml"
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_lines_media.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_template_lines_media.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_list_menu_item_checkbox.xml",
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_lines_media.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_lines_media.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media_custom.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_big_media_custom.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\layout_progressdialog.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\layout_progressdialog.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\list_host.xml",
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\list_host.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\fragment_folder_image_detail.xml",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\fragment_folder_image_detail.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_screen_simple_overlay_action_mode.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_custom_big.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\list_port.xml",
@@ -548,24 +904,16 @@
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\scan_single.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\main.xml",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\main.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\custom.xml",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\custom.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\select_dialog_item_material.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_folder.xml",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\activity_folder.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_material.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_alert_dialog_material.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\help.xml",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\help.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\zxing_capture.xml",
@@ -588,20 +936,12 @@
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\notification_action_tombstone.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_big_media.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_media_cancel_action.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\list_port.xml",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\list_port.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\share_popup.xml",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\layout\\share_popup.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\fragment_settings_exploitation.xml",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\fragment_settings_exploitation.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\donate.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\donate.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\fragment_settings_initialisation.xml",
@@ -612,20 +952,20 @@
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\activity_samecases.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\popup_line_delete.xml",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\popup_line_delete.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\list_view_row_item.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\list_view_row_item.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_action_mode_bar.xml",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_part_time.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_part_time.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\list_host.xml",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\list_host.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_big_media.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_big_media.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\popup_camera_settings.xml",
@@ -636,12 +976,12 @@
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\layout_photo_item.xml",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\layout_photo_item.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\notification_template_media.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_alert_dialog_button_bar_material.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\fragment_settings_initialisation.xml",
@@ -656,19 +996,11 @@
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\fragment_folder_image_detail.xml",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\fragment_folder_image_detail.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\toast.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\toast.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\popup_quit.xml",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\popup_quit.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\activity_settings.xml",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\layout\\activity_settings.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\abc_dialog_title_material.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\layout\\abc_dialog_title_material.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\layout\\main.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\layout\\main.xml"
     }
 ]

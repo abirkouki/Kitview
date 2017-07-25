@@ -24,7 +24,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.google.firebase.iid.FirebaseInstanceId;
-import com.kitview.out.mobile.R;
+import com.orthalis.connect.R;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -169,8 +169,8 @@ public class ParamNotifActivity extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
-        Toast.makeText(getApplicationContext(),"blablabla",Toast.LENGTH_LONG).show();
-        System.out.println("salutations");
+        //Toast.makeText(getApplicationContext(),"blablabla",Toast.LENGTH_LONG).show();
+        //System.out.println("salut");
         super.onDestroy();
 
     }

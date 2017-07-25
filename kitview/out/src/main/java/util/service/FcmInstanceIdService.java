@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.FirebaseInstanceIdService;
-import com.kitview.out.mobile.R;
+import com.orthalis.connect.R;
 
 /**
  * Created by orthalis on 23/05/2017.

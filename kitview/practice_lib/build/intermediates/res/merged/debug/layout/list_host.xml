@@ -31,7 +31,7 @@
         android:background="@null"
         android:paddingLeft="5dip"
         android:paddingRight="10dip"
-        android:src="@drawable/logo"
+        android:src="@drawable/logokitview"
         android:visibility="gone" />
      
       <ImageView

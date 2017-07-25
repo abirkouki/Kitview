@@ -2658,7 +2658,6 @@ containing a value of this type.
         public static int pictures_missing=0x7f0800a6;
         public static int pinch_to_zoom=0x7f0800a7;
         public static int port=0x7f0800a8;
-        public static int practice=0x7f080153;
         public static int preference_display_type=0x7f0800a9;
         public static int preference_economy=0x7f0800aa;
         public static int preference_economy_summary=0x7f0800ab;
@@ -2826,16 +2825,8 @@ containing a value of this type.
         public static int Animation_AppCompat_DropDownUp=0x7f0b009d;
         /**  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-
-        
          */
         public static int AppBaseTheme=0x7f0b000b;
-        /**  All customizations that are NOT specific to a particular API-level can go here. 
-         */
         public static int AppTheme=0x7f0b009e;
         public static int Base_AlertDialog_AppCompat=0x7f0b009f;
         public static int Base_AlertDialog_AppCompat_Light=0x7f0b00a0;

@@ -662,7 +662,7 @@ int drawable icon 0x7f020084
 int drawable install 0x7f020085
 int drawable level_1d 0x7f020086
 int drawable level_2d 0x7f020087
-int drawable logo 0x7f020088
+int drawable logo520 0x7f020088
 int drawable logo98 0x7f020089
 int drawable logokitview 0x7f02008a
 int drawable marker_1d 0x7f02008b

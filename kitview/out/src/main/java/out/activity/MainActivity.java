@@ -38,7 +38,8 @@ import android.widget.ViewAnimator;
 
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
-import com.kitview.out.mobile.R;
+import com.orthalis.connect.R;
+
 
 import java.io.File;
 import java.io.InputStream;

@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">Orthalis-</string>
+    <string name="app_name">OrthalisConnect</string>
     <string name="practice_id">Practice code</string>
     <string name="practice_scan">Scan</string>
-    <string name="FCM_PREF">com.kitview.out.mobile.fcm_pref</string>
-    <string name="FCM_TOKEN">com.kitview.out.mobile.fcm_token</string>
+    <string name="FCM_PREF">com.orthalis.connect.fcm_pref</string>
+    <string name="FCM_TOKEN">com.orthalis.connect.fcm_token</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_opening">Opening Hours</string>
 
@@ -27,5 +27,18 @@
     <string name="friday">friday</string>
     <string name="saturday">saturday</string>
     <string name="sunday">sunday</string>
+
+
+
+
+    <string name="folder_non_existent">Folder non existent</string>
+    <string name="downloading">Downloading&#8230;</string>
+    <string name="success_download">Files have been downloaded successfully</string>
+    <string name="download_failed">A problem occurred during the download</string>
+    <string name="no_data_received">No data received</string>
+
+
+
+
 
 </resources>

@@ -28,6 +28,10 @@
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\marker_1d.xml"
     },
     {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\empty_photo.png",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\empty_photo.png"
+    },
+    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\level_2d.xml",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\level_2d.xml"
     },
@@ -44,15 +48,39 @@
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\level_1d.xml"
     },
     {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\bubble_1d.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\bubble_1d.xml"
+    },
+    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\empty_photo.png",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\empty_photo.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\marker_2d.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\marker_2d.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\empty_photo.png",
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\empty_photo.png"
     },
     {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\display.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\display.xml"
+    },
+    {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\level_2d.xml",
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\level_2d.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\marker_1d.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\marker_1d.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\level_2d.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\level_2d.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-nodpi-v4\\level_1d.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-nodpi-v4\\level_1d.xml"
     }
 ]

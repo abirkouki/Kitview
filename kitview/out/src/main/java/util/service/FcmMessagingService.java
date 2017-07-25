@@ -13,7 +13,7 @@ import android.support.v4.app.NotificationCompat;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
-import com.kitview.out.mobile.R;
+import com.orthalis.connect.R;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -67,7 +67,7 @@ public class FcmMessagingService extends FirebaseMessagingService {
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this);
         notificationBuilder.setContentTitle(title);
         notificationBuilder.setContentText(message);
-        notificationBuilder.setSmallIcon(R.mipmap.ic_launcher);
+        notificationBuilder.setSmallIcon(R.drawable.logo98);
         notificationBuilder.setAutoCancel(true);
         notificationBuilder.setContentIntent(pendingIntent);
         NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);

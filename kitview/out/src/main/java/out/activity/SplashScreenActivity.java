@@ -8,7 +8,7 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.crittercism.app.Crittercism;
-import com.kitview.out.mobile.R;
+import com.orthalis.connect.R;
 
 import model.PersistenceManager;
 import util.system.SystemUtil;

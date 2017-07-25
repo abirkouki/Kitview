@@ -14,5 +14,13 @@
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
     }
 ]

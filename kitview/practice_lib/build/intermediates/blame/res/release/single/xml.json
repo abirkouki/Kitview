@@ -1,5 +1,9 @@
 [
     {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\xml\\preferences.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\xml\\preferences.xml"
+    },
+    {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\xml\\preferences.xml",
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\xml\\preferences.xml"
     },

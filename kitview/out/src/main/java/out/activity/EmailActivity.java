@@ -9,7 +9,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.kitview.out.mobile.R;
+
+import com.orthalis.connect.R;
 
 import util.app.AppController;
 

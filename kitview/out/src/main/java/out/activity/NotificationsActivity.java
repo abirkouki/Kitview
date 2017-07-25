@@ -8,7 +8,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.kitview.out.mobile.R;
+
+import com.orthalis.connect.R;
 
 import util.session.SQLiteHandler;
 import util.session.SessionManager;

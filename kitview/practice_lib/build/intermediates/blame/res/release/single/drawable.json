@@ -1,9 +1,5 @@
 [
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
-    },
-    {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_switch_thumb_material.xml",
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_switch_thumb_material.xml"
     },
@@ -14,14 +10,6 @@
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\open.png",
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\open.png"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\bubble_2d.xml",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\bubble_2d.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\btn_bg.xml",
@@ -36,28 +24,20 @@
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\export.png",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\export.png"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\circle.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\circle.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\open.png",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\open.png"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\export.png",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\export.png"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\btn_bg.xml",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\btn_bg.xml"
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\export.png",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\export.png"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\down_arrow.png",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\down_arrow.png"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\router.png",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\router.png"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_go_search_api_material.xml",
@@ -84,14 +64,6 @@
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\thumbnail_frame.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_tick_mark_material.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\settings.png",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\settings.png"
-    },
-    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_check_material.xml",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_btn_check_material.xml"
     },
@@ -100,100 +72,56 @@
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\back.png"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\notification_tile_bg.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\notification_tile_bg.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_btn_borderless_material.xml"
-    },
-    {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_colored_material.xml",
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_btn_colored_material.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_textfield_search_material.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\drawer_bg.xml",
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\drawer_bg.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\button_style_red_transparent3.xml",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\button_style_red_transparent3.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\toast_background.xml",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\toast_background.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_edit_text_material.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\wifi.png",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\wifi.png"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\down_arrow2.png",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\down_arrow2.png"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\blue_bg.xml",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\blue_bg.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\blue_bg.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\blue_bg.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\icon.png",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\icon.png"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\button_style_red_transparent.xml",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\button_style_red_transparent.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\wifi.png",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\wifi.png"
-    },
-    {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_tab_indicator_material.xml",
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\down_arrow2.png",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\down_arrow2.png"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\connect.png",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\connect.png"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\button_style_red_transparent2.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\button_style_red_transparent2.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_btn_radio_material.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_item_background_holo_light.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_search_api_material.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ic_search_api_material.xml"
-    },
-    {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_dark.xml",
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\install.png",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\install.png"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\notification_icon_background.xml",
@@ -216,28 +144,12 @@
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\closed.png",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\closed.png"
-    },
-    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_clear_material.xml",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_ic_clear_material.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\arrow_right.png",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\arrow_right.png"
-    },
-    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_thumb_material.xml",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\button_style_red_transparent2.xml",
@@ -248,16 +160,8 @@
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\computer_down.png"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\button_style_red_transparent3.xml",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\button_style_red_transparent3.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\cancel.png",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\cancel.png"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_borderless_material.xml",
@@ -272,10 +176,6 @@
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\discover.png"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_seekbar_track_material.xml"
-    },
-    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\blue_bg.xml",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\blue_bg.xml"
     },
@@ -284,16 +184,452 @@
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_voice_search_api_material.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
-    },
-    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\circle.xml",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\circle.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\router.png",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\router.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\btn_donate.png",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\btn_donate.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\cancel.png",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\cancel.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\icon.png",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\icon.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\btn_donate.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\btn_donate.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_search_api_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\bubble_2d.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\bubble_2d.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\settings.png",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\settings.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\computer_down.png",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\computer_down.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\discover.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\discover.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\btn_donate.png",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\btn_donate.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_material.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\computer.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\computer.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\router.png",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\router.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_clear_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\wifi.png",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\wifi.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\green_bg.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\green_bg.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\thumbnail_frame.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\thumbnail_frame.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\green_bg.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\green_bg.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\button_style_red_transparent2.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\button_style_red_transparent2.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\circle2.xml",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\circle2.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\circle.xml",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\circle.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\disabled.png",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\disabled.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_vector_test.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\closed.png",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\closed.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\bubble_2d.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\bubble_2d.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\export.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\export.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\btn_bg.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\btn_bg.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\router.png",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\router.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\drawer_bg.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\drawer_bg.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\computer.png",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\computer.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\settings.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\settings.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\discover.png",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\discover.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\disabled.png",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\disabled.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\button_style_red_transparent3.xml",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\button_style_red_transparent3.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\toast_background.xml",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\toast_background.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\down_arrow2.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\down_arrow2.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\blue_bg.xml",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\blue_bg.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\button_style_red_transparent.xml",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\button_style_red_transparent.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\wifi.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\wifi.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\export.png",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\export.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\down_arrow2.png",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\down_arrow2.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\connect.png",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\connect.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\btn_bg.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\btn_bg.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\open.png",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\open.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_vector_test.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\button_style_red_transparent.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\button_style_red_transparent.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\toast_background.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\toast_background.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_search_api_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\install.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\install.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\closed.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\closed.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\arrow_right.png",
+        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\arrow_right.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\button_style_red_transparent3.xml",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\button_style_red_transparent3.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\install.png",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\install.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\notification_tile_bg.xml"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\cancel.png",
+        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\cancel.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\connect.png",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\connect.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\down_arrow.png",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\down_arrow.png"
+    },
+    {
+        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\notification_bg_low.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_dialog_material_background.xml",
@@ -316,10 +652,6 @@
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\bubble_2d.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_textfield_search_material.xml"
-    },
-    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\connect.png",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\connect.png"
     },
@@ -328,16 +660,16 @@
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\btn_donate.png",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\btn_donate.png"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_dialog_material_background.xml",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_text_cursor_material.xml",
@@ -356,20 +688,12 @@
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\disabled.png"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\notification_bg.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\notification_bg.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\notification_bg.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_menu_overflow_material.xml",
@@ -380,8 +704,8 @@
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\discover.png",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\discover.png"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_ab_back_material.xml",
@@ -392,36 +716,40 @@
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
-    },
-    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_seekbar_tick_mark_material.xml",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_material.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_ratingbar_material.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\notification_icon_background.xml",
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\notification_icon_background.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\btn_donate.png",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\btn_donate.png"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\circle2.xml",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\circle2.xml"
     },
     {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\down_arrow.png",
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\down_arrow.png"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\computer.png",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\computer.png"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\back.png",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\back.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\button_style_red_transparent3.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\button_style_red_transparent3.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\closed.png",
@@ -432,60 +760,32 @@
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_btn_radio_material.xml"
-    },
-    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\dialog_background.xml",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\dialog_background.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_cab_background_top_material.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\arrow_right.png",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\arrow_right.png"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_indicator_material.xml",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\wifi.png",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\wifi.png"
-    },
-    {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\green_bg.xml",
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\green_bg.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_ab_back_material.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_cab_background_top_material.xml",
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\green_bg.xml",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\green_bg.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\notification_tile_bg.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\notification_tile_bg.xml"
-    },
-    {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\icon.png",
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\icon.png"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\button_style_red_transparent2.xml",
-        "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\button_style_red_transparent2.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_colored_material.xml",
@@ -496,12 +796,8 @@
         "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\notification_bg_low.xml",
@@ -512,8 +808,16 @@
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\cancel.png"
     },
     {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_tab_indicator_material.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_dialog_material_background.xml",
+        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\down_arrow2.png",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\down_arrow2.png"
+    },
+    {
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\gradient_bg.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\gradient_bg.xml"
     },
     {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\notification_bg.xml",
@@ -528,20 +832,8 @@
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\src\\main\\res\\drawable\\back.png"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_go_search_api_material.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
-    },
-    {
         "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\dialog_background.xml",
         "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\dialog_background.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\circle2.xml",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\circle2.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\circle.xml",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\circle.xml"
     },
     {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\drawer_bg.xml",
@@ -552,19 +844,11 @@
         "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\notification_bg_low.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\disabled.png",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\src\\main\\res\\drawable\\disabled.png"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\dialog_background.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\dialog_background.xml"
     },
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_list_selector_holo_light.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_vector_test.xml",
-        "source": "C:\\Users\\orthalis\\.android\\build-cache\\4a0f1dd35d360e93808018e8e680884cb9b8d803\\output\\res\\drawable\\abc_vector_test.xml"
-    },
-    {
-        "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "C:\\Users\\Administrateur\\.android\\build-cache\\31bce7940425a4e70c826901d4b047ba63d4169e\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
+        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\release\\drawable\\circle2.xml",
+        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\src\\main\\res\\drawable\\circle2.xml"
     }
 ]

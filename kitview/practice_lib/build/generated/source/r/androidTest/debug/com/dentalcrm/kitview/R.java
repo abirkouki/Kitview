@@ -684,7 +684,7 @@ public final class R {
         public static final int install = 0x7f020085;
         public static final int level_1d = 0x7f020086;
         public static final int level_2d = 0x7f020087;
-        public static final int logo = 0x7f020088;
+        public static final int logo520 = 0x7f020088;
         public static final int logo98 = 0x7f020089;
         public static final int logokitview = 0x7f02008a;
         public static final int marker_1d = 0x7f02008b;

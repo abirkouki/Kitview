@@ -4,7 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.widget.Toast;
 
-import com.kitview.out.mobile.R;
+
+import com.orthalis.connect.R;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.net.MalformedServerReplyException;

@@ -2047,7 +2047,7 @@ containing a value of this type.
         public static int install=0x7f020085;
         public static int level_1d=0x7f020086;
         public static int level_2d=0x7f020087;
-        public static int logo=0x7f020088;
+        public static int logo520=0x7f020088;
         public static int logo98=0x7f020089;
         public static int logokitview=0x7f02008a;
         public static int marker_1d=0x7f02008b;
@@ -2826,8 +2826,16 @@ containing a value of this type.
         public static int Animation_AppCompat_DropDownUp=0x7f0b009d;
         /**  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        
          */
         public static int AppBaseTheme=0x7f0b000b;
+        /**  All customizations that are NOT specific to a particular API-level can go here. 
+         */
         public static int AppTheme=0x7f0b009e;
         public static int Base_AlertDialog_AppCompat=0x7f0b009f;
         public static int Base_AlertDialog_AppCompat_Light=0x7f0b00a0;

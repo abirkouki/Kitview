@@ -643,7 +643,7 @@ public class MainActivity extends FragmentActivity{
 		this.mModules2.add(new Module(R.string.folder_patient, R.color.color3, R.drawable.ic_action_person));
 		this.mModules2.add(new Module(R.string.folder2, R.color.color4, R.drawable.ic_action_group));
 		this.mModules2.add(new Module(R.string.settings, R.color.color5, R.drawable.ic_action_settings));
-		this.mModules2.add(new Module(R.string.practice, R.color.color6, R.drawable.ic_action_settings));
+		this.mModules2.add(new Module(R.string.angle, R.color.color6, R.drawable.ic_action_settings));
 
 		this.mInitializationFinished2 = false;
 

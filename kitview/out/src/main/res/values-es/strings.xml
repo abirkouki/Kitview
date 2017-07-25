@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OrthalisConnect</string>
+    <string name="practice_id">Practice code</string>
+    <string name="practice_scan">Scan</string>
+    <string name="FCM_PREF">com.orthalis.connect.fcm_pref</string>
+    <string name="FCM_TOKEN">com.orthalis.connect.fcm_token</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_opening">Opening Hours</string>
+
+    <string name="balance">Balance</string>
+    <string name="notification">Notification</string>
+    <string name="appointment">Appointment</string>
+    <string name="phone">Phone</string>
+
+    <string name="map">Map</string>
+    <string name="contact">Contact</string>
+    <string name="about">About</string>
+    <string name="telephone">Telephone</string>
+    <string name="email">Email</string>
+    <string name="website">Website</string>
+    <string name="address">Address</string>
+    <string name="closed">closed</string>
+    <string name="monday">monday</string>
+    <string name="tuesday">tuesday</string>
+    <string name="wednesday">wednesday</string>
+    <string name="thursday">thursday</string>
+    <string name="friday">friday</string>
+    <string name="saturday">saturday</string>
+    <string name="sunday">sunday</string>
+
+
+
+
+    <string name="folder_non_existent">Folder non existent</string>
+    <string name="downloading">Downloading&#8230;</string>
+    <string name="success_download">Files have been downloaded successfully</string>
+    <string name="download_failed">A problem occurred during the download</string>
+    <string name="no_data_received">No data received</string>
+
+
+</resources>

@@ -11,7 +11,8 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
-import com.kitview.out.mobile.R;
+
+import com.orthalis.connect.R;
 
 import util.app.AppController;
 

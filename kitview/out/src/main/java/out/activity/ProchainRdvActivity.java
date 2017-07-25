@@ -16,7 +16,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.kitview.out.mobile.R;
+import com.orthalis.connect.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -127,7 +127,7 @@ public class ProchainRdvActivity extends AppCompatActivity {
                                         DateFormat.FULL,
                                         DateFormat.FULL, new Locale("FR","fr"));
 
-                                txtRdv.setText("Votre prochain rendez-vous sera le " + fullDateFormat.format(d).substring(0,fullDateFormat.format(d).length()-13));
+                                txtRdv.setText("Votre prochain rendez-vous sera le " + fullDateFormat.format(d).substring(0,fullDateFormat.format(d).length()-31));
                                 txtDuree.setText("Durée approximative : " + rdvDuree + " minutes");
                                 txtLibelle.setText("Libelle : " + s2);
                                 //date d'aujourd'hui

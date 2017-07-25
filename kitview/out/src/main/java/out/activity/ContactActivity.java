@@ -10,7 +10,8 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-import com.kitview.out.mobile.R;
+
+import com.orthalis.connect.R;
 
 import java.util.ArrayList;
 

@@ -8,7 +8,7 @@ android {
 
         multiDexEnabled true
 
-        applicationId "com.kitview.out.mobile"
+        applicationId "com.orthalis.connect"
         minSdkVersion 14
         targetSdkVersion 21
         versionCode 1

@@ -2,7 +2,8 @@ package util.helper;
 
 import android.util.Xml;
 
-import com.kitview.out.mobile.R;
+
+import com.orthalis.connect.R;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -284,7 +285,7 @@ public class XmlParser {
 
     private OpeningHours readOpeningHours(XmlPullParser parser) throws XmlPullParserException, IOException {
         parser.require(XmlPullParser.START_TAG, ns, "opening_hours");
-        String monday = ""+R.string.closed, tuesday = ""+R.string.closed, wednesday = ""+R.string.closed, thursday = ""+R.string.closed, friday = ""+R.string.closed, saturday = ""+R.string.closed, sunday = ""+R.string.closed;
+        String monday = ""+ R.string.closed, tuesday = ""+R.string.closed, wednesday = ""+R.string.closed, thursday = ""+R.string.closed, friday = ""+R.string.closed, saturday = ""+R.string.closed, sunday = ""+R.string.closed;
         while (parser.next() != XmlPullParser.END_TAG) {
             if (parser.getEventType() != XmlPullParser.START_TAG) {
                 continue;
@@ -322,8 +323,8 @@ public class XmlParser {
             String tagName = parser.getName();
             // looking for the tags
             switch (tagName) {
-                case "ip":
-                    ip = readLeaf(parser, "ip");
+                case "ip_address":
+                    ip = readLeaf(parser, "ip_address");
                     break;
                 case "port":
                     port = readLeaf(parser, "port");
