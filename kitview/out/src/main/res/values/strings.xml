@@ -28,7 +28,20 @@
     <string name="saturday">saturday</string>
     <string name="sunday">sunday</string>
 
+    <string name="notif_choice">When do you want to receive a notification of your appointment?</string>
+    <string name="one_day">24h before</string>
+    <string name="two_day">48h before</string>
+    <string name="three_day">72h before</string>
+    <string name="notif_family">Do you want to receive notifications from your family members?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 
+    <string name="welcome">Welcome</string>
+    <string name="call_confirmation">Call the office</string>
+
+    <string name="practice_call">Call</string>
+    <string name="practice_email">Send mail</string>
+    <string name="practice_map">Go to map</string>
 
 
     <string name="folder_non_existent">Folder non existent</string>

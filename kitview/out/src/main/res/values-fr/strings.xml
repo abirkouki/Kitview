@@ -1,44 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">OrthalisConnect</string>
-    <string name="practice_id">Practice code</string>
-    <string name="practice_scan">Scan</string>
+    <string name="practice_id">Code Cabinet </string>
+    <string name="practice_scan">Scan QRcode</string>
     <string name="FCM_PREF">com.orthalis.connect.fcm_pref</string>
     <string name="FCM_TOKEN">com.orthalis.connect.fcm_token</string>
     <string name="title_activity_maps">Map</string>
-    <string name="title_activity_opening">Opening Hours</string>
+    <string name="title_activity_opening">Horaires d ouverture</string>
 
-    <string name="balance">Balance</string>
-    <string name="notification">Notification</string>
-    <string name="appointment">Appointment</string>
+    <string name="balance">Solde</string>
+    <string name="notification">Notifications</string>
+    <string name="appointment">Rendez-vous</string>
     <string name="phone">Phone</string>
 
     <string name="map">Map</string>
     <string name="contact">Contact</string>
-    <string name="about">About</string>
+    <string name="about">A propos</string>
     <string name="telephone">Telephone</string>
     <string name="email">Email</string>
-    <string name="website">Website</string>
-    <string name="address">Address</string>
-    <string name="closed">closed</string>
-    <string name="monday">monday</string>
-    <string name="tuesday">tuesday</string>
-    <string name="wednesday">wednesday</string>
-    <string name="thursday">thursday</string>
-    <string name="friday">friday</string>
-    <string name="saturday">saturday</string>
-    <string name="sunday">sunday</string>
+    <string name="website">Site Web</string>
+    <string name="address">Adresse</string>
+    <string name="closed">fermé</string>
+    <string name="monday">Lundi</string>
+    <string name="tuesday">Mardi</string>
+    <string name="wednesday">Mercredi</string>
+    <string name="thursday">Jeudi</string>
+    <string name="friday">Vendredi</string>
+    <string name="saturday">Samedi</string>
+    <string name="sunday">Dimanche</string>
+
+
+    <string name="notif_choice">Quand voulez-vous recevoir une notification de votre rendez-vous?</string>
+    <string name="one_day">24h avant</string>
+    <string name="two_day">48h avant</string>
+    <string name="three_day">72h avant</string>
+    <string name="notif_family">Voulez-vous recevoir les notifications de votre famille?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+
+    <string name="welcome">Bienvenu(e)</string>
+    <string name="call_confirmation">Appeler le cabinet</string>
+
+    <string name="practice_call">Appeler</string>
+    <string name="practice_email">Envoyer un email</string>
+    <string name="practice_map">Voir sur la carte</string>
 
 
 
-
-
-
-    <string name="folder_non_existent">Folder non existent</string>
-    <string name="downloading">Downloading&#8230;</string>
-    <string name="success_download">Files have been downloaded successfully</string>
-    <string name="download_failed">A problem occurred during the download</string>
-    <string name="no_data_received">No data received</string>
+    <string name="folder_non_existent">Dossier non existant</string>
+    <string name="downloading">Téléchargement&#8230;</string>
+    <string name="success_download">Les fichiers ont été téléchargés avec succés</string>
+    <string name="download_failed">Un problème est survenu durant le téléchargement</string>
+    <string name="no_data_received">Aucune donnée reçue</string>
 
 
 
