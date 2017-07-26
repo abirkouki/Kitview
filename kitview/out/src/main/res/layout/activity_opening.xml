@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context="out.activity.OpeningActivity">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,34 +17,41 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent">
 
-            <TableRow android:background="@color/translucent"
+            <TableRow
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="1dp">
+                android:layout_margin="1dp"
+                android:background="@color/translucent">
 
-                <TextView android:layout_height="wrap_content"
-                    android:layout_width="fill_parent"
-                    android:text="@string/monday">
-                </TextView>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="@string/monday"
+                    android:textSize="20dp"></TextView>
+
                 <TextView
                     android:id="@+id/monday"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content">
-                </TextView>
+                    android:textSize="20dp"></TextView>
             </TableRow>
             <TableRow android:background="@color/translucent"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp">
 
-                <TextView android:layout_height="wrap_content"
-                    android:layout_width="fill_parent"
+                <TextView android:layout_height="45dp"
+                    android:layout_width="150dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
                     android:text="@string/tuesday">
                 </TextView>
                 <TextView
                     android:id="@+id/tuesday"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content">
+                    android:layout_width="wrap_content"
+                    android:textSize="20dp">
                 </TextView>
             </TableRow>
             <TableRow android:background="@color/translucent"
@@ -53,14 +59,18 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp">
 
-                <TextView android:layout_height="wrap_content"
-                    android:layout_width="fill_parent"
-                    android:text="@string/wednesday">
+                <TextView android:layout_height="45dp"
+                    android:layout_width="150dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:text="@string/wednesday"
+                    >
                 </TextView>
                 <TextView
                     android:id="@+id/wednesday"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content">
+                    android:layout_width="wrap_content"
+                    android:textSize="20dp">
                 </TextView>
             </TableRow>
             <TableRow android:background="@color/translucent"
@@ -68,14 +78,17 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp">
 
-                <TextView android:layout_height="wrap_content"
-                    android:layout_width="fill_parent"
+                <TextView android:layout_height="45dp"
+                    android:layout_width="150dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
                     android:text="@string/thursday">
                 </TextView>
                 <TextView
                     android:id="@+id/thursday"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content">
+                    android:layout_width="wrap_content"
+                    android:textSize="20dp">
                 </TextView>
             </TableRow>
             <TableRow android:background="@color/translucent"
@@ -83,14 +96,17 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp">
 
-                <TextView android:layout_height="wrap_content"
-                    android:layout_width="fill_parent"
+                <TextView android:layout_height="45dp"
+                    android:layout_width="150dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
                     android:text="@string/friday">
                 </TextView>
                 <TextView
                     android:id="@+id/friday"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content">
+                    android:layout_width="wrap_content"
+                    android:textSize="20dp">
                 </TextView>
             </TableRow>
             <TableRow android:background="@color/translucent"
@@ -98,14 +114,17 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp">
 
-                <TextView android:layout_height="wrap_content"
-                    android:layout_width="fill_parent"
+                <TextView android:layout_height="45dp"
+                    android:layout_width="150dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
                     android:text="@string/saturday">
                 </TextView>
                 <TextView
                     android:id="@+id/saturday"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content">
+                    android:layout_width="wrap_content"
+                    android:textSize="20dp">
                 </TextView>
             </TableRow>
             <TableRow android:background="@color/translucent"
@@ -113,14 +132,17 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="1dp">
 
-                <TextView android:layout_height="wrap_content"
-                    android:layout_width="fill_parent"
+                <TextView android:layout_height="45dp"
+                    android:layout_width="150dp"
+                    android:gravity="center"
+                    android:textSize="20dp"
                     android:text="@string/sunday">
                 </TextView>
                 <TextView
                     android:id="@+id/sunday"
                     android:layout_height="wrap_content"
-                    android:layout_width="wrap_content">
+                    android:layout_width="wrap_content"
+                    android:textSize="20dp">
                 </TextView>
             </TableRow>
         </TableLayout>
