@@ -126,8 +126,11 @@ public class ProchainRdvActivity extends AppCompatActivity {
                                 DateFormat fullDateFormat = DateFormat.getDateTimeInstance(
                                         DateFormat.FULL,
                                         DateFormat.FULL, new Locale("FR","fr"));
-
-                                txtRdv.setText("Votre prochain rendez-vous sera le " + fullDateFormat.format(d).substring(0,fullDateFormat.format(d).length()-31));
+                                int lastIndexDeuxPoints = fullDateFormat.format(d).lastIndexOf(':');
+                                String firstPartDate = fullDateFormat.format(d).substring(0,lastIndexDeuxPoints-6);
+                                String secondPartDate = fullDateFormat.format(d).substring(lastIndexDeuxPoints-5,lastIndexDeuxPoints-3);
+                                String thirdPartDate = fullDateFormat.format(d).substring(lastIndexDeuxPoints-2,lastIndexDeuxPoints);
+                                txtRdv.setText("Votre prochain rendez-vous sera le " +firstPartDate+" à "+secondPartDate+"h"+thirdPartDate);
                                 txtDuree.setText("Durée approximative : " + rdvDuree + " minutes");
                                 txtLibelle.setText("Libelle : " + s2);
                                 //date d'aujourd'hui
