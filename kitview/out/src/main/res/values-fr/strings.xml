@@ -6,7 +6,7 @@
     <string name="FCM_PREF">com.orthalis.connect.fcm_pref</string>
     <string name="FCM_TOKEN">com.orthalis.connect.fcm_token</string>
     <string name="title_activity_maps">Map</string>
-    <string name="title_activity_opening">Horaires d ouverture</string>
+    <string name="title_activity_opening">Horaires d\'ouverture</string>
 
     <string name="balance">Solde</string>
     <string name="notification">Notifications</string>
