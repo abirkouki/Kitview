@@ -56,6 +56,7 @@ import util.FTP.PracticeFTP;
 import util.app.AppController;
 import util.components.progressdialog.FRProgressDialog;
 import util.network.KitviewUtil;
+import util.session.SQLiteHandler;
 import util.session.SessionManager;
 import util.system.SystemUtil;
 import view.adapter.ModulesAdapter;
@@ -154,6 +155,8 @@ public class MainActivity extends FragmentActivity{
             }
             mDialog = new FRProgressDialog(this, "",false);
 
+
+
             //if(mViewAnimator.getDisplayedChild() != 0 && mCheckKitViewConnection)checkKitViewConnection();
         }catch(Exception e){
             e.printStackTrace();
@@ -162,8 +165,13 @@ public class MainActivity extends FragmentActivity{
 
 
 
-
-
+    public void deconnexion() {
+        session.setLogin(false);
+        SQLiteHandler db = new SQLiteHandler(getApplicationContext());
+        db.deleteUsers();
+        db.deleteParams();
+        recreate();
+    }
 
     //TODO garder peut etre utile
     public void launchWifiPopup(Activity context){
@@ -814,6 +822,8 @@ public class MainActivity extends FragmentActivity{
                         case 5://8://13
                             intent = new Intent(MainActivity.this, AboutActivity.class);
                             startActivity(intent);
+
+
                             break;
                         //Contact
                         case 6://9://14
