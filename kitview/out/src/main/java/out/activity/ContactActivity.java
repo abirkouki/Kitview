@@ -48,8 +48,9 @@ public class ContactActivity extends AppCompatActivity {
         //Nom du cabinet
         name = (TextView) findViewById(R.id.practice_name);
         name.setText(AppController.practiceName);
+        //name.setPadding(0,10,0,10);
 
-        //Praticiens di cabinet
+        //Praticiens du cabinet
         if (!AppController.practiceDoctors.isEmpty()){
             doctors = (TextView) findViewById(R.id.practice_doctors);
             ArrayList<XmlParser.Doctor> doctor_array = AppController.practiceDoctors;
