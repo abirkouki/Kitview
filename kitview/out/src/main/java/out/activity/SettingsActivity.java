@@ -9,6 +9,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -22,6 +23,7 @@ import java.util.Map;
 
 import util.app.AppConfig;
 import util.app.AppController;
+import util.network.NetworkUtils;
 import util.session.SQLiteHandler;
 import util.session.SessionManager;
 
@@ -150,7 +152,11 @@ public class SettingsActivity extends AppCompatActivity{
                 //Toast.makeText(getApplicationContext(),transformeNotifFamille((String) radioButtonFamille.getText()),Toast.LENGTH_LONG).show();
 
                     AppController.getInstance().addToRequestQueue(stringRequest, tag_string_req);
+                if (NetworkUtils.isWifiConnected(getApplicationContext()) || NetworkUtils.isMobileConnected(getApplicationContext())) {
                     db.addParams((String) radioButtonDelta.getText(), (String) radioButtonFamille.getText());
+                } else {
+                    Toast.makeText(getApplicationContext(),"Veuillez vérifier votre accès à internet", Toast.LENGTH_LONG).show();
+                }
                 // Launch main activity
                 Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
                 startActivity(intent);
