@@ -150,7 +150,7 @@ public class SettingsActivity extends AppCompatActivity{
                 //Toast.makeText(getApplicationContext(),transformeNotifFamille((String) radioButtonFamille.getText()),Toast.LENGTH_LONG).show();
 
                     AppController.getInstance().addToRequestQueue(stringRequest, tag_string_req);
-                    db.addParams((String) radioButtonDelta.getText(), transformeNotifFamille((String) radioButtonFamille.getText()));
+                    db.addParams((String) radioButtonDelta.getText(), (String) radioButtonFamille.getText());
                 // Launch main activity
                 Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
                 startActivity(intent);
