@@ -44,13 +44,23 @@ public class OpeningActivity extends AppCompatActivity {
         saturday = (TextView) findViewById(R.id.saturday);
         sunday = (TextView) findViewById(R.id.sunday);
 
-        monday.setText(AppController.practiceOpeningHours.monday);
-        tuesday.setText(AppController.practiceOpeningHours.tuesday);
-        wednesday.setText(AppController.practiceOpeningHours.wednesday);
-        thursday.setText(AppController.practiceOpeningHours.thursday);
-        friday.setText(AppController.practiceOpeningHours.friday);
-        saturday.setText(AppController.practiceOpeningHours.saturday);
-        sunday.setText(AppController.practiceOpeningHours.sunday);
+        monday.setText(closeHours(AppController.practiceOpeningHours.monday));
+        tuesday.setText(closeHours(AppController.practiceOpeningHours.tuesday));
+        wednesday.setText(closeHours(AppController.practiceOpeningHours.wednesday));
+        thursday.setText(closeHours(AppController.practiceOpeningHours.thursday));
+        friday.setText(closeHours(AppController.practiceOpeningHours.friday));
+        saturday.setText(closeHours(AppController.practiceOpeningHours.saturday));
+        sunday.setText(closeHours(AppController.practiceOpeningHours.sunday));
 
+    }
+
+    public String closeHours(String hours) {
+        String res;
+        if (hours==null) {
+            res = getApplication().getString(R.string.closed);
+        } else {
+            res = hours;
+        }
+        return res;
     }
 }
