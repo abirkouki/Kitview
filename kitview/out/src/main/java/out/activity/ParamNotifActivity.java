@@ -16,7 +16,6 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -62,7 +61,7 @@ public class ParamNotifActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        setContentView(R.layout.param_notif2);
+        setContentView(R.layout.param_notif);
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setLogo(R.drawable.logo98);

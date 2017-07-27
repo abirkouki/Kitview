@@ -1,18 +1,27 @@
 package out.activity;
 
+import android.content.Intent;
+
+
 import android.os.Bundle;
+
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
 
 import com.orthalis.connect.R;
 
+import java.util.GregorianCalendar;
+
 import util.session.SQLiteHandler;
 import util.session.SessionManager;
+
+import static android.R.attr.button;
 
 /**
  * Created by orthalis on 13/06/2017.
@@ -35,6 +44,11 @@ public class NotificationsActivity extends AppCompatActivity {
         actionBar.setDisplayUseLogoEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
         afficherNotifs();
+
+
+
+
+
         }
 /*
     protected void onStart() {
@@ -79,6 +93,15 @@ public class NotificationsActivity extends AppCompatActivity {
                 if (notif[i][0] != null) {
                     notifAffichage[i] = "Reception : " + notif[i][1] + "\nMessage : " + notif[i][0];
 
+                    /*GregorianCalendar calDate = new GregorianCalendar(2017, 11, 11);
+                    Intent intent = new Intent(Intent.ACTION_EDIT);
+                    intent.setType("vnd.android.cursor.item/event");
+                    intent.putExtra("beginTime", calDate.getTimeInMillis());
+                    intent.putExtra("allDay", true);
+                    intent.putExtra("rrule", "FREQ=YEARLY");
+                    intent.putExtra("endTime", calDate.getTimeInMillis()+60*60*1000);
+                    intent.putExtra("title", "A Test Event from android app");
+                    startActivity(intent);*/
                 }
             }
 

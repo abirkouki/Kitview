@@ -63,6 +63,7 @@ public class SettingsActivity extends AppCompatActivity{
         actionBar.setDisplayUseLogoEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
 
+
         // SqLite database handler
         db = new SQLiteHandler(getApplicationContext());
 
