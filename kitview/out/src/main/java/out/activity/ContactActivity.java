@@ -8,8 +8,9 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
-
 
 import com.orthalis.connect.R;
 
@@ -69,8 +70,9 @@ public class ContactActivity extends AppCompatActivity {
 
         //Adresse du cabinet
         address = (TextView) findViewById(R.id.practice_address);
+        Button addressButton = (Button) findViewById(R.id.map_button);
         address.setText(AppController.practiceAddress.geographic);
-        address.setOnClickListener(new View.OnClickListener() {
+        addressButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 intent = new Intent(ContactActivity.this, MapsActivity.class);
@@ -81,10 +83,11 @@ public class ContactActivity extends AppCompatActivity {
         //Téléphone du cabinet
         if (AppController.practiceContact.tel != null){
             TextView phoneDesc = (TextView) findViewById(R.id.phone);
+            Button phoneButton = (Button) findViewById(R.id.call_button);
             phoneDesc.setText(context.getString(R.string.telephone));
             phone = (TextView) findViewById(R.id.practice_phone);
             phone.setText(AppController.practiceContact.tel);
-            phone.setOnClickListener(new View.OnClickListener() {
+            phoneButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     intent = new Intent(ContactActivity.this, CallActivity.class);
@@ -92,20 +95,33 @@ public class ContactActivity extends AppCompatActivity {
                 }
             });
         }
+        else {
+            LinearLayout llphone1 = (LinearLayout) findViewById(R.id.llphone1);
+            llphone1.setVisibility(View.GONE);
+            LinearLayout llphone2 = (LinearLayout) findViewById(R.id.llphone2);
+            llphone2.setVisibility(View.GONE);
+        }
 
         //Email du cabinet
         if (AppController.practiceContact.email != null){
             TextView mailDesc = (TextView) findViewById(R.id.email);
+            Button mailButton = (Button) findViewById(R.id.email_button);
             mailDesc.setText(context.getString(R.string.email));
             mail = (TextView) findViewById(R.id.practice_mail);
             mail.setText(AppController.practiceContact.email);
-            mail.setOnClickListener(new View.OnClickListener() {
+            mailButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     intent = new Intent(ContactActivity.this, EmailActivity.class);
                     startActivity(intent);
                 }
             });
+        }
+        else {
+            LinearLayout llemail1 = (LinearLayout) findViewById(R.id.llemail1);
+            llemail1.setVisibility(View.GONE);
+            LinearLayout llemail2 = (LinearLayout) findViewById(R.id.llemail2);
+            llemail2.setVisibility(View.GONE);
         }
 
         //Site web du cabinet
@@ -124,6 +140,10 @@ public class ContactActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
+        }
+        else{
+            LinearLayout llwebsite = (LinearLayout) findViewById(R.id.llwebsite);
+            llwebsite.setVisibility(View.GONE);
         }
 
     }

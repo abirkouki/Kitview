@@ -63,8 +63,6 @@ public class SettingsActivity extends AppCompatActivity{
         actionBar.setDisplayUseLogoEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
 
-
-        setContentView(R.layout.activity_settings);
         // SqLite database handler
         db = new SQLiteHandler(getApplicationContext());
 
@@ -87,17 +85,17 @@ public class SettingsActivity extends AppCompatActivity{
         String delta = paramsDetails[0][0];
         String famille = paramsDetails[0][1];
 
-        if (delta.equals(radioButtonTrois.getText())) {
+        if (delta.equals("72")) {
             radioButtonTrois.setChecked(true);
         } else {
-            if (delta.equals(radioButtonDeux.getText())) {
+            if (delta.equals("48")) {
                 radioButtonDeux.setChecked(true);
             } else {
                 radioButtonUn.setChecked(true);
             }
         }
 
-        if (famille.equals(radioButtonYes.getText())) {
+        if (famille.equals("Y")) {
             radioButtonYes.setChecked(true);
         } else {
             radioButtonNo.setChecked(true);
@@ -118,7 +116,14 @@ public class SettingsActivity extends AppCompatActivity{
                 radioButtonDelta = (RadioButton) findViewById(selectedIdDelta);
                 radioButtonFamille = (RadioButton) findViewById(selectedIdFamille);
 
+                final String resultFam;
+                final String resultHeure;
 
+                if (radioButtonYes.isChecked()) resultFam = "Y";
+                else resultFam = "N";
+                if (radioButtonUn.isChecked()) resultHeure = "24";
+                else if (radioButtonDeux.isChecked()) resultHeure = "48";
+                else resultHeure = "72";
 
 
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, AppConfig.URL_MODIF_SETTINGS,
@@ -137,9 +142,9 @@ public class SettingsActivity extends AppCompatActivity{
                     @Override
                     protected Map<String, String> getParams() throws AuthFailureError {
                         Map<String,String> params = new HashMap<String,String>();
-                        params.put("rdv_notif_delta",(String) radioButtonDelta.getText());
+                        params.put("rdv_notif_delta",resultHeure);
                         params.put("patient_id", uid);
-                        params.put("notif_famille",transformeNotifFamille((String) radioButtonFamille.getText()));
+                        params.put("notif_famille",resultFam);
 
                         return params;
 
@@ -153,7 +158,8 @@ public class SettingsActivity extends AppCompatActivity{
 
                     AppController.getInstance().addToRequestQueue(stringRequest, tag_string_req);
                 if (NetworkUtils.isWifiConnected(getApplicationContext()) || NetworkUtils.isMobileConnected(getApplicationContext())) {
-                    db.addParams((String) radioButtonDelta.getText(), (String) radioButtonFamille.getText());
+                    //db.addParams((String) radioButtonDelta.getText(), (String) radioButtonFamille.getText());
+                    db.addParams(resultHeure,resultFam);
                 } else {
                     Toast.makeText(getApplicationContext(),"Veuillez vérifier votre accès à internet", Toast.LENGTH_LONG).show();
                 }
@@ -165,15 +171,15 @@ public class SettingsActivity extends AppCompatActivity{
         });
 
 
-    }
-    private String transformeNotifFamille (String reponse) {
-        //permet de transformer la réponse Oui pas Y ou Non pas N pour l'envoyer à la BDD
-        // TODO : plusieurs langues ??
-       if (reponse.equals("Oui")) {
-           return "Y";
-       } else {
-           return "N";
-       }
+//    }
+//    private String transformeNotifFamille (String reponse) {
+//        //permet de transformer la réponse Oui pas Y ou Non pas N pour l'envoyer à la BDD
+//        // TODO : plusieurs langues ??
+//       if (reponse.equals("Oui")) {
+//           return "Y";
+//       } else {
+//           return "N";
+//       }
     }
 
 //    @Override

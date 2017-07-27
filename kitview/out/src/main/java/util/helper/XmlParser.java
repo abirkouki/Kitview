@@ -2,9 +2,6 @@ package util.helper;
 
 import android.util.Xml;
 
-
-import com.orthalis.connect.R;
-
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -285,7 +282,7 @@ public class XmlParser {
 
     private OpeningHours readOpeningHours(XmlPullParser parser) throws XmlPullParserException, IOException {
         parser.require(XmlPullParser.START_TAG, ns, "opening_hours");
-        String monday = ""+ R.string.closed, tuesday = ""+R.string.closed, wednesday = ""+R.string.closed, thursday = ""+R.string.closed, friday = ""+R.string.closed, saturday = ""+R.string.closed, sunday = ""+R.string.closed;
+        String monday = "", tuesday = "", wednesday = "", thursday = "", friday = "", saturday = "", sunday = "";
         while (parser.next() != XmlPullParser.END_TAG) {
             if (parser.getEventType() != XmlPullParser.START_TAG) {
                 continue;
