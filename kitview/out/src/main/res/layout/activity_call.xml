@@ -7,5 +7,5 @@
         android:id="@+id/appeler"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Appeler mon cabinet" />
+        android:text="@string/call_confirmation" />
 </LinearLayout>

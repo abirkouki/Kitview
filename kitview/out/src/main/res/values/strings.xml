@@ -12,7 +12,7 @@
     <string name="appointment">Appointment</string>
     <string name="phone">Phone</string>
 
-    <string name="deconnexion">Deconnexion</string>
+    <string name="deconnexion">Deconnection</string>
     <string name="map">Map</string>
     <string name="contact">Contact</string>
     <string name="about">About</string>
@@ -33,7 +33,7 @@
     <string name="one_day">24h before</string>
     <string name="two_day">48h before</string>
     <string name="three_day">72h before</string>
-    <string name="notif_family">Do you want to receive notifications from your family members?</string>
+    <string name="notif_family">Do you want to receive your family members\' notifications</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
 
