@@ -44,6 +44,12 @@ public class ParamNotifActivity extends AppCompatActivity {
     private TextView txtNom;
     private TextView txtPrenom;
 
+    private RadioButton radioButtonTrois;
+    private RadioButton radioButtonDeux;
+    private RadioButton radioButtonUn;
+
+    private RadioButton radioButtonYes;
+    private RadioButton radioButtonNo;
 
     private RadioGroup radioGroup;
     private RadioButton radioButton;
@@ -56,7 +62,7 @@ public class ParamNotifActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        setContentView(R.layout.param_notif);
+        setContentView(R.layout.param_notif2);
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setLogo(R.drawable.logo98);
@@ -65,7 +71,12 @@ public class ParamNotifActivity extends AppCompatActivity {
 
         txtNom = (TextView) findViewById(R.id.nom);
         txtPrenom = (TextView) findViewById(R.id.prenom);
-
+        //
+        radioButtonTrois = (RadioButton) findViewById(R.id.troisjours);
+        radioButtonDeux = (RadioButton) findViewById(R.id.deuxjours);
+        radioButtonUn = (RadioButton) findViewById(R.id.unjour);
+        radioButtonYes = (RadioButton) findViewById(R.id.oui);
+        radioButtonNo = (RadioButton) findViewById(R.id.non);
         // SqLite database handler
         db = new SQLiteHandler(getApplicationContext());
 
@@ -78,6 +89,7 @@ public class ParamNotifActivity extends AppCompatActivity {
         final String uid = user.get("uid");
         final String nom = user.get("nom");
         final String prenom = user.get("prenom");
+
 
 
         // Displaying the user details on the screen
@@ -104,6 +116,27 @@ public class ParamNotifActivity extends AppCompatActivity {
                 String ff = FirebaseInstanceId.getInstance().getToken();
                 SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences(getString(R.string.FCM_PREF), Context.MODE_PRIVATE);
                 final String token = sharedPreferences.getString(getString(R.string.FCM_TOKEN),ff);
+
+                final String resultFam;
+                final String resultHeures;
+
+                if (radioButtonTrois.isChecked()) {
+                    resultHeures = "72";
+                } else if (radioButtonDeux.isChecked()) {
+                    resultHeures = "48";
+                } else {
+                    resultHeures = "24";
+                }
+
+                if (radioButtonYes.isChecked()) {
+                    resultFam = "Y";
+                } else {
+                    resultFam = "N";
+                }
+
+
+
+
                 StringRequest stringRequest = new StringRequest(Request.Method.POST, AppConfig.URL_INSERT,
                         new Response.Listener<String>() {
                             @Override
@@ -123,11 +156,11 @@ public class ParamNotifActivity extends AppCompatActivity {
 
 
                         params.put("fcm_token", token);
-                        params.put("rdv_notif_delta",(String) radioButton.getText());
+                        params.put("rdv_notif_delta",resultHeures);
                         params.put("patient_id", uid);
                         params.put("first_name", prenom);
                         params.put("last_name", nom);
-                        params.put("notif_famille",transformeNotifFamille((String) radioButtonFam.getText()));
+                        params.put("notif_famille",resultFam);
 
                         return params;
 
@@ -142,7 +175,7 @@ public class ParamNotifActivity extends AppCompatActivity {
                 //Toast.makeText(getApplicationContext(),nom,Toast.LENGTH_LONG).show();
                 //Toast.makeText(getApplicationContext(),transformeNotifFamille((String) radioButtonFamille.getText()),Toast.LENGTH_LONG).show();
                     AppController.getInstance().addToRequestQueue(stringRequest, tag_string_req);
-                    db.addParams((String) radioButton.getText(),(String) radioButtonFam.getText());
+                    db.addParams(resultHeures,resultFam);
                 // Launch main activity
                 Intent intent = new Intent(ParamNotifActivity.this, MainActivity.class);
 
@@ -151,14 +184,14 @@ public class ParamNotifActivity extends AppCompatActivity {
             }
         });
     }
-    private String transformeNotifFamille (String reponse) {
+   /* private String transformeNotifFamille (String reponse) {
         //permet de transformer la réponse Oui pas Y ou Non pas N pour l'envoyer à la BDD
-        if (reponse.equals("Oui")) {
+        if (reponse.equals("Oui") || reponse.equals("Yes") || reponse.equals("Si"))  {
             return "Y";
         } else {
             return "N";
         }
-    }
+    }*/
 
     //si on vient plusieurs fois sur cette activité, enlever ça
     @Override
@@ -166,6 +199,9 @@ public class ParamNotifActivity extends AppCompatActivity {
         moveTaskToBack(true);
         finish();
     }
+
+
+
 
     @Override
     protected void onDestroy() {

@@ -525,17 +525,18 @@ public class MainActivity extends FragmentActivity{
         //this.mModules2.add(new Module(R.string.picture_shot_several_patient, R.color.color2, R.drawable.ic_action_new_picture));
         //this.mModules2.add(new Module(R.string.folder_patient, R.color.color3, R.drawable.ic_action_person));
         //this.mModules2.add(new Module(R.string.folder2, R.color.color4, R.drawable.ic_action_group));//degager
-        this.mModules2.add(new Module(R.string.settings, R.color.color5, R.drawable.ic_action_settings));
+        this.mModules2.add(new Module(R.string.settings, R.color.color6, R.drawable.ic_action_settings));
         //this.mModules2.add(new Module(R.string.practice, R.color.color6, R.drawable.ic_action_settings));//degager
         this.mModules2.add(new Module(R.string.balance, R.color.color6, R.drawable.ic_action_settings));
         this.mModules2.add(new Module(R.string.notification, R.color.color6, R.drawable.ic_action_settings));
         this.mModules2.add(new Module(R.string.appointment, R.color.color6, R.drawable.ic_action_settings));
         //this.mModules2.add(new Module(R.string.phone, R.color.color6, R.drawable.ic_action_settings));
         //this.mModules2.add(new Module(R.string.email, R.color.color6, R.drawable.ic_action_settings));
-        //this.mModules2.add(new Module(R.string.map, R.color.color6, R.drawable.ic_action_settings));
+
         this.mModules2.add(new Module(R.string.contact, R.color.color6, R.drawable.ic_action_settings));
         this.mModules2.add(new Module(R.string.about, R.color.color6, R.drawable.ic_action_settings));
         this.mModules2.add(new Module(R.string.title_activity_opening, R.color.color6, R.drawable.ic_action_settings));
+        this.mModules2.add(new Module(R.string.deconnexion, R.color.color6, R.drawable.ic_action_settings));
 
         this.mInitializationFinished2 = false;
 
@@ -829,6 +830,10 @@ public class MainActivity extends FragmentActivity{
                         case 6://9://14
                             intent = new Intent(MainActivity.this, OpeningActivity.class);
                             startActivity(intent);
+                            break;
+
+                        case 7://9://14
+                            deconnexion();
                             break;
                     }
                 }
