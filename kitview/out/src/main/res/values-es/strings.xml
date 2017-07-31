@@ -52,8 +52,8 @@
     <string name="download_failed">Se produjo un problema durante la descarga</string>
     <string name="no_data_received">Datos no recibidos</string>
 
-
-
+    <string name="logging_in">Conexión</string>
+    <string name="no_connection">Verifique su conexión internet</string>
 
 
 </resources>

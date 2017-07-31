@@ -110,7 +110,7 @@ public class LoginActivity extends AppCompatActivity {
         // Tag used to cancel the request
         String tag_string_req = "req_login";
 
-        pDialog.setMessage("Logging in ...");
+        pDialog.setMessage(getApplicationContext().getResources().getString(R.string.logging_in));
         showDialog();
 
         StringRequest strReq = new StringRequest(Method.POST, AppConfig.URL_LOGIN, new Response.Listener<String>() {
@@ -146,7 +146,7 @@ public class LoginActivity extends AppCompatActivity {
                         // Error in login. Get the error message
                         String errorMsg = jObj.getString("error_msg");
                         Toast.makeText(getApplicationContext(),
-                                errorMsg, Toast.LENGTH_LONG).show();
+                                getApplicationContext().getResources().getString(R.string.no_connection), Toast.LENGTH_LONG).show();
                     }
                 } catch (JSONException e) {
                     // JSON error
