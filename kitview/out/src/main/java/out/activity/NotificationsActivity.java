@@ -1,27 +1,17 @@
 package out.activity;
 
-import android.content.Intent;
-
-
 import android.os.Bundle;
-
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
-
 import com.orthalis.connect.R;
-
-import java.util.GregorianCalendar;
 
 import util.session.SQLiteHandler;
 import util.session.SessionManager;
-
-import static android.R.attr.button;
 
 /**
  * Created by orthalis on 13/06/2017.
@@ -109,7 +99,7 @@ public class NotificationsActivity extends AppCompatActivity {
             mListView.setAdapter(adapter);
 
         } else {
-            noNotif.setText("Vous n'avez pas de notifications");
+            noNotif.setText(getApplicationContext().getString(R.string.no_notif));
         }
 
     }

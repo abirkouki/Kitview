@@ -55,5 +55,23 @@
     <string name="logging_in">Conexión</string>
     <string name="no_connection">Verifique su conexión internet</string>
 
+    <string name="rdv_change">Si vous voulez changer la date ou annuler votre rendez-vous, veuillez appeler votre cabinet</string>
+
+    <string name="payment">Il vous reste à payer </string>
+    <string name="update">Dernière mise à jour : </string>
+    <string name="devise">€</string>
+    <string name="missing_info">Information manquante, vérifiez votre connexion internet</string>
+
+    <string name="no_notif">Vous n\'avez pas de notifications</string>
+
+    <string name="next_rdv">Votre prochain rendez-vous sera le </string>
+    <string name="duration">Durée approximative : </string>
+    <string name="no_rdv">Vous n\'avez pas de prochain rendez-vous</string>
+    <string name="label">Libellé :</string>
+    <string name="minutes"> minutes</string>
+
+    <string name="code">code du cabinet</string>
+    <string name="password">mot de passe</string>
+    <string name="username">identifiant</string>
 
 </resources>

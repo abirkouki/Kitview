@@ -77,14 +77,17 @@ public class BalanceActivity extends AppCompatActivity {
         if (!NetworkUtils.isWifiConnected(getApplicationContext()) && !NetworkUtils.isMobileConnected(getApplicationContext())) {
             // si pas d'accès à internet => récupération des dernieres données de balance dans la bdd internet SQLite
             String[][] balanceDetails = db.getBalanceDetails();
+
             balance = balanceDetails[0][0];
             balanceMaj = balanceDetails[0][1];
             if (balance!=null) {
                 //affichage
-                txtBalance.setText("Il vous reste à payer " + balance + "€");
-                txtMaj.setText("Dernière mise à jour : " + balanceMaj);
+                txtBalance.setText(getApplicationContext().getString(R.string.payment) + balance + getApplicationContext().getString(R.string.devise));
+                String tmp;
+                tmp = getApplicationContext().getString(R.string.update) + balanceMaj;
+                txtMaj.setText(tmp);
             } else {
-                txtBalance.setText("Information manquante, vérifiez votre connexion internet");
+                txtBalance.setText(getApplicationContext().getString(R.string.missing_info));
             }
         } else {
             // si accès à internet => récupération de balance
@@ -102,11 +105,13 @@ public class BalanceActivity extends AppCompatActivity {
                             JSONObject user = jObj.getJSONObject("user");
 
                             balance = user.getString("balance");
-                            txtBalance.setText("Il vous reste à payer " + balance + "€");
+                            txtBalance.setText(getApplicationContext().getString(R.string.payment) + balance + getApplicationContext().getString(R.string.devise));
                             //date d'aujourd'hui
                             DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
                             Date date = new Date();
-                            txtMaj.setText("Dernière mise à jour : " + dateFormat.format(date));
+                            String tmp;
+                            tmp = getApplicationContext().getString(R.string.update) + dateFormat.format(date);
+                            txtMaj.setText(tmp);
                             //ajout des informations dans la bdd SQLite
                             db.addBalance(balance,dateFormat.format(date));
                         }

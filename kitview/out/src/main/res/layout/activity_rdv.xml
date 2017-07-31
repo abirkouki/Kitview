@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.20"
         android:gravity="center"
-        android:text="Si vous voulez changer la date ou annuler votre rendez-vous, veuillez appeler votre cabinet"
+        android:text="@string/rdv_change"
         android:textSize="15dp"
         android:visibility="visible" />
     <Button
@@ -46,13 +46,13 @@
         android:layout_width="112dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Appeler" />
+        android:text="@string/call_confirmation" />
 
     <TextView
         android:id="@+id/majRdv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:layout_weight="0.20"
-        android:textSize="15dp"
-        android:gravity="center"/>
+        android:textSize="15dp" />
 </LinearLayout>
