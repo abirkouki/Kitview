@@ -1,56 +1,56 @@
 <resources>
     <string name="app_name">OrthalisConnect</string>
-    <string name="practice_id">Practice code</string>
+    <string name="practice_id">Código ortodoncista</string>
     <string name="practice_scan">Scan</string>
     <string name="FCM_PREF">com.orthalis.connect.fcm_pref</string>
     <string name="FCM_TOKEN">com.orthalis.connect.fcm_token</string>
-    <string name="title_activity_maps">Map</string>
-    <string name="title_activity_opening">Opening Hours</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="title_activity_opening">Horarios</string>
 
     <string name="balance">Balance</string>
-    <string name="notification">Notification</string>
-    <string name="appointment">Appointment</string>
-    <string name="phone">Phone</string>
+    <string name="notification">Notificaciones</string>
+    <string name="appointment">Próxima cita</string>
+    <string name="phone">Teléfono</string>
 
 
-    <string name="deconnexion">Deconnexion</string>
-    <string name="map">Map</string>
-    <string name="contact">Contact</string>
-    <string name="about">About</string>
-    <string name="telephone">Telephone</string>
+    <string name="deconnexion">Cerrar sesión</string>
+    <string name="map">Mapa</string>
+    <string name="contact">Contacto</string>
+    <string name="about">Sobre nosotros</string>
+    <string name="telephone">Teléfono</string>
     <string name="email">Email</string>
-    <string name="website">Website</string>
-    <string name="address">Address</string>
+    <string name="website">Página web</string>
+    <string name="address">Dirección</string>
     <string name="closed">Cerrado</string>
-    <string name="monday">monday</string>
-    <string name="tuesday">tuesday</string>
-    <string name="wednesday">wednesday</string>
-    <string name="thursday">thursday</string>
-    <string name="friday">friday</string>
-    <string name="saturday">saturday</string>
-    <string name="sunday">sunday</string>
+    <string name="monday">Lunes</string>
+    <string name="tuesday">Martes</string>
+    <string name="wednesday">Miércoles</string>
+    <string name="thursday">Jueves</string>
+    <string name="friday">Viernes</string>
+    <string name="saturday">Sábado</string>
+    <string name="sunday">Domingo</string>
 
-    <string name="notif_choice">When do you want to receive a notification of your appointment?</string>
-    <string name="one_day">24h before</string>
-    <string name="two_day">48h before</string>
-    <string name="three_day">72h before</string>
-    <string name="notif_family">Do you want to receive notifications from your family members?</string>
-    <string name="yes">Yes</string>
+    <string name="notif_choice">¿Cuando le gustaría recibir las notificaciones de cita?</string>
+    <string name="one_day">24h antes</string>
+    <string name="two_day">48h antes</string>
+    <string name="three_day">72h antes</string>
+    <string name="notif_family">¿Le gustaría recibir las notificaciones de sus familiares?</string>
+    <string name="yes">Sí</string>
     <string name="no">No</string>
 
-    <string name="welcome">Welcome</string>
-    <string name="call_confirmation">Call the office</string>
+    <string name="welcome">Bienvenida/o</string>
+    <string name="call_confirmation">Llamar a la secretaría</string>
 
-    <string name="practice_call">Call</string>
-    <string name="practice_email">Send mail</string>
-    <string name="practice_map">Go to map</string>
+    <string name="practice_call">Llamar</string>
+    <string name="practice_email">Mandar email</string>
+    <string name="practice_map">Ver el mapa</string>
 
 
-    <string name="folder_non_existent">Folder non existent</string>
-    <string name="downloading">Downloading&#8230;</string>
-    <string name="success_download">Files have been downloaded successfully</string>
-    <string name="download_failed">A problem occurred during the download</string>
-    <string name="no_data_received">No data received</string>
+    <string name="folder_non_existent">Archivo no existente </string>
+    <string name="downloading">Descargando</string>
+    <string name="success_download">Descarga completada</string>
+    <string name="download_failed">Se produjo un problema durante la descarga</string>
+    <string name="no_data_received">Datos no recibidos</string>
 
 
 
