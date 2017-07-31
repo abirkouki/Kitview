@@ -175,6 +175,8 @@ public class ParamNotifActivity extends AppCompatActivity {
                 //Toast.makeText(getApplicationContext(),transformeNotifFamille((String) radioButtonFamille.getText()),Toast.LENGTH_LONG).show();
                     AppController.getInstance().addToRequestQueue(stringRequest, tag_string_req);
                     db.addParams(resultHeures,resultFam);
+
+                    db.addToken(token);
                 // Launch main activity
                 Intent intent = new Intent(ParamNotifActivity.this, MainActivity.class);
 

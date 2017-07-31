@@ -26,13 +26,15 @@ public class SQLiteHandler extends SQLiteOpenHelper {
     // Login table name
     private static final String TABLE_USER = "user";
 
-
+    //Token table name
+    private static final String TABLE_TOKEN = "token";
 
     // Login Table Columns names
     private static final String KEY_ID = "id";
     private static final String KEY_NOM = "nom";
     private static final String KEY_UID = "uid";
     private static final String KEY_PRENOM = "prenom";
+    private static final String KEY_TOKEN = "token";
 
     //Params table name
     private static final String TABLE_PARAMS = "params";
@@ -73,7 +75,7 @@ public class SQLiteHandler extends SQLiteOpenHelper {
         String CREATE_LOGIN_TABLE = "CREATE TABLE " + TABLE_USER + "("
                 + KEY_ID + " INTEGER PRIMARY KEY,"
                 + KEY_NOM + " TEXT," + KEY_UID + " TEXT,"
-                + KEY_PRENOM + " TEXT"+ ")";
+                + KEY_PRENOM +" TEXT"+")";
         String CREATE_NOTIF_TABLE = "CREATE TABLE " + TABLE_NOTIF + "("
                 + KEY_ID + " INTEGER PRIMARY KEY,"
                 + KEY_MESSAGE + " TEXT," + KEY_DATE + " TEXT"
@@ -90,12 +92,17 @@ public class SQLiteHandler extends SQLiteOpenHelper {
                 + KEY_ID + " INTEGER PRIMARY KEY,"
                 + KEY_DELTA + " TEXT,"+ KEY_FAMILLE + " TEXT"
                 + ")";
+        String CREATE_TOKEN_TABLE = "CREATE TABLE " + TABLE_TOKEN + "("
+                + KEY_ID + " INTEGER PRIMARY KEY,"
+                + KEY_TOKEN + " TEXT"+ ")";
+
 
         db.execSQL(CREATE_LOGIN_TABLE);
         db.execSQL(CREATE_NOTIF_TABLE);
         db.execSQL(CREATE_RDV_TABLE);
         db.execSQL(CREATE_BALANCE_TABLE);
         db.execSQL(CREATE_PARAMS_TABLE);
+        db.execSQL(CREATE_TOKEN_TABLE);
         Log.d(TAG, "Database tables created");
     }
 
@@ -108,6 +115,7 @@ public class SQLiteHandler extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_RDV);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_BALANCE);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_PARAMS);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_TOKEN);
         onCreate(db);
     }
 
@@ -124,12 +132,29 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 
 
 
+
         // Inserting Row
         long id = db.insert(TABLE_USER, null, values);
         db.close(); // Closing database connection
 
         Log.d(TAG, "New user inserted into sqlite: " + id);
     }
+    public void addToken(String token) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(KEY_TOKEN, token);
+
+
+
+
+        // Inserting Row
+        long id = db.insert(TABLE_TOKEN, null, values);
+        db.close(); // Closing database connection
+
+        Log.d(TAG, "New user inserted into sqlite: " + id);
+    }
+
 
     public void addNotif(String message, String date) {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -214,6 +239,7 @@ public class SQLiteHandler extends SQLiteOpenHelper {
             user.put("uid", cursor.getString(2));
             user.put("prenom", cursor.getString(3));
 
+
         }
         cursor.close();
         db.close();
@@ -222,6 +248,7 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 
         return user;
     }
+
     /**
      * Getting notif data from database
      * */
@@ -293,10 +320,30 @@ public class SQLiteHandler extends SQLiteOpenHelper {
         }
         cursor.close();
         db.close();
-        // return notif
+
         Log.d(TAG, "Fetching user from Sqlite: " + balance.toString());
 
         return balance;
+    }
+
+    public String getTokenDetails() {
+        String token="";
+        String selectQuery = "SELECT  * FROM " + TABLE_TOKEN;
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(selectQuery, null);
+
+
+
+        if (cursor.getCount() > 0) {
+            cursor.moveToFirst();
+            token = (cursor.getString(1));
+        }
+        cursor.close();
+        db.close();
+        //return notif
+        Log.d(TAG, "Fetching user from Sqlite: " + token.toString());
+
+        return token;
     }
 
     public String[][] getParamsDetails() {
@@ -333,6 +380,16 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 
         Log.d(TAG, "Deleted all user info from sqlite");
     }
+
+    public void deleteToken() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        // Delete All Rows
+        db.delete(TABLE_TOKEN, null, null);
+        db.close();
+
+        Log.d(TAG, "Deleted all token info from sqlite");
+    }
+
     public void deleteNotifs() {
         SQLiteDatabase db = this.getWritableDatabase();
         // Delete All Rows
@@ -368,4 +425,5 @@ public class SQLiteHandler extends SQLiteOpenHelper {
 
         Log.d(TAG, "Deleted all params info from sqlite");
     }
+
 }

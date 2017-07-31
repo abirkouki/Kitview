@@ -20,5 +20,7 @@ public class AppConfig{
 
     public static String URL_MODIF_SETTINGS = "http://"+AppController.practiceKitviewServer.ip+ File.separator+AppController.practiceKitviewServer.path+File.separator+"modif_settings.php";
 
+    public static String URL_DELETE_USER = "http://"+AppController.practiceKitviewServer.ip+ File.separator+AppController.practiceKitviewServer.path+File.separator+"delete_user.php";
+
 
 }

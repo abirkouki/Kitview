@@ -36,6 +36,11 @@ import android.widget.Toast;
 import android.widget.VideoView;
 import android.widget.ViewAnimator;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 import com.orthalis.connect.R;
@@ -46,6 +51,8 @@ import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import activity.FolderActivity;
@@ -53,6 +60,7 @@ import activity.ScenariosActivity;
 import model.Module;
 import model.rest.Personne;
 import util.FTP.PracticeFTP;
+import util.app.AppConfig;
 import util.app.AppController;
 import util.components.progressdialog.FRProgressDialog;
 import util.network.KitviewUtil;
@@ -80,6 +88,7 @@ public class MainActivity extends FragmentActivity{
     private LinearLayout mActualSituationTextView;
     private LinearLayout mBottomInfosLinearLayout;
 
+    String tag_string_req = "req_main_activity";
     //Model
     //private PersistenceManager mPersistenceManager;
     private int mOrientation;
@@ -168,8 +177,39 @@ public class MainActivity extends FragmentActivity{
     public void deconnexion() {
         session.setLogin(false);
         SQLiteHandler db = new SQLiteHandler(getApplicationContext());
+        final String token = db.getTokenDetails();
+        System.out.println("token : " +token);
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, AppConfig.URL_DELETE_USER,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        })
+        {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String,String> params = new HashMap<String,String>();
+                params.put("token", token);
+                return params;
+            }
+        };
+
+        //Toast.makeText(getApplicationContext(),"token"+token,Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(),"notifdelta :"+ radioButton.getText(),Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(),"uid :"+ uid,Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(),prenom,Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(),nom,Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(),transformeNotifFamille((String) radioButtonFamille.getText()),Toast.LENGTH_LONG).show();
+        AppController.getInstance().addToRequestQueue(stringRequest, tag_string_req);
         db.deleteUsers();
         db.deleteParams();
+        db.deleteToken();
         recreate();
     }
 
