@@ -9,10 +9,10 @@ android {
         multiDexEnabled true
 
         applicationId "com.orthalis.connect"
-        minSdkVersion 14
+        minSdkVersion 15
         targetSdkVersion 21
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.1"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -33,6 +33,7 @@ android {
     configurations {
         //all*.exclude group: 'com.android.support', module: 'support-v4'
         //all*.exclude group: 'com.android.support', module: 'support-annotations'
+        all*.exclude group: 'com.google.code.gson', module: 'gson'
     }
 
 }
@@ -58,6 +59,13 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:multidex:1.0.1'
     compile 'com.android.support:design:25.3.1'
+
+    compile 'com.google.android.gms:play-services-gcm:10.2.6'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'io.smooch:core:latest.release'
+    compile 'io.smooch:ui:latest.release'
+
     testCompile 'junit:junit:4.12'
 }
 apply plugin: 'com.google.gms.google-services'
