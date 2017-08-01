@@ -178,7 +178,6 @@ public class MainActivity extends FragmentActivity{
         session.setLogin(false);
         SQLiteHandler db = new SQLiteHandler(getApplicationContext());
         final String token = db.getTokenDetails();
-        System.out.println("token : " +token);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, AppConfig.URL_DELETE_USER,
                 new Response.Listener<String>() {
                     @Override
@@ -190,8 +189,7 @@ public class MainActivity extends FragmentActivity{
             public void onErrorResponse(VolleyError error) {
 
             }
-        })
-        {
+        }){
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String,String> params = new HashMap<String,String>();
@@ -199,13 +197,6 @@ public class MainActivity extends FragmentActivity{
                 return params;
             }
         };
-
-        //Toast.makeText(getApplicationContext(),"token"+token,Toast.LENGTH_LONG).show();
-        //Toast.makeText(getApplicationContext(),"notifdelta :"+ radioButton.getText(),Toast.LENGTH_LONG).show();
-        //Toast.makeText(getApplicationContext(),"uid :"+ uid,Toast.LENGTH_LONG).show();
-        //Toast.makeText(getApplicationContext(),prenom,Toast.LENGTH_LONG).show();
-        //Toast.makeText(getApplicationContext(),nom,Toast.LENGTH_LONG).show();
-        //Toast.makeText(getApplicationContext(),transformeNotifFamille((String) radioButtonFamille.getText()),Toast.LENGTH_LONG).show();
         AppController.getInstance().addToRequestQueue(stringRequest, tag_string_req);
         db.deleteUsers();
         db.deleteParams();
@@ -275,7 +266,6 @@ public class MainActivity extends FragmentActivity{
 
     //TODO peut etre pour l'image aussi ?? + régler MPEG4Extractor: Reset mWrongNALCounter. Re-check a condition - 'isMalformed = 0'
     private void initializeVideoView(){
-        System.out.println("initializeVideoView");
         Context context = getApplicationContext();
         Uri path;
         String pathStr = context.getFilesDir().getAbsolutePath() + File.separator + "Config" + File.separator + "video.mp4";
@@ -298,13 +288,26 @@ public class MainActivity extends FragmentActivity{
         }
     }
 
+    //pour gérer les fichiers jpg et png (et autres s'il le faut)
+    public String findExtension(String filePath){
+        //crée un tableau d'extensions
+        String[] ext=new String[]{".jpg",".png"};
+        String path = "";
+        for (String anExt : ext) {
+            File file = new File(filePath + anExt);
+            if (file.exists()) {
+                path = filePath + anExt;
+                break;
+            }
+        }
+        return path;
+    }
 
     private boolean initializeImageView(){
-        System.out.println("initializeImageView");
         Context context = getApplicationContext();
         boolean res = mImageView != null;
         if (res){
-            String pathStr = context.getFilesDir().getAbsolutePath() + File.separator + "Config" + File.separator + "photo0.jpg";
+            String pathStr = findExtension(context.getFilesDir().getAbsolutePath() + File.separator + "Config" + File.separator + "photo0");
             File imagePractice = new File(pathStr);
             res = imagePractice.exists();
             if (res){
