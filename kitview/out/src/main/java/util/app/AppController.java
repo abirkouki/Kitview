@@ -17,6 +17,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import io.smooch.core.Smooch;
+import out.activity.ChatActivity;
 import util.helper.XmlParser;
 
 public class AppController extends Application {
@@ -59,12 +61,14 @@ public class AppController extends Application {
         }
     }
 
-
+    public static String APP_TOKEN = "7drfjg3gy0t9tm9izomsx7x72";
     @Override
     public void onCreate() {
         super.onCreate();
         mInstance = this;
         parseConfigFile(getApplicationContext());
+
+        Smooch.init(this, APP_TOKEN);
     }
 
     public static synchronized AppController getInstance() {

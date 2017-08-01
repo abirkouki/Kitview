@@ -57,6 +57,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 import activity.FolderActivity;
 import activity.ScenariosActivity;
+import io.smooch.ui.ConversationActivity;
 import model.Module;
 import model.rest.Personne;
 import util.FTP.PracticeFTP;
@@ -580,7 +581,7 @@ public class MainActivity extends FragmentActivity{
         this.mModules2.add(new Module(R.string.about, R.color.color6, R.drawable.ic_action_settings));
         this.mModules2.add(new Module(R.string.title_activity_opening, R.color.color6, R.drawable.ic_action_settings));
         this.mModules2.add(new Module(R.string.deconnexion, R.color.color6, R.drawable.ic_action_settings));
-
+        this.mModules2.add(new Module(R.string.about, R.color.color6, R.drawable.ic_action_settings));
         this.mInitializationFinished2 = false;
 
         if(this.mGridView2 != null){
@@ -877,6 +878,10 @@ public class MainActivity extends FragmentActivity{
 
                         case 7://9://14
                             deconnexion();
+                            break;
+
+                        case 8:
+                            ConversationActivity.show(MainActivity.this);
                             break;
                     }
                 }
