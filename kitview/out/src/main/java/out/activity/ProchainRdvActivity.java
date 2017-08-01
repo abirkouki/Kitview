@@ -94,12 +94,17 @@ public class ProchainRdvActivity extends AppCompatActivity {
             rdvDuree = rdvDetails[0][3];
             rdvLibelle = rdvDetails[0][2];
             if (rdv != null) {
-                txtRdv.setText("Votre prochain rendez-vous sera le " + rdv);
-                txtDuree.setText("Durée approximative : " + rdvDuree + " minutes");
-                txtLibelle.setText("Libelle : " + rdvLibelle);
-                txtMaj.setText("Dernière mise à jour : " + rdvMaj);
+                String tmp;
+                tmp = getApplicationContext().getString(R.string.next_rdv) + rdv;
+                txtRdv.setText(tmp);
+                tmp = getApplicationContext().getString(R.string.duration) + rdvDuree + getApplicationContext().getString(R.string.minutes);
+                txtDuree.setText(tmp);
+                tmp = getApplicationContext().getString(R.string.label) + rdvLibelle;
+                txtLibelle.setText(tmp);
+                tmp = getApplicationContext().getString(R.string.update)+ rdvMaj;
+                txtMaj.setText(tmp);
             } else {
-                txtRdv.setText("Vous n'avez pas de prochain rendez-vous");
+                txtRdv.setText(getApplicationContext().getString(R.string.no_rdv));
             }
 
         } else {
@@ -130,20 +135,25 @@ public class ProchainRdvActivity extends AppCompatActivity {
                                 String firstPartDate = fullDateFormat.format(d).substring(0,lastIndexDeuxPoints-6);
                                 String secondPartDate = fullDateFormat.format(d).substring(lastIndexDeuxPoints-5,lastIndexDeuxPoints-3);
                                 String thirdPartDate = fullDateFormat.format(d).substring(lastIndexDeuxPoints-2,lastIndexDeuxPoints);
-                                txtRdv.setText("Votre prochain rendez-vous sera le " +firstPartDate+" à "+secondPartDate+"h"+thirdPartDate);
-                                txtDuree.setText("Durée approximative : " + rdvDuree + " minutes");
-                                txtLibelle.setText("Libelle : " + s2);
+                                String tmp;
+                                tmp = getApplicationContext().getString(R.string.next_rdv) +firstPartDate+getApplicationContext().getString(R.string.at)+secondPartDate+"h"+thirdPartDate;
+                                txtRdv.setText(tmp);
+                                tmp = getApplicationContext().getString(R.string.duration) + rdvDuree + getApplicationContext().getString(R.string.minutes);
+                                txtDuree.setText(tmp);
+                                tmp = getApplicationContext().getString(R.string.label) + s2;
+                                txtLibelle.setText(tmp);
                                 //date d'aujourd'hui
                                 DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
                                 Date date = new Date();
-                                txtMaj.setText("Dernière mise à jour : " + dateFormat.format(date));
+                                tmp = getApplicationContext().getString(R.string.update) + dateFormat.format(date);
+                                txtMaj.setText(tmp);
 
                                 //ajouter à la table rdv
 
                                 db.addRdv(rdv, dateFormat.format(date),s2, rdvDuree);
 
                         } else {
-                            txtRdv.setText("Vous n'avez pas de prochain rendez-vous");
+                            txtRdv.setText(getApplicationContext().getString(R.string.no_rdv));
                         }
                     } catch (JSONException e) {
                         e.printStackTrace();

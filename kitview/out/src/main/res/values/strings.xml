@@ -33,7 +33,7 @@
     <string name="one_day">24h before</string>
     <string name="two_day">48h before</string>
     <string name="three_day">72h before</string>
-    <string name="notif_family">Do you want to receive your family members\' notifications</string>
+    <string name="notif_family">Do you want to receive your family members\' notifications?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
 
@@ -50,6 +50,9 @@
     <string name="success_download">Files have been downloaded successfully</string>
     <string name="download_failed">A problem occurred during the download</string>
     <string name="no_data_received">No data received</string>
+    <string name="check">Check your internet connection</string>
+    <string name="error_try">An error has occurred, please try again in a moment</string>
+    <string name="error_check_try">An error has occurred, please check your connection and try again</string>
 
     <string name="logging_in">Logging in</string>
     <string name="no_connection">Check your connection please</string>
@@ -68,11 +71,18 @@
     <string name="no_rdv">You don\'t have a next appointment</string>
     <string name="label">Label :</string>
     <string name="minutes"> minutes</string>
+    <string name="at">at</string>
 
     <string name="code">practice code</string>
 
     <string name="password">password</string>
     <string name="username">username</string>
+
+    <string name="wifi_title">Wifi disabled</string>
+    <string name="wifi_content">Enable Wifi in your Android OS settings</string>
+
+    <string name="quit_application">Quit application ?</string>
+    <string name="confirm_quit_application">Are you sure you want to quit the application ?</string>
 
 
 </resources>

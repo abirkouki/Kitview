@@ -76,19 +76,19 @@ public class PracticeFTP {//TODO clean tout ce bordel et ranger les exceptions
         } catch (FolderNonExistent ex) {
             ex.printStackTrace();
             System.out.println("FolderNonExistent\nError: " + ex.getMessage());
-            toastToUserFromBackgroundThread(context.getString(R.string.folder_non_existent), Toast.LENGTH_LONG);//TODO changer le R.string
+            toastToUserFromBackgroundThread(context.getString(R.string.folder_non_existent), Toast.LENGTH_LONG);
         } catch (UnknownHostException ex) {
             ex.printStackTrace();
             System.out.println("UnknownHostException\nError: " + ex.getMessage());
-            toastToUserFromBackgroundThread("Veuillez vérifiez votre connexion internet",Toast.LENGTH_LONG);//TODO changer le R.string
+            toastToUserFromBackgroundThread(context.getString(R.string.check),Toast.LENGTH_LONG);
         } catch (MalformedServerReplyException ex) {
             ex.printStackTrace();
             System.out.println("MalformedServerReplyException\nError: " + ex.getMessage());
-            toastToUserFromBackgroundThread("Une erreur est survenue, veuillez réessayer dans un instant",Toast.LENGTH_LONG);//TODO changer le R.string
+            toastToUserFromBackgroundThread(context.getString(R.string.error_try),Toast.LENGTH_LONG);
         } catch (IOException ex) {
             ex.printStackTrace();
             System.out.println("IOException\nError: " + ex.getMessage());
-            toastToUserFromBackgroundThread("Une erreur de réseau est survenue, veuillez vérifier votre connexion et réessayer dans un instant",Toast.LENGTH_LONG);//TODO changer le R.string
+            toastToUserFromBackgroundThread(context.getString(R.string.error_check_try),Toast.LENGTH_LONG);
         } finally {
             try {
                 if (ftpClient.isConnected()) {
@@ -173,17 +173,17 @@ public class PracticeFTP {//TODO clean tout ce bordel et ranger les exceptions
         } catch (UnknownHostException ex) {
             ex.printStackTrace();
             System.out.println("UnknownHostException\nError: " + ex.getMessage());
-            toastToUserFromBackgroundThread("Veuillez vérifiez votre connexion internet",Toast.LENGTH_LONG);//TODO changer le R.string
+            toastToUserFromBackgroundThread(context.getString(R.string.check),Toast.LENGTH_LONG);
             dlSuccess = false;
         } catch (MalformedServerReplyException ex) {
             ex.printStackTrace();
             System.out.println("MalformedServerReplyException\nError: " + ex.getMessage());
-            toastToUserFromBackgroundThread("Une erreur est survenue, veuillez réessayer dans un instant",Toast.LENGTH_LONG);//TODO changer le R.string
+            toastToUserFromBackgroundThread(context.getString(R.string.error_try),Toast.LENGTH_LONG);
             dlSuccess = false;
         } catch (IOException ex) {
             ex.printStackTrace();
             System.out.println("IOException\nError: " + ex.getMessage());
-            toastToUserFromBackgroundThread("Une erreur de réseau est survenue, veuillez vérifier votre connexion et réessayer dans un instant",Toast.LENGTH_LONG);//TODO changer le R.string
+            toastToUserFromBackgroundThread(context.getString(R.string.error_check_try),Toast.LENGTH_LONG);
             dlSuccess = false;
         } finally {
             try {
