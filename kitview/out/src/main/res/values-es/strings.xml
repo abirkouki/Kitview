@@ -51,6 +51,10 @@
     <string name="success_download">Descarga completada</string>
     <string name="download_failed">Se produjo un problema durante la descarga</string>
     <string name="no_data_received">Datos no recibidos</string>
+    <!--TODO traduire-->
+    <string name="check">Veuillez vérifiez votre connexion internet</string>
+    <string name="error_try">Une erreur de réseau est survenue, veuillez réessayer dans un instant</string>
+    <string name="error_check_try">Une erreur de réseau est survenue, veuillez vérifier votre connexion et réessayer dans un instant</string>
 
     <string name="logging_in">Conexión</string>
     <string name="no_connection">Compruebe su conexión a internet</string>
@@ -69,9 +73,17 @@
     <string name="no_rdv">No tiene próxima cita</string>
     <string name="label">Descripción :</string>
     <string name="minutes"> minutos</string>
+    <!--TODO traduire at-->
+    <string name="at">at</string>
 
     <string name="code">código del consultorio</string>
     <string name="password">contraseña</string>
     <string name="username">login</string>
+
+    <string name="wifi_title">Wifi desactivado</string>
+    <string name="wifi_content">Activar Wifi en el mobilo</string>
+
+    <string name="quit_application">Quitter l\'application ?</string>
+    <string name="confirm_quit_application">Etes vous sûr de vouloir quitter l\'application ?</string>
 
 </resources>
