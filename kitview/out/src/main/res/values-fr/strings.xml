@@ -58,7 +58,7 @@
     <string name="no_connection">Veuillez verifiez la connexion internet</string>
 
     <string name="rdv_change">Si vous voulez changer la date ou annuler votre rendez-vous, veuillez appeler votre cabinet</string>
-    <string name="payment">Il vous reste à payer </string>
+    <string name="payment">Il vous reste à payer\u0020</string>
     <string name="update">Dernière mise à jour : </string>
     <string name="devise">€</string>
     <string name="missing_info">Information manquante, vérifiez votre connexion internet</string>

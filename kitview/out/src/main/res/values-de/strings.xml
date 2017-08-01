@@ -55,4 +55,24 @@
     <string name="no_connection">Check your connection please</string>
 
 
+    <string name="rdv_change">If you want to change your appointment date, please call the office</string>
+
+    <string name="payment">You still have to pay\u0020</string>
+    <string name="maj">Last update : </string>
+    <string name="devise">£</string>
+    <string name="missing_info">missing information, check your internet connection</string>
+
+    <string name="no_notif">You don\'t have any notifications</string>
+
+    <string name="next_rdv">Your next appoinment will be on </string>
+    <string name="duration">Approximate duration : </string>
+    <string name="no_rdv">You don\'t have a next appointment</string>
+    <string name="label">Label :</string>
+    <string name="minutes"> minutes</string>
+
+    <string name="code">practice code</string>
+
+    <string name="password">password</string>
+    <string name="username">username</string>
+
 </resources>

@@ -53,25 +53,25 @@
     <string name="no_data_received">Datos no recibidos</string>
 
     <string name="logging_in">Conexión</string>
-    <string name="no_connection">Verifique su conexión internet</string>
+    <string name="no_connection">Compruebe su conexión a internet</string>
 
-    <string name="rdv_change">Si vous voulez changer la date ou annuler votre rendez-vous, veuillez appeler votre cabinet</string>
+    <string name="rdv_change">Si desea cambiar o anular su cita, llame al consultorio de ortodoncia</string>
 
-    <string name="payment">Il vous reste à payer </string>
-    <string name="update">Dernière mise à jour : </string>
+    <string name="payment">Le queda por pagar\u0020</string>
+    <string name="update">Última actualización : </string>
     <string name="devise">€</string>
-    <string name="missing_info">Information manquante, vérifiez votre connexion internet</string>
+    <string name="missing_info">Informacion no encontrada, compruebe su conexión a internet</string>
 
-    <string name="no_notif">Vous n\'avez pas de notifications</string>
+    <string name="no_notif">No tiene notificaciones</string>
 
-    <string name="next_rdv">Votre prochain rendez-vous sera le </string>
-    <string name="duration">Durée approximative : </string>
-    <string name="no_rdv">Vous n\'avez pas de prochain rendez-vous</string>
-    <string name="label">Libellé :</string>
-    <string name="minutes"> minutes</string>
+    <string name="next_rdv">Su próxima cita será el </string>
+    <string name="duration">Duración aproximada : </string>
+    <string name="no_rdv">No tiene próxima cita</string>
+    <string name="label">Descripción :</string>
+    <string name="minutes"> minutos</string>
 
-    <string name="code">code du cabinet</string>
-    <string name="password">mot de passe</string>
-    <string name="username">identifiant</string>
+    <string name="code">código del consultorio</string>
+    <string name="password">contraseña</string>
+    <string name="username">login</string>
 
 </resources>

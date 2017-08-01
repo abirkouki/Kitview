@@ -92,6 +92,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 } else {
                     // Prompt user to enter credentials
+                    //TODO R.String
                     Toast.makeText(getApplicationContext(),
                             "Please enter the credentials!", Toast.LENGTH_LONG)
                             .show();

@@ -56,7 +56,7 @@
 
     <string name="rdv_change">If you want to change your appointment date, please call the office</string>
 
-    <string name="payment">You still have to pay </string>
+    <string name="payment">You still have to pay\u0020</string>
     <string name="maj">Last update : </string>
     <string name="devise">£</string>
     <string name="missing_info">missing information, check your internet connection</string>
