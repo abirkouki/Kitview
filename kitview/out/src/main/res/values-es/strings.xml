@@ -86,4 +86,8 @@
     <string name="quit_application">Quitter l\'application ?</string>
     <string name="confirm_quit_application">Etes vous sûr de vouloir quitter l\'application ?</string>
 
+    <string name="Smooch_activityConversation">Chat</string>
+    <string name="Smooch_startOfConversation">Bienvenido/a al chat</string>
+    <string name="Smooch_welcome">Déjenos su mensaje instantáneo para que nuestro equipo pueda contestarle</string>
+    <string name="Smooch_messageHint">Escriba su mensaje aquí...</string>
 </resources>

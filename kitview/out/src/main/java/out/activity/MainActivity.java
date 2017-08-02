@@ -57,6 +57,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 import activity.FolderActivity;
 import activity.ScenariosActivity;
+import io.smooch.core.User;
 import io.smooch.ui.ConversationActivity;
 import model.Module;
 import model.rest.Personne;
@@ -881,6 +882,8 @@ public class MainActivity extends FragmentActivity{
                             break;
 
                         case 8:
+                            User.getCurrentUser().setFirstName("JeanMichel");
+                            User.getCurrentUser().setLastName("Fonctionne");
                             ConversationActivity.show(MainActivity.this);
                             break;
                     }

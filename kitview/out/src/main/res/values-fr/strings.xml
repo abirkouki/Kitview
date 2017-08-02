@@ -85,4 +85,8 @@
     <string name="quit_application">Quitter l\'application ?</string>
     <string name="confirm_quit_application">Etes vous sûr de vouloir quitter l\'application ?</string>
 
+    <string name="Smooch_activityConversation">Chat</string>
+    <string name="Smooch_startOfConversation">Bienvenu/e sur le chat du cabinet</string>
+    <string name="Smooch_welcome">Vous pouvez nous laisser votre message instantané. Notre équipe s\'efforce de vous répondre dans les meilleurs délais</string>
+    <string name="Smooch_messageHint">Rédigez un message...</string>
 </resources>

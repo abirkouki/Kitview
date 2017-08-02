@@ -75,4 +75,9 @@
     <string name="password">password</string>
     <string name="username">username</string>
 
+    <string name="Smooch_activityConversation">Messages</string>
+    <string name="Smooch_startOfConversation">This is the start of your conversation with the team.</string>
+    <string name="Smooch_welcome">Feel free to leave us a message about anything that\'s on your mind.</string>
+    <string name="Smooch_messageHint">Type a message…</string>
+
 </resources>
