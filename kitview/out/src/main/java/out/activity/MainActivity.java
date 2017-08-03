@@ -57,6 +57,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 import activity.FolderActivity;
 import activity.ScenariosActivity;
+import io.smooch.core.User;
 import io.smooch.ui.ConversationActivity;
 import model.Module;
 import model.rest.Personne;
@@ -882,6 +883,13 @@ public class MainActivity extends FragmentActivity{
                             break;
 
                         case 8:
+                            SQLiteHandler db = new SQLiteHandler(getApplicationContext());
+                            HashMap<String, String> user = db.getUserDetails();
+
+                            final String nom = user.get("nom");
+                            final String prenom = user.get("prenom");
+                            User.getCurrentUser().setFirstName(prenom);
+                            User.getCurrentUser().setLastName(nom);
                             ConversationActivity.show(MainActivity.this);
                             break;
 
