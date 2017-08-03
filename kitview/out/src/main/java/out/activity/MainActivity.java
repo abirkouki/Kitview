@@ -882,8 +882,13 @@ public class MainActivity extends FragmentActivity{
                             break;
 
                         case 8:
-                            User.getCurrentUser().setFirstName("JeanMichel");
-                            User.getCurrentUser().setLastName("Fonctionne");
+                            SQLiteHandler db = new SQLiteHandler(getApplicationContext());
+                            HashMap<String, String> user = db.getUserDetails();
+
+                            final String nom = user.get("nom");
+                            final String prenom = user.get("prenom");
+                            User.getCurrentUser().setFirstName(prenom);
+                            User.getCurrentUser().setLastName(nom);
                             ConversationActivity.show(MainActivity.this);
                             break;
                     }
