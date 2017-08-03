@@ -4,6 +4,8 @@
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--<uses-permission android:name="android.permission.READ_CALENDAR" />-->
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
 
     <application
         android:name="util.app.AppController"
@@ -71,6 +73,7 @@
 
         <activity android:name="out.activity.ContactActivity" />
         <activity android:name="out.activity.AboutActivity"/>
+        <activity android:name="out.activity.CalendarActivity"/>
 
         <service android:name="util.service.FcmInstanceIdService">
             <intent-filter>

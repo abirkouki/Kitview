@@ -582,6 +582,7 @@ public class MainActivity extends FragmentActivity{
         this.mModules2.add(new Module(R.string.title_activity_opening, R.color.color6, R.drawable.ic_action_settings));
         this.mModules2.add(new Module(R.string.deconnexion, R.color.color6, R.drawable.ic_action_settings));
         this.mModules2.add(new Module(R.string.about, R.color.color6, R.drawable.ic_action_settings));
+        this.mModules2.add(new Module(R.string.calibrate, R.color.color6, R.drawable.ic_action_settings));
         this.mInitializationFinished2 = false;
 
         if(this.mGridView2 != null){
@@ -882,6 +883,11 @@ public class MainActivity extends FragmentActivity{
 
                         case 8:
                             ConversationActivity.show(MainActivity.this);
+                            break;
+
+                        case 9:
+                            intent = new Intent(MainActivity.this, CalendarActivity.class);
+                            startActivity(intent);
                             break;
                     }
                 }
