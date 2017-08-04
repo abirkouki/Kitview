@@ -8,7 +8,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
@@ -30,6 +29,7 @@ import java.util.Map;
 
 import util.app.AppConfig;
 import util.app.AppController;
+import util.helper.ActionBarHelper;
 import util.session.SQLiteHandler;
 import util.session.SessionManager;
 
@@ -62,11 +62,7 @@ public class ParamNotifActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.param_notif);
-
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setLogo(R.drawable.logo98);
-        actionBar.setDisplayUseLogoEnabled(true);
-        actionBar.setDisplayShowHomeEnabled(true);
+        ActionBarHelper.actionBarCustom(this,false);
 
         txtNom = (TextView) findViewById(R.id.nom);
         txtPrenom = (TextView) findViewById(R.id.prenom);
@@ -179,7 +175,6 @@ public class ParamNotifActivity extends AppCompatActivity {
                     db.addToken(token);
                 // Launch main activity
                 Intent intent = new Intent(ParamNotifActivity.this, MainActivity.class);
-
                 startActivity(intent);
                 finish();
             }

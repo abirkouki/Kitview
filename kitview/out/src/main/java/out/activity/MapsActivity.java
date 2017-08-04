@@ -46,9 +46,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         double lat = AppController.practiceAddress.latitude;
         double lng = AppController.practiceAddress.longitude;
         // Add a marker and move the camera
-        LatLng pau = new LatLng(lat, lng);
-        mMap.addMarker(new MarkerOptions().position(pau).title("Marker in Pau"));//Todo changer title marker
+        LatLng pos = new LatLng(lat, lng);
+        mMap.addMarker(new MarkerOptions().position(pos).title(AppController.practiceAddress.geographic));//Todo changer title marker
         float zoomLevel = (float) 16.0;
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(pau,zoomLevel));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(pos,zoomLevel));
     }
 }

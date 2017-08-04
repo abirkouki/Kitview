@@ -1,14 +1,16 @@
 package out.activity;
 
-import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -23,6 +25,7 @@ import java.util.Map;
 
 import util.app.AppConfig;
 import util.app.AppController;
+import util.helper.ActionBarHelper;
 import util.network.NetworkUtils;
 import util.session.SQLiteHandler;
 import util.session.SessionManager;
@@ -50,6 +53,15 @@ public class SettingsActivity extends AppCompatActivity{
 
     private RadioButton radioButtonYes;
     private RadioButton radioButtonNo;
+
+    private Switch switchVideo;
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        onBackPressed();
+        return true;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,11 +70,7 @@ public class SettingsActivity extends AppCompatActivity{
 
         setContentView(R.layout.activity_settings);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setLogo(R.drawable.logo98);
-        actionBar.setDisplayUseLogoEnabled(true);
-        actionBar.setDisplayShowHomeEnabled(true);
-
+        ActionBarHelper.actionBarCustom(this,true);
 
         // SqLite database handler
         db = new SQLiteHandler(getApplicationContext());
@@ -81,6 +89,11 @@ public class SettingsActivity extends AppCompatActivity{
         radioButtonUn = (RadioButton) findViewById(R.id.unjour);
         radioButtonYes = (RadioButton) findViewById(R.id.oui);
         radioButtonNo = (RadioButton) findViewById(R.id.non);
+        switchVideo = (Switch) findViewById(R.id.switch_video);
+
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        switchVideo.setChecked(prefs.getBoolean("KEY_VIDEO",false));
+
         //Récupération des parametres dans SQLite interne
         String[][] paramsDetails = db.getParamsDetails();
         String delta = paramsDetails[0][0];
@@ -162,11 +175,19 @@ public class SettingsActivity extends AppCompatActivity{
                     //db.addParams((String) radioButtonDelta.getText(), (String) radioButtonFamille.getText());
                     db.addParams(resultHeure,resultFam);
                 } else {
-                    Toast.makeText(getApplicationContext(),"Veuillez vérifier votre accès à internet", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"Veuillez vérifier votre accès à internet", Toast.LENGTH_LONG).show();//TODO string
                 }
-                // Launch main activity
-                Intent intent = new Intent(SettingsActivity.this, MainActivity.class);
-                startActivity(intent);
+
+                if (switchVideo != null) {//activé = vrai
+                    //System.out.println(switchVideo.isChecked());
+                    SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                    SharedPreferences.Editor ed = prefs.edit();
+                    ed.putBoolean("KEY_VIDEO", switchVideo.isChecked());
+                    //ed.commit();
+                    ed.apply();
+                }                                                                   //TODO patch -> intent dans onOptionsItemSelected voila voila, tres tres tres sale merci bonsoir
+//                Intent intent = new Intent(SettingsActivity.this, MainActivity.class);//TODO tester mais marchera pas si il fait précedent
+//                startActivity(intent);
                 finish();
             }
         });
@@ -183,14 +204,6 @@ public class SettingsActivity extends AppCompatActivity{
 //       }
     }
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        System.out.println("passe ici");
-//        MenuInflater inflater = getMenuInflater();
-//        inflater.inflate(R.menu.main,menu);
-//        System.out.println(inflater.toString());
-//        System.out.println(menu.toString());
-//        return true;
-//    }
+
 
 }

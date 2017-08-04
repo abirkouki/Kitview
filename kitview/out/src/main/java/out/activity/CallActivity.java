@@ -5,16 +5,16 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
-
 import com.orthalis.connect.R;
 
 import util.app.AppController;
+import util.helper.ActionBarHelper;
 
 
 /**
@@ -22,6 +22,12 @@ import util.app.AppController;
  */
 
 public class CallActivity extends AppCompatActivity {
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        onBackPressed();
+        return true;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,10 +38,7 @@ public class CallActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_call);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setLogo(R.drawable.logo98);
-        actionBar.setDisplayUseLogoEnabled(true);
-        actionBar.setDisplayShowHomeEnabled(true);
+        ActionBarHelper.actionBarCustom(this,true);
 
         Button buttonCall = (Button) findViewById(R.id.appeler);
 

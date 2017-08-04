@@ -1,8 +1,8 @@
 package out.activity;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.orthalis.connect.R;
 
+import util.helper.ActionBarHelper;
 import util.session.SQLiteHandler;
 import util.session.SessionManager;
 
@@ -22,6 +23,13 @@ public class NotificationsActivity extends AppCompatActivity {
     SessionManager session;
     ListView mListView;
     TextView noNotif;
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        onBackPressed();
+        return true;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,14 +37,8 @@ public class NotificationsActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_notifications);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setLogo(R.drawable.logo98);
-        actionBar.setDisplayUseLogoEnabled(true);
-        actionBar.setDisplayShowHomeEnabled(true);
+        ActionBarHelper.actionBarCustom(this,true);
         afficherNotifs();
-
-
-
 
 
         }

@@ -2,20 +2,27 @@ package out.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 
-
 import com.orthalis.connect.R;
 
 import util.app.AppController;
+import util.helper.ActionBarHelper;
 
 
 public class EmailActivity extends AppCompatActivity {
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        onBackPressed();
+        return true;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,10 +30,7 @@ public class EmailActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_email);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setLogo(R.drawable.logo98);
-        actionBar.setDisplayUseLogoEnabled(true);
-        actionBar.setDisplayShowHomeEnabled(true);
+        ActionBarHelper.actionBarCustom(this,true);
 
        Button buttonSend = (Button) findViewById(R.id.envoyer);
         //à remplacer par l'adresse du practicient

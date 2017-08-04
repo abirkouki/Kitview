@@ -7,7 +7,6 @@ package out.activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -30,6 +29,7 @@ import java.util.Map;
 
 import util.app.AppConfig;
 import util.app.AppController;
+import util.helper.ActionBarHelper;
 import util.session.SQLiteHandler;
 import util.session.SessionManager;
 
@@ -48,11 +48,7 @@ public class LoginActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_login);
-
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setLogo(R.drawable.logo98);
-        actionBar.setDisplayUseLogoEnabled(true);
-        actionBar.setDisplayShowHomeEnabled(true);
+        ActionBarHelper.actionBarCustom(this,false);
 
         inputUser = (EditText) findViewById(R.id.username);
         inputPassword = (EditText) findViewById(R.id.password);

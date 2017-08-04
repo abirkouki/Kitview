@@ -1,15 +1,15 @@
 package out.activity;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.TextView;
-
 
 import com.orthalis.connect.R;
 
 import util.app.AppController;
+import util.helper.ActionBarHelper;
 
 public class OpeningActivity extends AppCompatActivity {
 
@@ -22,17 +22,19 @@ public class OpeningActivity extends AppCompatActivity {
     private TextView sunday;
 
     @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        onBackPressed();
+        return true;
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_opening);
-
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setLogo(R.drawable.logo98);
-        actionBar.setDisplayUseLogoEnabled(true);
-        actionBar.setDisplayShowHomeEnabled(true);
+        ActionBarHelper.actionBarCustom(this,true);
 
 
         //Horaires du cabinet

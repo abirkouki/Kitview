@@ -5,8 +5,8 @@ import android.content.ContentValues;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.CalendarContract;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -16,18 +16,24 @@ import com.orthalis.connect.R;
 import java.util.Calendar;
 import java.util.TimeZone;
 
+import util.helper.ActionBarHelper;
+
 
 public class CalendarActivity extends AppCompatActivity {
 
     @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        onBackPressed();
+        return true;
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        this.setContentView(R.layout.activity_calendar);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_calendar);
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setLogo(R.drawable.logo98);
-        actionBar.setDisplayUseLogoEnabled(true);
-        actionBar.setDisplayShowHomeEnabled(true);
+        ActionBarHelper.actionBarCustom(this,true);
 
         Button button = (Button) findViewById(R.id.calendrier);
         button.setOnClickListener(new View.OnClickListener() {
@@ -41,10 +47,10 @@ public class CalendarActivity extends AppCompatActivity {
             long startMillis = 0;
             long endMillis = 0;
             Calendar beginTime = Calendar.getInstance();
-            beginTime.set(2017, 7, 2, 16, 56);
+            beginTime.set(2017, 7, 3, 16, 56);
             startMillis = beginTime.getTimeInMillis();
             Calendar endTime = Calendar.getInstance();
-            endTime.set(2017, 7, 2, 17, 15);//TODO duration
+            endTime.set(2017, 7, 3, 17, 15);//TODO duration
             endMillis = endTime.getTimeInMillis();
 
 

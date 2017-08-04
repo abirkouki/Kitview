@@ -7,12 +7,13 @@
     <item
         android:id="@+id/calibrate"
         android:icon="@android:drawable/ic_menu_mylocation"
-        app:showAsAction="always"
         android:title="@string/calibrate"/>
     <item
         android:id="@+id/preferences"
         android:icon="@android:drawable/ic_menu_preferences"
-        app:showAsAction="always|ifRoom"
         android:title="@string/preferences"/>
+
+    <!--onCreateOptionsMenu dans act to show-->
+
 
 </menu>

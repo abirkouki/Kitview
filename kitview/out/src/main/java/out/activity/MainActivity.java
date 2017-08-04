@@ -8,6 +8,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -18,7 +19,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
-import android.support.v4.app.FragmentActivity;
+import android.preference.PreferenceManager;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -45,7 +47,6 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 import com.orthalis.connect.R;
 
-
 import java.io.File;
 import java.io.InputStream;
 import java.text.SimpleDateFormat;
@@ -65,6 +66,7 @@ import util.FTP.PracticeFTP;
 import util.app.AppConfig;
 import util.app.AppController;
 import util.components.progressdialog.FRProgressDialog;
+import util.helper.ActionBarHelper;
 import util.network.KitviewUtil;
 import util.session.SQLiteHandler;
 import util.session.SessionManager;
@@ -73,7 +75,7 @@ import view.adapter.ModulesAdapter;
 import view.popup.GenericPopupManager;
 
 @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
-public class MainActivity extends FragmentActivity{
+public class MainActivity extends AppCompatActivity{
     //Views
     private ViewAnimator mViewAnimator;
     private ModulesAdapter mModulesAdapter0,mModulesAdapter2;
@@ -109,10 +111,9 @@ public class MainActivity extends FragmentActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        //setHasOptionsMenu(true);
+
         //TODO app bar s'est barre essayer de la remettre
 
-        //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         this.setContentView(R.layout.activity_main);
 
@@ -136,31 +137,34 @@ public class MainActivity extends FragmentActivity{
         this.mActualSituationTextView = (LinearLayout) findViewById(R.id.ll_parent_infos);
         this.mBottomInfosLinearLayout = (LinearLayout) findViewById(R.id.ll_bottom_infos);
 
-        if (!this.initializeImageView()) this.initializeVideoView();
+
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        if (prefs.getBoolean("KEY_VIDEO",false)) this.initializeVideoView();
+        else this.initializeImageView();
 
         this.mGridView0 = (GridView)this.findViewById(R.id.gridview_home0);
         //this.mGridView = (GridView)this.findViewById(R.id.gridview_home);
         this.mGridView2 = (GridView)this.findViewById(R.id.gridview_home2);
 
         try{
-            //int mode = (mPersistenceManager != null)?mPersistenceManager.getMode():PersistenceManager.MODE_SELECTION;
-
             File CfgDir = new File(getApplicationContext().getFilesDir().getAbsolutePath() + File.separator + "Config");
 
             if(CfgDir.exists()){
+                ActionBarHelper.actionBarCustom(this,false);
                 // Check if user is already logged in or not
                 if (session.isLoggedIn()) {
-                    System.out.println("isLogged");
+                    //System.out.println("isLogged");
                     setViewAnimatorIndex(2);
                     initializeGridView2();
                 }
                 else {
-                    System.out.println("isNotLogged");
+                    //System.out.println("isNotLogged");
                     // User is already logged in. Take him to main activity
                     Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                     startActivity(intent);
                 }
             }else{
+                ActionBarHelper.actionBarOrthalis(this);
                 setViewAnimatorIndex(0);
                 initializeGridView0();
             }
@@ -266,14 +270,14 @@ public class MainActivity extends FragmentActivity{
 		});*/
     }
 
-    //TODO peut etre pour l'image aussi ?? + régler MPEG4Extractor: Reset mWrongNALCounter. Re-check a condition - 'isMalformed = 0'
+    //TODO régler MPEG4Extractor: Reset mWrongNALCounter. Re-check a condition - 'isMalformed = 0'
     private void initializeVideoView(){
         Context context = getApplicationContext();
         Uri path;
         String pathStr = context.getFilesDir().getAbsolutePath() + File.separator + "Config" + File.separator + "video.mp4";
         File videoPractice = new File(pathStr);
         if (videoPractice.exists()) path = Uri.parse(pathStr);
-        else path = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.video);
+        else path = Uri.parse("android.resource://" + getPackageName() + File.separator + R.raw.video);
 
         if(mVideoView != null){
             if(path != null )mVideoView.setVideoURI(path);
@@ -282,7 +286,7 @@ public class MainActivity extends FragmentActivity{
             mVideoView.setOnPreparedListener (new MediaPlayer.OnPreparedListener() {
                 @Override
                 public void onPrepared(MediaPlayer mp) {
-                    System.out.println("startVideo");
+                    //System.out.println("startVideo");
                     mVideoView.start();
                     mp.setLooping(true);
                 }
@@ -305,14 +309,12 @@ public class MainActivity extends FragmentActivity{
         return path;
     }
 
-    private boolean initializeImageView(){
+    private void initializeImageView(){
         Context context = getApplicationContext();
-        boolean res = mImageView != null;
-        if (res){
+        if (mImageView != null){
             String pathStr = findExtension(context.getFilesDir().getAbsolutePath() + File.separator + "Config" + File.separator + "photo0");
             File imagePractice = new File(pathStr);
-            res = imagePractice.exists();
-            if (res){
+            if (imagePractice.exists()){
                 Bitmap mBitMap = BitmapFactory.decodeFile(pathStr);
                 mImageView.setImageBitmap(mBitMap);
             }
@@ -320,10 +322,8 @@ public class MainActivity extends FragmentActivity{
                 InputStream is = getResources().openRawResource(R.raw.orthalis);
                 Bitmap mBitMap = BitmapFactory.decodeStream(is);
                 mImageView.setImageBitmap(mBitMap);
-                res = true;
             }
         }
-        return res;
     }
 
 
@@ -572,17 +572,17 @@ public class MainActivity extends FragmentActivity{
         //this.mModules2.add(new Module(R.string.folder2, R.color.color4, R.drawable.ic_action_group));//degager
         this.mModules2.add(new Module(R.string.settings, R.color.color6, R.drawable.ic_action_settings));
         //this.mModules2.add(new Module(R.string.practice, R.color.color6, R.drawable.ic_action_settings));//degager
-        this.mModules2.add(new Module(R.string.balance, R.color.color6, R.drawable.ic_action_settings));
-        this.mModules2.add(new Module(R.string.notification, R.color.color6, R.drawable.ic_action_settings));
-        this.mModules2.add(new Module(R.string.appointment, R.color.color6, R.drawable.ic_action_settings));
+        this.mModules2.add(new Module(R.string.balance, R.color.color6, R.drawable.ic_action_refresh));
+        this.mModules2.add(new Module(R.string.notification, R.color.color6, R.drawable.ic_action_view_as_list));
+        this.mModules2.add(new Module(R.string.appointment, R.color.color6, R.drawable.ic_action_time));
         //this.mModules2.add(new Module(R.string.phone, R.color.color6, R.drawable.ic_action_settings));
         //this.mModules2.add(new Module(R.string.email, R.color.color6, R.drawable.ic_action_settings));
 
-        this.mModules2.add(new Module(R.string.contact, R.color.color6, R.drawable.ic_action_settings));
-        this.mModules2.add(new Module(R.string.about, R.color.color6, R.drawable.ic_action_settings));
-        this.mModules2.add(new Module(R.string.title_activity_opening, R.color.color6, R.drawable.ic_action_settings));
-        this.mModules2.add(new Module(R.string.deconnexion, R.color.color6, R.drawable.ic_action_settings));
-        this.mModules2.add(new Module(R.string.about, R.color.color6, R.drawable.ic_action_settings));
+        this.mModules2.add(new Module(R.string.contact, R.color.color6, R.drawable.ic_action_person));
+        this.mModules2.add(new Module(R.string.about, R.color.color6, R.drawable.ic_action_about));
+        this.mModules2.add(new Module(R.string.title_activity_opening, R.color.color6, R.drawable.ic_action_go_to_today));
+        this.mModules2.add(new Module(R.string.deconnexion, R.color.color6, R.drawable.ic_action_warning2));
+        this.mModules2.add(new Module(R.string.about, R.color.color6, R.drawable.ic_action_group));
         this.mModules2.add(new Module(R.string.calibrate, R.color.color6, R.drawable.ic_action_settings));
         this.mInitializationFinished2 = false;
 
@@ -784,6 +784,7 @@ public class MainActivity extends FragmentActivity{
                             //launchSettings(MainActivity.this,false);
                             intent = new Intent(MainActivity.this, out.activity.SettingsActivity.class);
                             startActivity(intent);
+                            //finish();//TODO tester mais marchera surement pas
                             break;
                         //Test
                         //case 5:

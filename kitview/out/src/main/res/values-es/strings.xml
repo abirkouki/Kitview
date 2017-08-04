@@ -89,5 +89,8 @@
     <string name="Smooch_activityConversation">Chat</string>
     <string name="Smooch_startOfConversation">Bienvenido/a al chat</string>
     <string name="Smooch_welcome">Déjenos su mensaje instantáneo para que nuestro equipo pueda contestarle</string>
-    <string name="Smooch_messageHint">Escriba su mensaje aquí...</string>
+    <string name="Smooch_messageHint">Escriba su mensaje aquí&#8230;</string>
+
+    <string name="video">Video en arrière plan : </string>
+    <string name="enter_login">Entrez vos identifiants donnés par votre praticien.</string>
 </resources>
