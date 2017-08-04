@@ -24,12 +24,17 @@ import com.orthalis.connect.R;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Map;
 
 import util.app.AppConfig;
 import util.app.AppController;
+<<<<<<< HEAD
 import util.helper.ActionBarHelper;
+=======
+import util.network.NetworkUtils;
+>>>>>>> master
 import util.session.SQLiteHandler;
 import util.session.SessionManager;
 
@@ -82,16 +87,12 @@ public class LoginActivity extends AppCompatActivity {
                 String password = inputPassword.getText().toString().trim();
 
                 // Check for empty data in the form
-                if (!user.isEmpty() && !password.isEmpty()) {
+                if (NetworkUtils.isWifiConnected(getApplicationContext()) || NetworkUtils.isMobileConnected(getApplicationContext())) {
                     // login user
                     checkLogin(user, password);
-
                 } else {
-                    // Prompt user to enter credentials
-                    //TODO R.String
-                    Toast.makeText(getApplicationContext(),
-                            "Please enter the credentials!", Toast.LENGTH_LONG)
-                            .show();
+
+                    Toast.makeText(getApplicationContext(), R.string.no_connection, Toast.LENGTH_LONG).show();
                 }
             }
 
@@ -110,75 +111,89 @@ public class LoginActivity extends AppCompatActivity {
         pDialog.setMessage(getApplicationContext().getResources().getString(R.string.logging_in));
         showDialog();
 
-        StringRequest strReq = new StringRequest(Method.POST, AppConfig.URL_LOGIN, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                Log.d(TAG, "Login Response: " + response.toString());
-                hideDialog();
+            StringRequest strReq = new StringRequest(Method.POST, AppConfig.URL_LOGIN, new Response.Listener<String>() {
+                @Override
+                public void onResponse(String response) {
 
-                try {
-                    JSONObject jObj = new JSONObject(response);
-                    boolean error = jObj.getBoolean("error");
+                    Log.d(TAG, "Login Response: " + response.toString());
+                    hideDialog();
 
-                    // Check for error node in json
-                    if (!error) {
-                        // user successfully logged in
-                        // Create login session
+                    try {
+                        JSONObject jObj = new JSONObject(response);
+                        boolean error = jObj.getBoolean("error");
 
-                        session.setLogin(true);
+                        // Check for error node in json
+                        if (!error) {
+                            // user successfully logged in
+                            // Create login session
 
-                        // Now store the user in SQLite
-                        String uid = jObj.getString("uid");
-                        JSONObject user = jObj.getJSONObject("user");
-                        String nom = user.getString("nom").trim();
-                        String prenom = user.getString("prenom").trim();
+                            session.setLogin(true);
 
-                        // Inserting row in users table
-                        db.addUser(prenom, nom, uid);
-                        // Launch ParamNotif
-                        Intent intent = new Intent(LoginActivity.this, ParamNotifActivity.class);
-                        startActivity(intent);
-                        finish();
-                    } else {
-                        // Error in login. Get the error message
-                        String errorMsg = jObj.getString("error_msg");
-                        Toast.makeText(getApplicationContext(),
-                                getApplicationContext().getResources().getString(R.string.no_connection), Toast.LENGTH_LONG).show();
+                            // Now store the user in SQLite
+                            String uid = jObj.getString("uid");
+                            JSONObject user = jObj.getJSONObject("user");
+                            String nom = user.getString("nom");
+                            String prenom = user.getString("prenom");
+                            byte[] bytes1 = nom.getBytes("UTF-8");
+                            String s1 = new String(bytes1, "UTF-8");
+                            nom = s1.trim();
+                            byte[] bytes2 = prenom.getBytes("UTF-8");
+                            String s2 = new String(bytes2, "UTF-8");
+                            prenom = s2.trim();
+                            // Inserting row in users table
+                            db.addUser(prenom, nom, uid);
+                            // Launch ParamNotif
+                            Intent intent = new Intent(LoginActivity.this, ParamNotifActivity.class);
+                            startActivity(intent);
+                            finish();
+                        } else {
+                            // Error in login. Get the error message
+                            //TODO: r string
+                            String errorMsg = jObj.getString("error_msg");
+                            if (errorMsg.equals("1")) {
+                                Toast.makeText(getApplicationContext(), "Login credentials are wrong", Toast.LENGTH_LONG).show();
+                            } else {
+                                Toast.makeText(getApplicationContext(), "Required parameters username or password is missing", Toast.LENGTH_LONG).show();
+                                }
+
+
+                        }
+                    } catch (JSONException e) {
+                        // JSON error
+                        e.printStackTrace();
+                        Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+                    } catch (UnsupportedEncodingException e) {
+                        e.printStackTrace();
                     }
-                } catch (JSONException e) {
-                    // JSON error
-                    e.printStackTrace();
-                    Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+
+                }
+            }, new Response.ErrorListener() {
+
+                @Override
+                public void onErrorResponse(VolleyError error) {
+                    Log.e(TAG, "Login Error: " + error.getMessage());
+                    Toast.makeText(getApplicationContext(),
+                            error.getMessage(), Toast.LENGTH_LONG).show();
+                    hideDialog();
+                }
+            }) {
+
+                @Override
+                protected Map<String, String> getParams() {
+                    // Posting parameters to login url
+                    Map<String, String> params = new HashMap<String, String>();
+                    params.put("username", username);
+                    params.put("password", password);
+
+                    return params;
                 }
 
-            }
-        }, new Response.ErrorListener() {
+            };
 
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.e(TAG, "Login Error: " + error.getMessage());
-                Toast.makeText(getApplicationContext(),
-                        error.getMessage(), Toast.LENGTH_LONG).show();
-                hideDialog();
-            }
-        })
-        {
+            // Adding request to request queue
+            AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
+        }
 
-            @Override
-            protected Map<String, String> getParams() {
-                // Posting parameters to login url
-                Map<String, String> params = new HashMap<String, String>();
-                params.put("username", username);
-                params.put("password", password);
-
-                return params;
-            }
-
-        };
-
-        // Adding request to request queue
-        AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
-    }
 
     @Override
     public void onBackPressed() {
