@@ -25,6 +25,7 @@ import com.orthalis.connect.R;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -134,9 +135,14 @@ public class LoginActivity extends AppCompatActivity {
                         // Now store the user in SQLite
                         String uid = jObj.getString("uid");
                         JSONObject user = jObj.getJSONObject("user");
-                        String nom = user.getString("nom").trim();
-                        String prenom = user.getString("prenom").trim();
-
+                        String nom = user.getString("nom");
+                        String prenom = user.getString("prenom");
+                        byte[] bytes1 = nom.getBytes("UTF-8");
+                        String s1 = new String(bytes1, "UTF-8");
+                        nom = s1.trim();
+                        byte[] bytes2 = prenom.getBytes("UTF-8");
+                        String s2 = new String(bytes2, "UTF-8");
+                        prenom = s2.trim();
                         // Inserting row in users table
                         db.addUser(prenom, nom, uid);
                         // Launch ParamNotif
@@ -153,6 +159,8 @@ public class LoginActivity extends AppCompatActivity {
                     // JSON error
                     e.printStackTrace();
                     Toast.makeText(getApplicationContext(), "Json error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+                } catch (UnsupportedEncodingException e) {
+                    e.printStackTrace();
                 }
 
             }
