@@ -21,7 +21,6 @@ import android.os.Environment;
 import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -57,11 +56,9 @@ import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import activity.FolderActivity;
-import activity.ScenariosActivity;
 import io.smooch.core.User;
 import io.smooch.ui.ConversationActivity;
 import model.Module;
-import model.rest.Personne;
 import util.FTP.PracticeFTP;
 import util.app.AppConfig;
 import util.app.AppController;
@@ -97,7 +94,7 @@ public class MainActivity extends AppCompatActivity{
     //private PersistenceManager mPersistenceManager;
     private int mOrientation;
 
-    public final static String KEY_TEST_CONNECTION = "KEY_TEST_CONNECTION";
+    //public final static String KEY_TEST_CONNECTION = "KEY_TEST_CONNECTION";
 
     //private boolean mCheckKitViewConnection = true;
 
@@ -111,8 +108,6 @@ public class MainActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-
-        //TODO app bar s'est barre essayer de la remettre
 
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         this.setContentView(R.layout.activity_main);
@@ -137,11 +132,6 @@ public class MainActivity extends AppCompatActivity{
         this.mActualSituationTextView = (LinearLayout) findViewById(R.id.ll_parent_infos);
         this.mBottomInfosLinearLayout = (LinearLayout) findViewById(R.id.ll_bottom_infos);
 
-
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if (prefs.getBoolean("KEY_VIDEO",false)) this.initializeVideoView();
-        else this.initializeImageView();
-
         this.mGridView0 = (GridView)this.findViewById(R.id.gridview_home0);
         //this.mGridView = (GridView)this.findViewById(R.id.gridview_home);
         this.mGridView2 = (GridView)this.findViewById(R.id.gridview_home2);
@@ -162,6 +152,7 @@ public class MainActivity extends AppCompatActivity{
                     // User is already logged in. Take him to main activity
                     Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                     startActivity(intent);
+                    finish();
                 }
             }else{
                 ActionBarHelper.actionBarOrthalis(this);
@@ -543,9 +534,11 @@ public class MainActivity extends AppCompatActivity{
                                 public void run() {
                                     if(mDialog != null)mDialog.cancelFRProgressDialog();
                                     if (folderExists[0].get()){//que si tout a réussi
-                                        //setViewAnimatorIndex(2);
-                                        //initializeGridView2();
                                         AppController.parseConfigFile(getApplicationContext());
+                                        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                                        SharedPreferences.Editor ed = prefs.edit();
+                                        ed.putBoolean("KEY_VIDEO", true);
+                                        ed.apply();
                                         recreate();
                                     };
                                 }
@@ -784,7 +777,6 @@ public class MainActivity extends AppCompatActivity{
                             //launchSettings(MainActivity.this,false);
                             intent = new Intent(MainActivity.this, out.activity.SettingsActivity.class);
                             startActivity(intent);
-                            //finish();//TODO tester mais marchera surement pas
                             break;
                         //Test
                         //case 5:
@@ -929,38 +921,48 @@ public class MainActivity extends AppCompatActivity{
     protected void onResume(){
         super.onResume();
 
-        //startVideo();
-        //TODO peut etre changer a partir d'ici
-        KitviewUtil.GetCurrentIdPatient(MainActivity.this,new KitviewUtil.IIntResponse() {
-            @Override
-            public void onResponse(int patientId) {
-                final Personne personne = (patientId != -1)?KitviewUtil.getPersonneFromId(MainActivity.this,patientId):null;
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        if (prefs.getBoolean("KEY_VIDEO",false)) {
+            mVideoView.setVisibility(View.VISIBLE);
+            this.initializeVideoView();
+            mImageView.setVisibility(View.GONE);
+        }
+        else {
+            mImageView.setVisibility(View.VISIBLE);
+            this.initializeImageView();
+            mVideoView.setVisibility(View.GONE);
+        }
 
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        if(personne != null){
-                            String lastName = personne.getLastName().trim();
-                            String firstName = personne.getFirstName().trim();
-
-                            String patientInfosFormatted = (lastName != null && lastName.length() <= ScenariosActivity.PATIENT_INFOS_MAX_CHARACTERS)?lastName:lastName.substring(0, ScenariosActivity.PATIENT_INFOS_MAX_CHARACTERS)+" ...";
-                            String patientInfosFormatted2 = (firstName != null && firstName.length() <= ScenariosActivity.PATIENT_INFOS_MAX_CHARACTERS)?firstName:firstName.substring(0, ScenariosActivity.PATIENT_INFOS_MAX_CHARACTERS)+" ...";
-
-                            mCurrentPatientInfosTextView.setText(patientInfosFormatted2+" "+patientInfosFormatted);
-
-                            String text = Html.fromHtml(getResources().getString(R.string.copyright_kitview_labs_2015))+" v"+SystemUtil.getAppVersion(MainActivity.this);
-
-                            mCopyrightTextView.setText(text);//patientInfosFormatted+" "+patientInfosFormatted2+" "+text);
-                        }
-                    }
-                });
-            }
-        });
+//        startVideo();
+//        KitviewUtil.GetCurrentIdPatient(MainActivity.this,new KitviewUtil.IIntResponse() {
+//            @Override
+//            public void onResponse(int patientId) {
+//                final Personne personne = (patientId != -1)?KitviewUtil.getPersonneFromId(MainActivity.this,patientId):null;
+//
+//                runOnUiThread(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        if(personne != null){
+//                            String lastName = personne.getLastName().trim();
+//                            String firstName = personne.getFirstName().trim();
+//
+//                            String patientInfosFormatted = (lastName != null && lastName.length() <= ScenariosActivity.PATIENT_INFOS_MAX_CHARACTERS)?lastName:lastName.substring(0, ScenariosActivity.PATIENT_INFOS_MAX_CHARACTERS)+" ...";
+//                            String patientInfosFormatted2 = (firstName != null && firstName.length() <= ScenariosActivity.PATIENT_INFOS_MAX_CHARACTERS)?firstName:firstName.substring(0, ScenariosActivity.PATIENT_INFOS_MAX_CHARACTERS)+" ...";
+//
+//                            mCurrentPatientInfosTextView.setText(patientInfosFormatted2+" "+patientInfosFormatted);
+//
+//                            String text = Html.fromHtml(getResources().getString(R.string.copyright_kitview_labs_2015))+" v"+SystemUtil.getAppVersion(MainActivity.this);
+//
+//                            mCopyrightTextView.setText(text);//patientInfosFormatted+" "+patientInfosFormatted2+" "+text);
+//                        }
+//                    }
+//                });
+//            }
+//        });
     }
 
     //TODO garder
     public void startVideo(){
-        //System.out.println("startVideo");
         try{
             if(mVideoView != null){
                 mVideoView.seekTo(0);
@@ -996,7 +998,7 @@ public class MainActivity extends AppCompatActivity{
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        if(outState != null)outState.putBoolean(KEY_TEST_CONNECTION,false);
+        //if(outState != null)outState.putBoolean(KEY_TEST_CONNECTION,false);
     }
 
     //TODO orientation change -> passe ici (1)

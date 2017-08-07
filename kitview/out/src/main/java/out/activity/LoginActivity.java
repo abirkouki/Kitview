@@ -56,6 +56,8 @@ public class LoginActivity extends AppCompatActivity {
         inputPassword = (EditText) findViewById(R.id.password);
         btnLogin = (Button) findViewById(R.id.btnLogin);
 
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);//TODO enlever, pour mon portable uniquement
+
         // Progress dialog
         pDialog = new ProgressDialog(this);
         pDialog.setCancelable(false);
@@ -191,7 +193,6 @@ public class LoginActivity extends AppCompatActivity {
             AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
 
         }
-
 
     @Override
     public void onBackPressed() {

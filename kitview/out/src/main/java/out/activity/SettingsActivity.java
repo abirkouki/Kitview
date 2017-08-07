@@ -185,23 +185,10 @@ public class SettingsActivity extends AppCompatActivity{
                     ed.putBoolean("KEY_VIDEO", switchVideo.isChecked());
                     //ed.commit();
                     ed.apply();
-                }                                                                   //TODO patch -> intent dans onOptionsItemSelected voila voila, tres tres tres sale merci bonsoir
-//                Intent intent = new Intent(SettingsActivity.this, MainActivity.class);//TODO tester mais marchera pas si il fait précedent
-//                startActivity(intent);
+                }
                 finish();
             }
         });
-
-
-//    }
-//    private String transformeNotifFamille (String reponse) {
-//        //permet de transformer la réponse Oui pas Y ou Non pas N pour l'envoyer à la BDD
-//        // TODO : plusieurs langues ??
-//       if (reponse.equals("Oui")) {
-//           return "Y";
-//       } else {
-//           return "N";
-//       }
     }
 
 
