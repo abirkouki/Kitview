@@ -1,26 +1,42 @@
 <resources>
+
+    <!--App-->
     <string name="app_name">OrthalisConnect</string>
-    <string name="practice_id">Código ortodoncista</string>
-    <string name="practice_scan">Scan</string>
     <string name="FCM_PREF">com.orthalis.connect.fcm_pref</string>
     <string name="FCM_TOKEN">com.orthalis.connect.fcm_token</string>
-    <string name="title_activity_maps">Mapa</string>
-    <string name="title_activity_opening">Horarios</string>
 
+    <!--Main dl practice-->
+    <string name="practice_id">Código ortodoncista</string>
+    <string name="practice_scan">Scan</string>
+    <string name="practice_msg">Entrez le code donné par votre cabinet</string>
+    <string name="confirm">Valider</string>
+    <string name="cancel">Annuler</string>
+
+    <!--Main-->
+    <string name="title_activity_opening">Horarios</string>
     <string name="balance">Balance</string>
     <string name="notification">Notificaciones</string>
     <string name="appointment">Próxima cita</string>
-    <string name="phone">Teléfono</string>
-
-
-    <string name="deconnexion">Cerrar sesión</string>
-    <string name="map">Mapa</string>
     <string name="contact">Contacto</string>
     <string name="about">Sobre nosotros</string>
+    <string name="wifi_title">Wifi desactivado</string>
+    <string name="wifi_content">Activar Wifi en el mobilo</string>
+    <string name="quit_application">Quitter l\'application ?</string>
+    <string name="confirm_quit_application">Etes vous sûr de vouloir quitter l\'application ?</string>
+
+    <string name="deconnexion">Cerrar sesión</string>
+
+    <!--Contact-->
+    <string name="map">Mapa</string>
     <string name="telephone">Teléfono</string>
     <string name="email">Email</string>
     <string name="website">Página web</string>
     <string name="address">Dirección</string>
+    <string name="practice_call">Llamar</string>
+    <string name="practice_email">Mandar email</string>
+    <string name="practice_map">Ver el mapa</string>
+
+    <!--Opening Hours-->
     <string name="closed">Cerrado</string>
     <string name="monday">Lunes</string>
     <string name="tuesday">Martes</string>
@@ -30,6 +46,8 @@
     <string name="saturday">Sábado</string>
     <string name="sunday">Domingo</string>
 
+    <!--ParramNotif & Settings-->
+    <string name="welcome">Bienvenida/o</string>
     <string name="notif_choice">¿Cuando le gustaría recibir las notificaciones de cita?</string>
     <string name="one_day">24h antes</string>
     <string name="two_day">48h antes</string>
@@ -37,60 +55,48 @@
     <string name="notif_family">¿Le gustaría recibir las notificaciones de sus familiares?</string>
     <string name="yes">Sí</string>
     <string name="no">No</string>
+    <string name="video">Video en arrière plan : </string>
 
-    <string name="welcome">Bienvenida/o</string>
-    <string name="call_confirmation">Llamar a la secretaría</string>
-
-    <string name="practice_call">Llamar</string>
-    <string name="practice_email">Mandar email</string>
-    <string name="practice_map">Ver el mapa</string>
-
-
-    <string name="folder_non_existent">Archivo no existente </string>
-    <string name="downloading">Descargando</string>
-    <string name="success_download">Descarga completada</string>
-    <string name="download_failed">Se produjo un problema durante la descarga</string>
-    <string name="no_data_received">Datos no recibidos</string>
-    <!--TODO traduire-->
-    <string name="check">Veuillez vérifiez votre connexion internet</string>
-    <string name="error_try">Une erreur de réseau est survenue, veuillez réessayer dans un instant</string>
-    <string name="error_check_try">Une erreur de réseau est survenue, veuillez vérifier votre connexion et réessayer dans un instant</string>
-
-    <string name="logging_in">Conexión</string>
-    <string name="no_connection">Compruebe su conexión a internet</string>
-
+    <!--RDV & Call-->
     <string name="rdv_change">Si desea cambiar o anular su cita, llame al consultorio de ortodoncia</string>
-
-    <string name="payment">Le queda por pagar\u0020</string>
-    <string name="update">Última actualización : </string>
-    <string name="devise">€</string>
-    <string name="missing_info">Informacion no encontrada, compruebe su conexión a internet</string>
-
-    <string name="no_notif">No tiene notificaciones</string>
-
     <string name="next_rdv">Su próxima cita será el </string>
     <string name="duration">Duración aproximada : </string>
     <string name="no_rdv">No tiene próxima cita</string>
     <string name="label">Descripción :</string>
     <string name="minutes"> minutos</string>
-    <!--TODO traduire at-->
     <string name="at">at</string>
+    <string name="call_confirmation">Llamar a la secretaría</string>
 
-    <string name="code">código del consultorio</string>
+    <!--FTP-->
+    <string name="folder_non_existent">Archivo no existente </string>
+    <string name="downloading">Descargando</string>
+    <string name="success_download">Descarga completada</string>
+    <string name="download_failed">Se produjo un problema durante la descarga</string>
+    <string name="no_data_received">Datos no recibidos</string>
+    <string name="check">Veuillez vérifiez votre connexion internet</string>
+    <string name="error_try">Une erreur de réseau est survenue, veuillez réessayer dans un instant</string>
+    <string name="error_check_try">Une erreur de réseau est survenue, veuillez vérifier votre connexion et réessayer dans un instant</string>
+
+    <!--Login-->
+    <string name="logging_in">Conexión</string>
+    <string name="no_connection">Compruebe su conexión a internet</string>
+    <string name="enter_login">Entrez vos identifiants donnés par votre praticien.</string>
     <string name="password">contraseña</string>
     <string name="username">login</string>
 
-    <string name="wifi_title">Wifi desactivado</string>
-    <string name="wifi_content">Activar Wifi en el mobilo</string>
+    <!--Balance-->
+    <string name="payment">Le queda por pagar\u0020</string>
+    <string name="update">Última actualización :\u0020</string>
+    <string name="devise">€</string>
+    <string name="missing_info">Informacion no encontrada, compruebe su conexión a internet</string>
 
-    <string name="quit_application">Quitter l\'application ?</string>
-    <string name="confirm_quit_application">Etes vous sûr de vouloir quitter l\'application ?</string>
+    <!--Notif-->
+    <string name="no_notif">No tiene notificaciones</string>
 
+    <!--Chat (smooch)-->
     <string name="Smooch_activityConversation">Chat</string>
     <string name="Smooch_startOfConversation">Bienvenido/a al chat</string>
     <string name="Smooch_welcome">Déjenos su mensaje instantáneo para que nuestro equipo pueda contestarle</string>
     <string name="Smooch_messageHint">Escriba su mensaje aquí&#8230;</string>
 
-    <string name="video">Video en arrière plan : </string>
-    <string name="enter_login">Entrez vos identifiants donnés par votre praticien.</string>
 </resources>

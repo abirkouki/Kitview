@@ -1,26 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!--App-->
     <string name="app_name">OrthalisConnect</string>
-    <string name="practice_id">Code Cabinet </string>
-    <string name="practice_scan">Scan QRcode</string>
     <string name="FCM_PREF">com.orthalis.connect.fcm_pref</string>
     <string name="FCM_TOKEN">com.orthalis.connect.fcm_token</string>
-    <string name="title_activity_maps">Map</string>
-    <string name="title_activity_opening">Horaires d\'ouverture</string>
 
+    <!--Main dl practice-->
+    <string name="practice_id">Code Cabinet </string>
+    <string name="practice_scan">Scan QRcode</string>
+    <string name="practice_msg">Entrez le code donné par votre cabinet</string>
+    <string name="confirm">Valider</string>
+    <string name="cancel">Annuler</string>
+
+    <!--Main-->
+    <string name="title_activity_opening">Horaires d\'ouverture</string>
     <string name="balance">Solde</string>
     <string name="notification">Notifications</string>
     <string name="appointment">Rendez-vous</string>
-    <string name="phone">Phone</string>
-
-    <string name="deconnexion">Deconnexion</string>
-    <string name="map">Map</string>
     <string name="contact">Contact</string>
     <string name="about">A propos</string>
+    <string name="wifi_title">Wifi désactivé</string>
+    <string name="wifi_content">Activez votre Wifi dans les réglages</string>
+    <string name="quit_application">Quitter l\'application ?</string>
+    <string name="confirm_quit_application">Etes vous sûr de vouloir quitter l\'application ?</string>
+
+    <string name="deconnexion">Déconnexion</string>
+
+    <!--Contact-->
+    <string name="map">Carte</string>
     <string name="telephone">Telephone</string>
     <string name="email">Email</string>
     <string name="website">Site Web</string>
     <string name="address">Adresse</string>
+    <string name="practice_call">Appeler</string>
+    <string name="practice_email">Envoyer un email</string>
+    <string name="practice_map">Voir sur la carte</string>
+
+    <!--Opening Hours-->
     <string name="closed">Fermé</string>
     <string name="monday">Lundi</string>
     <string name="tuesday">Mardi</string>
@@ -30,7 +47,8 @@
     <string name="saturday">Samedi</string>
     <string name="sunday">Dimanche</string>
 
-
+    <!--ParramNotif & Settings-->
+    <string name="welcome">Bienvenu(e)</string>
     <string name="notif_choice">Quand voulez-vous recevoir une notification de votre rendez-vous?</string>
     <string name="one_day">24h avant</string>
     <string name="two_day">48h avant</string>
@@ -38,16 +56,19 @@
     <string name="notif_family">Voulez-vous recevoir les notifications de votre famille?</string>
     <string name="yes">Oui</string>
     <string name="no">Non</string>
+    <string name="video">Video en arrière plan : </string>
 
-    <string name="welcome">Bienvenu(e)</string>
+    <!--RDV & Call-->
+    <string name="rdv_change">Si vous voulez changer la date ou annuler votre rendez-vous, veuillez appeler votre cabinet</string>
+    <string name="next_rdv">Votre prochain rendez-vous sera le </string>
+    <string name="duration">Durée approximative : </string>
+    <string name="no_rdv">Vous n\'avez pas de prochain rendez-vous</string>
+    <string name="label">Libellé :</string>
+    <string name="minutes"> minutes</string>
+    <string name="at">à</string>
     <string name="call_confirmation">Appeler le cabinet</string>
 
-    <string name="practice_call">Appeler</string>
-    <string name="practice_email">Envoyer un email</string>
-    <string name="practice_map">Voir sur la carte</string>
-
-
-
+    <!--FTP-->
     <string name="folder_non_existent">Dossier non existant</string>
     <string name="downloading">Téléchargement&#8230;</string>
     <string name="success_download">Les fichiers ont été téléchargés avec succés</string>
@@ -57,40 +78,26 @@
     <string name="error_try">Une erreur de réseau est survenue, veuillez réessayer dans un instant</string>
     <string name="error_check_try">Une erreur de réseau est survenue, veuillez vérifier votre connexion et réessayer dans un instant</string>
 
+    <!--Login-->
     <string name="logging_in">Connexion</string>
     <string name="no_connection">Veuillez verifiez la connexion internet</string>
-
-    <string name="rdv_change">Si vous voulez changer la date ou annuler votre rendez-vous, veuillez appeler votre cabinet</string>
-    <string name="payment">Il vous reste à payer\u0020</string>
-    <string name="update">Dernière mise à jour : </string>
-    <string name="devise">€</string>
-    <string name="missing_info">Information manquante, vérifiez votre connexion internet</string>
-
-    <string name="no_notif">Vous n\'avez pas de notifications</string>
-
-    <string name="next_rdv">Votre prochain rendez-vous sera le </string>
-    <string name="duration">Durée approximative : </string>
-    <string name="no_rdv">Vous n\'avez pas de prochain rendez-vous</string>
-    <string name="label">Libellé :</string>
-    <string name="minutes"> minutes</string>
-    <string name="at">à</string>
-
-    <string name="code">code du cabinet</string>
+    <string name="enter_login">Entrez vos identifiants donnés par votre praticien.</string>
     <string name="password">mot de passe</string>
     <string name="username">identifiant</string>
 
-    <string name="wifi_title">Wifi désactivé</string>
-    <string name="wifi_content">Activez votre Wifi dans les réglages</string>
+    <!--Balance-->
+    <string name="payment">Il vous reste à payer\u0020</string>
+    <string name="update">Dernière mise à jour :\u0020</string>
+    <string name="devise">€</string>
+    <string name="missing_info">Information manquante, vérifiez votre connexion internet</string>
 
-    <string name="quit_application">Quitter l\'application ?</string>
-    <string name="confirm_quit_application">Etes vous sûr de vouloir quitter l\'application ?</string>
+    <!--Notif-->
+    <string name="no_notif">Vous n\'avez pas de notifications</string>
 
+    <!--Chat (smooch)-->
     <string name="Smooch_activityConversation">Chat</string>
     <string name="Smooch_startOfConversation">Bienvenu/e sur le chat du cabinet</string>
     <string name="Smooch_welcome">Vous pouvez nous laisser votre message instantané. Notre équipe s\'efforce de vous répondre dans les meilleurs délais</string>
     <string name="Smooch_messageHint">Rédigez un message&#8230;</string>
-
-    <string name="video">Video en arrière plan : </string>
-    <string name="enter_login">Entrez vos identifiants donnés par votre praticien.</string>
 
 </resources>

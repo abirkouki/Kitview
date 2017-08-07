@@ -1,25 +1,42 @@
 <resources>
+
+    <!--App-->
     <string name="app_name">OrthalisConnect</string>
-    <string name="practice_id">Practice code</string>
-    <string name="practice_scan">Scan</string>
     <string name="FCM_PREF">com.orthalis.connect.fcm_pref</string>
     <string name="FCM_TOKEN">com.orthalis.connect.fcm_token</string>
-    <string name="title_activity_maps">Map</string>
-    <string name="title_activity_opening">Opening Hours</string>
 
+    <!--Main dl practice-->
+    <string name="practice_id">Practice code</string>
+    <string name="practice_scan">Scan</string>
+    <string name="practice_msg">Type in the code given by your practice</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+
+    <!--Main-->
+    <string name="title_activity_opening">Opening Hours</string>
     <string name="balance">Balance</string>
     <string name="notification">Notification</string>
     <string name="appointment">Appointment</string>
-    <string name="phone">Phone</string>
-
-    <string name="deconnexion">Deconnexion</string>
-    <string name="map">Map</string>
     <string name="contact">Contact</string>
     <string name="about">About</string>
+    <string name="wifi_title">Wifi disabled</string>
+    <string name="wifi_content">Enable Wifi in your Android OS settings</string>
+    <string name="quit_application">Quit application ?</string>
+    <string name="confirm_quit_application">Are you sure you want to quit the application ?</string>
+
+    <string name="deconnexion">Deconnection</string>
+
+    <!--Contact-->
+    <string name="map">Map</string>
     <string name="telephone">Telephone</string>
     <string name="email">Email</string>
     <string name="website">Website</string>
     <string name="address">Address</string>
+    <string name="practice_call">Call</string>
+    <string name="practice_email">Send mail</string>
+    <string name="practice_map">Go to map</string>
+
+    <!--Opening Hours-->
     <string name="closed">Closed</string>
     <string name="monday">monday</string>
     <string name="tuesday">tuesday</string>
@@ -29,58 +46,57 @@
     <string name="saturday">saturday</string>
     <string name="sunday">sunday</string>
 
+    <!--ParramNotif & Settings-->
+    <string name="welcome">Welcome</string>
     <string name="notif_choice">When do you want to receive a notification of your appointment?</string>
     <string name="one_day">24h before</string>
     <string name="two_day">48h before</string>
     <string name="three_day">72h before</string>
-    <string name="notif_family">Do you want to receive notifications from your family members?</string>
+    <string name="notif_family">Do you want to receive your family members\' notifications?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="video">Video in background : </string>
 
-    <string name="welcome">Welcome</string>
-    <string name="call_confirmation">Call the office</string>
-
-    <string name="practice_call">Call</string>
-    <string name="practice_email">Send mail</string>
-    <string name="practice_map">Go to map</string>
-
-
-    <string name="folder_non_existent">Folder non existent</string>
-    <string name="downloading">Downloading&#8230;</string>
-    <string name="success_download">Files have been downloaded successfully</string>
-    <string name="download_failed">A problem occurred during the download</string>
-    <string name="no_data_received">No data received</string>
-
-    <string name="logging_in">Logging in</string>
-    <string name="no_connection">Check your connection please</string>
-
-
+    <!--RDV & Call-->
     <string name="rdv_change">If you want to change your appointment date, please call the office</string>
-
-    <string name="payment">You still have to pay\u0020</string>
-    <string name="maj">Last update : </string>
-    <string name="devise">£</string>
-    <string name="missing_info">missing information, check your internet connection</string>
-
-    <string name="no_notif">You don\'t have any notifications</string>
-
     <string name="next_rdv">Your next appoinment will be on </string>
     <string name="duration">Approximate duration : </string>
     <string name="no_rdv">You don\'t have a next appointment</string>
     <string name="label">Label :</string>
     <string name="minutes"> minutes</string>
+    <string name="at">at</string>
+    <string name="call_confirmation">Call the office</string>
 
-    <string name="code">practice code</string>
+    <!--FTP-->
+    <string name="folder_non_existent">Folder non existent</string>
+    <string name="downloading">Downloading&#8230;</string>
+    <string name="success_download">Files have been downloaded successfully</string>
+    <string name="download_failed">A problem occurred during the download</string>
+    <string name="no_data_received">No data received</string>
+    <string name="check">Check your internet connection</string>
+    <string name="error_try">An error has occurred, please try again in a moment</string>
+    <string name="error_check_try">An error has occurred, please check your connection and try again</string>
 
+    <!--Login-->
+    <string name="logging_in">Logging in</string>
+    <string name="no_connection">Check your connection please</string>
+    <string name="enter_login">Enter your credentials given by your practician.</string>
     <string name="password">password</string>
     <string name="username">username</string>
 
+    <!--Balance-->
+    <string name="payment">You still have to pay\u0020</string>
+    <string name="update">Last update :\u0020</string>
+    <string name="devise">£</string>
+    <string name="missing_info">missing information, check your internet connection</string>
+
+    <!--Notif-->
+    <string name="no_notif">You don\'t have any notifications</string>
+
+    <!--Chat (smooch)-->
     <string name="Smooch_activityConversation">Messages</string>
     <string name="Smooch_startOfConversation">This is the start of your conversation with the team.</string>
     <string name="Smooch_welcome">Feel free to leave us a message about anything that\'s on your mind.</string>
     <string name="Smooch_messageHint">Type a message&#8230;</string>
-
-    <string name="video">Video in background : </string>
-    <string name="enter_login">Enter your identifiers given by your practician.</string>
 
 </resources>

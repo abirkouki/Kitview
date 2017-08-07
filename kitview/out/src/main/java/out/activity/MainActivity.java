@@ -476,9 +476,9 @@ public class MainActivity extends AppCompatActivity{
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         AlertDialog dialog;
         LayoutInflater inflater = getActivity().getLayoutInflater();
-        builder.setMessage("Cabinet").setTitle("Practice");//TODO R.strings
+        builder.setTitle(R.string.practice_id);
         builder.setView(inflater.inflate(R.layout.dialog_practicecode,null));
-        builder.setPositiveButton("Valider", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int id) {
                 EditText code_input = (EditText) ((Dialog) dialog).findViewById(R.id.code_input);

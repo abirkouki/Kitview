@@ -100,7 +100,7 @@
 
         <activity
             android:name="out.activity.MapsActivity"
-            android:label="@string/title_activity_maps" />
+            android:label="@string/map" />
 
     </application>
 
