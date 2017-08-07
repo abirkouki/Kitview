@@ -180,14 +180,7 @@ public class ParamNotifActivity extends AppCompatActivity {
             }
         });
     }
-   /* private String transformeNotifFamille (String reponse) {
-        //permet de transformer la réponse Oui pas Y ou Non pas N pour l'envoyer à la BDD
-        if (reponse.equals("Oui") || reponse.equals("Yes") || reponse.equals("Si"))  {
-            return "Y";
-        } else {
-            return "N";
-        }
-    }*/
+
 
     //si on vient plusieurs fois sur cette activité, enlever ça
     @Override

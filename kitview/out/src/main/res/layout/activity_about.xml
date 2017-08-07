@@ -6,4 +6,53 @@
     android:layout_height="match_parent"
     tools:context="out.activity.AboutActivity">
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="206dp"
+            app:srcCompat="@drawable/logo520" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="263dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/orthalis"
+                android:layout_width="match_parent"
+                android:layout_height="202dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="orthalis est une application pour patient blablabla"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/copyright"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="copyright orthalis"
+                android:textSize="10sp" />
+
+
+            <!-- Login Button -->
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

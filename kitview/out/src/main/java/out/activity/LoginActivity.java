@@ -30,11 +30,8 @@ import java.util.Map;
 
 import util.app.AppConfig;
 import util.app.AppController;
-<<<<<<< HEAD
 import util.helper.ActionBarHelper;
-=======
 import util.network.NetworkUtils;
->>>>>>> master
 import util.session.SQLiteHandler;
 import util.session.SessionManager;
 
@@ -192,6 +189,7 @@ public class LoginActivity extends AppCompatActivity {
 
             // Adding request to request queue
             AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
+
         }
 
 

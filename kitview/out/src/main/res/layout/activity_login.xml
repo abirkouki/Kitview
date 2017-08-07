@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/bg_login"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="10dp" >
+    android:padding="10dp"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        app:srcCompat="@drawable/logo520" />
+
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -13,33 +21,46 @@
         android:layout_gravity="center"
         android:orientation="vertical"
         android:paddingLeft="20dp"
-        android:paddingRight="20dp" >
+        android:paddingRight="20dp"
+        android:layout_weight="0.43"
+        android:weightSum="1">
+
+
+        <TextView
+            android:id="@+id/enter_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.21"
+            android:gravity="center"
+            android:text="@string/enter_login"
+            android:textSize="20sp" />
+
+
 
         <EditText
             android:id="@+id/username"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="@color/white"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
             android:hint="@string/username"
-            android:inputType="text"
-            android:padding="10dp"
-            android:singleLine="true"
-            android:textColor="@color/input_login"
-            android:textColorHint="@color/input_login_hint" />
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.17" />
 
         <EditText
             android:id="@+id/password"
-            android:layout_width="fill_parent"
+            android:digits="0123456789"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="@color/white"
-            android:hint="@string/password"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
             android:inputType="textPassword"
-            android:padding="10dp"
-            android:singleLine="true"
-            android:textColor="@color/input_login"
-            android:textColorHint="@color/input_login_hint" />
+            android:hint="@string/password"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.28" />
 
         <!-- Login Button -->
 
