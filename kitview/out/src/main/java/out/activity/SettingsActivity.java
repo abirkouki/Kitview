@@ -29,6 +29,7 @@ import util.helper.ActionBarHelper;
 import util.network.NetworkUtils;
 import util.session.SQLiteHandler;
 import util.session.SessionManager;
+import view.popup.GenericPopupManager;
 
 /**
  * Created by orthalis on 15/06/2017.
@@ -189,8 +190,55 @@ public class SettingsActivity extends AppCompatActivity{
                 finish();
             }
         });
+
+        Button buttonDeco = (Button) findViewById(R.id.deconnexion);
+        buttonDeco.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                GenericPopupManager mGenericPopupManager = new GenericPopupManager(SettingsActivity.this);
+                mGenericPopupManager.initializePopup();
+                mGenericPopupManager.showPopup(getResources().getString(R.string.deconnection), getResources().getString(R.string.deconnection_confirm), new GenericPopupManager.IClick() {
+                        @Override
+                        public void onValidateClick(){
+                            session.setLogin(false);
+                            SQLiteHandler db = new SQLiteHandler(getApplicationContext());
+                            final String token = db.getTokenDetails();
+                            StringRequest stringRequest = new StringRequest(Request.Method.POST, AppConfig.URL_DELETE_USER,
+                                    new Response.Listener<String>() {
+                                        @Override
+                                        public void onResponse(String response) {
+
+                                        }
+                                    }, new Response.ErrorListener() {
+                                @Override
+                                public void onErrorResponse(VolleyError error) {
+
+                                }
+                            }){
+                                @Override
+                                protected Map<String, String> getParams() throws AuthFailureError {
+                                    Map<String,String> params = new HashMap<String,String>();
+                                    params.put("token", token);
+                                    return params;
+                                }
+                            };
+                            AppController.getInstance().addToRequestQueue(stringRequest, tag_string_req);
+                            db.deleteUsers();
+                            db.deleteParams();
+                            db.deleteToken();
+                            SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                            SharedPreferences.Editor editor = sharedPrefs.edit();
+                            editor.clear();
+                            editor.apply();
+                            finish();
+                        }
+                        @Override
+                        public void onCancelClick(){
+                            //mGenericPopupManager.hideLineDeleteDialogPopup();
+                        }
+                    });
+            }
+        });
     }
-
-
-
 }

@@ -24,8 +24,6 @@
     <string name="quit_application">Quitter l\'application ?</string>
     <string name="confirm_quit_application">Etes vous sûr de vouloir quitter l\'application ?</string>
 
-    <string name="deconnexion">Cerrar sesión</string>
-
     <!--Contact-->
     <string name="map">Mapa</string>
     <string name="telephone">Teléfono</string>
@@ -55,7 +53,9 @@
     <string name="notif_family">¿Le gustaría recibir las notificaciones de sus familiares?</string>
     <string name="yes">Sí</string>
     <string name="no">No</string>
-    <string name="video">Video en arrière plan : </string>
+    <string name="video">Video en arrière plan :\u0020</string>
+    <string name="deconnection">Déconnexion</string>
+    <string name="deconnection_confirm">Vous allez être déconnecté&#8230;</string>
 
     <!--RDV & Call-->
     <string name="rdv_change">Si desea cambiar o anular su cita, llame al consultorio de ortodoncia</string>

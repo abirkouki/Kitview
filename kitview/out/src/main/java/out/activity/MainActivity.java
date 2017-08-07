@@ -136,41 +136,20 @@ public class MainActivity extends AppCompatActivity{
         //this.mGridView = (GridView)this.findViewById(R.id.gridview_home);
         this.mGridView2 = (GridView)this.findViewById(R.id.gridview_home2);
 
-        try{
-            File CfgDir = new File(getApplicationContext().getFilesDir().getAbsolutePath() + File.separator + "Config");
+//        try{
 
-            if(CfgDir.exists()){
-                ActionBarHelper.actionBarCustom(this,false);
-                // Check if user is already logged in or not
-                if (session.isLoggedIn()) {
-                    //System.out.println("isLogged");
-                    setViewAnimatorIndex(2);
-                    initializeGridView2();
-                }
-                else {
-                    //System.out.println("isNotLogged");
-                    // User is already logged in. Take him to main activity
-                    Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                    startActivity(intent);
-                    finish();
-                }
-            }else{
-                ActionBarHelper.actionBarOrthalis(this);
-                setViewAnimatorIndex(0);
-                initializeGridView0();
-            }
             mDialog = new FRProgressDialog(this, "",false);
 
 
 
             //if(mViewAnimator.getDisplayedChild() != 0 && mCheckKitViewConnection)checkKitViewConnection();
-        }catch(Exception e){
-            e.printStackTrace();
-        }
+//        }catch(Exception e){
+//            e.printStackTrace();
+//        }
     }
 
 
-
+    //TODO sortir cette fonction
     public void deconnexion() {
         session.setLogin(false);
         SQLiteHandler db = new SQLiteHandler(getApplicationContext());
@@ -208,7 +187,7 @@ public class MainActivity extends AppCompatActivity{
         launchGenericPopup(context,title, content, false);
     }
 
-    //TODO garder peut etre utile
+
     private void launchGenericPopup(Activity context, final String title, final String content, final boolean exitOnClose){
         mGenericPopupManager = new GenericPopupManager(context);
 
@@ -535,10 +514,6 @@ public class MainActivity extends AppCompatActivity{
                                     if(mDialog != null)mDialog.cancelFRProgressDialog();
                                     if (folderExists[0].get()){//que si tout a réussi
                                         AppController.parseConfigFile(getApplicationContext());
-                                        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-                                        SharedPreferences.Editor ed = prefs.edit();
-                                        ed.putBoolean("KEY_VIDEO", true);
-                                        ed.apply();
                                         recreate();
                                     };
                                 }
@@ -574,7 +549,7 @@ public class MainActivity extends AppCompatActivity{
         this.mModules2.add(new Module(R.string.contact, R.color.color6, R.drawable.ic_action_person));
         this.mModules2.add(new Module(R.string.about, R.color.color6, R.drawable.ic_action_about));
         this.mModules2.add(new Module(R.string.title_activity_opening, R.color.color6, R.drawable.ic_action_go_to_today));
-        this.mModules2.add(new Module(R.string.deconnexion, R.color.color6, R.drawable.ic_action_warning2));
+        this.mModules2.add(new Module(R.string.deconnection, R.color.color6, R.drawable.ic_action_warning2));//TODO sortir
         this.mModules2.add(new Module(R.string.about, R.color.color6, R.drawable.ic_action_group));
         this.mModules2.add(new Module(R.string.calibrate, R.color.color6, R.drawable.ic_action_settings));
         this.mInitializationFinished2 = false;
@@ -932,6 +907,30 @@ public class MainActivity extends AppCompatActivity{
             this.initializeImageView();
             mVideoView.setVisibility(View.GONE);
         }
+
+        File CfgDir = new File(getApplicationContext().getFilesDir().getAbsolutePath() + File.separator + "Config");
+
+        if(CfgDir.exists()){
+            ActionBarHelper.actionBarCustom(this,false);
+            // Check if user is already logged in or not
+            if (session.isLoggedIn()) {
+                //System.out.println("isLogged");
+                setViewAnimatorIndex(2);
+                initializeGridView2();
+            }
+            else {
+                //System.out.println("isNotLogged");
+                // User is already logged in. Take him to main activity
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        }else{
+            ActionBarHelper.actionBarOrthalis(this);
+            setViewAnimatorIndex(0);
+            initializeGridView0();
+        }
+
 
 //        startVideo();
 //        KitviewUtil.GetCurrentIdPatient(MainActivity.this,new KitviewUtil.IIntResponse() {

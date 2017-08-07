@@ -88,9 +88,22 @@
             android:id="@+id/okButton"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Ok"
-            />
+            android:text="Ok"/>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <Button
+            android:id="@+id/deconnexion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@color/grey"
+            android:text="@string/deconnection"/>
 
     </LinearLayout>
+
 
 </RelativeLayout>

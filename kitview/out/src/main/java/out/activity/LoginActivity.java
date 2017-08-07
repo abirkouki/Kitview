@@ -6,7 +6,9 @@ package out.activity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -141,6 +143,11 @@ public class LoginActivity extends AppCompatActivity {
                             prenom = s2.trim();
                             // Inserting row in users table
                             db.addUser(prenom, nom, uid);
+                            //preference
+                            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                            SharedPreferences.Editor ed = prefs.edit();
+                            ed.putBoolean("KEY_VIDEO", true);
+                            ed.apply();
                             // Launch ParamNotif
                             Intent intent = new Intent(LoginActivity.this, ParamNotifActivity.class);
                             startActivity(intent);

@@ -24,8 +24,6 @@
     <string name="quit_application">Quit application ?</string>
     <string name="confirm_quit_application">Are you sure you want to quit the application ?</string>
 
-    <string name="deconnexion">Deconnection</string>
-
     <!--Contact-->
     <string name="map">Map</string>
     <string name="telephone">Telephone</string>
@@ -55,7 +53,9 @@
     <string name="notif_family">Do you want to receive your family members\' notifications?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
-    <string name="video">Video in background : </string>
+    <string name="video">Video in background :\u0020</string>
+    <string name="deconnection">Deconnection</string>
+    <string name="deconnection_confirm">You are going to be  logged out&#8230;</string>
 
     <!--RDV & Call-->
     <string name="rdv_change">If you want to change your appointment date, please call the office</string>
