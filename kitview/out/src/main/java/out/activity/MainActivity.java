@@ -136,11 +136,25 @@ public class MainActivity extends AppCompatActivity{
         //this.mGridView = (GridView)this.findViewById(R.id.gridview_home);
         this.mGridView2 = (GridView)this.findViewById(R.id.gridview_home2);
 
+
 //        try{
 
-            mDialog = new FRProgressDialog(this, "",false);
+        File CfgDir = new File(getApplicationContext().getFilesDir().getAbsolutePath() + File.separator + "Config");
 
+        if(CfgDir.exists()){
+            ActionBarHelper.actionBarCustom(this,false);
+            if (session.isLoggedIn()) {
+                //System.out.println("isLogged");
+                setViewAnimatorIndex(2);
+                initializeGridView2();
+            }//cas où il est pas loggé -> dans onResume()
+        }else{
+            ActionBarHelper.actionBarOrthalis(this);
+            setViewAnimatorIndex(0);
+            initializeGridView0();
+        }
 
+        mDialog = new FRProgressDialog(this, "",false);
 
             //if(mViewAnimator.getDisplayedChild() != 0 && mCheckKitViewConnection)checkKitViewConnection();
 //        }catch(Exception e){
@@ -550,7 +564,7 @@ public class MainActivity extends AppCompatActivity{
         this.mModules2.add(new Module(R.string.about, R.color.color6, R.drawable.ic_action_about));
         this.mModules2.add(new Module(R.string.title_activity_opening, R.color.color6, R.drawable.ic_action_go_to_today));
         this.mModules2.add(new Module(R.string.deconnection, R.color.color6, R.drawable.ic_action_warning2));//TODO sortir
-        this.mModules2.add(new Module(R.string.about, R.color.color6, R.drawable.ic_action_group));
+        this.mModules2.add(new Module(R.string.about, R.color.color6, R.drawable.ic_action_group));//TODO str chat
         this.mModules2.add(new Module(R.string.calibrate, R.color.color6, R.drawable.ic_action_settings));
         this.mInitializationFinished2 = false;
 
@@ -910,25 +924,11 @@ public class MainActivity extends AppCompatActivity{
 
         File CfgDir = new File(getApplicationContext().getFilesDir().getAbsolutePath() + File.separator + "Config");
 
-        if(CfgDir.exists()){
-            ActionBarHelper.actionBarCustom(this,false);
-            // Check if user is already logged in or not
-            if (session.isLoggedIn()) {
-                //System.out.println("isLogged");
-                setViewAnimatorIndex(2);
-                initializeGridView2();
-            }
-            else {
-                //System.out.println("isNotLogged");
-                // User is already logged in. Take him to main activity
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        }else{
-            ActionBarHelper.actionBarOrthalis(this);
-            setViewAnimatorIndex(0);
-            initializeGridView0();
+        if (CfgDir.exists() && !session.isLoggedIn()){
+            //System.out.println("isNotLogged");
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(intent);
+            finish();
         }
 
 
