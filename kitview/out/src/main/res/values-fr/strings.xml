@@ -23,7 +23,7 @@
     <string name="wifi_title">Wifi désactivé</string>
     <string name="wifi_content">Activez votre Wifi dans les réglages</string>
     <string name="quit_application">Quitter l\'application ?</string>
-    <string name="confirm_quit_application">Etes vous sûr de vouloir quitter l\'application ?</string>
+    <string name="confirm_quit_application">Êtes-vous sûr de vouloir quitter l\'application ?</string>
 
     <!--Contact-->
     <string name="map">Carte</string>
@@ -80,7 +80,7 @@
 
     <!--Login-->
     <string name="logging_in">Connexion</string>
-    <string name="no_connection">Veuillez verifiez la connexion internet</string>
+    <string name="no_connection">Veuillez verifier la connexion internet</string>
     <string name="enter_login">Entrez vos identifiants donnés par votre praticien.</string>
     <string name="password">mot de passe</string>
     <string name="username">identifiant</string>
