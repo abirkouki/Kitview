@@ -565,7 +565,6 @@ public class MainActivity extends AppCompatActivity{
         this.mModules2.add(new Module(R.string.title_activity_opening, R.color.color6, R.drawable.ic_action_go_to_today));
         this.mModules2.add(new Module(R.string.deconnection, R.color.color6, R.drawable.ic_action_warning2));//TODO sortir
         this.mModules2.add(new Module(R.string.about, R.color.color6, R.drawable.ic_action_group));//TODO str chat
-        this.mModules2.add(new Module(R.string.calibrate, R.color.color6, R.drawable.ic_action_settings));
         this.mInitializationFinished2 = false;
 
         if(this.mGridView2 != null){
@@ -875,10 +874,6 @@ public class MainActivity extends AppCompatActivity{
                             ConversationActivity.show(MainActivity.this);
                             break;
 
-                        case 9:
-                            intent = new Intent(MainActivity.this, CalendarActivity.class);
-                            startActivity(intent);
-                            break;
                     }
                 }
             });

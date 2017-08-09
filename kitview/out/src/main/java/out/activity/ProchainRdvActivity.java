@@ -33,6 +33,7 @@ import java.util.Map;
 import util.app.AppConfig;
 import util.app.AppController;
 import util.helper.ActionBarHelper;
+import util.helper.CalendarEvent;
 import util.network.NetworkUtils;
 import util.session.SQLiteHandler;
 import util.session.SessionManager;
@@ -51,6 +52,7 @@ public class ProchainRdvActivity extends AppCompatActivity {
     TextView txtLibelle;
     TextView txtMaj;
     Button callButton;
+    Button calendarButton;
     String rdv;
     String rdvDuree;
     String rdvLibelle;
@@ -74,7 +76,6 @@ public class ProchainRdvActivity extends AppCompatActivity {
 
         ActionBarHelper.actionBarCustom(this,true);
 
-
         // SqLite database handler
         db = new SQLiteHandler(getApplicationContext());
 
@@ -83,11 +84,12 @@ public class ProchainRdvActivity extends AppCompatActivity {
 
 
         // Fetching user details from sqlite
-        HashMap<String, String> user = db.getUserDetails();
+        final HashMap<String, String> user = db.getUserDetails();//TODO si pb -> c'etait pas final
         final String uid = user.get("uid");
 
 
         txtRdv = (TextView) findViewById(R.id.dateRdv);
+        calendarButton = (Button) findViewById(R.id.addEvent);
         txtDuree = (TextView) findViewById(R.id.dureeRdv);
         txtLibelle = (TextView) findViewById(R.id.libelleRdv);
         txtMaj = (TextView) findViewById(R.id.majRdv);
@@ -102,6 +104,7 @@ public class ProchainRdvActivity extends AppCompatActivity {
                 String tmp;
                 tmp = getApplicationContext().getString(R.string.next_rdv) + rdv;
                 txtRdv.setText(tmp);
+                calendarButton.setVisibility(View.VISIBLE);
                 tmp = getApplicationContext().getString(R.string.duration) + rdvDuree + getApplicationContext().getString(R.string.minutes);
                 txtDuree.setText(tmp);
                 tmp = getApplicationContext().getString(R.string.label) + rdvLibelle;
@@ -143,6 +146,7 @@ public class ProchainRdvActivity extends AppCompatActivity {
                                 String tmp;
                                 tmp = getApplicationContext().getString(R.string.next_rdv) +firstPartDate+getApplicationContext().getString(R.string.at)+secondPartDate+"h"+thirdPartDate;
                                 txtRdv.setText(tmp);
+                                calendarButton.setVisibility(View.VISIBLE);
                                 tmp = getApplicationContext().getString(R.string.duration) + rdvDuree + getApplicationContext().getString(R.string.minutes);
                                 txtDuree.setText(tmp);
                                 tmp = getApplicationContext().getString(R.string.label) + s2;
@@ -194,6 +198,23 @@ public class ProchainRdvActivity extends AppCompatActivity {
             // Adding request to request queue
             AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
         }
+
+        //calendarButton.setVisibility(View.VISIBLE);
+        calendarButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //HashMap<String, String> user = db.getUserDetails();
+                CalendarEvent calEv = new CalendarEvent(getApplicationContext());
+                long eventID = calEv.createEvent(AppController.practiceName+" : RDV",rdvLibelle,AppController.practiceAddress.geographic,rdv,Integer.parseInt(rdvDuree));//TODO nom rdv non paramétrable
+                calEv.addAttendee(eventID,user.get("prenom")+" "+user.get("nom"));
+                calEv.addReminder(eventID,1);
+                calEv.addReminder(eventID,2);
+
+                Toast.makeText(getApplicationContext(),R.string.event_added, Toast.LENGTH_LONG).show();
+            }
+        });
+
+
 
         callButton.setOnClickListener(new View.OnClickListener() {
             @Override

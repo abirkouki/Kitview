@@ -59,13 +59,15 @@
 
     <!--RDV & Call-->
     <string name="rdv_change">If you want to change your appointment date, please call the office</string>
-    <string name="next_rdv">Your next appoinment will be on </string>
-    <string name="duration">Approximate duration : </string>
+    <string name="next_rdv">Your next appoinment will be on\u0020</string>
+    <string name="duration">Approximate duration :\u0020</string>
     <string name="no_rdv">You don\'t have a next appointment</string>
-    <string name="label">Label :</string>
-    <string name="minutes"> minutes</string>
-    <string name="at">at</string>
+    <string name="label">Label :\u0020</string>
+    <string name="minutes">\u0020minutes</string>
+    <string name="at">\u0020at\u0020</string>
     <string name="call_confirmation">Call the office</string>
+    <string name="add_event_button">Add event in calendar</string>
+    <string name="event_added">Event added in calendar</string>
 
     <!--FTP-->
     <string name="folder_non_existent">Folder non existent</string>

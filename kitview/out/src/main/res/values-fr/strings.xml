@@ -60,13 +60,15 @@
 
     <!--RDV & Call-->
     <string name="rdv_change">Si vous voulez changer la date ou annuler votre rendez-vous, veuillez appeler votre cabinet</string>
-    <string name="next_rdv">Votre prochain rendez-vous sera le </string>
-    <string name="duration">Durée approximative : </string>
+    <string name="next_rdv">Votre prochain rendez-vous sera le\u0020</string>
+    <string name="duration">Durée approximative :\u0020</string>
     <string name="no_rdv">Vous n\'avez pas de prochain rendez-vous</string>
-    <string name="label">Libellé :</string>
-    <string name="minutes"> minutes</string>
-    <string name="at">à</string>
+    <string name="label">Libellé :\u0020</string>
+    <string name="minutes">\u0020minutes</string>
+    <string name="at">\u0020à\u0020</string>
     <string name="call_confirmation">Appeler le cabinet</string>
+    <string name="add_event_button">Ajouter dans le calendrier</string>
+    <string name="event_added">Evénement ajouté dans le calendrier</string>
 
     <!--FTP-->
     <string name="folder_non_existent">Dossier non existant</string>
