@@ -7,10 +7,10 @@
 
     <!--Main dl practice-->
     <string name="practice_id">Código ortodoncista</string>
-    <string name="practice_scan">Scan</string>
-    <string name="practice_msg">Entrez le code donné par votre cabinet</string>
-    <string name="confirm">Valider</string>
-    <string name="cancel">Annuler</string>
+    <string name="practice_scan">Escanear</string>
+    <string name="practice_msg">Introduzca el código del consultorio</string>
+    <string name="confirm">Confirmar</string>
+    <string name="cancel">Anular</string>
 
     <!--Main-->
     <string name="title_activity_opening">Horarios</string>
@@ -20,9 +20,9 @@
     <string name="contact">Contacto</string>
     <string name="about">Sobre nosotros</string>
     <string name="wifi_title">Wifi desactivado</string>
-    <string name="wifi_content">Activar Wifi en el mobilo</string>
-    <string name="quit_application">Quitter l\'application ?</string>
-    <string name="confirm_quit_application">Etes vous sûr de vouloir quitter l\'application ?</string>
+    <string name="wifi_content">Active el Wifi del móvil</string>
+    <string name="quit_application">Salir de la aplicación?</string>
+    <string name="confirm_quit_application">Seguro que desea salir?</string>
 
     <!--Contact-->
     <string name="map">Mapa</string>
@@ -53,9 +53,9 @@
     <string name="notif_family">¿Le gustaría recibir las notificaciones de sus familiares?</string>
     <string name="yes">Sí</string>
     <string name="no">No</string>
-    <string name="video">Video en arrière plan :\u0020</string>
-    <string name="deconnection">Déconnexion</string>
-    <string name="deconnection_confirm">Vous allez être déconnecté&#8230;</string>
+    <string name="video">Vídeo de fondo de pantalla :\u0020</string>
+    <string name="deconnection">Cerrar sesión</string>
+    <string name="deconnection_confirm">Cerrando sesión&#8230;</string>
 
     <!--RDV & Call-->
     <string name="rdv_change">Si desea cambiar o anular su cita, llame al consultorio de ortodoncia</string>
@@ -65,7 +65,7 @@
     <string name="label">Descripción :</string>
     <string name="minutes"> minutos</string>
     <string name="at">at</string>
-    <string name="call_confirmation">Llamar a la secretaría</string>
+    <string name="call_confirmation">Llamar al consultorio</string>
 
     <!--FTP-->
     <string name="folder_non_existent">Archivo no existente </string>
@@ -73,16 +73,16 @@
     <string name="success_download">Descarga completada</string>
     <string name="download_failed">Se produjo un problema durante la descarga</string>
     <string name="no_data_received">Datos no recibidos</string>
-    <string name="check">Veuillez vérifiez votre connexion internet</string>
-    <string name="error_try">Une erreur de réseau est survenue, veuillez réessayer dans un instant</string>
-    <string name="error_check_try">Une erreur de réseau est survenue, veuillez vérifier votre connexion et réessayer dans un instant</string>
+    <string name="check">Por favor, compruebe su conexión a Internet</string>
+    <string name="error_try">Un error en la red se produjo, por favor intente de nuevo en un momento</string>
+    <string name="error_check_try">Un error en la red se produjo, compruebe su conexión a Internet e intente de nuevo</string>
 
     <!--Login-->
     <string name="logging_in">Conexión</string>
     <string name="no_connection">Compruebe su conexión a internet</string>
-    <string name="enter_login">Entrez vos identifiants donnés par votre praticien.</string>
+    <string name="enter_login">Introduzca su nombre de usuario y su contraseña</string>
     <string name="password">contraseña</string>
-    <string name="username">login</string>
+    <string name="username">nombre de usuario</string>
 
     <!--Balance-->
     <string name="payment">Le queda por pagar\u0020</string>
