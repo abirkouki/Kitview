@@ -18,7 +18,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import io.smooch.core.Smooch;
-import out.activity.ChatActivity;
 import util.helper.XmlParser;
 
 public class AppController extends Application {
@@ -33,7 +32,7 @@ public class AppController extends Application {
     public static String practiceName;
     public static ArrayList<XmlParser.Doctor> practiceDoctors;
     public static XmlParser.OpeningHours practiceOpeningHours;
-    public static XmlParser.KitviewServer practiceKitviewServer;
+    public static XmlParser.ConfigServer practiceConfigServer;
     public static String practiceText;
     public static XmlParser.Contact practiceContact;
 
@@ -48,7 +47,7 @@ public class AppController extends Application {
                 practiceName = xml.getName();
                 practiceDoctors = xml.getDoctors();
                 practiceOpeningHours = xml.getOpeningHours();
-                practiceKitviewServer = xml.getKitviewServer();
+                practiceConfigServer = xml.getConfigServer();
                 practiceText = xml.getText();
                 practiceContact = xml.getContact();
             } catch (IOException e) {
@@ -61,14 +60,12 @@ public class AppController extends Application {
         }
     }
 
-    public static String APP_TOKEN = "7drfjg3gy0t9tm9izomsx7x72";
     @Override
     public void onCreate() {
         super.onCreate();
         mInstance = this;
         parseConfigFile(getApplicationContext());
-
-        Smooch.init(this, APP_TOKEN);
+        Smooch.init(this, practiceConfigServer.chatSmooch);
     }
 
     public static synchronized AppController getInstance() {

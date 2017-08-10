@@ -85,23 +85,26 @@ public class XmlParser {
         }
     }
 
-    public static class KitviewServer {
+    public static class ConfigServer {
         public final String ip;
         public final String port;
-        public final String path;
+        public final String orthalisAppPath;
+        public final String chatSmooch;
 
-        public KitviewServer(String ip, String port, String path) {
+        public ConfigServer(String ip, String port, String orthalisAppPath, String chatSmooch) {
             this.ip = ip;
             this.port = port;
-            this.path = path;
+            this.orthalisAppPath = orthalisAppPath;
+            this.chatSmooch = chatSmooch;
         }
 
         @Override
         public String toString() {
-            return "KitviewServer{" +
+            return "ConfigServer{" +
                     "ip='" + ip + '\'' +
                     ", port='" + port + '\'' +
-                    ", path='" + path + '\'' +
+                    ", orthalisAppPath='" + orthalisAppPath + '\'' +
+                    ", chatSmooch='" + chatSmooch + '\'' +
                     '}';
         }
     }
@@ -134,7 +137,7 @@ public class XmlParser {
     private String name;
     private ArrayList<Doctor> doctors;
     private OpeningHours openingHours;
-    private KitviewServer kitviewServer;
+    private ConfigServer configServer;
     private String text;
     private Contact contact;
 
@@ -154,8 +157,8 @@ public class XmlParser {
         return openingHours;
     }
 
-    public KitviewServer getKitviewServer() {
-        return kitviewServer;
+    public ConfigServer getConfigServer() {
+        return configServer;
     }
 
     public String getText() {
@@ -204,8 +207,8 @@ public class XmlParser {
                 case "opening_hours":
                     openingHours = readOpeningHours(parser);
                     break;
-                case "kitview_server":
-                    kitviewServer = readKitviewServer(parser);
+                case "config_server":
+                    configServer = readConfigServer(parser);
                     break;
                 case "text":
                     text = readLeaf(parser, "text");
@@ -289,30 +292,39 @@ public class XmlParser {
             }
             String tagName = parser.getName();
             // looking for the tags
-            if (tagName.equals("monday")) {
-                monday = readLeaf(parser, "monday");
-            } else if(tagName.equals("tuesday")) {
-                tuesday = readLeaf(parser, "tuesday");
-            } else if(tagName.equals("wednesday")) {
-                wednesday = readLeaf(parser, "wednesday");
-            } else if(tagName.equals("thursday")) {
-                thursday = readLeaf(parser, "thursday");
-            } else if(tagName.equals("friday")) {
-                friday = readLeaf(parser, "friday");
-            } else if(tagName.equals("saturday")) {
-                saturday = readLeaf(parser, "saturday");
-            } else if(tagName.equals("sunday")) {
-                sunday = readLeaf(parser, "sunday");
-            } else {
-                skip(parser);
+            switch (tagName) {
+                case "monday":
+                    monday = readLeaf(parser, "monday");
+                    break;
+                case "tuesday":
+                    tuesday = readLeaf(parser, "tuesday");
+                    break;
+                case "wednesday":
+                    wednesday = readLeaf(parser, "wednesday");
+                    break;
+                case "thursday":
+                    thursday = readLeaf(parser, "thursday");
+                    break;
+                case "friday":
+                    friday = readLeaf(parser, "friday");
+                    break;
+                case "saturday":
+                    saturday = readLeaf(parser, "saturday");
+                    break;
+                case "sunday":
+                    sunday = readLeaf(parser, "sunday");
+                    break;
+                default:
+                    skip(parser);
+                    break;
             }
         }
         return new OpeningHours(monday, tuesday, wednesday, thursday, friday, saturday, sunday);
     }
 
-    private KitviewServer readKitviewServer(XmlPullParser parser) throws XmlPullParserException, IOException {
-        parser.require(XmlPullParser.START_TAG, ns, "kitview_server");
-        String ip = "", port = "", path = "";
+    private ConfigServer readConfigServer(XmlPullParser parser) throws XmlPullParserException, IOException {
+        parser.require(XmlPullParser.START_TAG, ns, "config_server");
+        String ip = "", port = "", orthalisAppPath = "", chatSmooch = "";
         while (parser.next() != XmlPullParser.END_TAG) {
             if (parser.getEventType() != XmlPullParser.START_TAG) {
                 continue;
@@ -326,15 +338,18 @@ public class XmlParser {
                 case "port":
                     port = readLeaf(parser, "port");
                     break;
-                case "path":
-                    path = readLeaf(parser, "path");
+                case "orthalis_app_path ":
+                    orthalisAppPath  = readLeaf(parser, "orthalis_app_path ");
+                    break;
+                case "chat_smooch":
+                    chatSmooch = readLeaf(parser, "chat_smooch");
                     break;
                 default:
                     skip(parser);
                     break;
             }
         }
-        return new KitviewServer(ip,port,path);
+        return new ConfigServer(ip,port,orthalisAppPath,chatSmooch);
     }
 
     private Contact readContact(XmlPullParser parser) throws XmlPullParserException, IOException {
@@ -346,14 +361,19 @@ public class XmlParser {
             }
             String tagName = parser.getName();
             // looking for the tags
-            if (tagName.equals("email")) {
-                email = readLeaf(parser, "email");
-            } else if(tagName.equals("tel")) {
-                tel = readLeaf(parser, "tel");
-            } else if(tagName.equals("website")) {
-                website = readLeaf(parser, "website");
-            } else {
-                skip(parser);
+            switch (tagName) {
+                case "email":
+                    email = readLeaf(parser, "email");
+                    break;
+                case "tel":
+                    tel = readLeaf(parser, "tel");
+                    break;
+                case "website":
+                    website = readLeaf(parser, "website");
+                    break;
+                default:
+                    skip(parser);
+                    break;
             }
         }
         return new Contact(email,tel,website);
@@ -368,12 +388,16 @@ public class XmlParser {
             }
             String tagName = parser.getName();
             // looking for the tags
-            if (tagName.equals("firstname")) {
-                firstname = readLeaf(parser, "firstname");
-            } else if(tagName.equals("lastname")) {
-                lastname = readLeaf(parser, "lastname");
-            } else {
-                skip(parser);
+            switch (tagName) {
+                case "firstname":
+                    firstname = readLeaf(parser, "firstname");
+                    break;
+                case "lastname":
+                    lastname = readLeaf(parser, "lastname");
+                    break;
+                default:
+                    skip(parser);
+                    break;
             }
         }
         return new Doctor(firstname, lastname);
