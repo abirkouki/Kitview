@@ -62,19 +62,12 @@
     <string name="next_rdv">Su próxima cita será el\u0020</string>
     <string name="duration">Duración aproximada :\u0020</string>
     <string name="no_rdv">No tiene próxima cita</string>
-<<<<<<< HEAD
     <string name="label">Descripción :\u0020</string>
     <string name="minutes">\u0020minutos</string>
     <string name="at">\u0020a las\u0020</string>
     <string name="call_confirmation">Llamar a la secretaría</string>
-    <string name="add_event_button">Ajouter dans le calendrier</string>
-    <string name="event_added">Evénement ajouté dans le calendrier</string>
-=======
-    <string name="label">Descripción :</string>
-    <string name="minutes"> minutos</string>
-    <string name="at">at</string>
-    <string name="call_confirmation">Llamar al consultorio</string>
->>>>>>> master
+    <string name="add_event_button">Añadir al calendario</string>
+    <string name="event_added">Evento añadido al calendario</string>
 
     <!--FTP-->
     <string name="folder_non_existent">Archivo no existente </string>
