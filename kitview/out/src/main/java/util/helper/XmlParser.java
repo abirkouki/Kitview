@@ -338,8 +338,8 @@ public class XmlParser {
                 case "port":
                     port = readLeaf(parser, "port");
                     break;
-                case "orthalis_app_path ":
-                    orthalisAppPath  = readLeaf(parser, "orthalis_app_path ");
+                case "orthalis_app_path":
+                    orthalisAppPath  = readLeaf(parser, "orthalis_app_path");
                     break;
                 case "chat_smooch":
                     chatSmooch = readLeaf(parser, "chat_smooch");
