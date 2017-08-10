@@ -37,11 +37,6 @@ import android.widget.Toast;
 import android.widget.VideoView;
 import android.widget.ViewAnimator;
 
-import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 import com.orthalis.connect.R;
@@ -52,15 +47,14 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import activity.FolderActivity;
+import io.smooch.core.Smooch;
 import io.smooch.core.User;
 import io.smooch.ui.ConversationActivity;
 import model.Module;
 import util.FTP.PracticeFTP;
-import util.app.AppConfig;
 import util.app.AppController;
 import util.components.progressdialog.FRProgressDialog;
 import util.helper.ActionBarHelper;
@@ -162,37 +156,6 @@ public class MainActivity extends AppCompatActivity{
 //        }
     }
 
-
-    //TODO sortir cette fonction
-    public void deconnexion() {
-        session.setLogin(false);
-        SQLiteHandler db = new SQLiteHandler(getApplicationContext());
-        final String token = db.getTokenDetails();
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, AppConfig.URL_DELETE_USER,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-
-                    }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-
-            }
-        }){
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String,String> params = new HashMap<String,String>();
-                params.put("token", token);
-                return params;
-            }
-        };
-        AppController.getInstance().addToRequestQueue(stringRequest, tag_string_req);
-        db.deleteUsers();
-        db.deleteParams();
-        db.deleteToken();
-        recreate();
-    }
 
     //TODO garder peut etre utile
     public void launchWifiPopup(Activity context){
@@ -528,6 +491,7 @@ public class MainActivity extends AppCompatActivity{
                                     if(mDialog != null)mDialog.cancelFRProgressDialog();
                                     if (folderExists[0].get()){//que si tout a réussi
                                         AppController.parseConfigFile(getApplicationContext());
+                                        Smooch.init(getApplication(), AppController.practiceConfigServer.chatSmooch);
                                         recreate();
                                     };
                                 }
@@ -563,8 +527,7 @@ public class MainActivity extends AppCompatActivity{
         this.mModules2.add(new Module(R.string.contact, R.color.color6, R.drawable.ic_action_person));
         this.mModules2.add(new Module(R.string.about, R.color.color6, R.drawable.ic_action_about));
         this.mModules2.add(new Module(R.string.title_activity_opening, R.color.color6, R.drawable.ic_action_go_to_today));
-        this.mModules2.add(new Module(R.string.deconnection, R.color.color6, R.drawable.ic_action_warning2));//TODO sortir
-        this.mModules2.add(new Module(R.string.about, R.color.color6, R.drawable.ic_action_group));//TODO str chat
+        this.mModules2.add(new Module(R.string.Smooch_activityConversation, R.color.color6, R.drawable.ic_action_group));
         this.mInitializationFinished2 = false;
 
         if(this.mGridView2 != null){
@@ -850,20 +813,13 @@ public class MainActivity extends AppCompatActivity{
                         case 5://8://13
                             intent = new Intent(MainActivity.this, AboutActivity.class);
                             startActivity(intent);
-
-
                             break;
                         //Contact
                         case 6://9://14
                             intent = new Intent(MainActivity.this, OpeningActivity.class);
                             startActivity(intent);
-                            break;
-
-                        case 7://9://14
-                            deconnexion();
-                            break;
-
-                        case 8:
+                        //Chat
+                        case 7:
                             SQLiteHandler db = new SQLiteHandler(getApplicationContext());
                             HashMap<String, String> user = db.getUserDetails();
 

@@ -3,6 +3,7 @@ package util.app;
 /**
  * Created by orthalis on 06/06/2017.
  */
+
 import android.app.Application;
 import android.content.Context;
 import android.text.TextUtils;
@@ -36,10 +37,11 @@ public class AppController extends Application {
     public static String practiceText;
     public static XmlParser.Contact practiceContact;
 
-    public static void parseConfigFile(Context appContext){
+    public static boolean parseConfigFile(Context appContext){
         String path = appContext.getFilesDir().getAbsolutePath() + File.separator + "Config" + File.separator + "config.xml";
         File fileConf = new File(path);
-        if (fileConf.exists()) {
+        boolean res = fileConf.exists();
+        if (res) {
             XmlParser xml = null;
             try {
                 xml = new XmlParser(path);
@@ -58,14 +60,14 @@ public class AppController extends Application {
                 System.out.println("XmlPullParserException");
             }
         }
+        return res;
     }
 
     @Override
     public void onCreate() {
         super.onCreate();
         mInstance = this;
-        parseConfigFile(getApplicationContext());
-        Smooch.init(this, practiceConfigServer.chatSmooch);
+        if (parseConfigFile(getApplicationContext())) Smooch.init(this, practiceConfigServer.chatSmooch);
     }
 
     public static synchronized AppController getInstance() {

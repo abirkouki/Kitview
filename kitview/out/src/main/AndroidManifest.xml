@@ -73,7 +73,6 @@
 
         <activity android:name="out.activity.ContactActivity" />
         <activity android:name="out.activity.AboutActivity"/>
-        <activity android:name="out.activity.CalendarActivity"/>
 
         <service android:name="util.service.FcmInstanceIdService">
             <intent-filter>
