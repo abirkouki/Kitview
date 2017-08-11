@@ -818,6 +818,7 @@ public class MainActivity extends AppCompatActivity{
                         case 6://9://14
                             intent = new Intent(MainActivity.this, OpeningActivity.class);
                             startActivity(intent);
+                            break;
                         //Chat
                         case 7:
                             if (AppController.practiceConfigServer.chatSmooch != null) {
