@@ -67,7 +67,8 @@ public class AppController extends Application {
     public void onCreate() {
         super.onCreate();
         mInstance = this;
-        if (parseConfigFile(getApplicationContext())) Smooch.init(this, practiceConfigServer.chatSmooch);
+        //parseConfigFile(getApplicationContext()
+        if (parseConfigFile(getApplicationContext()) && practiceConfigServer.chatSmooch != null) Smooch.init(this, practiceConfigServer.chatSmooch);
     }
 
     public static synchronized AppController getInstance() {

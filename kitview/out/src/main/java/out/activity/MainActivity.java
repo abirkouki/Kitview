@@ -491,7 +491,7 @@ public class MainActivity extends AppCompatActivity{
                                     if(mDialog != null)mDialog.cancelFRProgressDialog();
                                     if (folderExists[0].get()){//que si tout a réussi
                                         AppController.parseConfigFile(getApplicationContext());
-                                        Smooch.init(getApplication(), AppController.practiceConfigServer.chatSmooch);
+                                        if (AppController.practiceConfigServer.chatSmooch != null) Smooch.init(getApplication(), AppController.practiceConfigServer.chatSmooch);
                                         recreate();
                                     };
                                 }
@@ -527,7 +527,7 @@ public class MainActivity extends AppCompatActivity{
         this.mModules2.add(new Module(R.string.contact, R.color.color6, R.drawable.ic_action_person));
         this.mModules2.add(new Module(R.string.about, R.color.color6, R.drawable.ic_action_about));
         this.mModules2.add(new Module(R.string.title_activity_opening, R.color.color6, R.drawable.ic_action_go_to_today));
-        this.mModules2.add(new Module(R.string.Smooch_activityConversation, R.color.color6, R.drawable.ic_action_group));
+        if (AppController.practiceConfigServer.chatSmooch != null) this.mModules2.add(new Module(R.string.Smooch_activityConversation, R.color.color6, R.drawable.ic_action_group));
         this.mInitializationFinished2 = false;
 
         if(this.mGridView2 != null){
@@ -820,14 +820,15 @@ public class MainActivity extends AppCompatActivity{
                             startActivity(intent);
                         //Chat
                         case 7:
-                            SQLiteHandler db = new SQLiteHandler(getApplicationContext());
-                            HashMap<String, String> user = db.getUserDetails();
-
-                            final String nom = user.get("nom");
-                            final String prenom = user.get("prenom");
-                            User.getCurrentUser().setFirstName(prenom);
-                            User.getCurrentUser().setLastName(nom);
-                            ConversationActivity.show(MainActivity.this);
+                            if (AppController.practiceConfigServer.chatSmooch != null) {
+                                SQLiteHandler db = new SQLiteHandler(getApplicationContext());
+                                HashMap<String, String> user = db.getUserDetails();
+                                final String nom = user.get("nom");
+                                final String prenom = user.get("prenom");
+                                User.getCurrentUser().setFirstName(prenom);
+                                User.getCurrentUser().setLastName(nom);
+                                ConversationActivity.show(MainActivity.this);
+                            }
                             break;
 
                     }

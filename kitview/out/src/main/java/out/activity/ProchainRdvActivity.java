@@ -118,11 +118,12 @@ public class ProchainRdvActivity extends AppCompatActivity {
         } else {
             StringRequest strReq = new StringRequest(Request.Method.POST, AppConfig.URL_RECUPERER_PROCHAIN_RDV, new Response.Listener<String>() {
                 public void onResponse(String response) {
-                    //System.out.println(response);
+                    System.out.println(response);
                     try {
                         JSONObject jObj = new JSONObject(response);
 
                         boolean error = jObj.getBoolean("error");
+                        System.out.println("bool error = "+error+" ---------------------------------------------------");
 
                         // Check for error node in json
                         if (!error) {
