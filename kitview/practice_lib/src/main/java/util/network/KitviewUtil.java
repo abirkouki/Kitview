@@ -1,5 +1,27 @@
 package util.network;
 
+import android.annotation.TargetApi;
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.hardware.Camera.Parameters;
+import android.os.Build;
+import android.util.Base64;
+
+import com.embarcadero.javaandroid.DBXException;
+import com.embarcadero.javaandroid.DSProxy.TKitviewClass;
+import com.embarcadero.javaandroid.DSRESTConnection;
+import com.embarcadero.javaandroid.TDBXReader;
+import com.embarcadero.javaandroid.TDataSet;
+import com.embarcadero.javaandroid.TJSONObject;
+
+import org.w3c.dom.CharacterData;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
+
 import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -12,33 +34,15 @@ import java.util.StringTokenizer;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import org.w3c.dom.CharacterData;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.InputSource;
-
-import util.filter.FilterProcessor;
-import util.log.LogUtil;
+import activity.FolderActivity;
 import model.PersistenceManager;
 import model.rest.Personne;
 import model.rest.Photo;
 import model.rest.Scenario;
 import model.rest.ScenarioItem;
 import model.rest.Subscriber;
-import activity.FolderActivity;
-import android.annotation.TargetApi;
-import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.hardware.Camera.Parameters;
-import android.os.Build;
-import android.util.Base64;
-import android.util.Log;
-
-import com.embarcadero.javaandroid.*;
-import com.embarcadero.javaandroid.DSProxy.TKitviewClass;
+import util.filter.FilterProcessor;
+import util.log.LogUtil;
 
 @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
 public class KitviewUtil {
@@ -135,6 +139,7 @@ public class KitviewUtil {
 			if(currentSubscriber != null){
 				ip = currentSubscriber.getmHost();
 				port = currentSubscriber.getmHttpPort();
+				System.out.println("KitviewUtil:ip subscriber = "+ip);
 
 				_mConnection.setHost(ip);//"AG-VAIO");//"orqualpau.dyndns.org");//ip);
 				_mConnection.setPort(port);//8080);//port);
@@ -1490,6 +1495,7 @@ public class KitviewUtil {
 		if(LOG_ENABLED)LogUtil.getInstance().insertDataInLog(context,"[CALL] isKitviewAvailable()");
 
 		int isAvailable = NetworkUtil.isNetworkAvailable(context)?TEST_CONNECTION_OK:TEST_CONNECTION_WIFI_KO;
+		System.out.println("KitviewUtil:isAvailable = "+isAvailable);// 0 -> test_ok
 
 		if(LOG_ENABLED)LogUtil.getInstance().insertDataInLog(context,"[RESPONSE] isKitviewAvailable isAvailable:"+isAvailable);
 

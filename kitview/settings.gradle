@@ -1,7 +1,9 @@
 rootProject.name = 'kitview'
 
-include ':practice', ':out' , ':practice_lib'
+include ':practice', ':orthalis-connect' , ':practice_lib'
 
 rootProject.children.each {
-    it.name = rootProject.name + '-' + it.name
+    if (it.name.startsWith('practice')) {
+        it.name = rootProject.name + '-' + it.name
+    }
 }

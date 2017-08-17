@@ -2658,7 +2658,6 @@ containing a value of this type.
         public static int pictures_missing=0x7f0800a6;
         public static int pinch_to_zoom=0x7f0800a7;
         public static int port=0x7f0800a8;
-        public static int practice=0x7f080153;
         public static int preference_display_type=0x7f0800a9;
         public static int preference_economy=0x7f0800aa;
         public static int preference_economy_summary=0x7f0800ab;

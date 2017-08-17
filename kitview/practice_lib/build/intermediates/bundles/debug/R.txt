@@ -1259,7 +1259,6 @@ int string picture_time_display 0x7f0800a5
 int string pictures_missing 0x7f0800a6
 int string pinch_to_zoom 0x7f0800a7
 int string port 0x7f0800a8
-int string practice 0x7f080153
 int string preference_display_type 0x7f0800a9
 int string preference_economy 0x7f0800aa
 int string preference_economy_summary 0x7f0800ab

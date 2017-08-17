@@ -1,26 +1,25 @@
 package model;
 
-import java.lang.reflect.Type;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
-import util.network.KitviewUtil;
-import util.network.NetworkUtil;
-import util.system.SystemUtil;
+import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.graphics.Color;
 
 import com.dentalcrm.kitview.R;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 import model.rest.Categorie;
 import model.rest.Scenario;
 import model.rest.Subscriber;
-import android.app.Activity;
-import android.content.Context;
-import android.content.SharedPreferences;
-import android.graphics.Color;
-import android.util.Log;
+import util.network.KitviewUtil;
+import util.network.NetworkUtil;
+import util.system.SystemUtil;
 
 public class PersistenceManager{
 	private final static String SHARED_PREFERENCES_FILE_NAME = ".prefs";
@@ -100,6 +99,7 @@ public class PersistenceManager{
 	private SharedPreferences.Editor mSharedPreferencesEditor;
 
 	private final static String REMOTE_SERVER_ADRESS = "109.190.25.5:2015";
+	//private final static String REMOTE_SERVER_ADRESS = "192.168.2.77::8080";
 	//private final static String REMOTE_SERVER_ADRESS = "92.154.32.8:8081";
 	//private final static String REMOTE_SERVER_ADRESS_SURGERY = "109.190.25.5:2016";
 
@@ -232,6 +232,7 @@ public class PersistenceManager{
 	public String getRemoteServerAdress(boolean convertToIp){
 		String ip = mSharedPreferences.getString(KEY_REMOTE_SERVER_PATIENT, REMOTE_SERVER_ADRESS);//putString(KEY_KITVIEW_IP, ip);
 		//String ip = "92.154.32.8:8080";
+		//String ip = "192.168.2.77:8080";
 
 		if(convertToIp && ip != null && ip.startsWith("\\")){
 			int doublePointIndex = ip.lastIndexOf(":");
@@ -243,7 +244,7 @@ public class PersistenceManager{
 			if(newIp != null)ip = newIp+":"+port;
 			else ip = REMOTE_SERVER_ADRESS;//"0.0.0.0";
 		}
-		System.out.println("debug --------------------------------------------------------->>> "+ip);
+		System.out.println("PersisMan:debug --------------------------------------------------------->>> "+ip);
 		
 		return ip;
 	}

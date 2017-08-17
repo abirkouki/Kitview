@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="commons-io-2.5">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/out/libs/commons-io-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/orthalis-connect/libs/commons-io-2.5.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

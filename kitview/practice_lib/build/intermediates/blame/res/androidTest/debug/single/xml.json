@@ -1,14 +1,6 @@
 [
     {
-        "merged": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml\\preferences.xml",
-        "source": "E:\\DEV_ANDROID\\Kitview-master\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\xml\\preferences.xml"
-    },
-    {
         "merged": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml\\preferences.xml",
         "source": "C:\\DEV_ANDROID\\kitview\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\xml\\preferences.xml"
-    },
-    {
-        "merged": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\xml\\preferences.xml",
-        "source": "E:\\DEV_ANDROID\\orthalis\\practice_lib\\build\\intermediates\\bundles\\debug\\res\\xml\\preferences.xml"
     }
 ]

@@ -1,14 +1,5 @@
 package activity;
 
-import java.util.ArrayList;
-import java.util.List;
-import model.PersistenceManager;
-import model.rest.Subscriber;
-import util.network.KitviewUtil;
-import util.network.discovery.ActivityDiscovery;
-import util.system.SystemUtil;
-import view.adapter.CustomAdapter;
-import com.dentalcrm.kitview.R;
 import android.annotation.TargetApi;
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
@@ -36,6 +27,18 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.Switch;
+
+import com.dentalcrm.kitview.R;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import model.PersistenceManager;
+import model.rest.Subscriber;
+import util.network.KitviewUtil;
+import util.network.discovery.ActivityDiscovery;
+import util.system.SystemUtil;
+import view.adapter.CustomAdapter;
 
 @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
 public class SettingsActivity extends FragmentActivity implements ActionBar.TabListener {
@@ -442,6 +445,7 @@ public class SettingsActivity extends FragmentActivity implements ActionBar.TabL
 				});
 				
 				String host = mPersistenceManager.getMachineIp(false);
+				System.out.println("Settings:host = "+host);
 
 				if(host != ""){
 					//String ip = mPersistenceManager.getMachineIp(false);

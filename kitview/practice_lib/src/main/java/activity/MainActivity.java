@@ -1,21 +1,5 @@
 package activity;
 
-import java.io.File;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import model.Module;
-import model.PersistenceManager;
-import model.rest.Personne;
-import util.components.gallery.ImageCache;
-import util.components.gallery.ImageFetcher;
-import util.components.progressdialog.FRProgressDialog;
-import util.network.KitviewUtil;
-import util.system.SystemUtil;
-import view.adapter.ModulesAdapter;
-import view.popup.GenericPopupManager;
-import view.popup.QuitPopupManager;
-import com.dentalcrm.kitview.R;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -42,6 +26,25 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.VideoView;
 import android.widget.ViewAnimator;
+
+import com.dentalcrm.kitview.R;
+
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+
+import model.Module;
+import model.PersistenceManager;
+import model.rest.Personne;
+import util.components.gallery.ImageCache;
+import util.components.gallery.ImageFetcher;
+import util.components.progressdialog.FRProgressDialog;
+import util.network.KitviewUtil;
+import util.system.SystemUtil;
+import view.adapter.ModulesAdapter;
+import view.popup.GenericPopupManager;
+import view.popup.QuitPopupManager;
 
 @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
 public class MainActivity extends FragmentActivity{
@@ -104,9 +107,6 @@ public class MainActivity extends FragmentActivity{
 		this.mGridView0 = (GridView)this.findViewById(R.id.gridview_home0);
 		this.mGridView = (GridView)this.findViewById(R.id.gridview_home);
 		this.mGridView2 = (GridView)this.findViewById(R.id.gridview_home2);
-
-		//TODO voir pour le stockage cache du mode avec persistenceMan
-
 
 		try{
 			int mode = (mPersistenceManager != null)?mPersistenceManager.getMode():PersistenceManager.MODE_SELECTION;
@@ -316,7 +316,7 @@ public class MainActivity extends FragmentActivity{
 									public void run() {
 										runOnUiThread(new Runnable() {
 											public void run() {
-
+												System.out.println("Main:connectionEstablished = "+connectionEstablished);
 												if(connectionEstablished == KitviewUtil.TEST_CONNECTION_OK){
 													Intent intent = new Intent(MainActivity.this.getApplicationContext(), ScenariosActivity.class);
 
@@ -561,7 +561,7 @@ public class MainActivity extends FragmentActivity{
 			context.startActivity(intent);
 		}
 	}
-	//TODO voir comment cette fonction n'est plus appelee une fois qu'on a choisit un des modes pour faire un truc similaire pour le dl des data du ftp
+
 	public void initializeGridView0(){
 		this.mModules0 = new ArrayList<Module>();
 		this.mModules0.add(new Module(R.string.cabinet, R.color.color1, R.drawable.ic_action_group));
@@ -703,6 +703,7 @@ public class MainActivity extends FragmentActivity{
 					//Emergency
 					case 0:
 						if(mDialog != null)mDialog.showFRProgressDialog();
+						mPersistenceManager.setMachineIp("192.168.2.77");
 
 						new Thread(new Runnable() {
 							@Override
@@ -845,36 +846,7 @@ public class MainActivity extends FragmentActivity{
 						//Settings
 					case 4:
 						launchSettings(MainActivity.this,false);
-
 						break;
-
-						//Test
-//					case 5:
-//						if(mDialog != null)mDialog.showFRProgressDialog();
-//
-//						new Thread(new Runnable() {
-//							@Override
-//							public void run() {
-//								Intent intent = new Intent(MainActivity.this.getApplicationContext(), PracticeActivity.class);
-//								if(intent != null){
-//									intent.putExtra("practice", "5");
-//									intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//									MainActivity.this.getApplicationContext().startActivity(intent);
-//								}
-//
-//								if(mDialog != null){
-//									runOnUiThread(new  Runnable(){
-//										@Override
-//										public void run() {
-//											mDialog.cancelFRProgressDialog();
-//										}
-//									});
-//								}
-//							}
-//						}).start();
-//
-//						break;
-
 					}
 				}
 			});
@@ -911,7 +883,7 @@ public class MainActivity extends FragmentActivity{
 			@Override
 			public void onResponse(int patientId) {
 				final Personne personne = (patientId != -1)?KitviewUtil.getPersonneFromId(MainActivity.this,patientId):null;
-
+				System.out.println("Main:patientId = "+patientId);
 				runOnUiThread(new Runnable() {
 					@Override
 					public void run() {
