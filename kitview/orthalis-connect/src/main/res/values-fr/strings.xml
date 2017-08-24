@@ -24,6 +24,8 @@
     <string name="wifi_content">Activez votre Wifi dans les réglages</string>
     <string name="quit_application">Quitter l\'application ?</string>
     <string name="confirm_quit_application">Êtes-vous sûr de vouloir quitter l\'application ?</string>
+    <string name="no_chat">Votre cabinet n\'a pas de chat pour le moment</string>
+    <string name="work_in_progress">Cette fonctionnalité n\'est pas encore disponible</string>
 
     <!--Contact-->
     <string name="map">Carte</string>
@@ -86,6 +88,8 @@
     <string name="enter_login">Entrez vos identifiants donnés par votre praticien.</string>
     <string name="password">mot de passe</string>
     <string name="username">identifiant</string>
+    <string name="wrong_login">Mot de passe ou identifiant incorrects</string>
+    <string name="missing_login">Mot de passe ou identifiant requis</string>
 
     <!--Balance-->
     <string name="payment">Il vous reste à payer\u0020</string>
@@ -95,6 +99,10 @@
 
     <!--Notif-->
     <string name="no_notif">Vous n\'avez pas de notifications</string>
+
+    <!--Photo-->
+    <string name="take_a_pic">Prendre une photo</string>
+    <string name="photo_sent">Photo envoyée</string>
 
     <!--Chat (smooch)-->
     <string name="Smooch_activityConversation">Chat</string>

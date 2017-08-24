@@ -81,7 +81,6 @@ public class MainActivity extends FragmentActivity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
-		//TODO app bar s'est barre essayer de la remettre
 
 		this.requestWindowFeature(Window.FEATURE_NO_TITLE);
 		this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -159,34 +158,60 @@ public class MainActivity extends FragmentActivity{
 	}
 
 	public void checkKitViewConnection(){
-		/*mDialog.showFRProgressDialog();
-		KitviewUtil.isKitviewAvailable(MainActivity.this, new KitviewUtil.ITestConnectionResponse() {
+//		mDialog.showFRProgressDialog();
+//		KitviewUtil.isKitviewAvailable(MainActivity.this, new KitviewUtil.ITestConnectionResponse() {
+//			@Override
+//			public void onResponse(final int connectionEstablished){
+//				mDialog.cancelFRProgressDialog();
+//				if(connectionEstablished != KitviewUtil.TEST_CONNECTION_OK){// && mSettingsHasBeenLaunched){
+//					runOnUiThread(new Runnable() {
+//						public void run() {
+//							//String text = "";
+//
+//							if(connectionEstablished == KitviewUtil.TEST_CONNECTION_WIFI_KO){
+//								//text = getResources().getString(R.string.wifi_ko);
+//
+//								launchWifiPopup(MainActivity.this);
+//							}else if(connectionEstablished == KitviewUtil.TEST_CONNECTION_KITVIEW_KO){// && !mSettingsHasBeenLaunched){
+//								//text = getResources().getString(R.string.connection_to_kitview_ko);
+//
+//								//SystemUtil.showPopup(MainActivity.this,text);//getResources().getString(R.string.connection_to_kitview_ko));
+//
+//								//mAppSettingsPopupManager.showCameraSettingsDialogPopup();
+//
+//								launchSettings(MainActivity.this,true);
+//							}
+//						}
+//					});
+//				}
+//			}
+//		});
+
+		KitviewUtil.isKitviewAvailable(MainActivity.this, new util.network.KitviewUtil.ITestConnectionResponse() {
 			@Override
-			public void onResponse(final int connectionEstablished){
-				mDialog.cancelFRProgressDialog();
-				if(connectionEstablished != KitviewUtil.TEST_CONNECTION_OK){// && mSettingsHasBeenLaunched){
-					runOnUiThread(new Runnable() {
-						public void run() {
-							//String text = "";
-
-							if(connectionEstablished == KitviewUtil.TEST_CONNECTION_WIFI_KO){
-								//text = getResources().getString(R.string.wifi_ko);
-
-								launchWifiPopup(MainActivity.this);
-							}else if(connectionEstablished == KitviewUtil.TEST_CONNECTION_KITVIEW_KO){// && !mSettingsHasBeenLaunched){
-								//text = getResources().getString(R.string.connection_to_kitview_ko);
-
-								//SystemUtil.showPopup(MainActivity.this,text);//getResources().getString(R.string.connection_to_kitview_ko));
-
-								//mAppSettingsPopupManager.showCameraSettingsDialogPopup();
-
-								launchSettings(MainActivity.this,true);
+			public void onResponse(final int connectionEstablished) {
+				new Thread(new Runnable() {
+					@Override
+					public void run() {
+						runOnUiThread(new Runnable() {
+							public void run() {
+								if(connectionEstablished == KitviewUtil.TEST_CONNECTION_OK){
+									System.out.println("test connection ok");
+								}else{
+									if(connectionEstablished == KitviewUtil.TEST_CONNECTION_WIFI_KO){
+										System.out.println("test connection wifi ko");
+									}else if(connectionEstablished == KitviewUtil.TEST_CONNECTION_KITVIEW_KO){
+										System.out.println("test connection kitview ko");
+									}
+								}
 							}
-						}
-					});
-				}
+						});
+					}
+				}).start();
 			}
-		});*/
+		});
+
+
 	}
 
 	private void initializeVideoView(){
@@ -316,7 +341,6 @@ public class MainActivity extends FragmentActivity{
 									public void run() {
 										runOnUiThread(new Runnable() {
 											public void run() {
-												System.out.println("Main:connectionEstablished = "+connectionEstablished);
 												if(connectionEstablished == KitviewUtil.TEST_CONNECTION_OK){
 													Intent intent = new Intent(MainActivity.this.getApplicationContext(), ScenariosActivity.class);
 
@@ -654,7 +678,7 @@ public class MainActivity extends FragmentActivity{
 						@Override
 						public void onGlobalLayout() {
 							if(!mInitializationFinished2){
-								mSpacing = getWindowManager().getDefaultDisplay().getWidth()/50; // TODO voir pour les deprecated
+								mSpacing = getWindowManager().getDefaultDisplay().getWidth()/50;
 
 								LinearLayout.LayoutParams llp3 = (android.widget.LinearLayout.LayoutParams) mActualSituationTextView.getLayoutParams();//new LinearLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
 								llp3.setMargins(mSpacing, 0, mSpacing, 0);
@@ -703,7 +727,6 @@ public class MainActivity extends FragmentActivity{
 					//Emergency
 					case 0:
 						if(mDialog != null)mDialog.showFRProgressDialog();
-						mPersistenceManager.setMachineIp("192.168.2.77");
 
 						new Thread(new Runnable() {
 							@Override
@@ -883,7 +906,6 @@ public class MainActivity extends FragmentActivity{
 			@Override
 			public void onResponse(int patientId) {
 				final Personne personne = (patientId != -1)?KitviewUtil.getPersonneFromId(MainActivity.this,patientId):null;
-				System.out.println("Main:patientId = "+patientId);
 				runOnUiThread(new Runnable() {
 					@Override
 					public void run() {

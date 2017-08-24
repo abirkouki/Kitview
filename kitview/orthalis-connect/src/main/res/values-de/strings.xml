@@ -23,6 +23,8 @@
     <string name="wifi_content">Enable Wifi in your Android OS settings</string>
     <string name="quit_application">Quit application ?</string>
     <string name="confirm_quit_application">Are you sure you want to quit the application ?</string>
+    <string name="no_chat">Your Practice does not have a chat service at the moment</string>
+    <string name="work_in_progress">This feature is not yet available</string>
 
     <!--Contact-->
     <string name="map">Map</string>
@@ -85,6 +87,8 @@
     <string name="enter_login">Enter your credentials given by your practician.</string>
     <string name="password">password</string>
     <string name="username">username</string>
+    <string name="wrong_login">Login credentials are wrong</string>
+    <string name="missing_login">Required parameters username or password is missing</string>
 
     <!--Balance-->
     <string name="payment">You still have to pay\u0020</string>
@@ -94,6 +98,10 @@
 
     <!--Notif-->
     <string name="no_notif">You don\'t have any notifications</string>
+
+    <!--Photo-->
+    <string name="take_a_pic">Take a picture</string>
+    <string name="photo_sent">Photo sent</string>
 
     <!--Chat (smooch)-->
     <string name="Smooch_activityConversation">Messages</string>

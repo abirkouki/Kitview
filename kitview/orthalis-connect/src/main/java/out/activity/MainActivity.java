@@ -17,12 +17,9 @@ import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
 import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Html;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,23 +41,18 @@ import com.orthalis.connect.R;
 
 import java.io.File;
 import java.io.InputStream;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import activity.FolderActivity;
 import io.smooch.core.Smooch;
 import io.smooch.core.User;
 import io.smooch.ui.ConversationActivity;
 import model.Module;
-import model.rest.Personne;
 import util.FTP.PracticeFTP;
 import util.app.AppController;
 import util.components.progressdialog.FRProgressDialog;
 import util.helper.ActionBarHelper;
-import util.network.KitviewUtil;
 import util.session.SQLiteHandler;
 import util.session.SessionManager;
 import util.system.SystemUtil;
@@ -85,13 +77,7 @@ public class MainActivity extends AppCompatActivity{
     private LinearLayout mActualSituationTextView;
     private LinearLayout mBottomInfosLinearLayout;
 
-    //String tag_string_req = "req_main_activity";
-    //Model
-    //private PersistenceManager mPersistenceManager;
     private int mOrientation;
-
-//    public final static String KEY_TEST_CONNECTION = "KEY_TEST_CONNECTION";
-//    private boolean mCheckKitViewConnection = true;
 
     private SessionManager session;
 
@@ -109,17 +95,8 @@ public class MainActivity extends AppCompatActivity{
 
         // Session manager
         session = new SessionManager(getApplicationContext());
-
-//        if(savedInstanceState != null){
-//            mCheckKitViewConnection = (Boolean) savedInstanceState.get(KEY_TEST_CONNECTION);
-//            System.out.println("key test connection -> "+mCheckKitViewConnection);
-//        }
-
         this.mOrientation = getResources().getConfiguration().orientation;
 
-        //this.mPersistenceManager = PersistenceManager.getInstance();
-
-        //TODO trim layout
         this.mViewAnimator = (ViewAnimator) findViewById(R.id.va_main);
         this.mVideoView = (VideoView)findViewById(R.id.videoview);
         this.mImageView = (ImageView)findViewById(R.id.imageview);
@@ -129,11 +106,9 @@ public class MainActivity extends AppCompatActivity{
         this.mBottomInfosLinearLayout = (LinearLayout) findViewById(R.id.ll_bottom_infos);
 
         this.mGridView0 = (GridView)this.findViewById(R.id.gridview_home0);
-        //this.mGridView = (GridView)this.findViewById(R.id.gridview_home);
         this.mGridView2 = (GridView)this.findViewById(R.id.gridview_home2);
 
 
-//        try{
 
         File CfgDir = new File(getApplicationContext().getFilesDir().getAbsolutePath() + File.separator + "Config");
 
@@ -151,15 +126,9 @@ public class MainActivity extends AppCompatActivity{
         }
 
         mDialog = new FRProgressDialog(this, "",false);
-
-            //if(mViewAnimator.getDisplayedChild() != 0 && mCheckKitViewConnection)checkKitViewConnection();
-//        }catch(Exception e){
-//            e.printStackTrace();
-//        }
     }
 
 
-    //TODO garder peut etre utile
     public void launchWifiPopup(Activity context){
         String title = context.getResources().getString(R.string.wifi_title);
         String content = context.getResources().getString(R.string.wifi_content);
@@ -187,39 +156,6 @@ public class MainActivity extends AppCompatActivity{
         });
     }
 
-    //TODO voir pour la connexion au serveur cabinet
-    public void checkKitViewConnection(){
-		mDialog.showFRProgressDialog();
-		KitviewUtil.isKitviewAvailable(MainActivity.this, new KitviewUtil.ITestConnectionResponse() {
-			@Override
-			public void onResponse(final int connectionEstablished){
-				mDialog.cancelFRProgressDialog();
-				if(connectionEstablished != KitviewUtil.TEST_CONNECTION_OK){// && mSettingsHasBeenLaunched){
-					runOnUiThread(new Runnable() {
-						public void run() {
-							//String text = "";
-
-							if(connectionEstablished == KitviewUtil.TEST_CONNECTION_WIFI_KO){
-								//text = getResources().getString(R.string.wifi_ko);
-
-								launchWifiPopup(MainActivity.this);
-							}else if(connectionEstablished == KitviewUtil.TEST_CONNECTION_KITVIEW_KO){// && !mSettingsHasBeenLaunched){
-								//text = getResources().getString(R.string.connection_to_kitview_ko);
-
-								//SystemUtil.showPopup(MainActivity.this,text);//getResources().getString(R.string.connection_to_kitview_ko));
-
-								//mAppSettingsPopupManager.showCameraSettingsDialogPopup();
-
-								//launchSettings(MainActivity.this,true);
-                                System.out.println(connectionEstablished);
-                                System.out.println("pas connecté le batard");
-							}
-						}
-					});
-				}
-			}
-		});
-    }
 
     //TODO régler MPEG4Extractor: Reset mWrongNALCounter. Re-check a condition - 'isMalformed = 0'
     private void initializeVideoView(){
@@ -277,62 +213,6 @@ public class MainActivity extends AppCompatActivity{
         }
     }
 
-
-    //TODO conserver pour le moment (utile pour la photothèque)
-    public void launchMyCase(final Activity context, final int patientId){
-        if(mDialog != null)mDialog.showFRProgressDialog();
-        KitviewUtil.isKitviewAvailable(context, new KitviewUtil.ITestConnectionResponse() {
-            @Override
-            public void onResponse(final int connectionEstablished) {
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        context.runOnUiThread(new Runnable() {
-                            public void run() {
-                                if(connectionEstablished == KitviewUtil.TEST_CONNECTION_OK){
-                                    Intent intent = new Intent(context.getApplicationContext(), FolderActivity.class);
-                                    if(intent != null){
-                                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                        intent.putExtra(FolderActivity.EXTRA_KEY_PATIENTID, (patientId != -1)?patientId:KitviewUtil.GetCurrentIdPatientSync(context));
-                                        //mSettingsHasBeenLaunched = true;
-                                        context.getApplicationContext().startActivity(intent);
-                                    }
-                                    if(mDialog != null)mDialog.cancelFRProgressDialog();
-                                }else{
-                                    if(mDialog != null)mDialog.cancelFRProgressDialog();
-
-                                    String text = "";
-
-                                    if(connectionEstablished == KitviewUtil.TEST_CONNECTION_WIFI_KO){
-                                        launchWifiPopup(context);
-                                    }else if(connectionEstablished == KitviewUtil.TEST_CONNECTION_KITVIEW_KO){
-                                        text = context.getResources().getString(R.string.connection_to_kitview_ko);
-
-                                        launchSettings(context,true);
-                                    }
-                                }
-                            }
-                        });
-                    }
-                }).start();
-            }
-        });
-    }
-
-    //TODO garder et modifier
-    public static void launchSettings(Activity context, boolean connectionKo){
-//        if(!SettingsActivity.IS_LAUNCHED){
-//            if(connectionKo){
-//                String text = context.getResources().getString(R.string.connection_to_kitview_ko);
-//                SystemUtil.showPopup(context,text);
-//            }
-//            SettingsActivity.IS_LAUNCHED = true;
-//            Intent intent = new Intent(context.getApplicationContext(), SettingsActivity.class);
-//            context.startActivity(intent);
-//        }
-    }
-
-    //TODO mettre PracticeAct dans cette fonction
     public void initializeGridView0(){
         this.mModules0 = new ArrayList<Module>();
         this.mModules0.add(new Module(R.string.practice_id, R.color.logo_orange, R.drawable.ic_action_group));
@@ -401,13 +281,12 @@ public class MainActivity extends AppCompatActivity{
                             practiceScan();
                             break;
                     }
-                    //checkKitViewConnection();
                 }
             });
         }
     }
 
-    //TODO c'est ecrit en fr, changer ça
+
     public void practiceScan(){
         new IntentIntegrator(getActivity()).initiateScan();
     }
@@ -444,10 +323,9 @@ public class MainActivity extends AppCompatActivity{
 
         dialog = builder.create();
         dialog.show();
-        dialog.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);//TODO enlever, pour mon portable uniquement
     }
 
-    public void runFTPQuery(final String code_input){//TODO degager tous les println
+    public void runFTPQuery(final String code_input){
         final PracticeFTP ftp = new PracticeFTP(code_input,getApplicationContext(),getActivity());
         Thread thread1;
         final Thread thread2;
@@ -512,27 +390,18 @@ public class MainActivity extends AppCompatActivity{
     }
 
 
-    //TODO garder et modifier selon actions
-    //TODO ceux qui seront effacé -> changer le numéro du case
     public void initializeGridView2(){
         this.mModules2 = new ArrayList<Module>();
-        //this.mModules2.add(new Module(R.string.picture_shot_emergency, R.color.color1, R.drawable.ic_action_camera));
-        //this.mModules2.add(new Module(R.string.picture_shot_several_patient, R.color.color2, R.drawable.ic_action_new_picture));
-        //this.mModules2.add(new Module(R.string.folder_patient, R.color.color3, R.drawable.ic_action_person));
-        //this.mModules2.add(new Module(R.string.folder2, R.color.color4, R.drawable.ic_action_group));//degager
-        this.mModules2.add(new Module(R.string.settings, R.color.color6, R.drawable.ic_action_settings));
-        //this.mModules2.add(new Module(R.string.practice, R.color.color6, R.drawable.ic_action_settings));//degager
+        this.mModules2.add(new Module(R.string.appointment, R.color.color6, R.drawable.ic_action_time));
         this.mModules2.add(new Module(R.string.balance, R.color.color6, R.drawable.ic_action_refresh));
         this.mModules2.add(new Module(R.string.notification, R.color.color6, R.drawable.ic_action_view_as_list));
-        this.mModules2.add(new Module(R.string.appointment, R.color.color6, R.drawable.ic_action_time));
-        //this.mModules2.add(new Module(R.string.phone, R.color.color6, R.drawable.ic_action_settings));
-        //this.mModules2.add(new Module(R.string.email, R.color.color6, R.drawable.ic_action_settings));
-
+        this.mModules2.add(new Module(R.string.Smooch_activityConversation, R.color.color6, R.drawable.ic_action_group));
         this.mModules2.add(new Module(R.string.contact, R.color.color6, R.drawable.ic_action_person));
-        this.mModules2.add(new Module(R.string.about, R.color.color6, R.drawable.ic_action_about));
         this.mModules2.add(new Module(R.string.title_activity_opening, R.color.color6, R.drawable.ic_action_go_to_today));
-        if (AppController.practiceConfigServer.chatSmooch != null) this.mModules2.add(new Module(R.string.Smooch_activityConversation, R.color.color6, R.drawable.ic_action_group));
-        this.mModules2.add(new Module(R.string.picture_shot_emergency, R.color.color6, R.drawable.ic_action_camera));
+        this.mModules2.add(new Module(R.string.settings, R.color.color6, R.drawable.ic_action_settings));
+        this.mModules2.add(new Module(R.string.about, R.color.color6, R.drawable.ic_action_about));
+        this.mModules2.add(new Module(R.string.take_a_pic, R.color.color6, R.drawable.ic_action_camera));
+
         this.mInitializationFinished2 = false;
 
         if(this.mGridView2 != null){
@@ -592,240 +461,23 @@ public class MainActivity extends AppCompatActivity{
                 public void onItemClick(AdapterView<?> arg0, View arg1, final int arg2, long arg3) {
                     Intent intent;
                     switch (arg2) {
-
-                        //Emergency
-                        //case 0:
-                            /*
-                            if(mDialog != null){
-                                mDialog.showFRProgressDialog();
-                                System.out.println("dialog lancée");
-                            }
-                            new Thread(new Runnable() {
-                                @Override
-                                public void run() {
-                                    Intent intent = new Intent(MainActivity.this.getApplicationContext(), ScenariosActivity.class);
-                                    if(intent != null){
-                                        intent.putExtra(ScenariosActivity.KEY_MODE, ScenariosActivity.MODE_EMERGENCY);
-                                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                        MainActivity.this.getApplicationContext().startActivity(intent);
-                                    }
-
-                                    if(mDialog != null){
-                                        runOnUiThread(new  Runnable(){
-                                            @Override
-                                            public void run() {
-                                                mDialog.cancelFRProgressDialog();
-                                                System.out.println("dialog finie UIthread");
-                                            }
-                                        });
-                                    }
-                                }
-                            }).start();
-                            break;
-                            */
-                        //Seance photos
-                        //case 1:
-                            /*
-                            if(mDialog != null)mDialog.showFRProgressDialog();
-
-                            KitviewUtil.isKitviewAvailable(MainActivity.this, new KitviewUtil.ITestConnectionResponse() {
-                                @Override
-                                public void onResponse(final int connectionEstablished) {
-                                    new Thread(new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            runOnUiThread(new Runnable() {
-                                                public void run() {
-                                                    if(connectionEstablished == KitviewUtil.TEST_CONNECTION_OK){
-                                                        Intent intent = new Intent(MainActivity.this.getApplicationContext(), ScenariosActivity.class);
-
-                                                        if(intent != null){
-                                                            intent.putExtra(ScenariosActivity.KEY_MODE, ScenariosActivity.MODE_SCENARIO);
-                                                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                                            MainActivity.this.getApplicationContext().startActivity(intent);
-                                                        }
-                                                        if(mDialog != null)mDialog.cancelFRProgressDialog();
-                                                    }else{
-                                                        if(mDialog != null)mDialog.cancelFRProgressDialog();
-
-                                                        String text = "";
-
-                                                        if(connectionEstablished == KitviewUtil.TEST_CONNECTION_WIFI_KO){
-                                                            text = getResources().getString(R.string.wifi_ko);
-
-                                                            launchWifiPopup(MainActivity.this);
-
-                                                        }else if(connectionEstablished == KitviewUtil.TEST_CONNECTION_KITVIEW_KO){
-                                                            launchSettings(MainActivity.this,true);
-                                                        }
-                                                    }
-                                                }
-                                            });
-                                        }
-                                    }).start();
-                                }
-                            });
-                            break;
-                            */
-                        //Ma phototheque
-                        //case 2:
-                            /*
-                            launchMyCase(MainActivity.this,-1);
-                            break;
-                            */
-                        //Cas similaires
-                        //case 3:
-                            /*
-                            if(mDialog != null)mDialog.showFRProgressDialog();
-                            KitviewUtil.isKitviewAvailable(MainActivity.this, new KitviewUtil.ITestConnectionResponse() {
-                                @Override
-                                public void onResponse(final int connectionEstablished) {
-                                    new Thread(new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            runOnUiThread(new Runnable() {
-                                                public void run() {
-                                                    if(connectionEstablished == KitviewUtil.TEST_CONNECTION_OK){
-                                                        KitviewUtil.GetCurrentIdPatient(MainActivity.this,new KitviewUtil.IIntResponse() {
-                                                            @Override
-                                                            public void onResponse(final int patientId) {
-                                                                Intent intent = new Intent(MainActivity.this.getApplicationContext(), SameCasesActivity.class);
-                                                                if(intent != null){
-                                                                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                                                    intent.putExtra(SameCasesActivity.EXTRA_KEY_PATIENTID, patientId);
-                                                                    MainActivity.this.getApplicationContext().startActivity(intent);
-                                                                }
-                                                                if(mDialog != null)mDialog.cancelFRProgressDialog();
-                                                            }
-                                                        });
-                                                    }else{
-                                                        if(mDialog != null)mDialog.cancelFRProgressDialog();
-
-                                                        String text = "";
-
-                                                        if(connectionEstablished == KitviewUtil.TEST_CONNECTION_WIFI_KO){
-                                                            text = getResources().getString(R.string.wifi_ko);
-
-                                                            launchWifiPopup(MainActivity.this);
-
-                                                        }else if(connectionEstablished == KitviewUtil.TEST_CONNECTION_KITVIEW_KO){
-                                                            launchSettings(MainActivity.this,true);
-                                                        }
-                                                    }
-                                                }
-                                            });
-                                        }
-                                    }).start();
-                                }
-                            });
-
-//                            intent = new Intent(MainActivity.this.getApplicationContext(), OpeningActivity.class);
-//                            if(intent != null){
-//                                intent.putExtra("testXml", "3");
-//                                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                                MainActivity.this.getApplicationContext().startActivity(intent);
-//                            }
-                            if(mDialog != null)mDialog.cancelFRProgressDialog();
-                            break;
-                        */
-                        //Settings
-                        case 0://4
-                            //launchSettings(MainActivity.this,false);
-                            intent = new Intent(MainActivity.this, out.activity.SettingsActivity.class);
+                        //RDV
+                        case 0:
+                            intent = new Intent(MainActivity.this, ProchainRdvActivity.class);
                             startActivity(intent);
                             break;
-                        //Test
-                        //case 5:
-                            /*
-                            if(mDialog != null)mDialog.showFRProgressDialog();
-
-                            new Thread(new Runnable() {//TODO enlever ce thread ?
-                                @Override
-                                public void run() {
-
-                                    Intent intent = new Intent(MainActivity.this.getApplicationContext(), LoginActivity.class);
-                                    intent.putExtra("login", "5");
-                                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                                    MainActivity.this.getApplicationContext().startActivity(intent);
-
-
-//                                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-//                                    AlertDialog dialog;
-//                                    LayoutInflater inflater = getActivity().getLayoutInflater();
-//                                    builder.setTitle("Login");//TODO R.strings
-//                                    builder.setView(inflater.inflate(R.layout.activity_login,null));
-//                                    builder.setPositiveButton("Valider", new DialogInterface.OnClickListener() {
-//                                        @Override
-//                                        public void onClick(DialogInterface dialog, int id) {
-//                                            //EditText code_input = (EditText) ((Dialog) dialog).findViewById(R.id.code_input);
-//                                            //runFTPQuery(code_input.getText().toString());
-//                                            System.out.println("je suis dans le login hahahaha");
-//                                        }
-//                                    });
-//
-//                                    dialog = builder.create();
-//                                    dialog.show();
-//                                    dialog.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);//TODO enlever, pour mon portable uniquement
-
-                                    if(mDialog != null){
-                                        runOnUiThread(new  Runnable(){
-                                            @Override
-                                            public void run() {
-                                                mDialog.cancelFRProgressDialog();
-                                            }
-                                        });
-                                    }
-                                }
-                            }).start();
-                            break;
-                            */
                         //Balance
-                        case 1://6
+                        case 1:
                             intent = new Intent(MainActivity.this, BalanceActivity.class);
                             startActivity(intent);
                             break;
                         //Notif
-                        case 2://7
+                        case 2:
                             intent = new Intent(MainActivity.this, NotificationsActivity.class);
                             startActivity(intent);
                             break;
-                        //RDV
-                        case 3://8
-                            intent = new Intent(MainActivity.this, ProchainRdvActivity.class);
-                            startActivity(intent);
-                            break;
-                        //Appel
-//                        case 4://9
-//                            intent = new Intent(MainActivity.this, CallActivity.class);
-//                            startActivity(intent);
-//                            break;
-//                        //Mail
-//                        case 5://10
-//                            intent = new Intent(MainActivity.this, EmailActivity.class);
-//                            startActivity(intent);
-//                            break;
-//                        //Map
-//                        case 6://11
-//                            intent = new Intent(MainActivity.this, MapsActivity.class);
-//                            startActivity(intent);
-//                            break;
-                        //Contact
-                        case 4://7://12
-                            intent = new Intent(MainActivity.this, ContactActivity.class);
-                            startActivity(intent);
-                            break;
-                        //Contact
-                        case 5://8://13
-                            intent = new Intent(MainActivity.this, AboutActivity.class);
-                            startActivity(intent);
-                            break;
-                        //Horaires
-                        case 6://9://14
-                            intent = new Intent(MainActivity.this, OpeningActivity.class);
-                            startActivity(intent);
-                            break;
                         //Chat
-                        case 7:
+                        case 3:
                             if (AppController.practiceConfigServer.chatSmooch != null) {
                                 SQLiteHandler db = new SQLiteHandler(getApplicationContext());
                                 HashMap<String, String> user = db.getUserDetails();
@@ -834,77 +486,42 @@ public class MainActivity extends AppCompatActivity{
                                 User.getCurrentUser().setFirstName(prenom);
                                 User.getCurrentUser().setLastName(nom);
                                 ConversationActivity.show(MainActivity.this);
+                            }else {
+                                Toast.makeText(getApplicationContext(),R.string.no_chat,Toast.LENGTH_SHORT).show();
                             }
                             break;
-
-                        //test Photo
-                        case 8:
-                            checkKitViewConnection();
-                            //        startVideo();
-
-
-
-
-
-
-
-
-
-                            KitviewUtil.GetCurrentIdPatient(MainActivity.this,new KitviewUtil.IIntResponse() {
-                                @Override
-                                public void onResponse(int patientId) {
-                                    final Personne personne = (patientId != -1)?KitviewUtil.getPersonneFromId(MainActivity.this,patientId):null;
-
-                                    runOnUiThread(new Runnable() {
-                                        @Override
-                                        public void run() {
-                                            if(personne != null){
-                                                String lastName = personne.getLastName().trim();
-                                                String firstName = personne.getFirstName().trim();
-
-                                                //String patientInfosFormatted = (lastName != null && lastName.length() <= ScenariosActivity.PATIENT_INFOS_MAX_CHARACTERS)?lastName:lastName.substring(0, ScenariosActivity.PATIENT_INFOS_MAX_CHARACTERS)+" ...";
-                                                //String patientInfosFormatted2 = (firstName != null && firstName.length() <= ScenariosActivity.PATIENT_INFOS_MAX_CHARACTERS)?firstName:firstName.substring(0, ScenariosActivity.PATIENT_INFOS_MAX_CHARACTERS)+" ...";
-
-                                                //mCurrentPatientInfosTextView.setText(patientInfosFormatted2+" "+patientInfosFormatted);
-
-                                                String text = Html.fromHtml(getResources().getString(R.string.copyright_kitview_labs_2015))+" v"+SystemUtil.getAppVersion(MainActivity.this);
-                                                System.out.println(text);
-                                                //.setText(text);//patientInfosFormatted+" "+patientInfosFormatted2+" "+text);
-                                            }
-                                        }
-                                    });
-                                }
-                            });
+                        //Contact
+                        case 4:
+                            intent = new Intent(MainActivity.this, ContactActivity.class);
+                            startActivity(intent);
                             break;
-
-
-
+                        //Horaires
+                        case 5:
+                            intent = new Intent(MainActivity.this, OpeningActivity.class);
+                            startActivity(intent);
+                            break;
+                        //Settings
+                        case 6:
+                            intent = new Intent(MainActivity.this, out.activity.SettingsActivity.class);
+                            startActivity(intent);
+                            break;
+                        //A propos
+                        case 7:
+                            intent = new Intent(MainActivity.this, AboutActivity.class);
+                            startActivity(intent);
+                            break;
+                        //Photo
+                        case 8://TODO masquer pour le moment
+                            intent = new Intent(MainActivity.this, PhotoActivity.class);
+                            startActivity(intent);
+                            Toast.makeText(getApplicationContext(),R.string.work_in_progress,Toast.LENGTH_SHORT).show();
+                            break;
                     }
                 }
             });
         }
     }
 
-    //TODO garder peut etre utile
-    public static File getOutputTextFile(){
-        File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "MyCameraApp");
-
-        // Create the storage directory if it does not exist
-        if (mediaStorageDir != null && !mediaStorageDir.exists()){
-            if (!mediaStorageDir.mkdirs()){
-                Log.d("MyCameraApp", "failed to create directory");
-                return null;
-            }
-        }
-
-        // Create a media file name
-        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-
-        if(mediaStorageDir != null){
-            File mediaFile = new File(mediaStorageDir.getPath() + File.separator +"BARCODE_"+ timeStamp + ".txt");
-            return mediaFile;
-        }else return null;
-    }
 
     @Override
     protected void onResume(){
@@ -932,7 +549,6 @@ public class MainActivity extends AppCompatActivity{
         }
     }
 
-    //TODO garder
     public void startVideo(){
         try{
             if(mVideoView != null){
@@ -950,7 +566,6 @@ public class MainActivity extends AppCompatActivity{
         //pauseVideo();
     }
 
-    //TODO garder
     public void pauseVideo(){
         if(mVideoView != null){
             mVideoView.seekTo(0);
@@ -965,14 +580,7 @@ public class MainActivity extends AppCompatActivity{
         launchGenericPopup(MainActivity.this,title,content,true);
     }
 
-    //TODO orientation change -> passe ici (3) apres onPause
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        //if(outState != null)outState.putBoolean(KEY_TEST_CONNECTION,false);
-    }
 
-    //TODO orientation change -> passe ici (1)
     @Override
     public void onConfigurationChanged(Configuration newConfig){
         super.onConfigurationChanged(newConfig);

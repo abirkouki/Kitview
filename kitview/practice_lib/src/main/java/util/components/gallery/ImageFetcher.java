@@ -23,6 +23,8 @@ import android.net.NetworkInfo;
 import android.os.Build;
 import android.util.Log;
 
+import com.dentalcrm.kitview.BuildConfig;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -36,8 +38,6 @@ import java.util.StringTokenizer;
 
 import model.rest.Personne;
 import util.network.KitviewUtil;
-
-import com.dentalcrm.kitview.BuildConfig;
 
 /**
  * A simple subclass of {@link ImageResizer} that fetches and resizes images fetched from a URL.

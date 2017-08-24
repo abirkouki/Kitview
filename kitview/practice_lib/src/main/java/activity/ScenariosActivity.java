@@ -1,46 +1,5 @@
 package activity;
 
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.Date;
-import java.util.List;
-import java.util.StringTokenizer;
-import javax.net.ServerSocketFactory;
-import model.PersistenceManager;
-import model.Sound;
-import model.rest.Personne;
-import model.rest.Scenario;
-import model.rest.ScenarioItem;
-import util.components.progressdialog.FRProgressDialog;
-import util.components.shake.ShakeDetector;
-import util.file.FileUtil;
-import util.image.ImageUtil;
-import util.network.KitviewUtil;
-import util.network.NetworkUtil;
-import util.sound.SoundUtil;
-import util.system.SystemUtil;
-import view.LevelView2;
-import view.camera.CameraPreviewSeveral;
-import view.level.orientation.Orientation;
-import view.level.orientation.OrientationListener;
-import view.level.orientation.OrientationProvider;
-import view.popup.BarCodeModesPopupManager;
-import view.popup.CameraSettingsPopupManager;
-import view.popup.GenericPopupManager;
-import view.adapter.VerticalListViewAdapter;
-import view.arrowpopup.ChromeHelpPopup;
-import com.embarcadero.javaandroid.TJSONObject;
-import com.dentalcrm.kitview.R;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
@@ -80,8 +39,52 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.ViewAnimator;
+
+import com.dentalcrm.kitview.R;
+import com.embarcadero.javaandroid.TJSONObject;
+
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Date;
+import java.util.List;
+import java.util.StringTokenizer;
+
+import javax.net.ServerSocketFactory;
+
+import model.PersistenceManager;
+import model.Sound;
+import model.rest.Personne;
+import model.rest.Scenario;
+import model.rest.ScenarioItem;
+import util.components.progressdialog.FRProgressDialog;
+import util.components.shake.ShakeDetector;
+import util.file.FileUtil;
+import util.image.ImageUtil;
+import util.network.KitviewUtil;
+import util.network.NetworkUtil;
+import util.sound.SoundUtil;
+import util.system.SystemUtil;
+import view.LevelView2;
+import view.adapter.VerticalListViewAdapter;
+import view.arrowpopup.ChromeHelpPopup;
+import view.camera.CameraPreviewSeveral;
+import view.level.orientation.Orientation;
+import view.level.orientation.OrientationListener;
+import view.level.orientation.OrientationProvider;
+import view.popup.BarCodeModesPopupManager;
+import view.popup.CameraSettingsPopupManager;
+import view.popup.GenericPopupManager;
 
 @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
 public class ScenariosActivity extends FragmentActivity implements OrientationListener{
@@ -288,7 +291,6 @@ public class ScenariosActivity extends FragmentActivity implements OrientationLi
 						Socket socket = null;
 						try {
 							socket = serverSocket.accept();
-
 							takePicture();
 
 							socket.close();
@@ -358,7 +360,6 @@ public class ScenariosActivity extends FragmentActivity implements OrientationLi
 		});
 	}
 
-	// TODO voir pour les deprecated
 	public void setResolution(int width, int height){
 		try{
 			Parameters params = mCamera.getParameters();

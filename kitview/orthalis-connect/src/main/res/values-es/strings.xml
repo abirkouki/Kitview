@@ -23,6 +23,8 @@
     <string name="wifi_content">Active el Wifi del móvil</string>
     <string name="quit_application">Salir de la aplicación?</string>
     <string name="confirm_quit_application">Seguro que desea salir?</string>
+    <string name="no_chat">Su consultorio no dispone de chat por ahora</string>
+    <string name="work_in_progress">Esta opción no está disponible por el momento</string>
 
     <!--Contact-->
     <string name="map">Mapa</string>
@@ -85,6 +87,8 @@
     <string name="enter_login">Introduzca su nombre de usuario y su contraseña</string>
     <string name="password">contraseña</string>
     <string name="username">nombre de usuario</string>
+    <string name="wrong_login">Usuario o contraseña incorrecta</string>
+    <string name="missing_login">Usuario o contraseña requerida</string>
 
     <!--Balance-->
     <string name="payment">Le queda por pagar\u0020</string>
@@ -94,6 +98,10 @@
 
     <!--Notif-->
     <string name="no_notif">No tiene notificaciones</string>
+
+    <!--Photo-->
+    <string name="take_a_pic">Sacar una foto</string>
+    <string name="photo_sent">foto enviada</string>
 
     <!--Chat (smooch)-->
     <string name="Smooch_activityConversation">Chat</string>

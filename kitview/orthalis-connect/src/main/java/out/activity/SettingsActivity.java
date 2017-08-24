@@ -176,7 +176,7 @@ public class SettingsActivity extends AppCompatActivity{
                     //db.addParams((String) radioButtonDelta.getText(), (String) radioButtonFamille.getText());
                     db.addParams(resultHeure,resultFam);
                 } else {
-                    Toast.makeText(getApplicationContext(),"Veuillez vérifier votre accès à internet", Toast.LENGTH_LONG).show();//TODO string
+                    Toast.makeText(getApplicationContext(),R.string.check, Toast.LENGTH_LONG).show();
                 }
 
                 if (switchVideo != null) {//activé = vrai

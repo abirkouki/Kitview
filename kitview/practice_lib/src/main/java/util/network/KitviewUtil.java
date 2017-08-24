@@ -49,7 +49,7 @@ public class KitviewUtil {
 	private static DSRESTConnection _mConnection;
 	private static PersistenceManager _mPersistenceManager;
 
-	private final static boolean LOG_ENABLED = true;
+	private final static boolean LOG_ENABLED = false;
 
 	public static interface IIntResponse{
 		public void onResponse(int response);
@@ -139,7 +139,6 @@ public class KitviewUtil {
 			if(currentSubscriber != null){
 				ip = currentSubscriber.getmHost();
 				port = currentSubscriber.getmHttpPort();
-				System.out.println("KitviewUtil:ip subscriber = "+ip);
 
 				_mConnection.setHost(ip);//"AG-VAIO");//"orqualpau.dyndns.org");//ip);
 				_mConnection.setPort(port);//8080);//port);
@@ -152,6 +151,8 @@ public class KitviewUtil {
 		}
 		_mConnection.setProtocol("http");
 
+		//_mConnection = getConnection("192.168.2.77",8080);
+		//System.out.println("DSRESTConnection");
 		return _mConnection;
 	}
 
@@ -200,7 +201,6 @@ public class KitviewUtil {
 
 	public static void DeleteSessionFile(final Context context,final String FileName) {
 		if(LOG_ENABLED)LogUtil.getInstance().insertDataInLog(context,"[CALL] DeleteSessionFile(FileName:"+FileName);
-
 		final DSRESTConnection conn = getInstanceConnection(context);
 		final TKitviewClass tserverclass = new TKitviewClass(conn);
 
@@ -524,6 +524,7 @@ public class KitviewUtil {
 
 	public static void AddSessionFilenameToIdPatient(final Context context,final int IdPatient, final String SessionFilename, final String lstAttributs, final int WithRefresh, final int WithPreview){
 		if(LOG_ENABLED)LogUtil.getInstance().insertDataInLog(context,"[CALL] AddSessionFilenameToIdPatient(IdPatient:"+IdPatient+",SessionFilename:"+SessionFilename+",lstAttributs:"+lstAttributs+",WithRefresh:"+WithRefresh+")");
+
 
 		final DSRESTConnection conn = getInstanceConnection(context);
 		final TKitviewClass tserverclass = new TKitviewClass(conn);
@@ -1495,7 +1496,7 @@ public class KitviewUtil {
 		if(LOG_ENABLED)LogUtil.getInstance().insertDataInLog(context,"[CALL] isKitviewAvailable()");
 
 		int isAvailable = NetworkUtil.isNetworkAvailable(context)?TEST_CONNECTION_OK:TEST_CONNECTION_WIFI_KO;
-		System.out.println("KitviewUtil:isAvailable = "+isAvailable);// 0 -> test_ok
+		System.out.println("KitviewUtil:isAvailable (network) = "+isAvailable);// 0 -> test_ok
 
 		if(LOG_ENABLED)LogUtil.getInstance().insertDataInLog(context,"[RESPONSE] isKitviewAvailable isAvailable:"+isAvailable);
 

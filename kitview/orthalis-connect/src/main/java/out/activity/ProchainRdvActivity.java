@@ -205,7 +205,7 @@ public class ProchainRdvActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //HashMap<String, String> user = db.getUserDetails();
                 CalendarEvent calEv = new CalendarEvent(getApplicationContext());
-                long eventID = calEv.createEvent(AppController.practiceName+" : RDV",rdvLibelle,AppController.practiceAddress.geographic,rdv,Integer.parseInt(rdvDuree));//TODO nom rdv non paramétrable
+                long eventID = calEv.createEvent(AppController.practiceName+" : RDV",rdvLibelle,AppController.practiceAddress.geographic,rdv,Integer.parseInt(rdvDuree));//TODO a mettre eventuellement un titre de rdv dans le .xml
                 calEv.addAttendee(eventID,user.get("prenom")+" "+user.get("nom"));
                 calEv.addReminder(eventID,1);
                 calEv.addReminder(eventID,2);

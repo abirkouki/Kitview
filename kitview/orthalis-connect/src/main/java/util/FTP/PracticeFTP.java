@@ -27,7 +27,7 @@ import exception.FolderNonExistent;
  */
 
 
-public class PracticeFTP {//TODO clean tout ce bordel et ranger les exceptions
+public class PracticeFTP {
 
     private String code_input;
     private Activity activity;
@@ -109,16 +109,12 @@ public class PracticeFTP {//TODO clean tout ce bordel et ranger les exceptions
         FTPClient ftpClient = new FTPClient();
         boolean dlSuccess = true;
 
-        try {//TODO degager println
-            System.out.println("/////////////////////////////////////////////////////////////\n" +
-                    "/////////////////////////////////////////////////////////////\n" +
-                    "/////////////////////////////FTP/////////////////////////////\n" +
-                    "/////////////////////////////////////////////////////////////\n" +
-                    "/////////////////////////////////////////////////////////////\n");
-//           if (android.os.Build.VERSION.SDK_INT > 9) {
-//                 StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-//                 StrictMode.setThreadPolicy(policy);
-//           }
+        try {
+//            System.out.println("/////////////////////////////////////////////////////////////\n" +
+//                    "/////////////////////////////////////////////////////////////\n" +
+//                    "/////////////////////////////FTP/////////////////////////////\n" +
+//                    "/////////////////////////////////////////////////////////////\n" +
+//                    "/////////////////////////////////////////////////////////////\n");
             ftpClient.connect(SERVER, PORT);
             ftpClient.login(USER, PASS);
             ftpClient.enterLocalPassiveMode();
@@ -149,24 +145,9 @@ public class PracticeFTP {//TODO clean tout ce bordel et ranger les exceptions
             }
 
             if (dlSuccess) {//Si le téléchargement de tous les fichiers est un succès
-                System.out.println(context.getString(R.string.success_download));//TODO enlever println
+                //System.out.println(context.getString(R.string.success_download));
                 toastToUserFromBackgroundThread(context.getString(R.string.success_download),Toast.LENGTH_SHORT);
                 moveCacheFolder();
-///////////////////////////////////////INUTILE VERIF FICHIER.CONF/////////////////////////////////////////////////////TODO degager println
-//                try {
-//                    FileInputStream fis = context.openFileInput("kitpatient.conf");
-//                    InputStreamReader isr = new InputStreamReader(fis, "UTF-8");
-//                    BufferedReader bufferedReader = new BufferedReader(isr);
-//                    StringBuilder sb = new StringBuilder();
-//                    String line;
-//                    while ((line = bufferedReader.readLine()) != null) {
-//                        sb.append(line).append("\n");
-//                    }
-//                    System.out.println(sb.toString());
-//                } catch (FileNotFoundException e) {
-//                    e.printStackTrace();
-//                }
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             } else {
                 toastToUserFromBackgroundThread(context.getString(R.string.download_failed),Toast.LENGTH_SHORT);
             }

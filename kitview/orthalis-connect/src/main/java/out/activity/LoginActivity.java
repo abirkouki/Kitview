@@ -58,8 +58,6 @@ public class LoginActivity extends AppCompatActivity {
         inputPassword = (EditText) findViewById(R.id.password);
         btnLogin = (Button) findViewById(R.id.btnLogin);
 
-        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_VISIBLE);//TODO enlever, pour mon portable uniquement
-
         // Progress dialog
         pDialog = new ProgressDialog(this);
         pDialog.setCancelable(false);
@@ -154,12 +152,11 @@ public class LoginActivity extends AppCompatActivity {
                             finish();
                         } else {
                             // Error in login. Get the error message
-                            //TODO: r string
                             String errorMsg = jObj.getString("error_msg");
                             if (errorMsg.equals("1")) {
-                                Toast.makeText(getApplicationContext(), "Login credentials are wrong", Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(), R.string.wrong_login, Toast.LENGTH_LONG).show();
                             } else {
-                                Toast.makeText(getApplicationContext(), "Required parameters username or password is missing", Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(), R.string.missing_login, Toast.LENGTH_LONG).show();
                                 }
 
 

@@ -74,7 +74,7 @@ public class SettingsActivity extends FragmentActivity implements ActionBar.TabL
 
 		final ActionBar actionBar = getActionBar();
 
-		//TODO enlever les deprecated enlevera peut etre les NullPointerException
+
 		try {
 			actionBar.setHomeButtonEnabled(false);
 			actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
@@ -187,7 +187,6 @@ public class SettingsActivity extends FragmentActivity implements ActionBar.TabL
 			this.initializeAndroidPort(view);
 			this.initializeRestoreButton(view);
 
-			// TODO voir pour les serveurs distants en mode patient
 			boolean patientMode = (mPersistenceManager.getMode() == PersistenceManager.MODE_PATIENT);
 
 			//mDoctorEmailLinearLayout.setVisibility(patientMode?View.VISIBLE:View.GONE);
@@ -445,7 +444,6 @@ public class SettingsActivity extends FragmentActivity implements ActionBar.TabL
 				});
 				
 				String host = mPersistenceManager.getMachineIp(false);
-				System.out.println("Settings:host = "+host);
 
 				if(host != ""){
 					//String ip = mPersistenceManager.getMachineIp(false);

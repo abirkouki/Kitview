@@ -5,8 +5,6 @@
 
 package com.embarcadero.javaandroid;
 
-import java.util.Date;
-
 public class DSProxy {
   public static class TKitviewClass extends DSAdmin {
     public TKitviewClass(DSRESTConnection Connection) {
