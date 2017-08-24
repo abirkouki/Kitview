@@ -512,8 +512,8 @@ public class MainActivity extends AppCompatActivity{
                             break;
                         //Photo
                         case 8://TODO masquer pour le moment
-                            intent = new Intent(MainActivity.this, PhotoActivity.class);
-                            startActivity(intent);
+                            //intent = new Intent(MainActivity.this, PhotoActivity.class);
+                            //startActivity(intent);
                             Toast.makeText(getApplicationContext(),R.string.work_in_progress,Toast.LENGTH_SHORT).show();
                             break;
                     }

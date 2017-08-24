@@ -7,8 +7,6 @@ import com.embarcadero.javaandroid.DSProxy;
 import com.embarcadero.javaandroid.DSRESTConnection;
 import com.embarcadero.javaandroid.TJSONObject;
 
-import model.PersistenceManager;
-
 /**
  * Created by Administrateur on 24/08/2017.
  */
@@ -16,63 +14,11 @@ import model.PersistenceManager;
 public class KitviewUtilApp extends KitviewUtil {
 
     private static DSRESTConnection _mConnection;
-    private static PersistenceManager _mPersistenceManager;
-
 
     private static DSRESTConnection getInstanceConnection(Context context){
-//        _mPersistenceManager = PersistenceManager.getInstance();
-//
-//        if(_mConnection != null){
-//            _mConnection.CloseSession();
-//        }
-//
-//        _mConnection = new DSRESTConnection();
-//
-//        boolean modePatient = (_mPersistenceManager.getMode() == PersistenceManager.MODE_PATIENT);
-//
-//        if(modePatient){
-//            String rawRemoteServer = _mPersistenceManager.getInstance().getRemoteServerAdress(true);//false);//true);
-//
-//            StringTokenizer st = new StringTokenizer(rawRemoteServer, ":");
-//
-//            int nbTokens = (st != null)?st.countTokens():0;
-//
-//            if(nbTokens == 2){
-//                _mConnection.setHost(st.nextToken());
-//
-//                try{
-//                    String portRaw = st.nextToken();
-//                    int portInt = Integer.parseInt(portRaw);
-//
-//                    _mConnection.setPort(portInt);
-//                }catch(NumberFormatException e){
-//                    e.printStackTrace();
-//                }
-//            }
-//        }else{
-//            ArrayList<Subscriber> subscribers = _mPersistenceManager.getInstance().getSubscribers();
-//            int subscriberIndex = _mPersistenceManager.getInstance().getSubscriberIndex();
-//            Subscriber currentSubscriber = ((subscriberIndex != -1)?subscribers.get(subscriberIndex):null);
-//            String ip = "";
-//            int port = -1;
-//
-//            if(currentSubscriber != null){
-//                ip = currentSubscriber.getmHost();
-//                port = currentSubscriber.getmHttpPort();
-//
-//                _mConnection.setHost(ip);//"AG-VAIO");//"orqualpau.dyndns.org");//ip);
-//                _mConnection.setPort(port);//8080);//port);
-//            }else{
-//                _mConnection.setHost("");
-//                _mConnection.setPort(-1);
-//            }
-//        }
-//        _mConnection.setProtocol("http");
-
-
 //        _mConnection = getConnection("diedendorf.dyndns.org",8080);
 //        _mConnection = getConnection("192.168.2.74",8080);
-        _mConnection = getConnection("192.168.2.77",8080);
+        _mConnection = getConnection("192.168.2.77",8080);//TODO mettre variables xml
         return _mConnection;
     }
 
