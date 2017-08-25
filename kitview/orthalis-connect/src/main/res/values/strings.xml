@@ -93,7 +93,6 @@
     <!--Balance-->
     <string name="payment">You still have to pay\u0020</string>
     <string name="update">Last update :\u0020</string>
-    <string name="devise">£</string>
     <string name="missing_info">missing information, check your internet connection</string>
 
     <!--Notif-->

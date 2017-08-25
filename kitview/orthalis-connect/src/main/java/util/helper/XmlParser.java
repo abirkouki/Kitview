@@ -137,6 +137,7 @@ public class XmlParser {
     private String name;
     private ArrayList<Doctor> doctors;
     private OpeningHours openingHours;
+    private String currency;
     private ConfigServer configServer;
     private String text;
     private Contact contact;
@@ -155,6 +156,10 @@ public class XmlParser {
 
     public OpeningHours getOpeningHours() {
         return openingHours;
+    }
+
+    public String getCurrency() {
+        return currency;
     }
 
     public ConfigServer getConfigServer() {
@@ -206,6 +211,9 @@ public class XmlParser {
                     break;
                 case "opening_hours":
                     openingHours = readOpeningHours(parser);
+                    break;
+                case "currency":
+                    currency = readLeaf(parser, "currency");
                     break;
                 case "config_server":
                     configServer = readConfigServer(parser);

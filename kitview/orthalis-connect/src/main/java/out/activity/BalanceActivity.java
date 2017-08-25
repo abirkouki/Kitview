@@ -89,7 +89,7 @@ public class BalanceActivity extends AppCompatActivity {
             balanceMaj = balanceDetails[0][1];
             if (balance!=null) {
                 //affichage
-                txtBalance.setText(getApplicationContext().getString(R.string.payment) + balance + getApplicationContext().getString(R.string.devise));
+                txtBalance.setText(getApplicationContext().getString(R.string.payment) + balance +" "+ AppController.practiceCurrency);
                 String tmp;
                 tmp = getApplicationContext().getString(R.string.update) + balanceMaj;
                 txtMaj.setText(tmp);
@@ -112,7 +112,7 @@ public class BalanceActivity extends AppCompatActivity {
                             JSONObject user = jObj.getJSONObject("user");
 
                             balance = user.getString("balance");
-                            txtBalance.setText(getApplicationContext().getString(R.string.payment) + balance + getApplicationContext().getString(R.string.devise));
+                            txtBalance.setText(getApplicationContext().getString(R.string.payment) + balance +" "+ AppController.practiceCurrency);
                             //date d'aujourd'hui
                             DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
                             Date date = new Date();

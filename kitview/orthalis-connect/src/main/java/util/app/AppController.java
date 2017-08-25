@@ -33,6 +33,7 @@ public class AppController extends Application {
     public static String practiceName;
     public static ArrayList<XmlParser.Doctor> practiceDoctors;
     public static XmlParser.OpeningHours practiceOpeningHours;
+    public static String practiceCurrency;
     public static XmlParser.ConfigServer practiceConfigServer;
     public static String practiceText;
     public static XmlParser.Contact practiceContact;
@@ -49,6 +50,7 @@ public class AppController extends Application {
                 practiceName = xml.getName();
                 practiceDoctors = xml.getDoctors();
                 practiceOpeningHours = xml.getOpeningHours();
+                practiceCurrency = xml.getCurrency();
                 practiceConfigServer = xml.getConfigServer();
                 practiceText = xml.getText();
                 practiceContact = xml.getContact();
@@ -67,7 +69,6 @@ public class AppController extends Application {
     public void onCreate() {
         super.onCreate();
         mInstance = this;
-        //parseConfigFile(getApplicationContext()
         if (parseConfigFile(getApplicationContext()) && practiceConfigServer.chatSmooch != null) Smooch.init(this, practiceConfigServer.chatSmooch);
     }
 

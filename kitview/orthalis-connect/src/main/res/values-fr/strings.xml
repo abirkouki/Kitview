@@ -94,7 +94,6 @@
     <!--Balance-->
     <string name="payment">Il vous reste à payer\u0020</string>
     <string name="update">Dernière mise à jour :\u0020</string>
-    <string name="devise">€</string>
     <string name="missing_info">Information manquante, vérifiez votre connexion internet</string>
 
     <!--Notif-->

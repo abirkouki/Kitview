@@ -76,76 +76,76 @@
                     android:visibility="visible" >
 
                     <!--<LinearLayout-->
-                        <!--android:id="@+id/ll_situation_actuelle"-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:layout_marginBottom="1dp"-->
-                        <!--android:background="#55000000"-->
-                        <!--android:gravity="center_vertical"-->
-                        <!--android:orientation="horizontal" >-->
+                    <!--android:id="@+id/ll_situation_actuelle"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="1dp"-->
+                    <!--android:background="#55000000"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal" >-->
 
-                        <!--<ImageView-->
-                            <!--android:layout_width="wrap_content"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:src="@drawable/ic_action_time" />-->
+                    <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/ic_action_time" />-->
 
-                        <!--<TextView-->
-                            <!--android:id="@+id/situation_actuelle"-->
-                            <!--android:layout_width="match_parent"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:background="@null"-->
-                            <!--android:text="Votre prochain rendez-vous sera le 3 mai 2015."-->
-                            <!--android:textColor="@color/white"-->
-                            <!--android:textSize="15sp"-->
-                            <!--android:textStyle="normal"-->
-                            <!--android:visibility="visible" />-->
+                    <!--<TextView-->
+                    <!--android:id="@+id/situation_actuelle"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@null"-->
+                    <!--android:text="Votre prochain rendez-vous sera le 3 mai 2015."-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:textStyle="normal"-->
+                    <!--android:visibility="visible" />-->
                     <!--</LinearLayout>-->
 
                     <!--<LinearLayout-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:layout_marginBottom="1dp"-->
-                        <!--android:background="#55000000"-->
-                        <!--android:gravity="center_vertical"-->
-                        <!--android:orientation="horizontal" >-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="1dp"-->
+                    <!--android:background="#55000000"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal" >-->
 
-                        <!--<ImageView-->
-                            <!--android:layout_width="wrap_content"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:src="@drawable/ic_action_view_as_list" />-->
+                    <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/ic_action_view_as_list" />-->
 
-                        <!--<TextView-->
-                            <!--android:layout_width="match_parent"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:background="@null"-->
-                            <!--android:text="Votre solde à ce jour est de 500 €."-->
-                            <!--android:textColor="@color/white"-->
-                            <!--android:textSize="15sp"-->
-                            <!--android:textStyle="normal"-->
-                            <!--android:visibility="visible" />-->
+                    <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@null"-->
+                    <!--android:text="Votre solde à ce jour est de 500 €."-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:textStyle="normal"-->
+                    <!--android:visibility="visible" />-->
                     <!--</LinearLayout>-->
 
                     <!--<LinearLayout-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:background="#55000000"-->
-                        <!--android:gravity="center_vertical"-->
-                        <!--android:orientation="horizontal" >-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="#55000000"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:orientation="horizontal" >-->
 
-                        <!--<ImageView-->
-                            <!--android:layout_width="wrap_content"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:src="@drawable/ic_action_go_to_today" />-->
+                    <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:src="@drawable/ic_action_go_to_today" />-->
 
-                        <!--<TextView-->
-                            <!--android:layout_width="match_parent"-->
-                            <!--android:layout_height="wrap_content"-->
-                            <!--android:background="@null"-->
-                            <!--android:text="La prochaine échéance sera le 15 avril 2015 pour un montant de 300 €."-->
-                            <!--android:textColor="@color/white"-->
-                            <!--android:textSize="15sp"-->
-                            <!--android:textStyle="normal"-->
-                            <!--android:visibility="visible" />-->
+                    <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@null"-->
+                    <!--android:text="La prochaine échéance sera le 15 avril 2015 pour un montant de 300 €."-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:textStyle="normal"-->
+                    <!--android:visibility="visible" />-->
                     <!--</LinearLayout>-->
                 </LinearLayout>
             </LinearLayout>

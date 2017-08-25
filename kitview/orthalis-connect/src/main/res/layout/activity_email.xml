@@ -5,42 +5,50 @@
     android:layout_height="fill_parent"
     android:weightSum="1">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.23">
+    <LinearLayout>
 
-        <TextView
-            android:layout_width="72dp"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="intitulé" />
 
-        <EditText
-            android:id="@+id/intitule_email"
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"/>
+            android:layout_weight="0.23">
+
+            <TextView
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="intitulé" />
+
+            <EditText
+                android:id="@+id/intitule_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="message" />
+
+        <EditText
+            android:id="@+id/message_email"
+            android:layout_width="fill_parent"
+            android:layout_height="200sp" />
+
+        <Button
+            android:id="@+id/envoyer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Envoyer" />
+
     </LinearLayout>
 
-    <TextView
-        android:layout_width="149dp"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:gravity="center"
-        android:text="message" />
 
-    <EditText
-        android:id="@+id/message_email"
-        android:layout_width="fill_parent"
-        android:layout_height="200sp" />
 
-    <Button
-        android:id="@+id/envoyer"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Envoyer" />
 </LinearLayout>
